@@ -13,12 +13,7 @@ struct OnboardingFlowView: View {
             stepContent
                 .environmentObject(viewModel)
 
-            VStack(spacing: 0) {
-                progressBar
-                if viewModel.currentStep.canGoBack {
-                    backButton
-                }
-            }
+            progressBar
         }
         .background(Brand.surface.ignoresSafeArea())
     }
@@ -84,25 +79,4 @@ struct OnboardingFlowView: View {
         .padding(.top, 8)
     }
 
-    private var backButton: some View {
-        HStack {
-            Button {
-                withAnimation(LitmusMotion.smooth) {
-                    viewModel.goBack()
-                }
-            } label: {
-                HStack(spacing: 6) {
-                    Image(systemName: "chevron.left")
-                    Text(String(localized: "onboarding.back"))
-                }
-                .font(LitmusTypography.bodyMedium())
-                .foregroundStyle(Brand.accent)
-            }
-            .buttonStyle(.plain)
-            .padding(.horizontal, LitmusSpacing.lg)
-            .padding(.top, LitmusSpacing.sm)
-
-            Spacer()
-        }
-    }
 }

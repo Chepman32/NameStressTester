@@ -1,16 +1,5 @@
 {
   "source": "/Users/antonchepur/Litmus/Litmus/Features/Onboarding/OnboardingFlowView.swift",
-  "tables": {
-    "Localizable": [
-      {
-        "comment": "",
-        "key": "onboarding.back",
-        "location": {
-          "startingColumn": 44,
-          "startingLine": 96
-        }
-      }
-    ]
-  },
+  "tables": {},
   "version": 1
 }
