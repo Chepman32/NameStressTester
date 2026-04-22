@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1D6F466A5212A6F95F67AE16"
+               BlueprintIdentifier = "10625253F0B0EAA4D9E03615"
                BuildableName = "Litmus.app"
                BlueprintName = "Litmus"
                ReferencedContainer = "container:Litmus.xcodeproj">
@@ -30,7 +30,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1D6F466A5212A6F95F67AE16"
+            BlueprintIdentifier = "10625253F0B0EAA4D9E03615"
             BuildableName = "Litmus.app"
             BlueprintName = "Litmus"
             ReferencedContainer = "container:Litmus.xcodeproj">
@@ -41,7 +41,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "22AA38FE3DDE243ECAA2BADA"
+               BlueprintIdentifier = "07AF1440CE6382293909C0B4"
                BuildableName = "LitmusTests.xctest"
                BlueprintName = "LitmusTests"
                ReferencedContainer = "container:Litmus.xcodeproj">
@@ -51,7 +51,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A41EC42E3C2EC20963D9BCA0"
+               BlueprintIdentifier = "F78507D916421D32235BDA36"
                BuildableName = "LitmusUITests.xctest"
                BlueprintName = "LitmusUITests"
                ReferencedContainer = "container:Litmus.xcodeproj">
@@ -73,7 +73,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1D6F466A5212A6F95F67AE16"
+            BlueprintIdentifier = "10625253F0B0EAA4D9E03615"
             BuildableName = "Litmus.app"
             BlueprintName = "Litmus"
             ReferencedContainer = "container:Litmus.xcodeproj">
@@ -90,7 +90,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1D6F466A5212A6F95F67AE16"
+            BlueprintIdentifier = "10625253F0B0EAA4D9E03615"
             BuildableName = "Litmus.app"
             BlueprintName = "Litmus"
             ReferencedContainer = "container:Litmus.xcodeproj">

@@ -31,19 +31,17 @@ private struct RootContainerView: View {
     var body: some View {
         ZStack(alignment: .bottom) {
             if session.splashFinished {
-                NavigationStack(path: $coordinator.path) {
-                    InputScreen()
-                        .navigationDestination(for: AppRoute.self, destination: destination(for:))
-                }
-                .sheet(item: $coordinator.sheet) { sheet in
-                    switch sheet {
-                    case .settings:
-                        NavigationStack {
-                            SettingsScreen()
+                if session.preferences.hasSeenOnboarding {
+                    mainAppContent
+                } else {
+                    OnboardingFlowView {
+                        withAnimation(LitmusMotion.gentle) {
+                            session.preferences.hasSeenOnboarding = true
+                            session.savePreferences(context: modelContext)
                         }
-                        .presentationDetents([.medium, .large])
-                        .presentationDragIndicator(.visible)
                     }
+                    .environmentObject(coordinator)
+                    .environmentObject(session)
                 }
             } else {
                 SplashScreen {
@@ -71,6 +69,23 @@ private struct RootContainerView: View {
                 withAnimation {
                     session.toast = nil
                 }
+            }
+        }
+    }
+
+    private var mainAppContent: some View {
+        NavigationStack(path: $coordinator.path) {
+            InputScreen()
+                .navigationDestination(for: AppRoute.self, destination: destination(for:))
+        }
+        .sheet(item: $coordinator.sheet) { sheet in
+            switch sheet {
+            case .settings:
+                NavigationStack {
+                    SettingsScreen()
+                }
+                .presentationDetents([.medium, .large])
+                .presentationDragIndicator(.visible)
             }
         }
     }

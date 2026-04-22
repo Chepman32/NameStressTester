@@ -1,0 +1,152 @@
+{
+  "source": "/Users/antonchepur/Litmus/Litmus/Features/Settings/SettingsScreen.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "settings.title",
+        "location": {
+          "startingColumn": 44,
+          "startingLine": 20
+        }
+      },
+      {
+        "comment": "",
+        "key": "settings.appearance",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 31
+        }
+      },
+      {
+        "comment": "",
+        "key": "settings.tests",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 46
+        }
+      },
+      {
+        "comment": "",
+        "key": "settings.data",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 79
+        }
+      },
+      {
+        "comment": "",
+        "key": "settings.about",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 107
+        }
+      },
+      {
+        "comment": "",
+        "key": "settings.appearance.darkmode",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 33
+        }
+      },
+      {
+        "comment": "",
+        "key": "settings.tests.reorder",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 69
+        }
+      },
+      {
+        "comment": "",
+        "key": "settings.tests.includeMiddle",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 54
+        }
+      },
+      {
+        "comment": "",
+        "key": "settings.tests.strict",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 65
+        }
+      },
+      {
+        "comment": "",
+        "key": "settings.data.clearHistory.confirm",
+        "location": {
+          "startingColumn": 55,
+          "startingLine": 94
+        }
+      },
+      {
+        "comment": "",
+        "key": "settings.data.clearHistory",
+        "location": {
+          "startingColumn": 113,
+          "startingLine": 94
+        }
+      },
+      {
+        "comment": "",
+        "key": "settings.data.export",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 101
+        }
+      },
+      {
+        "comment": "",
+        "key": "settings.about.about",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 114
+        }
+      },
+      {
+        "comment": "",
+        "key": "settings.about.privacy",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 120
+        }
+      },
+      {
+        "comment": "",
+        "key": "settings.about.version",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 109
+        }
+      },
+      {
+        "comment": "",
+        "key": "1.0.0",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 111
+        }
+      },
+      {
+        "comment": "",
+        "key": "Test Order",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 166
+        }
+      },
+      {
+        "comment": "",
+        "key": "Done",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 169
+        }
+      }
+    ]
+  },
+  "version": 1
+}

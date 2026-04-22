@@ -1,0 +1,96 @@
+{
+  "source": "/Users/antonchepur/Litmus/Litmus/Features/History/HistoryScreen.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "history.search.placeholder",
+        "location": {
+          "startingColumn": 94,
+          "startingLine": 88
+        }
+      },
+      {
+        "comment": "",
+        "key": "",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 77
+        }
+      },
+      {
+        "comment": "",
+        "key": "history.title",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 111
+        }
+      },
+      {
+        "comment": "",
+        "key": "Input",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 103
+        }
+      },
+      {
+        "comment": "",
+        "key": "history.empty.title",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 136
+        }
+      },
+      {
+        "comment": "",
+        "key": "history.empty.subtitle",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 139
+        }
+      },
+      {
+        "comment": "",
+        "key": "history.empty.cta",
+        "location": {
+          "startingColumn": 51,
+          "startingLine": 142
+        }
+      },
+      {
+        "comment": "",
+        "key": "Favorite",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 187
+        }
+      },
+      {
+        "comment": "",
+        "key": "history.delete.undo",
+        "location": {
+          "startingColumn": 54,
+          "startingLine": 198
+        }
+      },
+      {
+        "comment": "",
+        "key": "history.delete.undo.button",
+        "location": {
+          "startingColumn": 60,
+          "startingLine": 199
+        }
+      },
+      {
+        "comment": "",
+        "key": "Delete",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 209
+        }
+      }
+    ]
+  },
+  "version": 1
+}

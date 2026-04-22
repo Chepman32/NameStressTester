@@ -1,0 +1,30 @@
+{
+  "/Users/antonchepur/Litmus/Litmus/Features/Onboarding/OnboardingStep.swift" : {
+    "const-values" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingStep.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingStep.d",
+    "diagnostics" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingStep.dia",
+    "object" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingStep.o",
+    "swift-dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingStep.swiftdeps"
+  },
+  "/Users/antonchepur/Litmus/Litmus/Features/Onboarding/OnboardingSwipeCardsView.swift" : {
+    "const-values" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingSwipeCardsView.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingSwipeCardsView.d",
+    "diagnostics" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingSwipeCardsView.dia",
+    "object" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingSwipeCardsView.o",
+    "swift-dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingSwipeCardsView.swiftdeps"
+  },
+  "/Users/antonchepur/Litmus/Litmus/Features/Onboarding/OnboardingViewModel.swift" : {
+    "const-values" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingViewModel.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingViewModel.d",
+    "diagnostics" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingViewModel.dia",
+    "object" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingViewModel.o",
+    "swift-dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingViewModel.swiftdeps"
+  },
+  "/Users/antonchepur/Litmus/Litmus/Features/Onboarding/OnboardingWelcomeView.swift" : {
+    "const-values" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingWelcomeView.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingWelcomeView.d",
+    "diagnostics" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingWelcomeView.dia",
+    "object" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingWelcomeView.o",
+    "swift-dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingWelcomeView.swiftdeps"
+  }
+}

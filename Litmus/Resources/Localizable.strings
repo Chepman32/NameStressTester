@@ -48,3 +48,45 @@
 "time.today" = "Today";
 "time.yesterday" = "Yesterday";
 "time.daysAgo" = "%d days ago";
+
+"onboarding.welcome.headline" = "Find the name that survives real life";
+"onboarding.welcome.subheadline" = "7 stress-tests every name should pass before the birth certificate is signed";
+"onboarding.welcome.cta" = "Get Started";
+"onboarding.welcome.footnote" = "Fully offline. No data leaves your device.";
+
+"onboarding.goal.headline" = "What matters most to you in a name?";
+"onboarding.goal.subheadline" = "Pick the one that resonates most.";
+
+"onboarding.pain.headline" = "What worries you about choosing a name?";
+"onboarding.pain.subheadline" = "Select all that apply. You're not alone.";
+
+"onboarding.social.headline" = "Join thousands of parents who've stress-tested names";
+"onboarding.social.subheadline" = "Real stories from real parents.";
+
+"onboarding.swipe.headline" = "Which statements do you relate to?";
+"onboarding.swipe.subheadline" = "Swipe right to agree, left to skip.";
+"onboarding.swipe.agree" = "Relate";
+"onboarding.swipe.disagree" = "Skip";
+"onboarding.swipe.complete" = "All done!";
+
+"onboarding.solution.headline" = "Litmus has you covered";
+"onboarding.solution.subheadline" = "Here's exactly how we solve every worry you shared.";
+"onboarding.solution.cta" = "Choose My Tests";
+
+"onboarding.prefs.headline" = "Which tests should we run?";
+"onboarding.prefs.subheadline" = "Select the ones that matter to you. You can change this anytime.";
+"onboarding.prefs.cta" = "Build My Test Suite";
+
+"onboarding.processing.headline" = "Building your personalised test suite...";
+"onboarding.processing.subheadline" = "Just a moment while we prepare everything.";
+
+"onboarding.demo.headline" = "Test your own name";
+"onboarding.demo.subheadline" = "Enter your name (or any name you love) and see Litmus in action.";
+"onboarding.demo.cta" = "Run the Gauntlet";
+
+"onboarding.complete.message" = "That's the Litmus experience. Ready to test names with confidence?";
+"onboarding.complete.cta" = "Start Testing Names";
+"onboarding.complete.secondary" = "Share My Results";
+
+"onboarding.continue" = "Continue";
+"onboarding.back" = "Back";

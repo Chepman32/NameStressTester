@@ -1,0 +1,32 @@
+{
+  "source": "/Users/antonchepur/Litmus/Litmus/Utilities/SystemHelpers.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "time.today",
+        "location": {
+          "startingColumn": 68,
+          "startingLine": 21
+        }
+      },
+      {
+        "comment": "",
+        "key": "time.yesterday",
+        "location": {
+          "startingColumn": 72,
+          "startingLine": 22
+        }
+      },
+      {
+        "comment": "",
+        "key": "time.daysAgo",
+        "location": {
+          "startingColumn": 53,
+          "startingLine": 25
+        }
+      }
+    ]
+  },
+  "version": 1
+}

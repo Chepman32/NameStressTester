@@ -1,0 +1,30 @@
+{
+  "/Users/antonchepur/Litmus/Litmus/Engine/Analyzers.swift" : {
+    "const-values" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/Analyzers.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/Analyzers.d",
+    "diagnostics" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/Analyzers.dia",
+    "object" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/Analyzers.o",
+    "swift-dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/Analyzers.swiftdeps"
+  },
+  "/Users/antonchepur/Litmus/Litmus/Engine/DataRepository.swift" : {
+    "const-values" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/DataRepository.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/DataRepository.d",
+    "diagnostics" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/DataRepository.dia",
+    "object" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/DataRepository.o",
+    "swift-dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/DataRepository.swiftdeps"
+  },
+  "/Users/antonchepur/Litmus/Litmus/Engine/NameModels.swift" : {
+    "const-values" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/NameModels.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/NameModels.d",
+    "diagnostics" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/NameModels.dia",
+    "object" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/NameModels.o",
+    "swift-dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/NameModels.swiftdeps"
+  },
+  "/Users/antonchepur/Litmus/Litmus/Engine/NameTestEngine.swift" : {
+    "const-values" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/NameTestEngine.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/NameTestEngine.d",
+    "diagnostics" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/NameTestEngine.dia",
+    "object" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/NameTestEngine.o",
+    "swift-dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/NameTestEngine.swiftdeps"
+  }
+}

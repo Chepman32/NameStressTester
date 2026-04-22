@@ -1,0 +1,24 @@
+{
+  "source": "/Users/antonchepur/Litmus/Litmus/Features/Onboarding/OnboardingProcessingView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "onboarding.processing.headline",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 30
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.processing.subheadline",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 35
+        }
+      }
+    ]
+  },
+  "version": 1
+}

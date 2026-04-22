@@ -1,0 +1,30 @@
+{
+  "/Users/antonchepur/Litmus/Litmus/Features/Onboarding/OnboardingPreferencesView.swift" : {
+    "const-values" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/OnboardingPreferencesView.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/OnboardingPreferencesView.d",
+    "diagnostics" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/OnboardingPreferencesView.dia",
+    "object" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/OnboardingPreferencesView.o",
+    "swift-dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/OnboardingPreferencesView.swiftdeps"
+  },
+  "/Users/antonchepur/Litmus/Litmus/Features/Onboarding/OnboardingProcessingView.swift" : {
+    "const-values" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/OnboardingProcessingView.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/OnboardingProcessingView.d",
+    "diagnostics" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/OnboardingProcessingView.dia",
+    "object" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/OnboardingProcessingView.o",
+    "swift-dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/OnboardingProcessingView.swiftdeps"
+  },
+  "/Users/antonchepur/Litmus/Litmus/Features/Onboarding/OnboardingSocialProofView.swift" : {
+    "const-values" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/OnboardingSocialProofView.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/OnboardingSocialProofView.d",
+    "diagnostics" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/OnboardingSocialProofView.dia",
+    "object" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/OnboardingSocialProofView.o",
+    "swift-dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/OnboardingSocialProofView.swiftdeps"
+  },
+  "/Users/antonchepur/Litmus/Litmus/Features/Onboarding/OnboardingSolutionView.swift" : {
+    "const-values" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/OnboardingSolutionView.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/OnboardingSolutionView.d",
+    "diagnostics" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/OnboardingSolutionView.dia",
+    "object" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/OnboardingSolutionView.o",
+    "swift-dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/x86_64/OnboardingSolutionView.swiftdeps"
+  }
+}

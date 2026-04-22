@@ -1,0 +1,32 @@
+{
+  "source": "/Users/antonchepur/Litmus/Litmus/Features/Onboarding/OnboardingPreferencesView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "onboarding.prefs.cta",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 60
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.prefs.headline",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 21
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.prefs.subheadline",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 26
+        }
+      }
+    ]
+  },
+  "version": 1
+}

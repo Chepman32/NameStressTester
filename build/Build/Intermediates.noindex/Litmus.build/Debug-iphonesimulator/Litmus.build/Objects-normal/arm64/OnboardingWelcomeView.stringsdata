@@ -1,0 +1,40 @@
+{
+  "source": "/Users/antonchepur/Litmus/Litmus/Features/Onboarding/OnboardingWelcomeView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "onboarding.welcome.headline",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 14
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.welcome.subheadline",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 19
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.welcome.cta",
+        "location": {
+          "startingColumn": 55,
+          "startingLine": 33
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.welcome.footnote",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 38
+        }
+      }
+    ]
+  },
+  "version": 1
+}

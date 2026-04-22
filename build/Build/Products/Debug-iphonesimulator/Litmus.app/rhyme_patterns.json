@@ -1,0 +1,45 @@
+{
+  "patterns": [
+    {
+      "sound": "ART",
+      "anchors": ["art", "hart", "bart", "mart"],
+      "words": [
+        { "word": "cart", "negative": false, "severity": null },
+        { "word": "tart", "negative": true, "severity": "mild" },
+        { "word": "fart", "negative": true, "severity": "moderate" }
+      ]
+    },
+    {
+      "sound": "ASH",
+      "anchors": ["ash"],
+      "words": [
+        { "word": "rash", "negative": false, "severity": null },
+        { "word": "trash", "negative": true, "severity": "moderate" }
+      ]
+    },
+    {
+      "sound": "IAN",
+      "anchors": ["ian", "ien"],
+      "words": [
+        { "word": "dean", "negative": false, "severity": null },
+        { "word": "pee-an", "negative": true, "severity": "mild" }
+      ]
+    },
+    {
+      "sound": "LEE",
+      "anchors": ["lee", "leigh", "ley", "li"],
+      "words": [
+        { "word": "glee", "negative": false, "severity": null },
+        { "word": "flea", "negative": true, "severity": "mild" }
+      ]
+    },
+    {
+      "sound": "OE",
+      "anchors": ["oe", "jo", "joe"],
+      "words": [
+        { "word": "foe", "negative": true, "severity": "moderate" },
+        { "word": "show", "negative": false, "severity": null }
+      ]
+    }
+  ]
+}
