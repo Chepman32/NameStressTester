@@ -9,13 +9,12 @@ struct OnboardingFlowView: View {
     @EnvironmentObject private var session: AppSession
 
     var body: some View {
-        ZStack(alignment: .top) {
-            stepContent
-                .environmentObject(viewModel)
-
-            progressBar
-        }
-        .background(Brand.surface.ignoresSafeArea())
+        stepContent
+            .environmentObject(viewModel)
+            .safeAreaInset(edge: .top, spacing: 0) {
+                topChrome
+            }
+            .background(Brand.surface.ignoresSafeArea())
     }
 
     @ViewBuilder
@@ -63,6 +62,16 @@ struct OnboardingFlowView: View {
         }
     }
 
+    private var topChrome: some View {
+        progressBar
+            .padding(.horizontal, LitmusSpacing.lg)
+            .padding(.top, 10)
+            .padding(.bottom, LitmusSpacing.sm)
+            .background {
+                Brand.surface.ignoresSafeArea(edges: .top)
+            }
+    }
+
     private var progressBar: some View {
         GeometryReader { proxy in
             ZStack(alignment: .leading) {
@@ -75,8 +84,6 @@ struct OnboardingFlowView: View {
             }
         }
         .frame(height: 4)
-        .padding(.horizontal, LitmusSpacing.lg)
-        .padding(.top, 8)
     }
 
 }
