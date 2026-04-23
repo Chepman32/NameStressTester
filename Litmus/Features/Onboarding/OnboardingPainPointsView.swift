@@ -4,46 +4,52 @@ struct OnboardingPainPointsView: View {
     @EnvironmentObject private var viewModel: OnboardingViewModel
 
     var body: some View {
-        ScrollView {
-            VStack(spacing: LitmusSpacing.xl) {
-                VStack(spacing: LitmusSpacing.sm) {
-                    Text("onboarding.pain.headline")
-                        .font(LitmusTypography.title())
-                        .foregroundStyle(Brand.textPrimary)
-                        .multilineTextAlignment(.center)
+        VStack(spacing: 0) {
+            ScrollView {
+                VStack(spacing: LitmusSpacing.xl) {
+                    VStack(spacing: LitmusSpacing.sm) {
+                        Text("onboarding.pain.headline")
+                            .font(LitmusTypography.title())
+                            .foregroundStyle(Brand.textPrimary)
+                            .multilineTextAlignment(.center)
 
-                    Text("onboarding.pain.subheadline")
-                        .font(LitmusTypography.bodyMedium())
-                        .foregroundStyle(Brand.textSecondary)
-                        .multilineTextAlignment(.center)
-                }
+                        if viewModel.selectedPainPoints.isEmpty {
+                            Text("onboarding.pain.subheadline")
+                                .font(LitmusTypography.bodyMedium())
+                                .foregroundStyle(Brand.textSecondary)
+                                .multilineTextAlignment(.center)
+                                .transition(.asymmetric(
+                                    insertion: .move(edge: .top).combined(with: .opacity),
+                                    removal: .move(edge: .top).combined(with: .opacity)
+                                ))
+                        }
+                    }
+                    .animation(.spring(response: 0.4, dampingFraction: 0.78), value: viewModel.selectedPainPoints.isEmpty)
 
-                VStack(spacing: LitmusSpacing.sm) {
-                    ForEach(viewModel.painPoints) { point in
-                        PainPointRow(
-                            point: point,
-                            isSelected: viewModel.selectedPainPoints.contains(point)
-                        ) {
-                            withAnimation(LitmusMotion.snappy) {
-                                if viewModel.selectedPainPoints.contains(point) {
-                                    viewModel.selectedPainPoints.remove(point)
-                                } else {
-                                    viewModel.selectedPainPoints.insert(point)
-                                    Haptics.selection()
+                    VStack(spacing: LitmusSpacing.sm) {
+                        ForEach(viewModel.painPoints) { point in
+                            PainPointRow(
+                                point: point,
+                                isSelected: viewModel.selectedPainPoints.contains(point)
+                            ) {
+                                withAnimation(LitmusMotion.snappy) {
+                                    if viewModel.selectedPainPoints.contains(point) {
+                                        viewModel.selectedPainPoints.remove(point)
+                                    } else {
+                                        viewModel.selectedPainPoints.insert(point)
+                                        Haptics.selection()
+                                    }
                                 }
                             }
                         }
                     }
-                }
 
-                Spacer(minLength: LitmusSpacing.xl)
+                    Spacer(minLength: LitmusSpacing.xl)
+                }
+                .padding(.horizontal, LitmusSpacing.lg)
+                .padding(.top, LitmusSpacing.md)
             }
-            .padding(.horizontal, LitmusSpacing.lg)
-            .padding(.top, LitmusSpacing.md)
-            .padding(.bottom, LitmusSpacing.xxxl)
-        }
-        .background(Brand.surface.ignoresSafeArea())
-        .safeAreaInset(edge: .bottom) {
+
             LitmusButton(
                 title: String(localized: "onboarding.continue"),
                 isDisabled: viewModel.selectedPainPoints.isEmpty
@@ -54,6 +60,7 @@ struct OnboardingPainPointsView: View {
             .padding(.horizontal, LitmusSpacing.lg)
             .padding(.bottom, LitmusSpacing.lg)
         }
+        .background(Brand.surface.ignoresSafeArea())
     }
 }
 

@@ -6,7 +6,7 @@
 	<integer>12</integer>
 	<key>logs</key>
 	<dict>
-		<key>6B70DDEC-E9DA-4564-867A-59FBFAB50136</key>
+		<key>09354839-6353-42F3-BDF7-C82AF63A121C</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>6B70DDEC-E9DA-4564-867A-59FBFAB50136.xcactivitylog</string>
+			<string>09354839-6353-42F3-BDF7-C82AF63A121C.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -40,15 +40,15 @@
 			<key>signature</key>
 			<string>Building project Litmus with scheme Litmus and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>798567834.33889103</real>
+			<real>798622875.61781394</real>
 			<key>timeStoppedRecording</key>
-			<real>798567837.02409995</real>
+			<real>798622878.43643606</real>
 			<key>title</key>
 			<string>Building project Litmus with scheme Litmus and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>6B70DDEC-E9DA-4564-867A-59FBFAB50136</string>
+			<string>09354839-6353-42F3-BDF7-C82AF63A121C</string>
 		</dict>
-		<key>729D4D73-9641-4D45-B3D1-8214C0C0D350</key>
+		<key>28AD7712-F84E-4A14-9BA7-503585CAE59A</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -57,7 +57,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>729D4D73-9641-4D45-B3D1-8214C0C0D350.xcactivitylog</string>
+			<string>28AD7712-F84E-4A14-9BA7-503585CAE59A.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -82,13 +82,13 @@
 			<key>signature</key>
 			<string>Building project Litmus with scheme Litmus and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>798567578.88344395</real>
+			<real>798624567.02941597</real>
 			<key>timeStoppedRecording</key>
-			<real>798567581.58258295</real>
+			<real>798624569.81684804</real>
 			<key>title</key>
 			<string>Building project Litmus with scheme Litmus and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>729D4D73-9641-4D45-B3D1-8214C0C0D350</string>
+			<string>28AD7712-F84E-4A14-9BA7-503585CAE59A</string>
 		</dict>
 	</dict>
 </dict>

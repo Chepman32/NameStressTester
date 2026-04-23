@@ -4,56 +4,63 @@ struct OnboardingGoalView: View {
     @EnvironmentObject private var viewModel: OnboardingViewModel
 
     var body: some View {
-        ScrollView {
-            VStack(spacing: LitmusSpacing.xl) {
-                VStack(spacing: LitmusSpacing.sm) {
-                    Text("onboarding.goal.headline")
-                        .font(LitmusTypography.title())
-                        .foregroundStyle(Brand.textPrimary)
-                        .multilineTextAlignment(.center)
+        VStack(spacing: 0) {
+            ScrollView {
+                VStack(spacing: LitmusSpacing.xl) {
+                    VStack(spacing: LitmusSpacing.sm) {
+                        Text("onboarding.goal.headline")
+                            .font(LitmusTypography.title())
+                            .foregroundStyle(Brand.textPrimary)
+                            .multilineTextAlignment(.center)
 
-                    Text("onboarding.goal.subheadline")
-                        .font(LitmusTypography.bodyMedium())
-                        .foregroundStyle(Brand.textSecondary)
-                        .multilineTextAlignment(.center)
-                }
+                        if viewModel.selectedGoal == nil {
+                            Text("onboarding.goal.subheadline")
+                                .font(LitmusTypography.bodyMedium())
+                                .foregroundStyle(Brand.textSecondary)
+                                .multilineTextAlignment(.center)
+                                .transition(.asymmetric(
+                                    insertion: .move(edge: .top).combined(with: .opacity),
+                                    removal: .move(edge: .top).combined(with: .opacity)
+                                ))
+                        }
+                    }
+                    .animation(.spring(response: 0.4, dampingFraction: 0.78), value: viewModel.selectedGoal == nil)
 
-                VStack(spacing: LitmusSpacing.sm) {
-                    ForEach(viewModel.goals) { goal in
-                        GoalRow(
-                            goal: goal,
-                            isSelected: viewModel.selectedGoal?.id == goal.id
-                        ) {
-                            withAnimation(LitmusMotion.snappy) {
-                                if viewModel.selectedGoal?.id == goal.id {
-                                    viewModel.selectedGoal = nil
-                                } else {
-                                    viewModel.selectedGoal = goal
-                                    Haptics.selection()
+                    VStack(spacing: LitmusSpacing.sm) {
+                        ForEach(viewModel.goals) { goal in
+                            GoalRow(
+                                goal: goal,
+                                isSelected: viewModel.selectedGoal?.id == goal.id
+                            ) {
+                                withAnimation(LitmusMotion.snappy) {
+                                    if viewModel.selectedGoal?.id == goal.id {
+                                        viewModel.selectedGoal = nil
+                                    } else {
+                                        viewModel.selectedGoal = goal
+                                        Haptics.selection()
+                                    }
                                 }
                             }
                         }
                     }
-                }
 
-                Spacer(minLength: LitmusSpacing.xl)
-            }
-            .padding(.horizontal, LitmusSpacing.lg)
-            .padding(.top, LitmusSpacing.md)
-            .padding(.bottom, LitmusSpacing.xxxl)
-        }
-        .background(Brand.surface.ignoresSafeArea())
-        .safeAreaInset(edge: .bottom) {
-            if viewModel.selectedGoal != nil {
-                LitmusButton(title: String(localized: "onboarding.continue")) {
-                    Haptics.impact(.medium)
-                    viewModel.advance()
+                    Spacer(minLength: LitmusSpacing.xl)
                 }
                 .padding(.horizontal, LitmusSpacing.lg)
-                .padding(.bottom, LitmusSpacing.lg)
-                .transition(.move(edge: .bottom).combined(with: .opacity))
+                .padding(.top, LitmusSpacing.md)
             }
+
+            LitmusButton(
+                title: String(localized: "onboarding.continue"),
+                isDisabled: viewModel.selectedGoal == nil
+            ) {
+                Haptics.impact(.medium)
+                viewModel.advance()
+            }
+            .padding(.horizontal, LitmusSpacing.lg)
+            .padding(.bottom, LitmusSpacing.lg)
         }
+        .background(Brand.surface.ignoresSafeArea())
     }
 }
 

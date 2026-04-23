@@ -4,26 +4,26 @@
     "Localizable": [
       {
         "comment": "",
+        "key": "onboarding.continue",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 54
+        }
+      },
+      {
+        "comment": "",
         "key": "onboarding.pain.headline",
         "location": {
-          "startingColumn": 26,
-          "startingLine": 10
+          "startingColumn": 30,
+          "startingLine": 11
         }
       },
       {
         "comment": "",
         "key": "onboarding.pain.subheadline",
         "location": {
-          "startingColumn": 26,
-          "startingLine": 15
-        }
-      },
-      {
-        "comment": "",
-        "key": "onboarding.continue",
-        "location": {
-          "startingColumn": 42,
-          "startingLine": 48
+          "startingColumn": 34,
+          "startingLine": 17
         }
       }
     ]
