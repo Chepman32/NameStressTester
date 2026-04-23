@@ -17,8 +17,22 @@ struct SettingsScreen: View {
             aboutSection
         }
         .listStyle(.insetGrouped)
+        .scrollContentBackground(.hidden)
+        .background(Brand.surface.ignoresSafeArea())
         .navigationTitle(String(localized: "settings.title"))
         .navigationBarTitleDisplayMode(.inline)
+        .toolbarBackground(Brand.surface, for: .navigationBar)
+        .toolbarBackground(.visible, for: .navigationBar)
+        .tint(Brand.accent)
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                Button("Done") {
+                    dismiss()
+                }
+                .font(LitmusTypography.bodyMedium().weight(.semibold))
+                .foregroundStyle(Brand.accent)
+            }
+        }
         .sheet(isPresented: Binding(
             get: { shareItems.isEmpty == false },
             set: { if !$0 { shareItems = [] } }
@@ -28,7 +42,7 @@ struct SettingsScreen: View {
     }
 
     private var appearanceSection: some View {
-        Section(String(localized: "settings.appearance")) {
+        Section {
             VStack(alignment: .leading, spacing: LitmusSpacing.sm) {
                 Text(String(localized: "settings.appearance.darkmode"))
                     .font(LitmusTypography.bodyMedium())
@@ -39,11 +53,14 @@ struct SettingsScreen: View {
                 }
             }
             .padding(.vertical, 6)
+            .listRowBackground(Brand.card)
+        } header: {
+            sectionHeader(String(localized: "settings.appearance"))
         }
     }
 
     private var testsSection: some View {
-        Section(String(localized: "settings.tests")) {
+        Section {
             Toggle(isOn: Binding(
                 get: { session.preferences.includeMiddleName },
                 set: {
@@ -52,8 +69,10 @@ struct SettingsScreen: View {
                 }
             )) {
                 Text(String(localized: "settings.tests.includeMiddle"))
+                    .foregroundStyle(Brand.textPrimary)
             }
             .tint(Brand.accent)
+            .listRowBackground(Brand.card)
 
             Toggle(isOn: Binding(
                 get: { session.preferences.strictMode },
@@ -63,8 +82,10 @@ struct SettingsScreen: View {
                 }
             )) {
                 Text(String(localized: "settings.tests.strict"))
+                    .foregroundStyle(Brand.textPrimary)
             }
             .tint(Brand.accent)
+            .listRowBackground(Brand.card)
 
             NavigationLink(String(localized: "settings.tests.reorder")) {
                 TestOrderScreen(order: session.preferences.testOrder) { updated in
@@ -72,11 +93,15 @@ struct SettingsScreen: View {
                     session.savePreferences(context: modelContext)
                 }
             }
+            .foregroundStyle(Brand.textPrimary)
+            .listRowBackground(Brand.card)
+        } header: {
+            sectionHeader(String(localized: "settings.tests"))
         }
     }
 
     private var dataSection: some View {
-        Section(String(localized: "settings.data")) {
+        Section {
             Button {
                 if confirmClear {
                     try? PersistenceService.shared.clearAllHistory(context: modelContext)
@@ -94,36 +119,57 @@ struct SettingsScreen: View {
                 Text(confirmClear ? String(localized: "settings.data.clearHistory.confirm") : String(localized: "settings.data.clearHistory"))
                     .foregroundStyle(Brand.fail)
             }
+            .listRowBackground(Brand.card)
 
             Button {
                 exportAll()
             } label: {
                 Text(String(localized: "settings.data.export"))
+                    .foregroundStyle(Brand.textPrimary)
             }
+            .listRowBackground(Brand.card)
+        } header: {
+            sectionHeader(String(localized: "settings.data"))
         }
     }
 
     private var aboutSection: some View {
-        Section(String(localized: "settings.about")) {
+        Section {
             HStack {
                 Text(String(localized: "settings.about.version"))
+                    .foregroundStyle(Brand.textPrimary)
                 Spacer()
                 Text("1.0.0")
                     .foregroundStyle(Brand.textSecondary)
             }
+            .listRowBackground(Brand.card)
             NavigationLink(String(localized: "settings.about.about")) {
                 StaticTextScreen(
                     title: "About Litmus",
                     bodyText: "Litmus is a fully offline iPhone and iPad utility that stress-tests a prospective name against rhyme exposure, initials, pronunciation friction, badge fit, namesake baggage, and monogram aesthetics."
                 )
             }
+            .foregroundStyle(Brand.textPrimary)
+            .listRowBackground(Brand.card)
             NavigationLink(String(localized: "settings.about.privacy")) {
                 StaticTextScreen(
                     title: "Privacy Policy",
                     bodyText: "Litmus sends no data off-device, requests no network-backed account, and stores reports only in local SwiftData storage until the user deletes them."
                 )
             }
+            .foregroundStyle(Brand.textPrimary)
+            .listRowBackground(Brand.card)
+        } header: {
+            sectionHeader(String(localized: "settings.about"))
         }
+    }
+
+    private func sectionHeader(_ title: String) -> some View {
+        Text(title)
+            .font(LitmusTypography.badge())
+            .foregroundStyle(Brand.textTertiary)
+            .textCase(.uppercase)
+            .padding(.leading, LitmusSpacing.xs)
     }
 
     private func exportAll() {
@@ -153,6 +199,7 @@ private struct TestOrderScreen: View {
             ForEach(order, id: \.self) { type in
                 HStack {
                     Text(String(localized: String.LocalizationValue(type.localizedNameKey)))
+                        .foregroundStyle(Brand.textPrimary)
                     Spacer()
                     Image(systemName: "line.3.horizontal")
                         .foregroundStyle(Brand.textTertiary)
@@ -161,9 +208,15 @@ private struct TestOrderScreen: View {
             .onMove { source, destination in
                 order.move(fromOffsets: source, toOffset: destination)
             }
+            .listRowBackground(Brand.card)
         }
         .environment(\.editMode, .constant(.active))
+        .scrollContentBackground(.hidden)
+        .background(Brand.surface.ignoresSafeArea())
         .navigationTitle("Test Order")
+        .toolbarBackground(Brand.surface, for: .navigationBar)
+        .toolbarBackground(.visible, for: .navigationBar)
+        .tint(Brand.accent)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button("Done") {
@@ -190,5 +243,8 @@ private struct StaticTextScreen: View {
         .background(Brand.surface.ignoresSafeArea())
         .navigationTitle(title)
         .navigationBarTitleDisplayMode(.inline)
+        .toolbarBackground(Brand.surface, for: .navigationBar)
+        .toolbarBackground(.visible, for: .navigationBar)
+        .tint(Brand.accent)
     }
 }

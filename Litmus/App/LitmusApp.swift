@@ -78,14 +78,13 @@ private struct RootContainerView: View {
             InputScreen()
                 .navigationDestination(for: AppRoute.self, destination: destination(for:))
         }
-        .sheet(item: $coordinator.sheet) { sheet in
+        .fullScreenCover(item: $coordinator.sheet) { sheet in
             switch sheet {
             case .settings:
                 NavigationStack {
                     SettingsScreen()
                 }
-                .presentationDetents([.medium, .large])
-                .presentationDragIndicator(.visible)
+                .preferredColorScheme(session.preferredColorScheme)
             }
         }
     }

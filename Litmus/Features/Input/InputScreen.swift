@@ -58,6 +58,14 @@ struct InputScreen: View {
         .scrollDismissesKeyboard(.interactively)
         .background(Brand.surface.ignoresSafeArea())
         .navigationBarHidden(true)
+        .overlay(alignment: .bottomTrailing) {
+            if focus != nil {
+                keyboardDismissButton
+                    .padding(.trailing, LitmusSpacing.lg)
+                    .padding(.bottom, LitmusSpacing.md)
+                    .transition(.move(edge: .bottom).combined(with: .opacity))
+            }
+        }
         .highPriorityGesture(
             DragGesture()
                 .onEnded { value in
@@ -74,6 +82,7 @@ struct InputScreen: View {
             await viewModel.loadSuggestions()
             session.refreshHistoryCount(context: modelContext)
         }
+        .animation(LitmusMotion.micro, value: focus != nil)
     }
 
     private var header: some View {
@@ -211,21 +220,6 @@ struct InputScreen: View {
 
     private var cta: some View {
         VStack(spacing: LitmusSpacing.md) {
-            if focus != nil {
-                HStack {
-                    Spacer()
-                    Button {
-                        focus = nil
-                        UIApplication.shared.endEditing()
-                    } label: {
-                        Image(systemName: "keyboard.chevron.compact.down")
-                            .font(.system(size: 20))
-                            .foregroundStyle(Brand.textTertiary)
-                    }
-                    .buttonStyle(.plain)
-                }
-            }
-
             LitmusButton(
                 title: String(localized: "input.cta"),
                 style: .primary,
@@ -235,6 +229,26 @@ struct InputScreen: View {
                 submit()
             }
         }
+    }
+
+    private var keyboardDismissButton: some View {
+        Button {
+            focus = nil
+            UIApplication.shared.endEditing()
+        } label: {
+            Label("Done", systemImage: "keyboard.chevron.compact.down")
+                .font(.system(size: 15, weight: .semibold))
+                .foregroundStyle(Brand.textPrimary)
+                .padding(.horizontal, 14)
+                .padding(.vertical, 10)
+                .background(Brand.card, in: Capsule())
+                .overlay {
+                    Capsule()
+                        .stroke(Brand.divider, lineWidth: 1)
+                }
+                .shadow(color: Color.black.opacity(0.12), radius: 10, x: 0, y: 4)
+        }
+        .buttonStyle(.plain)
     }
 
     private func submit() {
