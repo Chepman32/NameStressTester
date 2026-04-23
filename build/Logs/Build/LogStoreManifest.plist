@@ -6,48 +6,6 @@
 	<integer>12</integer>
 	<key>logs</key>
 	<dict>
-		<key>09354839-6353-42F3-BDF7-C82AF63A121C</key>
-		<dict>
-			<key>className</key>
-			<string>IDECommandLineBuildLog</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>09354839-6353-42F3-BDF7-C82AF63A121C.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>Litmus project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Litmus</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Building project Litmus with scheme Litmus and configuration Debug</string>
-			<key>timeStartedRecording</key>
-			<real>798622875.61781394</real>
-			<key>timeStoppedRecording</key>
-			<real>798622878.43643606</real>
-			<key>title</key>
-			<string>Building project Litmus with scheme Litmus and configuration Debug</string>
-			<key>uniqueIdentifier</key>
-			<string>09354839-6353-42F3-BDF7-C82AF63A121C</string>
-		</dict>
 		<key>28AD7712-F84E-4A14-9BA7-503585CAE59A</key>
 		<dict>
 			<key>className</key>
@@ -89,6 +47,48 @@
 			<string>Building project Litmus with scheme Litmus and configuration Debug</string>
 			<key>uniqueIdentifier</key>
 			<string>28AD7712-F84E-4A14-9BA7-503585CAE59A</string>
+		</dict>
+		<key>E974E347-6CF9-4875-A2A1-F62ABC559CE1</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E974E347-6CF9-4875-A2A1-F62ABC559CE1.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Litmus project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Litmus</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project Litmus with scheme Litmus and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>798625496.05224299</real>
+			<key>timeStoppedRecording</key>
+			<real>798625498.90201294</real>
+			<key>title</key>
+			<string>Building project Litmus with scheme Litmus and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>E974E347-6CF9-4875-A2A1-F62ABC559CE1</string>
 		</dict>
 	</dict>
 </dict>

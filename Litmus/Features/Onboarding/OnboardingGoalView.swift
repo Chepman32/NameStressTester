@@ -58,7 +58,7 @@ struct OnboardingGoalView: View {
                 viewModel.advance()
             }
             .padding(.horizontal, LitmusSpacing.lg)
-            .padding(.bottom, LitmusSpacing.lg)
+            .padding(.vertical, LitmusSpacing.lg)
         }
         .background(Brand.surface.ignoresSafeArea())
     }
