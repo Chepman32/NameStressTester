@@ -13,7 +13,7 @@ final class ResultsViewModel: ObservableObject {
     @Published var results: [TestResult] = []
     @Published var summary: NameRunSummary?
     @Published var currentIndex = 0
-    @Published var totalCount = 7
+    @Published var totalCount = TestType.defaultOrder.count
     @Published var currentTestType: TestType?
     @Published var isRunning = false
 
@@ -56,6 +56,7 @@ final class ResultsViewModel: ObservableObject {
                             totalCount = total
                             currentTestType = testType
                         case .result(_, _, let result):
+                            guard result.testType.isAvailableInApp else { continue }
                             results.append(result)
                             if result.verdict == .pass {
                                 Haptics.impact(.light)
@@ -64,17 +65,18 @@ final class ResultsViewModel: ObservableObject {
                             } else {
                                 Haptics.notification(.error)
                             }
-                        case .completed(let summary):
-                            self.summary = summary
+                        case .completed:
+                            let visibleSummary = NameRunSummary(results: results, strictMode: session.preferences.strictMode)
+                            self.summary = visibleSummary
                             isRunning = false
                             do {
-                                _ = try PersistenceService.shared.saveReport(name: liveName, summary: summary, context: context)
+                                _ = try PersistenceService.shared.saveReport(name: liveName, summary: visibleSummary, context: context)
                                 session.refreshHistoryCount(context: context)
                             } catch {
                                 session.toast = ToastState(title: "Could not save. Results remain visible.", actionTitle: nil, action: nil)
                             }
 
-                            switch summary.overallVerdict {
+                            switch visibleSummary.overallVerdict {
                             case .survived: Haptics.notification(.success)
                             case .mixed: Haptics.notification(.warning)
                             case .failed: Haptics.notification(.error)
@@ -314,7 +316,7 @@ struct ResultsScreen: View {
     }
 }
 
-private struct TestDetailView: View {
+struct TestDetailView: View {
     let result: TestResult
     let name: NameComponents
 

@@ -36,10 +36,6 @@ struct OnboardingFlowView: View {
             OnboardingSocialProofView()
                 .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading)))
 
-        case .swipeCards:
-            OnboardingSwipeCardsView()
-                .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading)))
-
         case .solution:
             OnboardingSolutionView()
                 .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading)))

@@ -155,7 +155,7 @@ struct HistoryScreen: View {
                     coordinator.push(.savedReport(report.id))
                 } label: {
                     HStack(spacing: LitmusSpacing.md) {
-                        LitmusScoreRing(value: report.passCount, total: max(report.passCount + report.warnCount + report.failCount, 1))
+                        LitmusScoreRing(value: report.displayPassCount, total: max(report.displayTotalCount, 1))
                         VStack(alignment: .leading, spacing: 4) {
                             Text(report.fullName)
                                 .font(LitmusTypography.bodyLarge())

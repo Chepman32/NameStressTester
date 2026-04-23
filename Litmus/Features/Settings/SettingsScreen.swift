@@ -114,7 +114,7 @@ struct SettingsScreen: View {
             NavigationLink(String(localized: "settings.about.about")) {
                 StaticTextScreen(
                     title: "About Litmus",
-                    bodyText: "Litmus is a fully offline iPhone and iPad utility that stress-tests a prospective name against rhyme exposure, initials, pronunciation friction, email ergonomics, badge fit, namesake baggage, and monogram aesthetics."
+                    bodyText: "Litmus is a fully offline iPhone and iPad utility that stress-tests a prospective name against rhyme exposure, initials, pronunciation friction, badge fit, namesake baggage, and monogram aesthetics."
                 )
             }
             NavigationLink(String(localized: "settings.about.privacy")) {
@@ -144,7 +144,7 @@ private struct TestOrderScreen: View {
     let onSave: ([TestType]) -> Void
 
     init(order: [TestType], onSave: @escaping ([TestType]) -> Void) {
-        _order = State(initialValue: order)
+        _order = State(initialValue: TestType.sanitizedOrder(order))
         self.onSave = onSave
     }
 
@@ -167,7 +167,7 @@ private struct TestOrderScreen: View {
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button("Done") {
-                    onSave(order)
+                    onSave(TestType.sanitizedOrder(order))
                     dismiss()
                 }
             }

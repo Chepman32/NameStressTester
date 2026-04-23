@@ -1,30 +1,23 @@
 {
-  "/Users/antonchepur/Litmus/Litmus/Features/Onboarding/OnboardingDemoResultsView.swift" : {
-    "const-values" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingDemoResultsView.swiftconstvalues",
-    "dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingDemoResultsView.d",
-    "diagnostics" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingDemoResultsView.dia",
-    "object" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingDemoResultsView.o",
-    "swift-dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingDemoResultsView.swiftdeps"
+  "/Users/antonchepur/Litmus/Litmus/Utilities/ShareCardRenderer.swift" : {
+    "const-values" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/ShareCardRenderer.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/ShareCardRenderer.d",
+    "diagnostics" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/ShareCardRenderer.dia",
+    "object" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/ShareCardRenderer.o",
+    "swift-dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/ShareCardRenderer.swiftdeps"
   },
-  "/Users/antonchepur/Litmus/Litmus/Features/Onboarding/OnboardingFlowView.swift" : {
-    "const-values" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingFlowView.swiftconstvalues",
-    "dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingFlowView.d",
-    "diagnostics" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingFlowView.dia",
-    "object" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingFlowView.o",
-    "swift-dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingFlowView.swiftdeps"
+  "/Users/antonchepur/Litmus/Litmus/Utilities/SystemHelpers.swift" : {
+    "const-values" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/SystemHelpers.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/SystemHelpers.d",
+    "diagnostics" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/SystemHelpers.dia",
+    "object" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/SystemHelpers.o",
+    "swift-dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/SystemHelpers.swiftdeps"
   },
-  "/Users/antonchepur/Litmus/Litmus/Features/Onboarding/OnboardingGoalView.swift" : {
-    "const-values" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingGoalView.swiftconstvalues",
-    "dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingGoalView.d",
-    "diagnostics" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingGoalView.dia",
-    "object" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingGoalView.o",
-    "swift-dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingGoalView.swiftdeps"
-  },
-  "/Users/antonchepur/Litmus/Litmus/Features/Onboarding/OnboardingPainPointsView.swift" : {
-    "const-values" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingPainPointsView.swiftconstvalues",
-    "dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingPainPointsView.d",
-    "diagnostics" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingPainPointsView.dia",
-    "object" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingPainPointsView.o",
-    "swift-dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/OnboardingPainPointsView.swiftdeps"
+  "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "object" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/antonchepur/Litmus/build/Build/Intermediates.noindex/Litmus.build/Debug-iphonesimulator/Litmus.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps"
   }
 }

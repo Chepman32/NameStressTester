@@ -5,7 +5,6 @@ enum OnboardingStep: Int, CaseIterable {
     case goal
     case painPoints
     case socialProof
-    case swipeCards
     case solution
     case preferences
     case processing

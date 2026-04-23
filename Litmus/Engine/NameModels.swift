@@ -57,7 +57,19 @@ enum TestType: String, Codable, CaseIterable, Hashable, Identifiable {
 
     var id: String { rawValue }
 
-    static let defaultOrder: [TestType] = [.rhyme, .initials, .pronunciation, .email, .nameTag, .namesake, .monogram]
+    static let defaultOrder: [TestType] = [.rhyme, .initials, .pronunciation, .nameTag, .namesake, .monogram]
+
+    var isAvailableInApp: Bool {
+        self != .email
+    }
+
+    static func sanitizedOrder(_ order: [TestType]) -> [TestType] {
+        var sanitized: [TestType] = []
+        for type in order where type.isAvailableInApp && sanitized.contains(type) == false {
+            sanitized.append(type)
+        }
+        return sanitized.isEmpty ? defaultOrder : sanitized
+    }
 
     var localizedNameKey: String {
         switch self {
@@ -81,6 +93,12 @@ enum TestType: String, Codable, CaseIterable, Hashable, Identifiable {
         case .namesake: "book.closed.fill"
         case .monogram: "seal.fill"
         }
+    }
+}
+
+extension Array where Element == TestResult {
+    var visibleInApp: [TestResult] {
+        filter { $0.testType.isAvailableInApp }
     }
 }
 

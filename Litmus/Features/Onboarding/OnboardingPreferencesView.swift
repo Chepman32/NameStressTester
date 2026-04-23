@@ -7,7 +7,6 @@ struct OnboardingPreferencesView: View {
         (.rhyme, "🎵", "Detect risky rhymes"),
         (.initials, "🔤", "Check for bad initials"),
         (.pronunciation, "🗣️", "Score speaking difficulty"),
-        (.email, "📧", "Simulate email addresses"),
         (.nameTag, "🏷️", "Preview badge fit"),
         (.namesake, "📖", "Check famous namesakes"),
         (.monogram, "✒️", "Rate monogram style"),

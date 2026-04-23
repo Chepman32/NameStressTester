@@ -13,7 +13,7 @@ struct NameTestEngine {
     ) -> AsyncThrowingStream<NameTestEvent, Error> {
         AsyncThrowingStream { continuation in
             Task {
-                let orderedTypes = preferences.testOrder.isEmpty ? TestType.defaultOrder : preferences.testOrder
+                let orderedTypes = TestType.sanitizedOrder(preferences.testOrder)
                 continuation.yield(.started(total: orderedTypes.count))
 
                 var results: [TestResult] = []

@@ -47,7 +47,6 @@
 		C607313F3EFC8468C349A789 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE39217AF82B955E5D24A3 /* SettingsScreen.swift */; };
 		C9A33A9CFA739545E1852BFB /* NameModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE515C0B5120A2EA301DC2 /* NameModels.swift */; };
 		CCBA968967DCE305542185FF /* LitmusRenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C7B1FEA53C4333A4B74F6E /* LitmusRenderTests.swift */; };
-		D5EF9CED9EA209E7264D5202 /* OnboardingSwipeCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5932AAB868E9887ECB8F60 /* OnboardingSwipeCardsView.swift */; };
 		DE1C656BB4B844CC5D7A3472 /* InputScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0322DFBA56C9AB44A2A47B /* InputScreen.swift */; };
 		E31A21532BD569951C6EBD3C /* popular_names_frequency.json in Resources */ = {isa = PBXBuildFile; fileRef = 01FDA75AD946FAE04CF6232B /* popular_names_frequency.json */; };
 		E966C31F36CF56F56CC48864 /* OnboardingDemoResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA5B6BF4596DA63691413BB /* OnboardingDemoResultsView.swift */; };
@@ -111,7 +110,6 @@
 		9ACE39217AF82B955E5D24A3 /* SettingsScreen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 		A9C7EE388F6B911C448FD2A4 /* HistoryScreen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HistoryScreen.swift; sourceTree = "<group>"; };
 		B4428FBB1D4E08AC94DE4E0F /* historical_namesakes.json */ = {isa = PBXFileReference; includeInIndex = 1; path = historical_namesakes.json; sourceTree = "<group>"; };
-		BF5932AAB868E9887ECB8F60 /* OnboardingSwipeCardsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingSwipeCardsView.swift; sourceTree = "<group>"; };
 		C92D400B9282CB4D8AC4CB01 /* Litmus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Litmus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB4A05DDF0AE187C15B5449F /* bad_initials.json */ = {isa = PBXFileReference; includeInIndex = 1; path = bad_initials.json; sourceTree = "<group>"; };
 		CCC2DB5C95C4D67F719C3DB7 /* LitmusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LitmusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -384,7 +382,6 @@
 				101F2DBCFBDD3118FA8434B0 /* OnboardingSocialProofView.swift */,
 				05023C5E06A82326E3221290 /* OnboardingSolutionView.swift */,
 				3AF425A29AF06DAAFC62CB98 /* OnboardingStep.swift */,
-				BF5932AAB868E9887ECB8F60 /* OnboardingSwipeCardsView.swift */,
 				DFE3AF8179A028F12CF4B6DD /* OnboardingViewModel.swift */,
 				2809ED449B86D8094E1898AA /* OnboardingWelcomeView.swift */,
 			);
@@ -556,7 +553,6 @@
 				4AF893880EC500E869449375 /* OnboardingSocialProofView.swift in Sources */,
 				743ECB556A87122ED8A7CECA /* OnboardingSolutionView.swift in Sources */,
 				A6B7D119E6286922A6981B60 /* OnboardingStep.swift in Sources */,
-				D5EF9CED9EA209E7264D5202 /* OnboardingSwipeCardsView.swift in Sources */,
 				7DC37EA8C40D649A469D59FD /* OnboardingViewModel.swift in Sources */,
 				356B7B6D32A773CC3E22096B /* OnboardingWelcomeView.swift in Sources */,
 				01BAEC87BA8FC139225890FE /* ResultsScreen.swift in Sources */,

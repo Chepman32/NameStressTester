@@ -59,11 +59,27 @@ final class NameReport {
     var testResults: [TestResult] {
         get {
             guard let data = testResultsJSON.data(using: .utf8) else { return [] }
-            return (try? JSONDecoder().decode([TestResult].self, from: data)) ?? []
+            return ((try? JSONDecoder().decode([TestResult].self, from: data)) ?? []).visibleInApp
         }
         set {
-            testResultsJSON = NameReport.encoderString(from: newValue)
+            testResultsJSON = NameReport.encoderString(from: newValue.visibleInApp)
         }
+    }
+
+    var displayPassCount: Int {
+        testResults.filter { $0.verdict == .pass }.count
+    }
+
+    var displayWarnCount: Int {
+        testResults.filter { $0.verdict == .warn }.count
+    }
+
+    var displayFailCount: Int {
+        testResults.filter { $0.verdict == .fail }.count
+    }
+
+    var displayTotalCount: Int {
+        testResults.count
     }
 
     private static func encoderString(from results: [TestResult]) -> String {
@@ -91,7 +107,7 @@ final class UserPreferences {
         self.appearanceModeRaw = snapshot.appearanceMode.rawValue
         self.includeMiddleName = snapshot.includeMiddleName
         self.strictMode = snapshot.strictMode
-        self.testOrderRaw = UserPreferences.encode(snapshot.testOrder)
+        self.testOrderRaw = UserPreferences.encode(TestType.sanitizedOrder(snapshot.testOrder))
         self.hasSeenOnboarding = snapshot.hasSeenOnboarding
     }
 
@@ -109,7 +125,7 @@ final class UserPreferences {
         appearanceModeRaw = snapshot.appearanceMode.rawValue
         includeMiddleName = snapshot.includeMiddleName
         strictMode = snapshot.strictMode
-        testOrderRaw = UserPreferences.encode(snapshot.testOrder)
+        testOrderRaw = UserPreferences.encode(TestType.sanitizedOrder(snapshot.testOrder))
         hasSeenOnboarding = snapshot.hasSeenOnboarding
     }
 
@@ -129,7 +145,7 @@ final class UserPreferences {
         else {
             return TestType.defaultOrder
         }
-        return order
+        return TestType.sanitizedOrder(order)
     }
 }
 

@@ -7,7 +7,7 @@
         "key": "Tested today",
         "location": {
           "startingColumn": 18,
-          "startingLine": 64
+          "startingLine": 65
         }
       },
       {
@@ -15,7 +15,7 @@
         "key": "results.score",
         "location": {
           "startingColumn": 51,
-          "startingLine": 107
+          "startingLine": 117
         }
       },
       {
@@ -23,7 +23,7 @@
         "key": "onboarding.complete.message",
         "location": {
           "startingColumn": 18,
-          "startingLine": 116
+          "startingLine": 126
         }
       },
       {
@@ -31,7 +31,7 @@
         "key": "onboarding.complete.cta",
         "location": {
           "startingColumn": 51,
-          "startingLine": 122
+          "startingLine": 132
         }
       },
       {
@@ -39,7 +39,7 @@
         "key": "onboarding.complete.secondary",
         "location": {
           "startingColumn": 51,
-          "startingLine": 127
+          "startingLine": 137
         }
       }
     ]

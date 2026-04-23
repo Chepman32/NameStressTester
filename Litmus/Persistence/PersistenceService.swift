@@ -69,9 +69,9 @@ final class PersistenceService {
         case .alphabeticalZA:
             return filtered.sorted { $0.fullName.localizedCaseInsensitiveCompare($1.fullName) == .orderedDescending }
         case .bestScoreFirst:
-            return filtered.sorted { ($0.passCount, $0.testDate) > ($1.passCount, $1.testDate) }
+            return filtered.sorted { ($0.displayPassCount, $0.testDate) > ($1.displayPassCount, $1.testDate) }
         case .worstScoreFirst:
-            return filtered.sorted { ($0.passCount, $0.testDate) < ($1.passCount, $1.testDate) }
+            return filtered.sorted { ($0.displayPassCount, $0.testDate) < ($1.displayPassCount, $1.testDate) }
         }
     }
 
@@ -107,9 +107,9 @@ final class PersistenceService {
                 initials: report.initials,
                 testDate: report.testDate,
                 overallVerdict: report.overallVerdict.rawValue,
-                passCount: report.passCount,
-                warnCount: report.warnCount,
-                failCount: report.failCount,
+                passCount: report.displayPassCount,
+                warnCount: report.displayWarnCount,
+                failCount: report.displayFailCount,
                 isFavorited: report.isFavorited,
                 results: report.testResults
             )

@@ -22,19 +22,6 @@ struct Testimonial: Identifiable {
     let rating: Int
 }
 
-struct SwipeCardItem: Identifiable, Hashable {
-    let id = UUID()
-    let text: String
-    
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(id)
-    }
-    
-    static func == (lhs: SwipeCardItem, rhs: SwipeCardItem) -> Bool {
-        lhs.id == rhs.id
-    }
-}
-
 struct SolutionMapping: Identifiable {
     let id = UUID()
     let painPoint: String
@@ -48,7 +35,6 @@ final class OnboardingViewModel: ObservableObject {
     @Published var currentStep: OnboardingStep = .welcome
     @Published var selectedGoal: OnboardingGoal?
     @Published var selectedPainPoints: Set<OnboardingPainPoint> = []
-    @Published var swipedCards: [SwipeCardItem: Bool] = [:]
     @Published var selectedTests: Set<TestType> = Set(TestType.defaultOrder)
     @Published var demoName: NameComponents?
     @Published var demoSummary: NameRunSummary?
@@ -57,7 +43,6 @@ final class OnboardingViewModel: ObservableObject {
     let goals: [OnboardingGoal] = [
         OnboardingGoal(emoji: "🎭", title: "Sounds beautiful", subtitle: "When spoken aloud"),
         OnboardingGoal(emoji: "🛡️", title: "Bully-proof", subtitle: "No playground teasing"),
-        OnboardingGoal(emoji: "📧", title: "Email-friendly", subtitle: "Clean, professional address"),
         OnboardingGoal(emoji: "🏷️", title: "Looks good on paper", subtitle: "Resumes, diplomas, forms"),
         OnboardingGoal(emoji: "📚", title: "Good history", subtitle: "Positive namesake connections"),
         OnboardingGoal(emoji: "🗣️", title: "Easy to pronounce", subtitle: "No daily corrections"),
@@ -68,7 +53,6 @@ final class OnboardingViewModel: ObservableObject {
         OnboardingPainPoint(emoji: "😰", title: "Embarrassing initials"),
         OnboardingPainPoint(emoji: "😬", title: "Playground rhymes and teasing"),
         OnboardingPainPoint(emoji: "🤷", title: "Constant mispronunciation"),
-        OnboardingPainPoint(emoji: "📧", title: "Awkward email address"),
         OnboardingPainPoint(emoji: "👤", title: "Namesake baggage"),
         OnboardingPainPoint(emoji: "💬", title: "Family pressure and judgement"),
         OnboardingPainPoint(emoji: "😵‍💫", title: "Second-guessing myself"),
@@ -78,14 +62,6 @@ final class OnboardingViewModel: ObservableObject {
         Testimonial(name: "Sarah M.", tag: "First-time mom", text: "We almost named our daughter Olivia S. until Litmus flagged the initials. We caught it in time!", rating: 5),
         Testimonial(name: "James T.", tag: "Dad of three", text: "Tested 12 names before settling on Theo. The rhyme check saved us from a total disaster.", rating: 5),
         Testimonial(name: "Priya K.", tag: "Expecting", text: "I was worried about pronunciation. Litmus confirmed my instinct — Arjun is perfect.", rating: 5),
-    ]
-
-    let swipeCardItems: [SwipeCardItem] = [
-        SwipeCardItem(text: "I spend hours on baby name lists but still feel completely unsure."),
-        SwipeCardItem(text: "I'm terrified of accidental initials like A.S.S. or P.I.G."),
-        SwipeCardItem(text: "I worry my child will be teased because of their name."),
-        SwipeCardItem(text: "I can't stop imagining awkward email addresses."),
-        SwipeCardItem(text: "What if there's a famous criminal with the same name?"),
     ]
 
     var progressFraction: Double {
@@ -98,7 +74,6 @@ final class OnboardingViewModel: ObservableObject {
         case .goal: return selectedGoal != nil
         case .painPoints: return !selectedPainPoints.isEmpty
         case .socialProof: return true
-        case .swipeCards: return true
         case .solution: return true
         case .preferences: return !selectedTests.isEmpty
         case .processing: return false
@@ -128,7 +103,7 @@ final class OnboardingViewModel: ObservableObject {
             appearanceMode: .system,
             includeMiddleName: true,
             strictMode: false,
-            testOrder: Array(selectedTests),
+            testOrder: TestType.defaultOrder.filter { selectedTests.contains($0) },
             hasSeenOnboarding: false
         )
         do {
@@ -163,12 +138,6 @@ final class OnboardingViewModel: ObservableObject {
                 solution: "Pronunciation Test scores difficulty and predicts mistakes",
                 icon: "waveform.and.person.filled",
                 color: Brand.pronunciation
-            ),
-            "Awkward email address": SolutionMapping(
-                painPoint: "Awkward emails",
-                solution: "Email Simulator shows how the address looks and reads",
-                icon: "envelope.badge.shield.half.filled",
-                color: Brand.email
             ),
             "Namesake baggage": SolutionMapping(
                 painPoint: "Namesake baggage",

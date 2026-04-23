@@ -7,7 +7,7 @@
         "key": "onboarding.prefs.cta",
         "location": {
           "startingColumn": 42,
-          "startingLine": 60
+          "startingLine": 59
         }
       },
       {
@@ -15,7 +15,7 @@
         "key": "onboarding.prefs.headline",
         "location": {
           "startingColumn": 30,
-          "startingLine": 21
+          "startingLine": 20
         }
       },
       {
@@ -23,7 +23,7 @@
         "key": "onboarding.prefs.subheadline",
         "location": {
           "startingColumn": 30,
-          "startingLine": 26
+          "startingLine": 25
         }
       }
     ]

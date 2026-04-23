@@ -7,6 +7,7 @@ struct OnboardingDemoResultsView: View {
     @EnvironmentObject private var session: AppSession
     @EnvironmentObject private var coordinator: AppCoordinator
     @Environment(\.colorScheme) private var colorScheme
+    @State private var expandedCards: Set<UUID> = []
     let onComplete: () -> Void
 
     var body: some View {
@@ -26,7 +27,7 @@ struct OnboardingDemoResultsView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: LitmusSpacing.lg) {
                 heroSection(name: name, summary: summary)
-                cardsSection(results: summary.results)
+                cardsSection(name: name, results: summary.results)
                 verdictSection(summary: summary)
                 completionCTA
             }
@@ -72,16 +73,25 @@ struct OnboardingDemoResultsView: View {
         .padding(.top, LitmusSpacing.lg)
     }
 
-    private func cardsSection(results: [TestResult]) -> some View {
+    private func cardsSection(name: NameComponents, results: [TestResult]) -> some View {
         VStack(spacing: LitmusSpacing.md) {
             ForEach(results) { result in
                 LitmusCard(
                     testType: result.testType,
                     summary: result.summaryLine,
                     verdict: result.verdict,
-                    isExpanded: .constant(false)
+                    isExpanded: Binding(
+                        get: { expandedCards.contains(result.id) },
+                        set: { expanded in
+                            if expanded {
+                                expandedCards.insert(result.id)
+                            } else {
+                                expandedCards.remove(result.id)
+                            }
+                        }
+                    )
                 ) {
-                    EmptyView()
+                    TestDetailView(result: result, name: name)
                 }
             }
         }
