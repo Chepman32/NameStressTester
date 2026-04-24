@@ -6,7 +6,7 @@
 	<integer>12</integer>
 	<key>logs</key>
 	<dict>
-		<key>093BF664-301A-4C16-8B50-E822CC17A801</key>
+		<key>1BEC03A5-1505-43A2-AA63-50A8AF9F22B2</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>093BF664-301A-4C16-8B50-E822CC17A801.xcactivitylog</string>
+			<string>1BEC03A5-1505-43A2-AA63-50A8AF9F22B2.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -32,23 +32,23 @@
 				<integer>0</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
-			<string>Litmus project</string>
+			<string>Namify project</string>
 			<key>schemeIdentifier-schemeName</key>
-			<string>Litmus</string>
+			<string>Namify</string>
 			<key>schemeIdentifier-sharedScheme</key>
 			<integer>1</integer>
 			<key>signature</key>
-			<string>Building project Litmus with scheme Litmus and configuration Debug</string>
+			<string>Building project Namify with scheme Namify and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>798636137.27815998</real>
+			<real>798719274.91639304</real>
 			<key>timeStoppedRecording</key>
-			<real>798636140.15062296</real>
+			<real>798719280.35003805</real>
 			<key>title</key>
-			<string>Building project Litmus with scheme Litmus and configuration Debug</string>
+			<string>Building project Namify with scheme Namify and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>093BF664-301A-4C16-8B50-E822CC17A801</string>
+			<string>1BEC03A5-1505-43A2-AA63-50A8AF9F22B2</string>
 		</dict>
-		<key>1CBF9519-7DB0-45AF-AA5E-8B9AE2C31274</key>
+		<key>DB118697-081C-463D-9490-6DB10CBDB466</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -57,7 +57,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>1CBF9519-7DB0-45AF-AA5E-8B9AE2C31274.xcactivitylog</string>
+			<string>DB118697-081C-463D-9490-6DB10CBDB466.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -74,21 +74,21 @@
 				<integer>0</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
-			<string>Litmus project</string>
+			<string>Namify project</string>
 			<key>schemeIdentifier-schemeName</key>
-			<string>Litmus</string>
+			<string>Namify</string>
 			<key>schemeIdentifier-sharedScheme</key>
 			<integer>1</integer>
 			<key>signature</key>
-			<string>Building project Litmus with scheme Litmus and configuration Debug</string>
+			<string>Building project Namify with scheme Namify and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>798636515.21393204</real>
+			<real>798712805.05465806</real>
 			<key>timeStoppedRecording</key>
-			<real>798636519.07875204</real>
+			<real>798712816.28505194</real>
 			<key>title</key>
-			<string>Building project Litmus with scheme Litmus and configuration Debug</string>
+			<string>Building project Namify with scheme Namify and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>1CBF9519-7DB0-45AF-AA5E-8B9AE2C31274</string>
+			<string>DB118697-081C-463D-9490-6DB10CBDB466</string>
 		</dict>
 	</dict>
 </dict>

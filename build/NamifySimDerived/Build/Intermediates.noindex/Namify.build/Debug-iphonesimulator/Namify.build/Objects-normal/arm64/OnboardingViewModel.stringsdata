@@ -1,0 +1,368 @@
+{
+  "source": "/Users/antonchepur/Namify/Namify/Features/Onboarding/OnboardingViewModel.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "onboarding.goal.soundsBeautiful",
+        "location": {
+          "startingColumn": 68,
+          "startingLine": 45
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.goal.soundsBeautiful.sub",
+        "location": {
+          "startingColumn": 132,
+          "startingLine": 45
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.goal.bullyProof",
+        "location": {
+          "startingColumn": 71,
+          "startingLine": 46
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.goal.bullyProof.sub",
+        "location": {
+          "startingColumn": 130,
+          "startingLine": 46
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.goal.looksGood",
+        "location": {
+          "startingColumn": 71,
+          "startingLine": 47
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.goal.looksGood.sub",
+        "location": {
+          "startingColumn": 129,
+          "startingLine": 47
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.goal.goodHistory",
+        "location": {
+          "startingColumn": 68,
+          "startingLine": 48
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.goal.goodHistory.sub",
+        "location": {
+          "startingColumn": 128,
+          "startingLine": 48
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.goal.easyPronounce",
+        "location": {
+          "startingColumn": 71,
+          "startingLine": 49
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.goal.easyPronounce.sub",
+        "location": {
+          "startingColumn": 133,
+          "startingLine": 49
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.goal.aesthetic",
+        "location": {
+          "startingColumn": 68,
+          "startingLine": 50
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.goal.aesthetic.sub",
+        "location": {
+          "startingColumn": 126,
+          "startingLine": 50
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.pain.initials",
+        "location": {
+          "startingColumn": 73,
+          "startingLine": 56
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.pain.rhymes",
+        "location": {
+          "startingColumn": 73,
+          "startingLine": 57
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.pain.mispronunciation",
+        "location": {
+          "startingColumn": 73,
+          "startingLine": 58
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.pain.namesake",
+        "location": {
+          "startingColumn": 73,
+          "startingLine": 59
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.pain.family",
+        "location": {
+          "startingColumn": 73,
+          "startingLine": 60
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.pain.secondGuessing",
+        "location": {
+          "startingColumn": 80,
+          "startingLine": 61
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.testimonial.1.name",
+        "location": {
+          "startingColumn": 49,
+          "startingLine": 67
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.testimonial.1.tag",
+        "location": {
+          "startingColumn": 106,
+          "startingLine": 67
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.testimonial.1.text",
+        "location": {
+          "startingColumn": 163,
+          "startingLine": 67
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.testimonial.2.name",
+        "location": {
+          "startingColumn": 49,
+          "startingLine": 68
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.testimonial.2.tag",
+        "location": {
+          "startingColumn": 106,
+          "startingLine": 68
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.testimonial.2.text",
+        "location": {
+          "startingColumn": 163,
+          "startingLine": 68
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.testimonial.3.name",
+        "location": {
+          "startingColumn": 49,
+          "startingLine": 69
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.testimonial.3.tag",
+        "location": {
+          "startingColumn": 106,
+          "startingLine": 69
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.testimonial.3.text",
+        "location": {
+          "startingColumn": 163,
+          "startingLine": 69
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.pain.initials",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 131
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.pain.initials",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 132
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.solution.initials",
+        "location": {
+          "startingColumn": 45,
+          "startingLine": 133
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.pain.rhymes",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 137
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.pain.rhymes",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 138
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.solution.rhymes",
+        "location": {
+          "startingColumn": 45,
+          "startingLine": 139
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.pain.mispronunciation",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 143
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.pain.mispronunciation",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 144
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.solution.pronunciation",
+        "location": {
+          "startingColumn": 45,
+          "startingLine": 145
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.pain.namesake",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 149
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.pain.namesake",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 150
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.solution.namesake",
+        "location": {
+          "startingColumn": 45,
+          "startingLine": 151
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.pain.family",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 155
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.pain.family",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 156
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.solution.family",
+        "location": {
+          "startingColumn": 45,
+          "startingLine": 157
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.pain.secondGuessing",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 161
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.pain.secondGuessing",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 162
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.solution.secondGuessing",
+        "location": {
+          "startingColumn": 45,
+          "startingLine": 163
+        }
+      }
+    ]
+  },
+  "version": 1
+}

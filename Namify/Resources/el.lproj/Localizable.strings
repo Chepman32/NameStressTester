@@ -1,0 +1,328 @@
+// MARK: - Splash
+"splash.tagline" = "κάθε όνομα αξίζει ένα crash test";
+
+// MARK: - Input
+"input.title" = "Τέστ ονόματος";
+"input.subtitle" = "Γράψε όνομα, μεσαίο (προαιρετικά) και επίθετο";
+"input.field.first" = "Όνομα";
+"input.field.middle" = "Μεσαίο όνομα (προαιρετικά)";
+"input.field.last" = "Επίθετο";
+"input.cta" = "Ξεκίνα το Τέστ";
+"input.header" = "NAMIFY";
+"input.keyboard.done" = "Τέλος";
+
+// MARK: - Results
+"results.testing" = "Τέστ %d από %d: %@...";
+"results.verdict.survived" = "Αυτό το όνομα θα επιβιώσει στο γυμνάσιο.";
+"results.verdict.mixed" = "Αυτό το όνομα θα χρειαστεί λίγη προστασία.";
+"results.verdict.failed" = "Αυτό το όνομα μπαίνει στην αρένα ανοπλο.";
+"results.score" = "Πέρασε %d από %d τεστ";
+"results.share.cta" = "Κοινοποίηση Αναφοράς";
+"results.another.cta" = "Τέστ Άλλου Ονόματος";
+"results.share.watermark" = "Τέσταρε με το Namify για iOS";
+"results.button.back" = "Πίσω";
+"results.label.testedToday" = "Τέσταρε σήμερα";
+"results.toast.saveFailed" = "Αποτυχία αποθήκευσης. Τα αποτελέσματα παραμένουν ορατά.";
+"results.toast.interrupted" = "Η διαδικασία διακόπηκε.";
+"results.toast.nameCopied" = "Το πλήρες όνομα αντιγράφηκε";
+"results.toast.verdictCopied" = "Η απόφαση αντιγράφηκε";
+"results.swipe.share" = "Κοινοποίηση";
+
+// MARK: - Results Detail
+"results.detail.noRhymes" = "Δεν εντοπίστηκαν ομοιοκαταληξίες";
+"results.detail.rollCallMiss" = "Πιθανό λάθος στην κλήση: %@";
+"results.detail.difficultyScore" = "Βαθμός δυσκολίας: %d/10";
+"results.detail.readability" = "Αναγνωσιμότητα";
+"results.detail.helloMyNameIs" = "ΓΕΙΑ ΣΟΥ, ΜΕ ΛΕΝΕ";
+"results.detail.blankSlate" = "Κανένα γνωστό ιστορικό πρόσωπο δεν μοιράζεται αυτό το όνομα — καθαρό χαρτί.";
+"results.detail.noMatches" = "Δεν βρέθηκαν αντιστοιχίες στη βάση δεδομένων προβληματικών αρχικών.";
+
+// MARK: - Sentiment Labels
+"results.sentiment.positive" = "Θετικό";
+"results.sentiment.negative" = "Αρνητικό";
+"results.sentiment.mixed" = "Μικτό";
+
+// MARK: - Email Status
+"email.status.likelyAvailable" = "Πιθανώς Διαθέσιμο";
+"email.status.likelyTaken" = "Πιθανώς Κατειλημμένο";
+"email.status.uncertain" = "Αβέβαιο";
+
+// MARK: - Email Readability
+"email.readability.easy" = "ΕΥΚΟΛΟ";
+"email.readability.moderate" = "ΜΕΤΡΙΟ";
+"email.readability.difficult" = "ΔΥΣΚΟΛΟ";
+
+// MARK: - Monogram Styles
+"monogram.style.classic" = "Κλασικό";
+"monogram.style.stacked" = "Στοιβαγμένο";
+"monogram.style.interleaved" = "Πλεκτό";
+
+// MARK: - Test Names
+"test.rhyme.name" = "Ομοιοκαταληξία";
+"test.initials.name" = "Έλεγχος Αρχικών";
+"test.pronunciation.name" = "Τέστ Προφοράς";
+"test.email.name" = "Διαθεσιμότητα Email";
+"test.nametag.name" = "Προεπισκόπηση Καρτελών";
+"test.namesake.name" = "Ιστορικά Πρότυπα";
+"test.monogram.name" = "Αισθητική Μονογράμματος";
+
+// MARK: - History
+"history.title" = "Ιστορικό";
+"history.empty.title" = "Κανένα όνομα δεν έχει τεσταριστεί ακόμα";
+"history.empty.subtitle" = "Το ιστορικό σου θα εμφανιστεί εδώ";
+"history.empty.cta" = "Τέστ Ονόματος";
+"history.search.placeholder" = "Αναζήτηση ονομάτων...";
+"history.delete.undo" = "Το όνομα διαγράφηκε";
+"history.delete.undo.button" = "Αναίρεση";
+"history.button.back" = "Εισαγωγή";
+"history.swipe.favorite" = "Αγαπημένο";
+"history.swipe.delete" = "Διαγραφή";
+
+// MARK: - Sort Orders
+"sort.recent" = "Πρόσφατα";
+"sort.az" = "Α-Ω";
+"sort.za" = "Ω-Α";
+"sort.best" = "Καλύτερα";
+"sort.worst" = "Χειρότερα";
+
+// MARK: - Settings
+"settings.title" = "Ρυθμίσεις";
+"settings.appearance" = "ΕΜΦΑΝΙΣΗ";
+"settings.tests" = "ΤΕΣΤ";
+"settings.data" = "ΔΕΔΟΜΕΝΑ";
+"settings.about" = "ΣΧΕΤΙΚΑ";
+"settings.button.done" = "Τέλος";
+"settings.appearance.darkmode" = "Σκοτεινή Λειτουργία";
+"settings.appearance.language" = "Γλώσσα";
+"settings.language.title" = "Γλώσσα";
+"settings.language.system" = "Συστήματος";
+"settings.tests.includeMiddle" = "Συμπερίληψη μεσαίου ονόματος σε όλα τα τεστ";
+"settings.tests.strict" = "Αυστηρή λειτουργία (η ΠΡΟΣΟΧ μετράει ως ΑΠΟΤΥΧ)";
+"settings.tests.reorder" = "Διαχείριση σειράς τεστ";
+"settings.data.clearHistory" = "Εκκαθάριση ιστορικού";
+"settings.data.clearHistory.confirm" = "Πάτα ξανά για επιβεβαίωση";
+"settings.data.export" = "Εξαγωγή όλων των αποτελεσμάτων";
+"settings.about.version" = "Έκδοση";
+"settings.about.about" = "Σχετικά με το Namify";
+"settings.about.privacy" = "Πολιτική Απορρήτου";
+"settings.toast.cleared" = "Το ιστορικό εκκαθαρίστηκε";
+"settings.toast.exportFailed" = "Αποτυχία εξαγωγής ιστορικού";
+"settings.testOrder.title" = "Σειρά Τεστ";
+
+// MARK: - About & Privacy
+"settings.about.title" = "Σχετικά με το Namify";
+"settings.about.body" = "Το Namify είναι ένα πλήρως offline εργαλείο για iPhone και iPad που ελέγχει ένα υποψήφιο όνομα ως προς ομοιοκαταληξίες, αρχικά, δυσκολία προφοράς, χωρητικότητα σε κάρτες, ιστορικά πρότυπα και αισθητική μονογράμματος.";
+"settings.privacy.title" = "Πολιτική Απορρήτου";
+"settings.privacy.body" = "Το Namify δεν στέλνει δεδομένα εκτός συσκευής, δεν απαιτεί λογαριασμό και αποθηκεύει αναφορές μόνο τοπικά μέσω SwiftData μέχρι να τις διαγράψει ο χρήστης.";
+
+// MARK: - Badges
+"badge.pass" = "ΕΠΙΤΥΧ";
+"badge.fail" = "ΑΠΟΤΥΧ";
+"badge.warn" = "ΠΡΟΣΟΧ";
+
+// MARK: - Time
+"time.today" = "Σήμερα";
+"time.yesterday" = "Χθες";
+"time.daysAgo" = "πριν από %d ημέρες";
+
+// MARK: - Onboarding Welcome
+"onboarding.welcome.headline" = "Βρες το όνομα που επιβιώνει στην πραγματική ζωή";
+"onboarding.welcome.subheadline" = "7 τεστ που πρέπει να περάσει κάθε όνομα πριν υπογραφεί το πιστοποιητικό γέννησης";
+"onboarding.welcome.cta" = "Ας Αρχίσουμε";
+"onboarding.welcome.footnote" = "Πλήρως offline. Κανένα δεδομένο δεν φεύγει από τη συσκευή σου.";
+"onboarding.welcome.preview.rhyme" = "Ομοιοκαταληξία";
+"onboarding.welcome.preview.initials" = "Έλεγχος Αρχικών";
+"onboarding.welcome.preview.pronunciation" = "Προφορά";
+
+// MARK: - Onboarding Goal
+"onboarding.goal.headline" = "Τι έχει μεγαλύτερη σημασία για σένα σε ένα όνομα;";
+"onboarding.goal.subheadline" = "Διάλεξε αυτό που σε εκφράζει περισσότερο.";
+"onboarding.goal.soundsBeautiful" = "Ακούγεται όμορφα";
+"onboarding.goal.soundsBeautiful.sub" = "Όταν το λες δυνατά";
+"onboarding.goal.bullyProof" = "Ασφαλές από πειράγματα";
+"onboarding.goal.bullyProof.sub" = "Κανένα πειράγματα στην παιδική χαρά";
+"onboarding.goal.looksGood" = "Δείχνει καλό στο χαρτί";
+"onboarding.goal.looksGood.sub" = "Βιογραφικά, πτυχία, έντυπα";
+"onboarding.goal.goodHistory" = "Καλό ιστορικό";
+"onboarding.goal.goodHistory.sub" = "Θετικές συνδέσεις με πρότυπα";
+"onboarding.goal.easyPronounce" = "Εύκολο στην προφορά";
+"onboarding.goal.easyPronounce.sub" = "Χωρίς καθημερινές διορθώσεις";
+"onboarding.goal.aesthetic" = "Αισθητικό μονόγραμμα";
+"onboarding.goal.aesthetic.sub" = "Όμορφα αρχικά";
+
+// MARK: - Onboarding Pain
+"onboarding.pain.headline" = "Τι σε ανησυχεί στο να διαλέξεις όνομα;";
+"onboarding.pain.subheadline" = "Επίλεξε όλα όσα ισχύουν. Δεν είσαι μόνος/η.";
+"onboarding.pain.initials" = "Αμηχανία με τα αρχικά";
+"onboarding.pain.rhymes" = "Ομοιοκαταληξίες και πειράγματα";
+"onboarding.pain.mispronunciation" = "Συνεχείς λάθος προφορές";
+"onboarding.pain.namesake" = "Ιστορικό βάρος από πρότυπα";
+"onboarding.pain.family" = "Πίεση και κρίση από την οικογένεια";
+"onboarding.pain.secondGuessing" = "Αμφιβολίες και αναθεωρήσεις";
+
+// MARK: - Onboarding Social
+"onboarding.social.headline" = "Γίνε μέρος χιλιάδων γονιών που έχουν τεστάρει ονόματα";
+"onboarding.social.subheadline" = "Αληθινές ιστορίες από αληθινούς γονείς.";
+"onboarding.testimonial.1.name" = "Σάρα Μ.";
+"onboarding.testimonial.1.tag" = "Μαμά για πρώτη φορά";
+"onboarding.testimonial.1.text" = "Λίγο πριν ονομάσουμε την κόρη μας Olivia S., το Namify μας προειδοποίησε για τα αρχικά. Το προλάβαμε έγκαιρα!";
+"onboarding.testimonial.2.name" = "Τζέιμς Τ.";
+"onboarding.testimonial.2.tag" = "Πατέρας τριών παιδιών";
+"onboarding.testimonial.2.text" = "Τέσταρα 12 ονόματα πριν καταλήξω στον Θοδωρή. Ο έλεγχος ομοιοκαταληξίας μας έσωσε από ολική καταστροφή.";
+"onboarding.testimonial.3.name" = "Πρία Κ.";
+"onboarding.testimonial.3.tag" = "Σε αναμονή";
+"onboarding.testimonial.3.text" = "Ανησυχούσα για την προφορά. Το Namify επιβεβαίωσε το ένστικτό μου — ο Αρτζούν είναι τέλειος.";
+
+// MARK: - Onboarding Solution
+"onboarding.solution.headline" = "Το Namify σε καλύπτει";
+"onboarding.solution.subheadline" = "Δες ακριβώς πώς λύνουμε κάθε ανησυχία που μοιράστηκες.";
+"onboarding.solution.cta" = "Διάλεξε Τα Τεστ Μου";
+"onboarding.solution.initials" = "Ο Έλεγχος Αρχικών σαρώνει 500+ προβληματικούς συνδυασμούς αμέσως";
+"onboarding.solution.rhymes" = "Η Ομοιοκαταληξία εντοπίζει 2.000+ επικίνδυνες ομοιοκαταληξίες και ήχους";
+"onboarding.solution.pronunciation" = "Το Τέστ Προφοράς βαθμολογεί τη δυσκολία και προβλέπει λάθη";
+"onboarding.solution.namesake" = "Τα Ιστορικά Πρότυπα σημειώνουν διάσημες προσωπικότητες — καλές και κακές";
+"onboarding.solution.family" = "Μια αναφορά με δεδομένα σου δίνει αυτοπεποίθηση να υπερασπιστείς την επιλογή σου";
+"onboarding.solution.secondGuessing" = "Τέσταρε απεριόριστα ονόματα και σύγκρινε τα αποτελέσματα";
+
+// MARK: - Onboarding Preferences
+"onboarding.prefs.headline" = "Ποια τεστ να τρέξουμε;";
+"onboarding.prefs.subheadline" = "Επίλεξε αυτά που σε ενδιαφέρουν. Μπορείς να τα αλλάξεις ανά πάσα στιγμή.";
+"onboarding.prefs.cta" = "Φτιάξε Το Τεστ Μου";
+"onboarding.prefs.rhyme" = "Εντόπισε επικίνδυνες ομοιοκαταληξίες";
+"onboarding.prefs.initials" = "Έλεγχος προβληματικών αρχικών";
+"onboarding.prefs.pronunciation" = "Βαθμολόγησε δυσκολία προφοράς";
+"onboarding.prefs.nametag" = "Προεπισκόπηση κάρτας ονόματος";
+"onboarding.prefs.namesake" = "Έλεγχος διάσημων προτύπων";
+"onboarding.prefs.monogram" = "Αξιολόγηση αισθητικής μονογράμματος";
+
+// MARK: - Onboarding Processing
+"onboarding.processing.headline" = "Φτιάχνουμε το εξατομικευμένο τεστ σου...";
+"onboarding.processing.subheadline" = "Μια στιγμή μέχρι να ετοιμάσουμε τα πάντα.";
+
+// MARK: - Onboarding Demo
+"onboarding.demo.headline" = "Τέσταρε το δικό σου όνομα";
+"onboarding.demo.subheadline" = "Γράψε το όνομά σου (ή οποιοδήποτε αγαπάς) και δες το Namify σε δράση.";
+"onboarding.demo.cta" = "Ξεκίνα το Τέστ";
+
+// MARK: - Onboarding Complete
+"onboarding.complete.message" = "Αυτή είναι η εμπειρία Namify. Έτοιμος/η να τεστάρεις ονόματα με αυτοπεποίθηση;";
+"onboarding.complete.cta" = "Ξεκίνα το Τέστ Ονομάτων";
+"onboarding.complete.secondary" = "Κοινοποίηση Αποτελεσμάτων";
+
+// MARK: - Onboarding Navigation
+"onboarding.continue" = "Συνέχεια";
+"onboarding.back" = "Πίσω";
+
+// MARK: - Analyzer Summaries — Rhyme
+"rhyme.summary.none" = "Δεν εντοπίστηκαν συνηθισμένες ομοιοκαταληξίες παιδικής χαράς";
+"rhyme.summary.one" = "Βρέθηκε 1 ημι-ομοιοκαταληξία — χαμηλός κίνδυνος";
+"rhyme.summary.multiple" = "Βρέθηκαν %d ομοιοκαταληξίες — υψηλή έκθεση";
+
+// MARK: - Analyzer Details — Rhyme
+"rhyme.detail.none" = "Δεν εντοπίστηκαν ομοιοκαταληξίες στη διαθέσιμη βάση δεδομένων.";
+"rhyme.detail.some" = "Ελέγξαμε το %@ σε σχέση με μοτίβα ομοιοκαταληξίας, ημι-ομοιοκαταληξίες και αρνητικές λέξεις για να εκτιμήσουμε την έκθεση στην παιδική χαρά.";
+
+// MARK: - Analyzer Summaries — Initials
+"initials.summary.pass" = "Αρχικά %@ — κανένα πρόβλημα";
+"initials.summary.fail" = "Αρχικά %@ — σημειωμένος συνδυασμός";
+"initials.summary.warn" = "Αρχικά %@ — συνιστάται έλεγχος";
+
+// MARK: - Analyzer Details — Initials
+"initials.detail.pass" = "Αυτά τα αρχικά δεν ταιριάζουν με τη βάση προβληματικών αρχικών.";
+"initials.detail.fail" = "Το Namify έλεγξε κύριους και εναλλακτικούς συνδυασμούς αρχικών, συμπεριλαμβανομένων αντεστραμμένων ζευγών και διγράμματων μορφών.";
+
+// MARK: - Analyzer Summaries — Pronunciation
+"pronunciation.summary.pass" = "Φωνητικά απλό — εύκολο στην προφορά";
+"pronunciation.summary.warn" = "Αμφίβολο φωνηεντικό σύμπλεγμα μπορεί να προκαλέσει λάθος προφορά";
+"pronunciation.summary.fail" = "Εντοπίστηκαν πολλές παγίδες προφοράς";
+
+// MARK: - Analyzer Details — Pronunciation
+"pronunciation.detail" = "Το Namify βαθμολόγησε τη δυσκολία προφοράς χρησιμοποιώντας σιωπηλά γράμματα, αμφίβολα συμπλέγματα, ασυνήθιστες συμφωνικές ομάδες, μήκος ονόματος και γνωστά μοτίβα λάθος προφοράς.";
+"pronunciation.factor.pass.label" = "Απλή φωνητική";
+"pronunciation.factor.pass.explanation" = "Δεν εντοπίστηκαν μοτίβα υψηλής τριβής στην προφορά.";
+
+// MARK: - Analyzer Summaries — Email
+"email.summary.pass" = "onoma.epitheto@ — πιθανώς διαθέσιμο στους περισσότερους τομείς";
+"email.summary.warn" = "Συνηθισμένο όνομα — μπορεί να υπάρχουν προβλήματα διαθεσιμότητας";
+"email.summary.fail" = "Εξαιρετικά συνηθισμένο — περίμενε αριθμημένες παραλλαγές email";
+
+// MARK: - Analyzer Details — Email
+"email.detail" = "Η διαθεσιμότητα εκτιμάται από τη συχνότητα ονόματος και επιθέτου στη βάση δεδομένων, προσαρμοσμένη ως προς μήκος διεύθυνσης και τριβή υπαγόρευσης.";
+
+// MARK: - Analyzer Summaries — Name Tag
+"nametag.summary.pass" = "Χωράει άνετα σε κανονική κάρτα συνεδρίου";
+"nametag.summary.warn" = "Οριακά χωράει σε κανονική κάρτα συνεδρίου";
+"nametag.summary.fail" = "Τόσο μεγάλο που κόβεται σε κανονική κάρτα ονόματος";
+
+// MARK: - Analyzer Details — Name Tag
+"nametag.detail" = "Το Namify μέτρησε το αποδομένο όνομα σε σχέση με το πλάτος κανονικής κάρτας συνεδρίου και σημειώνει εχθρικά-στον-εκτυπωτή διακριτικά ή εξαιρετικά αραιές ετικέτες.";
+
+// MARK: - Analyzer Summaries — Namesake
+"namesake.summary.empty.pass" = "Δεν βρέθηκε αξιοσημείωτο βάρος για αυτό το όνομα";
+"namesake.summary.has.pass" = "Οι ιστορικές συνδέσεις είναι καθαρές ή θετικές";
+"namesake.summary.warn" = "Βρέθηκαν μικτές ή περίπλοκες συνδέσεις με πρότυπα";
+"namesake.summary.fail" = "Ένα διάσημο αρνητικό πρότυπο σηκώνει κόκκινη σημαία";
+
+// MARK: - Analyzer Details — Namesake
+"namesake.detail.empty" = "Δεν βρέθηκαν ευρέως γνωστές ιστορικές ή πολιτισμικές προσωπικότητες στη διαθέσιμη βάση δεδομένων.";
+"namesake.detail.some" = "Το Namify έλεγξε ακριβείς και φωνητικές αντιστοιχίες ονόματος στη βάση ιστορικών και πολιτισμικών προσωπικοτήτων.";
+
+// MARK: - Analyzer Summaries — Monogram
+"monogram.summary.pass" = "Ισχυρή αισθητική μονογράμματος";
+"monogram.summary.warn" = "Αποδεκτό αλλά όχι ιδανικό";
+"monogram.summary.fail" = "Το μονόγραμμα μπορεί να έχει οπτικά προβλήματα";
+
+// MARK: - Analyzer Details — Monogram
+"monogram.detail" = "Το Namify βαθμολογεί συμμετρία, αρμονία πλάτους, συγκρούσεις στοιβαγμένης διάταξης, ισορροπία καμπυλών και σύγχυση γραμμάτων για να εκτιμήσει πώς αντεπεξέρχονται τα αρχικά ως μονόγραμμα.";
+
+// MARK: - Generic Unavailable
+"generic.unavailable.summary" = "Τα δεδομένα του τεστ δεν είναι διαθέσιμα. Αυτό το τεστ δεν ολοκληρώθηκε.";
+"generic.unavailable.detail" = "Τα ενσωματωμένα δεδομένα για αυτόν τον αναλυτή δεν φορτώθηκαν. Το Namify διατήρησε την υπόλοιπη αναφορά και σημείωσε αυτό το αποτέλεσμα ως προειδοποίηση αντί να αποτύχει ολόκληρη η διαδικασία.";
+"generic.unavailable.message" = "Δεδομένα μη διαθέσιμα";
+
+// MARK: - Share Card
+"share.card.watermark" = "Τέσταρε με το Namify";
+
+// MARK: - App
+"app.toast.saveSettingsFailed" = "Αποτυχία αποθήκευσης ρυθμίσεων";
+
+// MARK: - Accessibility
+"accessibility.expandHint" = "Πάτα δύο φορές για επέκταση λεπτομερειών.";
+
+// MARK: - Seed Data: Bad Initials Notes
+"initials.note.profanity" = "Συνηθισμένη βωμολοχία";
+"initials.note.medical" = "Ιατρικό ακρωνύμιο με κοινωνικό βάρος";
+"initials.note.suggestive" = "Υποβλητικό ακρωνύμιο";
+"initials.note.hate" = "Αναφορά σε ομάδα μίσους";
+"initials.note.negative" = "Αρνητική αγγλική λέξη";
+"initials.note.teasing" = "Συνηθισμένος στόχος πειράγματος";
+"initials.note.slang" = "Αργκό ακρωνύμιο";
+
+// MARK: - Seed Data: Pronunciation Rules
+"pronunciation.rule.silentLetters" = "Σιωπηλά γράμματα";
+"pronunciation.rule.silentLetters.explanation" = "Περιέχει ακολουθία gh που οι αγγλόφωνοι συχνά μαντεύουν λάθος.";
+"pronunciation.rule.uncommonCombo" = "Ασυνήθιστος συνδυασμός γραμμάτων";
+"pronunciation.rule.uncommonCombo.explanation" = "Περιέχει κελτικό συμφωνικό συνδυασμό που πολλοί αναγνώστες δεν θα αποκωδικοποιήσουν σωστά.";
+"pronunciation.rule.ambiguousVowel" = "Αμφίβολο φωνηεντικό σύμπλεγμα";
+"pronunciation.rule.ambiguousVowel.explanation" = "Διπλό φωνήεν με πολλαπλές πιθανές αναγνώσεις.";
+"pronunciation.rule.eigh" = "Αμφίβολο φωνηεντικό σύμπλεγμα";
+"pronunciation.rule.eigh.explanation" = "Τα μοτίβα EIGH παράγουν πολλαπλές αγγλικές εικασίες.";
+"pronunciation.rule.sz" = "Ασυνήθιστος συνδυασμός γραμμάτων";
+"pronunciation.rule.sz.explanation" = "Το SZ είναι ασυνήθιστο σε αγγλικά ονόματα και συχνά προκαλεί δισταγμό.";
+"pronunciation.rule.uncommonFreq" = "Ασυνήθιστη συχνότητα γραμμάτων";
+"pronunciation.rule.uncommonFreq.explanation" = "Το Χ στη μέση ενός ονόματος αυξάνει την τριβή υπαγόρευσης.";
+
+// MARK: - Seed Data: Historical Namesake Bios
+"namesake.ada.bio" = "Πρωτοπόρος του προγραμματισμού υπολογιστών.";
+"namesake.attila.bio" = "Κατακτητικός ηγεμόνας των Ούνων.";
+"namesake.cleo.bio" = "Τελευταία ενεργή κυβερνήτης της Πτολεμαϊκής Αιγύπτου.";
+"namesake.james.baldwin.bio" = "Αμερικανός συγγραφέας και διανοούμενος των πολιτικών δικαιωμάτων.";
+"namesake.james.dean.bio" = "Αμερικανός ηθοποιός και πολιτισμικό είδωλο.";
+"namesake.john.gacy.bio" = "Δολοφόνος κατά συρροή και εγκληματίας.";
+"namesake.john.lennon.bio" = "Μουσικός και πολιτισμική προσωπικότητα.";
+"namesake.mary.shelley.bio" = "Συγγραφέας του Φρανκενστάιν.";
+"namesake.mary.bloody.bio" = "Αγγλίδα βασίλισσα με βίαιη κληρονομιά.";
+"namesake.adolf.bio" = "Δικτάτορας της Ναζιστικής Γερμανίας.";
+"namesake.ulysses.bio" = "Πρόεδρος των ΗΠΑ και στρατηγός του Εμφυλίου Πολέμου.";
+"namesake.wolf.bio" = "Αμερικανός δημοσιογράφος ραδιοτηλεόρασης.";
+"namesake.zelda.bio" = "Αμερικανίδα κοσμική και συγγραφέας.";

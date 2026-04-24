@@ -1,0 +1,145 @@
+import SwiftUI
+import SwiftData
+
+@main
+struct NamifyApp: App {
+    private let container: ModelContainer
+
+    @StateObject private var coordinator = AppCoordinator()
+    @StateObject private var session = AppSession()
+
+    init() {
+        container = Self.makeModelContainer()
+    }
+
+    private static func makeModelContainer() -> ModelContainer {
+        let schema = Schema([NameReport.self, UserPreferences.self])
+        let configuration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
+
+        do {
+            return try ModelContainer(for: schema, configurations: [configuration])
+        } catch {
+            assertionFailure("Failed to open the persistent store: \(error)")
+
+            let fallbackConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: true)
+            do {
+                return try ModelContainer(for: schema, configurations: [fallbackConfiguration])
+            } catch {
+                fatalError("Failed to create an in-memory store: \(error)")
+            }
+        }
+    }
+
+    var body: some Scene {
+        WindowGroup {
+            RootContainerView()
+                .environmentObject(coordinator)
+                .environmentObject(session)
+                .preferredColorScheme(session.preferredColorScheme)
+                .environment(\.locale, session.preferredLocale)
+        }
+        .modelContainer(container)
+    }
+}
+
+private struct RootContainerView: View {
+    @Environment(\.modelContext) private var modelContext
+    @EnvironmentObject private var coordinator: AppCoordinator
+    @EnvironmentObject private var session: AppSession
+
+    var body: some View {
+        ZStack(alignment: .bottom) {
+            if session.splashFinished {
+                if session.preferences.hasSeenOnboarding {
+                    mainAppContent
+                } else {
+                    OnboardingFlowView {
+                        withAnimation(NamifyMotion.gentle) {
+                            session.preferences.hasSeenOnboarding = true
+                            session.savePreferences(context: modelContext)
+                        }
+                    }
+                    .environmentObject(coordinator)
+                    .environmentObject(session)
+                }
+            } else {
+                SplashScreen {
+                    withAnimation(NamifyMotion.gentle) {
+                        session.splashFinished = true
+                    }
+                }
+            }
+
+            if let toast = session.toast {
+                NamifyToast(title: toast.title, actionTitle: toast.actionTitle, action: toast.action)
+                    .padding(.horizontal, NamifySpacing.md)
+                    .padding(.bottom, NamifySpacing.xl)
+                    .transition(.move(edge: .bottom).combined(with: .opacity))
+            }
+        }
+        .background(Brand.surface.ignoresSafeArea())
+        .task {
+            await session.bootstrap(context: modelContext)
+        }
+        .onChange(of: session.toast?.id) { _, _ in
+            guard session.toast != nil else { return }
+            Task { @MainActor in
+                try? await Task.sleep(for: .seconds(3))
+                withAnimation {
+                    session.toast = nil
+                }
+            }
+        }
+    }
+
+    private var mainAppContent: some View {
+        NavigationStack(path: $coordinator.path) {
+            InputScreen()
+                .navigationDestination(for: AppRoute.self, destination: destination(for:))
+        }
+        .fullScreenCover(item: $coordinator.sheet) { sheet in
+            switch sheet {
+            case .settings:
+                NavigationStack {
+                    SettingsScreen()
+                }
+                .preferredColorScheme(session.preferredColorScheme)
+            }
+        }
+    }
+
+    @ViewBuilder
+    private func destination(for route: AppRoute) -> some View {
+        switch route {
+        case .history:
+            HistoryScreen()
+        case .results(let name):
+            ResultsScreen(source: .live(name))
+        case .savedReport(let reportID):
+            SavedReportHost(reportID: reportID)
+        }
+    }
+}
+
+private struct SavedReportHost: View {
+    let reportID: UUID
+    @Environment(\.modelContext) private var modelContext
+    @State private var report: NameReport?
+
+    var body: some View {
+        Group {
+            if let report {
+                ResultsScreen(source: .saved(report))
+            } else {
+                ProgressView()
+                    .tint(Brand.accent)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background(Brand.surface.ignoresSafeArea())
+            }
+        }
+        .task {
+            let descriptor = FetchDescriptor<NameReport>()
+            report = try? modelContext.fetch(descriptor).first(where: { $0.id == reportID })
+        }
+    }
+}

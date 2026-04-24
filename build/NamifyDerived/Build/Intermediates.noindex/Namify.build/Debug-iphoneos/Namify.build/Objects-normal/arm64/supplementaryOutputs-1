@@ -1,0 +1,30 @@
+{
+  "/Users/antonchepur/Namify/Namify/App/AppCoordinator.swift" : {
+    "const-values" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/AppCoordinator.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/AppCoordinator.d",
+    "diagnostics" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/AppCoordinator.dia",
+    "object" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/AppCoordinator.o",
+    "swift-dependencies" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/AppCoordinator.swiftdeps"
+  },
+  "/Users/antonchepur/Namify/Namify/App/NamifyApp.swift" : {
+    "const-values" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/NamifyApp.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/NamifyApp.d",
+    "diagnostics" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/NamifyApp.dia",
+    "object" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/NamifyApp.o",
+    "swift-dependencies" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/NamifyApp.swiftdeps"
+  },
+  "/Users/antonchepur/Namify/Namify/DesignSystem/NamifyComponents.swift" : {
+    "const-values" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/NamifyComponents.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/NamifyComponents.d",
+    "diagnostics" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/NamifyComponents.dia",
+    "object" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/NamifyComponents.o",
+    "swift-dependencies" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/NamifyComponents.swiftdeps"
+  },
+  "/Users/antonchepur/Namify/Namify/DesignSystem/NamifyTheme.swift" : {
+    "const-values" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/NamifyTheme.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/NamifyTheme.d",
+    "diagnostics" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/NamifyTheme.dia",
+    "object" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/NamifyTheme.o",
+    "swift-dependencies" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/NamifyTheme.swiftdeps"
+  }
+}

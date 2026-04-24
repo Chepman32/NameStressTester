@@ -1,0 +1,48 @@
+{
+  "source": "/Users/antonchepur/Namify/Namify/Persistence/Models.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "sort.recent",
+        "location": {
+          "startingColumn": 45,
+          "startingLine": 167
+        }
+      },
+      {
+        "comment": "",
+        "key": "sort.az",
+        "location": {
+          "startingColumn": 49,
+          "startingLine": 168
+        }
+      },
+      {
+        "comment": "",
+        "key": "sort.za",
+        "location": {
+          "startingColumn": 49,
+          "startingLine": 169
+        }
+      },
+      {
+        "comment": "",
+        "key": "sort.best",
+        "location": {
+          "startingColumn": 49,
+          "startingLine": 170
+        }
+      },
+      {
+        "comment": "",
+        "key": "sort.worst",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 171
+        }
+      }
+    ]
+  },
+  "version": 1
+}

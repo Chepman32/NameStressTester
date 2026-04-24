@@ -1,0 +1,312 @@
+{
+  "source": "/Users/antonchepur/Namify/Namify/Engine/Analyzers.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "rhyme.summary.none",
+        "location": {
+          "startingColumn": 45,
+          "startingLine": 26
+        }
+      },
+      {
+        "comment": "",
+        "key": "rhyme.summary.one",
+        "location": {
+          "startingColumn": 45,
+          "startingLine": 29
+        }
+      },
+      {
+        "comment": "",
+        "key": "rhyme.summary.multiple",
+        "location": {
+          "startingColumn": 60,
+          "startingLine": 32
+        }
+      },
+      {
+        "comment": "",
+        "key": "rhyme.detail.none",
+        "location": {
+          "startingColumn": 48,
+          "startingLine": 37
+        }
+      },
+      {
+        "comment": "",
+        "key": "rhyme.detail.some",
+        "location": {
+          "startingColumn": 63,
+          "startingLine": 39
+        }
+      },
+      {
+        "comment": "",
+        "key": "generic.unavailable.summary",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 542
+        }
+      },
+      {
+        "comment": "",
+        "key": "generic.unavailable.detail",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 543
+        }
+      },
+      {
+        "comment": "",
+        "key": "generic.unavailable.message",
+        "location": {
+          "startingColumn": 57,
+          "startingLine": 544
+        }
+      },
+      {
+        "comment": "",
+        "key": "initials.summary.pass",
+        "location": {
+          "startingColumn": 60,
+          "startingLine": 78
+        }
+      },
+      {
+        "comment": "",
+        "key": "initials.summary.fail",
+        "location": {
+          "startingColumn": 60,
+          "startingLine": 80
+        }
+      },
+      {
+        "comment": "",
+        "key": "initials.summary.warn",
+        "location": {
+          "startingColumn": 60,
+          "startingLine": 82
+        }
+      },
+      {
+        "comment": "",
+        "key": "initials.detail.pass",
+        "location": {
+          "startingColumn": 37,
+          "startingLine": 90
+        }
+      },
+      {
+        "comment": "",
+        "key": "initials.detail.fail",
+        "location": {
+          "startingColumn": 37,
+          "startingLine": 91
+        }
+      },
+      {
+        "comment": "",
+        "key": "pronunciation.summary.pass",
+        "location": {
+          "startingColumn": 37,
+          "startingLine": 156
+        }
+      },
+      {
+        "comment": "",
+        "key": "pronunciation.summary.warn",
+        "location": {
+          "startingColumn": 41,
+          "startingLine": 158
+        }
+      },
+      {
+        "comment": "",
+        "key": "pronunciation.summary.fail",
+        "location": {
+          "startingColumn": 41,
+          "startingLine": 159
+        }
+      },
+      {
+        "comment": "",
+        "key": "pronunciation.detail",
+        "location": {
+          "startingColumn": 48,
+          "startingLine": 163
+        }
+      },
+      {
+        "comment": "",
+        "key": "pronunciation.factor.pass.label",
+        "location": {
+          "startingColumn": 63,
+          "startingLine": 176
+        }
+      },
+      {
+        "comment": "",
+        "key": "pronunciation.factor.pass.explanation",
+        "location": {
+          "startingColumn": 130,
+          "startingLine": 176
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@.explanation",
+        "location": {
+          "startingColumn": 77,
+          "startingLine": 144
+        }
+      },
+      {
+        "comment": "",
+        "key": "email.summary.pass",
+        "location": {
+          "startingColumn": 45,
+          "startingLine": 250
+        }
+      },
+      {
+        "comment": "",
+        "key": "email.summary.warn",
+        "location": {
+          "startingColumn": 45,
+          "startingLine": 252
+        }
+      },
+      {
+        "comment": "",
+        "key": "email.summary.fail",
+        "location": {
+          "startingColumn": 45,
+          "startingLine": 254
+        }
+      },
+      {
+        "comment": "",
+        "key": "email.detail",
+        "location": {
+          "startingColumn": 47,
+          "startingLine": 261
+        }
+      },
+      {
+        "comment": "",
+        "key": "nametag.summary.fail",
+        "location": {
+          "startingColumn": 41,
+          "startingLine": 322
+        }
+      },
+      {
+        "comment": "",
+        "key": "nametag.summary.warn",
+        "location": {
+          "startingColumn": 41,
+          "startingLine": 325
+        }
+      },
+      {
+        "comment": "",
+        "key": "nametag.summary.pass",
+        "location": {
+          "startingColumn": 41,
+          "startingLine": 328
+        }
+      },
+      {
+        "comment": "",
+        "key": "nametag.detail",
+        "location": {
+          "startingColumn": 43,
+          "startingLine": 335
+        }
+      },
+      {
+        "comment": "",
+        "key": "namesake.summary.empty.pass",
+        "location": {
+          "startingColumn": 63,
+          "startingLine": 373
+        }
+      },
+      {
+        "comment": "",
+        "key": "namesake.summary.has.pass",
+        "location": {
+          "startingColumn": 114,
+          "startingLine": 373
+        }
+      },
+      {
+        "comment": "",
+        "key": "namesake.summary.warn",
+        "location": {
+          "startingColumn": 45,
+          "startingLine": 375
+        }
+      },
+      {
+        "comment": "",
+        "key": "namesake.summary.fail",
+        "location": {
+          "startingColumn": 45,
+          "startingLine": 377
+        }
+      },
+      {
+        "comment": "",
+        "key": "namesake.detail.empty",
+        "location": {
+          "startingColumn": 37,
+          "startingLine": 381
+        }
+      },
+      {
+        "comment": "",
+        "key": "namesake.detail.some",
+        "location": {
+          "startingColumn": 37,
+          "startingLine": 382
+        }
+      },
+      {
+        "comment": "",
+        "key": "monogram.summary.pass",
+        "location": {
+          "startingColumn": 49,
+          "startingLine": 423
+        }
+      },
+      {
+        "comment": "",
+        "key": "monogram.summary.warn",
+        "location": {
+          "startingColumn": 49,
+          "startingLine": 424
+        }
+      },
+      {
+        "comment": "",
+        "key": "monogram.summary.fail",
+        "location": {
+          "startingColumn": 49,
+          "startingLine": 425
+        }
+      },
+      {
+        "comment": "",
+        "key": "monogram.detail",
+        "location": {
+          "startingColumn": 43,
+          "startingLine": 432
+        }
+      }
+    ]
+  },
+  "version": 1
+}

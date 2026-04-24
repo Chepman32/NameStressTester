@@ -1,0 +1,23 @@
+{
+  "/Users/antonchepur/Namify/Namify/Utilities/ShareCardRenderer.swift" : {
+    "const-values" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/ShareCardRenderer.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/ShareCardRenderer.d",
+    "diagnostics" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/ShareCardRenderer.dia",
+    "object" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/ShareCardRenderer.o",
+    "swift-dependencies" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/ShareCardRenderer.swiftdeps"
+  },
+  "/Users/antonchepur/Namify/Namify/Utilities/SystemHelpers.swift" : {
+    "const-values" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/SystemHelpers.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/SystemHelpers.d",
+    "diagnostics" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/SystemHelpers.dia",
+    "object" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/SystemHelpers.o",
+    "swift-dependencies" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/SystemHelpers.swiftdeps"
+  },
+  "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "object" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps"
+  }
+}

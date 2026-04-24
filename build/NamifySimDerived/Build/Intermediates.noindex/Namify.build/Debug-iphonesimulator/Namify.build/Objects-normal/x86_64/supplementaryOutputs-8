@@ -1,0 +1,30 @@
+{
+  "/Users/antonchepur/Namify/Namify/Features/Onboarding/OnboardingDemoResultsView.swift" : {
+    "const-values" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/OnboardingDemoResultsView.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/OnboardingDemoResultsView.d",
+    "diagnostics" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/OnboardingDemoResultsView.dia",
+    "object" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/OnboardingDemoResultsView.o",
+    "swift-dependencies" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/OnboardingDemoResultsView.swiftdeps"
+  },
+  "/Users/antonchepur/Namify/Namify/Features/Onboarding/OnboardingFlowView.swift" : {
+    "const-values" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/OnboardingFlowView.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/OnboardingFlowView.d",
+    "diagnostics" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/OnboardingFlowView.dia",
+    "object" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/OnboardingFlowView.o",
+    "swift-dependencies" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/OnboardingFlowView.swiftdeps"
+  },
+  "/Users/antonchepur/Namify/Namify/Features/Onboarding/OnboardingGoalView.swift" : {
+    "const-values" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/OnboardingGoalView.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/OnboardingGoalView.d",
+    "diagnostics" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/OnboardingGoalView.dia",
+    "object" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/OnboardingGoalView.o",
+    "swift-dependencies" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/OnboardingGoalView.swiftdeps"
+  },
+  "/Users/antonchepur/Namify/Namify/Features/Onboarding/OnboardingPainPointsView.swift" : {
+    "const-values" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/OnboardingPainPointsView.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/OnboardingPainPointsView.d",
+    "diagnostics" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/OnboardingPainPointsView.dia",
+    "object" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/OnboardingPainPointsView.o",
+    "swift-dependencies" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/OnboardingPainPointsView.swiftdeps"
+  }
+}

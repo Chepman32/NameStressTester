@@ -1,0 +1,12 @@
+{
+  "flagged": [
+    { "initials": "ASS", "category": "profanity", "severity": "critical", "note": "Common profanity" },
+    { "initials": "POO", "category": "bathroom_humor", "severity": "critical", "note": "Bathroom-humor target" },
+    { "initials": "KKK", "category": "culturally_insensitive", "severity": "critical", "note": "Hate-group reference" },
+    { "initials": "STD", "category": "embarrassing", "severity": "moderate", "note": "Medical acronym with social baggage" },
+    { "initials": "BJ", "category": "embarrassing", "severity": "moderate", "note": "Suggestive abbreviation" },
+    { "initials": "WTF", "category": "slang", "severity": "moderate", "note": "Profane slang acronym" },
+    { "initials": "BAD", "category": "playground", "severity": "mild", "note": "Negative plain-English word" },
+    { "initials": "BUM", "category": "playground", "severity": "mild", "note": "Common teasing target" }
+  ]
+}

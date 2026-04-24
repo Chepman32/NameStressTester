@@ -1,0 +1,32 @@
+{
+  "source": "/Users/antonchepur/Namify/Namify/Features/Onboarding/OnboardingSolutionView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "onboarding.solution.cta",
+        "location": {
+          "startingColumn": 51,
+          "startingLine": 39
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.solution.headline",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 15
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.solution.subheadline",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 20
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,80 @@
+{
+  "source": "/Users/antonchepur/Namify/Namify/Features/Onboarding/OnboardingPreferencesView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "onboarding.prefs.rhyme",
+        "location": {
+          "startingColumn": 48,
+          "startingLine": 8
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.prefs.initials",
+        "location": {
+          "startingColumn": 51,
+          "startingLine": 9
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.prefs.pronunciation",
+        "location": {
+          "startingColumn": 59,
+          "startingLine": 10
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.prefs.nametag",
+        "location": {
+          "startingColumn": 53,
+          "startingLine": 11
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.prefs.namesake",
+        "location": {
+          "startingColumn": 51,
+          "startingLine": 12
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.prefs.monogram",
+        "location": {
+          "startingColumn": 53,
+          "startingLine": 13
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.prefs.cta",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 61
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.prefs.headline",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 22
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.prefs.subheadline",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 27
+        }
+      }
+    ]
+  },
+  "version": 1
+}

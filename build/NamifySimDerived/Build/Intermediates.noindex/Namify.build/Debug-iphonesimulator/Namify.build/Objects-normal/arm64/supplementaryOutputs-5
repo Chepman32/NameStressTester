@@ -1,0 +1,23 @@
+{
+  "/Users/antonchepur/Namify/Namify/Engine/NameTestEngine.swift" : {
+    "const-values" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/NameTestEngine.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/NameTestEngine.d",
+    "diagnostics" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/NameTestEngine.dia",
+    "object" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/NameTestEngine.o",
+    "swift-dependencies" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/NameTestEngine.swiftdeps"
+  },
+  "/Users/antonchepur/Namify/Namify/Engine/TestDetailData.swift" : {
+    "const-values" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/TestDetailData.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/TestDetailData.d",
+    "diagnostics" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/TestDetailData.dia",
+    "object" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/TestDetailData.o",
+    "swift-dependencies" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/TestDetailData.swiftdeps"
+  },
+  "/Users/antonchepur/Namify/Namify/Features/History/HistoryScreen.swift" : {
+    "const-values" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/HistoryScreen.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/HistoryScreen.d",
+    "diagnostics" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/HistoryScreen.dia",
+    "object" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/HistoryScreen.o",
+    "swift-dependencies" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/HistoryScreen.swiftdeps"
+  }
+}

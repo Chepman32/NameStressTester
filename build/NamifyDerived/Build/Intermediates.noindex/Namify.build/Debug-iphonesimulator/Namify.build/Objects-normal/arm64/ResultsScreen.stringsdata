@@ -1,0 +1,400 @@
+{
+  "source": "/Users/antonchepur/Namify/Namify/Features/Results/ResultsScreen.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "results.toast.interrupted",
+        "location": {
+          "startingColumn": 73,
+          "startingLine": 87
+        }
+      },
+      {
+        "comment": "",
+        "key": "results.toast.saveFailed",
+        "location": {
+          "startingColumn": 85,
+          "startingLine": 76
+        }
+      },
+      {
+        "comment": "",
+        "key": "results.testing",
+        "location": {
+          "startingColumn": 49,
+          "startingLine": 101
+        }
+      },
+      {
+        "comment": "",
+        "key": "results.button.back",
+        "location": {
+          "startingColumn": 44,
+          "startingLine": 165
+        }
+      },
+      {
+        "comment": "",
+        "key": "results.toast.nameCopied",
+        "location": {
+          "startingColumn": 73,
+          "startingLine": 196
+        }
+      },
+      {
+        "comment": "",
+        "key": "results.label.testedToday",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 293
+        }
+      },
+      {
+        "comment": "",
+        "key": "results.swipe.share",
+        "location": {
+          "startingColumn": 49,
+          "startingLine": 244
+        }
+      },
+      {
+        "comment": "",
+        "key": "results.score",
+        "location": {
+          "startingColumn": 51,
+          "startingLine": 275
+        }
+      },
+      {
+        "comment": "",
+        "key": "results.share.cta",
+        "location": {
+          "startingColumn": 51,
+          "startingLine": 279
+        }
+      },
+      {
+        "comment": "",
+        "key": "results.another.cta",
+        "location": {
+          "startingColumn": 51,
+          "startingLine": 283
+        }
+      },
+      {
+        "comment": "",
+        "key": "results.toast.verdictCopied",
+        "location": {
+          "startingColumn": 73,
+          "startingLine": 272
+        }
+      },
+      {
+        "comment": "",
+        "key": "results.detail.noRhymes",
+        "location": {
+          "startingColumn": 37,
+          "startingLine": 355
+        }
+      },
+      {
+        "comment": "",
+        "key": "results.detail.blankSlate",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 516
+        }
+      },
+      {
+        "comment": "",
+        "key": "results.detail.noMatches",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 392
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ — %@",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 387
+        }
+      },
+      {
+        "comment": "",
+        "key": "initials.note.profanity",
+        "location": {
+          "startingColumn": 59,
+          "startingLine": 600
+        }
+      },
+      {
+        "comment": "",
+        "key": "initials.note.medical",
+        "location": {
+          "startingColumn": 78,
+          "startingLine": 601
+        }
+      },
+      {
+        "comment": "",
+        "key": "initials.note.suggestive",
+        "location": {
+          "startingColumn": 66,
+          "startingLine": 602
+        }
+      },
+      {
+        "comment": "",
+        "key": "initials.note.hate",
+        "location": {
+          "startingColumn": 63,
+          "startingLine": 603
+        }
+      },
+      {
+        "comment": "",
+        "key": "initials.note.negative",
+        "location": {
+          "startingColumn": 70,
+          "startingLine": 604
+        }
+      },
+      {
+        "comment": "",
+        "key": "initials.note.teasing",
+        "location": {
+          "startingColumn": 64,
+          "startingLine": 605
+        }
+      },
+      {
+        "comment": "",
+        "key": "initials.note.slang",
+        "location": {
+          "startingColumn": 64,
+          "startingLine": 606
+        }
+      },
+      {
+        "comment": "",
+        "key": "results.detail.difficultyScore",
+        "location": {
+          "startingColumn": 51,
+          "startingLine": 426
+        }
+      },
+      {
+        "comment": "",
+        "key": "results.detail.rollCallMiss",
+        "location": {
+          "startingColumn": 55,
+          "startingLine": 406
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@@%@",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 447
+        }
+      },
+      {
+        "comment": "",
+        "key": "results.detail.readability",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 466
+        }
+      },
+      {
+        "comment": "",
+        "key": "email.readability.easy",
+        "location": {
+          "startingColumn": 47,
+          "startingLine": 591
+        }
+      },
+      {
+        "comment": "",
+        "key": "email.readability.moderate",
+        "location": {
+          "startingColumn": 51,
+          "startingLine": 592
+        }
+      },
+      {
+        "comment": "",
+        "key": "email.readability.difficult",
+        "location": {
+          "startingColumn": 52,
+          "startingLine": 593
+        }
+      },
+      {
+        "comment": "",
+        "key": "results.detail.helloMyNameIs",
+        "location": {
+          "startingColumn": 48,
+          "startingLine": 490
+        }
+      },
+      {
+        "comment": "",
+        "key": "namesake.ada.bio",
+        "location": {
+          "startingColumn": 55,
+          "startingLine": 613
+        }
+      },
+      {
+        "comment": "",
+        "key": "namesake.attila.bio",
+        "location": {
+          "startingColumn": 57,
+          "startingLine": 614
+        }
+      },
+      {
+        "comment": "",
+        "key": "namesake.cleo.bio",
+        "location": {
+          "startingColumn": 52,
+          "startingLine": 615
+        }
+      },
+      {
+        "comment": "",
+        "key": "namesake.james.baldwin.bio",
+        "location": {
+          "startingColumn": 56,
+          "startingLine": 616
+        }
+      },
+      {
+        "comment": "",
+        "key": "namesake.james.dean.bio",
+        "location": {
+          "startingColumn": 53,
+          "startingLine": 617
+        }
+      },
+      {
+        "comment": "",
+        "key": "namesake.john.gacy.bio",
+        "location": {
+          "startingColumn": 58,
+          "startingLine": 618
+        }
+      },
+      {
+        "comment": "",
+        "key": "namesake.john.lennon.bio",
+        "location": {
+          "startingColumn": 54,
+          "startingLine": 619
+        }
+      },
+      {
+        "comment": "",
+        "key": "namesake.mary.shelley.bio",
+        "location": {
+          "startingColumn": 55,
+          "startingLine": 620
+        }
+      },
+      {
+        "comment": "",
+        "key": "namesake.mary.bloody.bio",
+        "location": {
+          "startingColumn": 54,
+          "startingLine": 621
+        }
+      },
+      {
+        "comment": "",
+        "key": "namesake.adolf.bio",
+        "location": {
+          "startingColumn": 55,
+          "startingLine": 622
+        }
+      },
+      {
+        "comment": "",
+        "key": "namesake.ulysses.bio",
+        "location": {
+          "startingColumn": 59,
+          "startingLine": 623
+        }
+      },
+      {
+        "comment": "",
+        "key": "namesake.wolf.bio",
+        "location": {
+          "startingColumn": 55,
+          "startingLine": 624
+        }
+      },
+      {
+        "comment": "",
+        "key": "namesake.zelda.bio",
+        "location": {
+          "startingColumn": 59,
+          "startingLine": 625
+        }
+      },
+      {
+        "comment": "",
+        "key": "results.sentiment.positive",
+        "location": {
+          "startingColumn": 51,
+          "startingLine": 582
+        }
+      },
+      {
+        "comment": "",
+        "key": "results.sentiment.negative",
+        "location": {
+          "startingColumn": 51,
+          "startingLine": 583
+        }
+      },
+      {
+        "comment": "",
+        "key": "results.sentiment.mixed",
+        "location": {
+          "startingColumn": 48,
+          "startingLine": 584
+        }
+      },
+      {
+        "comment": "",
+        "key": "monogram.style.classic",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 637
+        }
+      },
+      {
+        "comment": "",
+        "key": "monogram.style.stacked",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 638
+        }
+      },
+      {
+        "comment": "",
+        "key": "monogram.style.interleaved",
+        "location": {
+          "startingColumn": 43,
+          "startingLine": 639
+        }
+      }
+    ]
+  },
+  "version": 1
+}

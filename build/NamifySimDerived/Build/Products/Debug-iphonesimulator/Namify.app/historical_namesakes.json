@@ -1,0 +1,17 @@
+{
+  "entries": [
+    { "firstName": "Ada", "fullName": "Ada Lovelace", "shortBio": "Pioneer of computer programming.", "era": "19th century", "domain": "science", "sentiment": "positive", "notoriety": 12 },
+    { "firstName": "Attila", "fullName": "Attila the Hun", "shortBio": "Conquering ruler of the Huns.", "era": "5th century", "domain": "politics", "sentiment": "negative", "notoriety": 40 },
+    { "firstName": "Cleo", "fullName": "Cleopatra", "shortBio": "Last active ruler of Ptolemaic Egypt.", "era": "1st century BCE", "domain": "politics", "sentiment": "mixed", "notoriety": 25 },
+    { "firstName": "James", "fullName": "James Baldwin", "shortBio": "American writer and civil-rights thinker.", "era": "20th century", "domain": "arts", "sentiment": "positive", "notoriety": 55 },
+    { "firstName": "James", "fullName": "James Dean", "shortBio": "American actor and cultural icon.", "era": "20th century", "domain": "arts", "sentiment": "positive", "notoriety": 61 },
+    { "firstName": "John", "fullName": "John Lennon", "shortBio": "Musician and cultural figure.", "era": "20th century", "domain": "arts", "sentiment": "positive", "notoriety": 11 },
+    { "firstName": "John", "fullName": "John Wayne Gacy", "shortBio": "Serial killer and criminal.", "era": "20th century", "domain": "crime", "sentiment": "negative", "notoriety": 19 },
+    { "firstName": "Mary", "fullName": "Mary Shelley", "shortBio": "Author of Frankenstein.", "era": "19th century", "domain": "arts", "sentiment": "positive", "notoriety": 33 },
+    { "firstName": "Mary", "fullName": "Bloody Mary", "shortBio": "English queen with violent legacy.", "era": "16th century", "domain": "politics", "sentiment": "negative", "notoriety": 80 },
+    { "firstName": "Adolf", "fullName": "Adolf Hitler", "shortBio": "Dictator of Nazi Germany.", "era": "20th century", "domain": "politics", "sentiment": "negative", "notoriety": 1 },
+    { "firstName": "Ulysses", "fullName": "Ulysses S. Grant", "shortBio": "US president and Civil War general.", "era": "19th century", "domain": "politics", "sentiment": "positive", "notoriety": 52 },
+    { "firstName": "Wolf", "fullName": "Wolf Blitzer", "shortBio": "American broadcast journalist.", "era": "21st century", "domain": "media", "sentiment": "neutral", "notoriety": 450 },
+    { "firstName": "Zelda", "fullName": "Zelda Fitzgerald", "shortBio": "American socialite and writer.", "era": "20th century", "domain": "arts", "sentiment": "mixed", "notoriety": 280 }
+  ]
+}

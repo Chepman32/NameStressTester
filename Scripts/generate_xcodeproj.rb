@@ -3,10 +3,10 @@ require "pathname"
 require "xcodeproj"
 
 ROOT = Pathname(__dir__).parent.expand_path
-PROJECT_PATH = ROOT.join("Litmus.xcodeproj")
-APP_PATH = ROOT.join("Litmus")
-TESTS_PATH = ROOT.join("LitmusTests")
-UI_TESTS_PATH = ROOT.join("LitmusUITests")
+PROJECT_PATH = ROOT.join("Namify.xcodeproj")
+APP_PATH = ROOT.join("Namify")
+TESTS_PATH = ROOT.join("NamifyTests")
+UI_TESTS_PATH = ROOT.join("NamifyUITests")
 
 FileUtils.rm_rf(PROJECT_PATH)
 
@@ -19,13 +19,13 @@ project.build_configuration_list.build_configurations.each do |config|
   config.build_settings["IPHONEOS_DEPLOYMENT_TARGET"] = "17.0"
 end
 
-app_target = project.new_target(:application, "Litmus", :ios, "17.0")
-unit_target = project.new_target(:unit_test_bundle, "LitmusTests", :ios, "17.0")
-ui_target = project.new_target(:ui_test_bundle, "LitmusUITests", :ios, "17.0")
+app_target = project.new_target(:application, "Namify", :ios, "17.0")
+unit_target = project.new_target(:unit_test_bundle, "NamifyTests", :ios, "17.0")
+ui_target = project.new_target(:ui_test_bundle, "NamifyUITests", :ios, "17.0")
 
 app_target.build_configurations.each do |config|
-  config.build_settings["INFOPLIST_FILE"] = "Litmus/Resources/Info.plist"
-  config.build_settings["PRODUCT_BUNDLE_IDENTIFIER"] = "com.antonchepur.litmus"
+  config.build_settings["INFOPLIST_FILE"] = "Namify/Resources/Info.plist"
+  config.build_settings["PRODUCT_BUNDLE_IDENTIFIER"] = "com.antonchepur.namify"
   config.build_settings["PRODUCT_NAME"] = "$(TARGET_NAME)"
   config.build_settings["SWIFT_EMIT_LOC_STRINGS"] = "YES"
   config.build_settings["SWIFT_OPTIMIZATION_LEVEL"] = config.name == "Debug" ? "-Onone" : "-O"
@@ -41,24 +41,24 @@ app_target.build_configurations.each do |config|
 end
 
 unit_target.build_configurations.each do |config|
-  config.build_settings["INFOPLIST_FILE"] = "LitmusTests/Info.plist"
-  config.build_settings["PRODUCT_BUNDLE_IDENTIFIER"] = "com.antonchepur.litmus.tests"
+  config.build_settings["INFOPLIST_FILE"] = "NamifyTests/Info.plist"
+  config.build_settings["PRODUCT_BUNDLE_IDENTIFIER"] = "com.antonchepur.namify.tests"
   config.build_settings["PRODUCT_NAME"] = "$(TARGET_NAME)"
   config.build_settings["TARGETED_DEVICE_FAMILY"] = "1,2"
   config.build_settings["CODE_SIGN_STYLE"] = "Automatic"
   config.build_settings["DEVELOPMENT_TEAM"] = ""
-  config.build_settings["TEST_HOST"] = "$(BUILT_PRODUCTS_DIR)/Litmus.app/Litmus"
+  config.build_settings["TEST_HOST"] = "$(BUILT_PRODUCTS_DIR)/Namify.app/Namify"
   config.build_settings["BUNDLE_LOADER"] = "$(TEST_HOST)"
 end
 
 ui_target.build_configurations.each do |config|
-  config.build_settings["INFOPLIST_FILE"] = "LitmusUITests/Info.plist"
-  config.build_settings["PRODUCT_BUNDLE_IDENTIFIER"] = "com.antonchepur.litmus.uitests"
+  config.build_settings["INFOPLIST_FILE"] = "NamifyUITests/Info.plist"
+  config.build_settings["PRODUCT_BUNDLE_IDENTIFIER"] = "com.antonchepur.namify.uitests"
   config.build_settings["PRODUCT_NAME"] = "$(TARGET_NAME)"
   config.build_settings["TARGETED_DEVICE_FAMILY"] = "1,2"
   config.build_settings["CODE_SIGN_STYLE"] = "Automatic"
   config.build_settings["DEVELOPMENT_TEAM"] = ""
-  config.build_settings["TEST_TARGET_NAME"] = "Litmus"
+  config.build_settings["TEST_TARGET_NAME"] = "Namify"
 end
 
 unit_target.add_dependency(app_target)
@@ -93,9 +93,9 @@ def add_entries(group, directory, source_phase:, resource_phase: nil)
 end
 
 main_group = project.main_group
-app_group = main_group.new_group("Litmus", "Litmus")
-tests_group = main_group.new_group("LitmusTests", "LitmusTests")
-ui_tests_group = main_group.new_group("LitmusUITests", "LitmusUITests")
+app_group = main_group.new_group("Namify", "Namify")
+tests_group = main_group.new_group("NamifyTests", "NamifyTests")
+ui_tests_group = main_group.new_group("NamifyUITests", "NamifyUITests")
 
 add_entries(app_group, APP_PATH, source_phase: app_target.source_build_phase, resource_phase: app_target.resources_build_phase)
 add_entries(tests_group, TESTS_PATH, source_phase: unit_target.source_build_phase, resource_phase: unit_target.resources_build_phase)
@@ -106,7 +106,7 @@ scheme.add_build_target(app_target)
 scheme.add_test_target(unit_target)
 scheme.add_test_target(ui_target)
 scheme.set_launch_target(app_target)
-scheme.save_as(PROJECT_PATH.to_s, "Litmus", true)
+scheme.save_as(PROJECT_PATH.to_s, "Namify", true)
 
 project.save
 puts "Generated #{PROJECT_PATH}"

@@ -1,0 +1,328 @@
+// MARK: - Splash
+"splash.tagline" = "모든 이름은 스트레스 테스트를 받을 자격이 있어요";
+
+// MARK: - Input
+"input.title" = "이름 테스트하기";
+"input.subtitle" = "이름, 중간 이름(선택), 성을 입력하세요";
+"input.field.first" = "이름";
+"input.field.middle" = "중간 이름(선택)";
+"input.field.last" = "성";
+"input.cta" = "테스트 시작";
+"input.header" = "NAMIFY";
+"input.keyboard.done" = "완료";
+
+// MARK: - Results
+"results.testing" = "테스트 %d / %d 실행 중: %@...";
+"results.verdict.survived" = "이 이름은 중학교를 무사히 넘길 거예요.";
+"results.verdict.mixed" = "이 이름에는 약간의 방어구가 필요해요.";
+"results.verdict.failed" = "이 이름은 무장하지 않은 채 전장에 들어가요.";
+"results.score" = "%d / %d 테스트 통과";
+"results.share.cta" = "결과 공유하기";
+"results.another.cta" = "다른 이름 테스트하기";
+"results.share.watermark" = "Namify for iOS로 테스트";
+"results.button.back" = "뒤로";
+"results.label.testedToday" = "오늘 테스트함";
+"results.toast.saveFailed" = "저장할 수 없습니다. 결과는 여전히 표시됩니다.";
+"results.toast.interrupted" = "테스트가 중단되었습니다.";
+"results.toast.nameCopied" = "전체 이름이 복사되었습니다";
+"results.toast.verdictCopied" = "판결이 복사되었습니다";
+"results.swipe.share" = "공유";
+
+// MARK: - Results Detail
+"results.detail.noRhymes" = "라임 취약점이 발견되지 않았습니다";
+"results.detail.rollCallMiss" = "부를 때 잘못 읽힐 가능성: %@";
+"results.detail.difficultyScore" = "난이도 점수: %d/10";
+"results.detail.readability" = "가독성";
+"results.detail.helloMyNameIs" = "HELLO MY NAME IS";
+"results.detail.blankSlate" = "이 이름을 가진 유명한 역사적 인물이 없습니다——백지 상태예요.";
+"results.detail.noMatches" = "표시된 이니셜 데이터베이스에서 일치하는 항목이 없습니다.";
+
+// MARK: - Sentiment Labels
+"results.sentiment.positive" = "긍정적";
+"results.sentiment.negative" = "부정적";
+"results.sentiment.mixed" = "혼합";
+
+// MARK: - Email Status
+"email.status.likelyAvailable" = "사용 가능할 가능성 높음";
+"email.status.likelyTaken" = "이미 사용 중일 가능성 높음";
+"email.status.uncertain" = "불확실";
+
+// MARK: - Email Readability
+"email.readability.easy" = "쉬움";
+"email.readability.moderate" = "보통";
+"email.readability.difficult" = "어려움";
+
+// MARK: - Monogram Styles
+"monogram.style.classic" = "클래식";
+"monogram.style.stacked" = "쌓기";
+"monogram.style.interleaved" = "교차";
+
+// MARK: - Test Names
+"test.rhyme.name" = "라임 취약점";
+"test.initials.name" = "이니셜 확인";
+"test.pronunciation.name" = "발음 테스트";
+"test.email.name" = "이메일 사용 가능 여부";
+"test.nametag.name" = "네임택 미리보기";
+"test.namesake.name" = "역사적 동명인";
+"test.monogram.name" = "모노그램 미학";
+
+// MARK: - History
+"history.title" = "기록";
+"history.empty.title" = "아직 테스트한 이름이 없습니다";
+"history.empty.subtitle" = "테스트 기록이 여기에 표시됩니다";
+"history.empty.cta" = "이름 테스트하기";
+"history.search.placeholder" = "테스트한 이름 검색...";
+"history.delete.undo" = "이름이 삭제되었습니다";
+"history.delete.undo.button" = "실행 취소";
+"history.button.back" = "입력";
+"history.swipe.favorite" = "즐겨찾기";
+"history.swipe.delete" = "삭제";
+
+// MARK: - Sort Orders
+"sort.recent" = "최근";
+"sort.az" = "A-Z";
+"sort.za" = "Z-A";
+"sort.best" = "최고";
+"sort.worst" = "최악";
+
+// MARK: - Settings
+"settings.title" = "설정";
+"settings.appearance" = "외관";
+"settings.tests" = "테스트";
+"settings.data" = "데이터";
+"settings.about" = "정보";
+"settings.button.done" = "완료";
+"settings.appearance.darkmode" = "다크 모드";
+"settings.appearance.language" = "언어";
+"settings.language.title" = "언어";
+"settings.language.system" = "시스템";
+"settings.tests.includeMiddle" = "모든 테스트에 중간 이름 포함";
+"settings.tests.strict" = "엄격 모드(경고를 불합격으로 처리)";
+"settings.tests.reorder" = "테스트 순서 관리";
+"settings.data.clearHistory" = "모든 기록 지우기";
+"settings.data.clearHistory.confirm" = "다시 탭하여 확인";
+"settings.data.export" = "모든 결과 낳볂내기";
+"settings.about.version" = "버전";
+"settings.about.about" = "Namify 정보";
+"settings.about.privacy" = "개인정보 처리방침";
+"settings.toast.cleared" = "기록이 지워졌습니다";
+"settings.toast.exportFailed" = "기록 낳볂내기에 실패했습니다";
+"settings.testOrder.title" = "테스트 순서";
+
+// MARK: - About & Privacy
+"settings.about.title" = "Namify 정보";
+"settings.about.body" = "Namify는 잠재적 이름에 대해 라임 노출, 이니셜, 발음 마찰, 네임택 적합성, 역사적 동명인, 모노그램 미학 측면에서 스트레스 테스트를 수행하는 완전 오프라인 iPhone 및 iPad 유틸리티입니다.";
+"settings.privacy.title" = "개인정보 처리방침";
+"settings.privacy.body" = "Namify는 기기 외부로 데이터를 전송하지 않고, 네트워크 계정을 요구하지 않으며, 보고서는 사용자가 삭제할 때까지 로컬 SwiftData 저장소에만 보관합니다.";
+
+// MARK: - Badges
+"badge.pass" = "통과";
+"badge.fail" = "불합격";
+"badge.warn" = "경고";
+
+// MARK: - Time
+"time.today" = "오늘";
+"time.yesterday" = "어제";
+"time.daysAgo" = "%d일 전";
+
+// MARK: - Onboarding Welcome
+"onboarding.welcome.headline" = "현실에서 살아남을 이름을 찾아보세요";
+"onboarding.welcome.subheadline" = "출생증명서에 서명하기 전에 모든 이름이 통과해야 할 7가지 스트레스 테스트";
+"onboarding.welcome.cta" = "시작하기";
+"onboarding.welcome.footnote" = "완전 오프라인. 데이터는 기기를 벗어나지 않습니다.";
+"onboarding.welcome.preview.rhyme" = "라임 취약점";
+"onboarding.welcome.preview.initials" = "이니셜 확인";
+"onboarding.welcome.preview.pronunciation" = "발음 테스트";
+
+// MARK: - Onboarding Goal
+"onboarding.goal.headline" = "이름에서 가장 중요하게 생각하는 것은?";
+"onboarding.goal.subheadline" = "가장 마음에 드는 것을 선택하세요.";
+"onboarding.goal.soundsBeautiful" = "아름답게 들리는";
+"onboarding.goal.soundsBeautiful.sub" = "소리 내어 읽을 때";
+"onboarding.goal.bullyProof" = "놀림감이 안 되는";
+"onboarding.goal.bullyProof.sub" = "놀이터에서 놀림당하지 않는";
+"onboarding.goal.looksGood" = "종이 위에서 멋진";
+"onboarding.goal.looksGood.sub" = "이력서, 졸업장, 서류";
+"onboarding.goal.goodHistory" = "좋은 역사를 가진";
+"onboarding.goal.goodHistory.sub" = "역사적 인물과의 긍정적 연관";
+"onboarding.goal.easyPronounce" = "발음이 쉬운";
+"onboarding.goal.easyPronounce.sub" = "매일 고칠 필요가 없는";
+"onboarding.goal.aesthetic" = "예쁜 모노그램";
+"onboarding.goal.aesthetic.sub" = "아름다운 이니셜";
+
+// MARK: - Onboarding Pain
+"onboarding.pain.headline" = "이름을 고를 때 걱정되는 것은?";
+"onboarding.pain.subheadline" = "해당하는 것을 모두 선택하세요. 혼자가 아닙니다.";
+"onboarding.pain.initials" = "민망한 이니셜";
+"onboarding.pain.rhymes" = "놀이터의 라임과 놀림";
+"onboarding.pain.mispronunciation" = "계속 잘못 발음되는 것";
+"onboarding.pain.namesake" = "역사적 인물의 짐";
+"onboarding.pain.family" = "가족의 압박과 평가";
+"onboarding.pain.secondGuessing" = "자신을 의심하는 것";
+
+// MARK: - Onboarding Social
+"onboarding.social.headline" = "이름을 테스트한 수천 명의 부모님들과 함께하세요";
+"onboarding.social.subheadline" = "진짜 부모님들의 진짜 이야기.";
+"onboarding.testimonial.1.name" = "Sarah M.";
+"onboarding.testimonial.1.tag" = "첫 아이 엄마";
+"onboarding.testimonial.1.text" = "딸 이름을 Olivia S.로 지으려다가 Namify가 이니셜을 알려줬어요. 다행히 제때 알았죠!";
+"onboarding.testimonial.2.name" = "James T.";
+"onboarding.testimonial.2.tag" = "아이 셋 아빠";
+"onboarding.testimonial.2.text" = "Theo로 결정하기 전에 12개 이름을 테스트했어요. 라임 체크가 큰 재난을 막아줬죠.";
+"onboarding.testimonial.3.name" = "Priya K.";
+"onboarding.testimonial.3.tag" = "임신 중";
+"onboarding.testimonial.3.text" = "발음이 걱정됐어요. Namify가 제 직감을 확인해줬어요——Arjun은 완벽해요.";
+
+// MARK: - Onboarding Solution
+"onboarding.solution.headline" = "Namify가 당신을 지켜줍니다";
+"onboarding.solution.subheadline" = "당신이 공유한 모든 걱정을 우리가 어떻게 해결하는지 소개합니다.";
+"onboarding.solution.cta" = "내 테스트 선택";
+"onboarding.solution.initials" = "이니셜 확인이 500개 이상의 표시된 조합을 즉시 스캔";
+"onboarding.solution.rhymes" = "라임 취약점이 2000개 이상의 위험한 라임과 소리를 탐지";
+"onboarding.solution.pronunciation" = "발음 테스트가 난이도를 평가하고 실수를 예측";
+"onboarding.solution.namesake" = "역사적 동명인이 유명 인물——좋은 사람도 나쁜 사람도——표시";
+"onboarding.solution.family" = "데이터 기반 성적표가 당신의 선택을 지킬 자신감을 줍니다";
+"onboarding.solution.secondGuessing" = "무제한으로 이름을 테스트하고 결과를 나란히 비교";
+
+// MARK: - Onboarding Preferences
+"onboarding.prefs.headline" = "어떤 테스트를 실행할까요?";
+"onboarding.prefs.subheadline" = "중요한 것을 선택하세요. 언제든지 변경할 수 있습니다.";
+"onboarding.prefs.cta" = "내 테스트 세트 만들기";
+"onboarding.prefs.rhyme" = "위험한 라임 탐지";
+"onboarding.prefs.initials" = "나쁜 이니셜 확인";
+"onboarding.prefs.pronunciation" = "발음 난이도 평가";
+"onboarding.prefs.nametag" = "네임택 적합성 미리보기";
+"onboarding.prefs.namesake" = "유명한 역사적 인물 확인";
+"onboarding.prefs.monogram" = "모노그램 스타일 평가";
+
+// MARK: - Onboarding Processing
+"onboarding.processing.headline" = "맞춤형 테스트 세트를 구성 중...";
+"onboarding.processing.subheadline" = "준비가 완료될 때까지 잠시만 기다려 주세요.";
+
+// MARK: - Onboarding Demo
+"onboarding.demo.headline" = "당신의 이름을 테스트해보세요";
+"onboarding.demo.subheadline" = "당신의 이름(또는 좋아하는 이름)을 입력하고 Namify의 작동을 확인하세요.";
+"onboarding.demo.cta" = "테스트 시작";
+
+// MARK: - Onboarding Complete
+"onboarding.complete.message" = "이것이 Namify의 경험입니다. 자신 있게 이름을 테스트할 준비가 되셨나요?";
+"onboarding.complete.cta" = "이름 테스트 시작";
+"onboarding.complete.secondary" = "내 결과 공유";
+
+// MARK: - Onboarding Navigation
+"onboarding.continue" = "계속";
+"onboarding.back" = "뒤로";
+
+// MARK: - Analyzer Summaries — Rhyme
+"rhyme.summary.none" = "일반적인 놀이터 라임이 발견되지 않았습니다";
+"rhyme.summary.one" = "1개의 유사 라임 발견——경미한 위험";
+"rhyme.summary.multiple" = "%d개의 직접 라임 발견——높은 노출 위험";
+
+// MARK: - Analyzer Details — Rhyme
+"rhyme.detail.none" = "통합 라임 코퍼스에서 라임 취약점이 발견되지 않았습니다.";
+"rhyme.detail.some" = "놀이터 노출을 추정하기 위해 %@을(를) 통합 라임 패턴, 유사 라임 앵커, 부정적 단어 코퍼스와 비교했습니다.";
+
+// MARK: - Analyzer Summaries — Initials
+"initials.summary.pass" = "이니셜 %@ — 문제가 발견되지 않았습니다";
+"initials.summary.fail" = "이니셜 %@ — 표시된 조합";
+"initials.summary.warn" = "이니셜 %@ — 검토 권장";
+
+// MARK: - Analyzer Details — Initials
+"initials.detail.pass" = "이 이니셜은 표시된 이니셜 데이터베이스와 일치하지 않습니다.";
+"initials.detail.fail" = "Namify는 주요 및 대체 이니셜 조합, 역전 쌍, 두 글자 형태를 확인했습니다.";
+
+// MARK: - Analyzer Summaries — Pronunciation
+"pronunciation.summary.pass" = "발음이 단순——읽기 쉬움";
+"pronunciation.summary.warn" = "모호한 모음 클러스터가 오발음을 유발할 수 있음";
+"pronunciation.summary.fail" = "여러 발음 함정이 발견되었습니다";
+
+// MARK: - Analyzer Details — Pronunciation
+"pronunciation.detail" = "Namify는 묵음 문자, 모호한 클러스터, 익숙하지 않은 자음 조합, 이름 길이, 알려진 오발음 패턴을 사용하여 발음 난이도를 평가했습니다.";
+"pronunciation.factor.pass.label" = "발음이 단순";
+"pronunciation.factor.pass.explanation" = "높은 마찰 발음 패턴이 발견되지 않았습니다.";
+
+// MARK: - Analyzer Summaries — Email
+"email.summary.pass" = "이름.성@ — 대부분의 도메인에서 사용 가능할 가능성이 높음";
+"email.summary.warn" = "흔한 이름——사용 가능성 문제가 있을 수 있음";
+"email.summary.fail" = "매우 흔함——번호가 붙은 이메일 변형이 필요할 것으로 예상";
+
+// MARK: - Analyzer Details — Email
+"email.detail" = "사용 가능성은 통합된 풀네임 빈도 순위에서 추정되며, 주소 길이와 구두 전달 마찰로 조정됩니다.";
+
+// MARK: - Analyzer Summaries — Name Tag
+"nametag.summary.pass" = "표준 회의 네임택에 깔끔하게 들어감";
+"nametag.summary.warn" = "표준 회의 네임택에 간신히 들어감";
+"nametag.summary.fail" = "표준 네임택을 잘라내야 할 정도로 김";
+
+// MARK: - Analyzer Details — Name Tag
+"nametag.detail" = "Namify는 렌더링된 네임택 이름을 표준 회의 네임택 너비와 비교하고, 프린터에 친화적이지 않은 발음 기호나 극도로 드문 라벨도 표시합니다.";
+
+// MARK: - Analyzer Summaries — Namesake
+"namesake.summary.empty.pass" = "이 이름에 대해 주목할 만한 짐이 발견되지 않았습니다";
+"namesake.summary.has.pass" = "역사적 연관성이 깨끗하거나 긍정적임";
+"namesake.summary.warn" = "혼합되거나 복잡한 역사적 동명인 연관성이 발견되었습니다";
+"namesake.summary.fail" = "유명한 부정적 역사적 인물이 강력한 경고 신호를 보냅니다";
+
+// MARK: - Analyzer Details — Namesake
+"namesake.detail.empty" = "통합된 역사적 동명인 데이터셋에서 널리 알려진 역사적 또는 문화적 인물이 발견되지 않았습니다.";
+"namesake.detail.some" = "Namify는 통합된 역사적 및 문화적 인물에 대해 정확하고 음성적으로 일치하는 이름을 확인했습니다.";
+
+// MARK: - Analyzer Summaries — Monogram
+"monogram.summary.pass" = "모노그램 미학이 뛰어남";
+"monogram.summary.warn" = "허용 가능하지만 이상적이지 않음";
+"monogram.summary.fail" = "모노그램에 시각적 문제가 있을 수 있음";
+
+// MARK: - Analyzer Details — Monogram
+"monogram.detail" = "Namify는 대칭성, 너비 조화, 쌓기 레이아웃 충돌, 곡선 균형, 문자 혼동 가능성을 평가하여 이니셜이 모노그램으로 어떻게 보일지 예측합니다.";
+
+// MARK: - Generic Unavailable
+"generic.unavailable.summary" = "테스트 데이터를 사용할 수 없습니다. 이 테스트를 완료할 수 없습니다.";
+"generic.unavailable.detail" = "이 분석기의 통합 데이터를 로드할 수 없습니다. Namify는 보고서의 나머지를 보존하고 이 결과를 경고로 표시했습니다.";
+"generic.unavailable.message" = "데이터를 사용할 수 없습니다";
+
+// MARK: - Share Card
+"share.card.watermark" = "Namify로 테스트";
+
+// MARK: - App
+"app.toast.saveSettingsFailed" = "설정을 저장할 수 없습니다";
+
+// MARK: - Accessibility
+"accessibility.expandHint" = "두 번 탭하여 세부 정보를 펼칩니다.";
+
+// MARK: - Seed Data: Bad Initials Notes
+"initials.note.profanity" = "일반적인 욕설";
+"initials.note.medical" = "사회적 짐을 가진 의학 약어";
+"initials.note.suggestive" = "암시적인 약어";
+"initials.note.hate" = "증오 단체 언급";
+"initials.note.negative" = "부정적인 영어 단어";
+"initials.note.teasing" = "일반적인 놀림 대상";
+"initials.note.slang" = "거친 속어 약어";
+
+// MARK: - Seed Data: Pronunciation Rules
+"pronunciation.rule.silentLetters" = "묵음 문자";
+"pronunciation.rule.silentLetters.explanation" = "영어 사용자가 자주 틀리게 추측하는 gh 시퀀스가 포함되어 있습니다.";
+"pronunciation.rule.uncommonCombo" = "흔하지 않은 문자 조합";
+"pronunciation.rule.uncommonCombo.explanation" = "많은 독자가 올바르게 분석하지 못하는 게일어 스타일의 자음 블렌드가 포함되어 있습니다.";
+"pronunciation.rule.ambiguousVowel" = "모호한 모음 클러스터";
+"pronunciation.rule.ambiguousVowel.explanation" = "여러 가능한 읽기 방식을 가진 두 개의 모음 클러스터.";
+"pronunciation.rule.eigh" = "모호한 모음 클러스터";
+"pronunciation.rule.eigh.explanation" = "EIGH 패턴은 여러 영어 추측을 생성합니다.";
+"pronunciation.rule.sz" = "흔하지 않은 문자 조합";
+"pronunciation.rule.sz.explanation" = "SZ는 영어 이름에서 흔하지 않고 종종 망설임을 유발합니다.";
+"pronunciation.rule.uncommonFreq" = "흔하지 않은 문자 빈도";
+"pronunciation.rule.uncommonFreq.explanation" = "주어진 이름 중간에 X가 있으면 구두 전달 마찰이 증가합니다.";
+
+// MARK: - Seed Data: Historical Namesake Bios
+"namesake.ada.bio" = "컴퓨터 프로그래밍의 선구자.";
+"namesake.attila.bio" = "훈족의 정복자 군주.";
+"namesake.cleo.bio" = "ptolemaios 이집트의 마지막 통치자.";
+"namesake.james.baldwin.bio" = "미국 작가이자 민권 사상가.";
+"namesake.james.dean.bio" = "미국 배우이자 문화 아이콘.";
+"namesake.john.gacy.bio" = "연쇄 살인범이자 범죄자.";
+"namesake.john.lennon.bio" = "음악가이자 문화적 인물.";
+"namesake.mary.shelley.bio" = "《프랑켄슈타인》의 저자.";
+"namesake.mary.bloody.bio" = "폭력적인 유산을 가진 영국 여왕.";
+"namesake.adolf.bio" = "나치 독일의 독재자.";
+"namesake.ulysses.bio" = "미국 대통령이자 남북전쟁 장군.";
+"namesake.wolf.bio" = "미국 방송 기자.";
+"namesake.zelda.bio" = "미국 사교계 명사이자 작가.";

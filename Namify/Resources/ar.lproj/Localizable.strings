@@ -1,0 +1,328 @@
+// MARK: - Splash
+"splash.tagline" = "كل اسم يستحق اختبار الضغط";
+
+// MARK: - Input
+"input.title" = "اختبر اسمًا";
+"input.subtitle" = "أدخل الاسم الأول والأوسط (اختياري) واسم العائلة";
+"input.field.first" = "الاسم الأول";
+"input.field.middle" = "الاسم الأوسط (اختياري)";
+"input.field.last" = "اسم العائلة";
+"input.cta" = "ابدأ الاختبار";
+"input.header" = "ناميفاي";
+"input.keyboard.done" = "تم";
+
+// MARK: - Results
+"results.testing" = "جارٍ إجراء الاختبار %d من %d: %@...";
+"results.verdict.survived" = "هذا الاسم سيتجاوز مرحلة المراهقة بسلام.";
+"results.verdict.mixed" = "هذا الاسم سيحتاج إلى بعض الحماية.";
+"results.verdict.failed" = "هذا الاسم يدخل الساحة دون سلاح.";
+"results.score" = "نجح في %d من %d اختبارات";
+"results.share.cta" = "شارك التقرير";
+"results.another.cta" = "اختبر اسمًا آخر";
+"results.share.watermark" = "تم الاختبار باستخدام ناميفاي لنظام iOS";
+"results.button.back" = "رجوع";
+"results.label.testedToday" = "تم الاختبار اليوم";
+"results.toast.saveFailed" = "تعذّر الحفظ. النتائج لا تزال ظاهرة.";
+"results.toast.interrupted" = "تم مقاطعة الاختبار.";
+"results.toast.nameCopied" = "تم نسخ الاسم الكامل";
+"results.toast.verdictCopied" = "تم نسخ النتيجة";
+"results.swipe.share" = "مشاركة";
+
+// MARK: - Results Detail
+"results.detail.noRhymes" = "لم يُكتشف أي ضعف في التجانس";
+"results.detail.rollCallMiss" = "احتمال خطأ في نداء الاسم: %@";
+"results.detail.difficultyScore" = "درجة الصعوبة: %d/10";
+"results.detail.readability" = "سهولة القراءة";
+"results.detail.helloMyNameIs" = "مرحبًا، اسمي";
+"results.detail.blankSlate" = "لا توجد شخصيات تاريخية مشهورة تحمل هذا الاسم — صفحة بيضاء.";
+"results.detail.noMatches" = "لم يُعثر على تطابقات في قاعدة بيانات الحروف الأولى المُعلَّمة.";
+
+// MARK: - Sentiment Labels
+"results.sentiment.positive" = "إيجابي";
+"results.sentiment.negative" = "سلبي";
+"results.sentiment.mixed" = "مختلط";
+
+// MARK: - Email Status
+"email.status.likelyAvailable" = "على الأرجح متاح";
+"email.status.likelyTaken" = "على الأرجح محجوز";
+"email.status.uncertain" = "غير مؤكد";
+
+// MARK: - Email Readability
+"email.readability.easy" = "سهل";
+"email.readability.moderate" = "متوسط";
+"email.readability.difficult" = "صعب";
+
+// MARK: - Monogram Styles
+"monogram.style.classic" = "كلاسيكي";
+"monogram.style.stacked" = "مُكدَّس";
+"monogram.style.interleaved" = "متداخل";
+
+// MARK: - Test Names
+"test.rhyme.name" = "ضعف التجانس";
+"test.initials.name" = "فحص الحروف الأولى";
+"test.pronunciation.name" = "اختبار النطق";
+"test.email.name" = "توفر البريد الإلكتروني";
+"test.nametag.name" = "معاينة شارة الاسم";
+"test.namesake.name" = "الشخصية التاريخية";
+"test.monogram.name" = "جمالية الأحرف الأولى";
+
+// MARK: - History
+"history.title" = "السجل";
+"history.empty.title" = "لم يتم اختبار أي اسم بعد";
+"history.empty.subtitle" = "سيظهر سجل اختباراتك هنا";
+"history.empty.cta" = "اختبر اسمًا";
+"history.search.placeholder" = "ابحث في الأسماء المختبرة...";
+"history.delete.undo" = "تم حذف الاسم";
+"history.delete.undo.button" = "تراجع";
+"history.button.back" = "إدخال";
+"history.swipe.favorite" = "مفضل";
+"history.swipe.delete" = "حذف";
+
+// MARK: - Sort Orders
+"sort.recent" = "الأحدث";
+"sort.az" = "أ-ي";
+"sort.za" = "ي-أ";
+"sort.best" = "الأفضل";
+"sort.worst" = "الأسوأ";
+
+// MARK: - Settings
+"settings.title" = "الإعدادات";
+"settings.appearance" = "المظهر";
+"settings.tests" = "الاختبارات";
+"settings.data" = "البيانات";
+"settings.about" = "حول التطبيق";
+"settings.button.done" = "تم";
+"settings.appearance.darkmode" = "الوضع الداكن";
+"settings.appearance.language" = "اللغة";
+"settings.language.title" = "اللغة";
+"settings.language.system" = "النظام";
+"settings.tests.includeMiddle" = "تضمين الاسم الأوسط في جميع الاختبارات";
+"settings.tests.strict" = "الوضع الصارم (يُحتسب التحذير رسبًا)";
+"settings.tests.reorder" = "إدارة ترتيب الاختبارات";
+"settings.data.clearHistory" = "مسح كل السجل";
+"settings.data.clearHistory.confirm" = "اضغط مرة أخرى للتأكيد";
+"settings.data.export" = "تصدير جميع النتائج";
+"settings.about.version" = "الإصدار";
+"settings.about.about" = "حول ناميفاي";
+"settings.about.privacy" = "سياسة الخصوصية";
+"settings.toast.cleared" = "تم مسح السجل";
+"settings.toast.exportFailed" = "تعذّر تصدير السجل";
+"settings.testOrder.title" = "ترتيب الاختبارات";
+
+// MARK: - About & Privacy
+"settings.about.title" = "حول ناميفاي";
+"settings.about.body" = "ناميفاي هو أداة عملية لأجهزة iPhone وiPad تعمل بالكامل دون اتصال بالإنترنت، وتختبر الاسم المرشح من حيث التجانس السلبي، الحروف الأولى، صعوبة النطق، ملاءمة الشارة، الارتباطات التاريخية، وجمالية الأحرف الأولى.";
+"settings.privacy.title" = "سياسة الخصوصية";
+"settings.privacy.body" = "ناميفاي لا يرسل أي بيانات خارج الجهاز، ولا يطلب حسابًا مرتبطًا بالشبكة، ويحتفظ بالتقارير فقط في ذاكرة SwiftData المحلية حتى يقوم المستخدم بحذفها.";
+
+// MARK: - Badges
+"badge.pass" = "نجح";
+"badge.fail" = "رسب";
+"badge.warn" = "تحذ";
+
+// MARK: - Time
+"time.today" = "اليوم";
+"time.yesterday" = "أمس";
+"time.daysAgo" = "قبل %d يومًا";
+
+// MARK: - Onboarding Welcome
+"onboarding.welcome.headline" = "اعثر على الاسم الذي يتحمل الحياة الحقيقية";
+"onboarding.welcome.subheadline" = "7 اختبارات ضغط يجب أن يجتازها كل اسم قبل توقيع شهادة الميلاد";
+"onboarding.welcome.cta" = "لنبدأ";
+"onboarding.welcome.footnote" = "يعمل بالكامل دون اتصال. لا تغادر بياناتك جهازك.";
+"onboarding.welcome.preview.rhyme" = "ضعف التجانس";
+"onboarding.welcome.preview.initials" = "فحص الحروف الأولى";
+"onboarding.welcome.preview.pronunciation" = "اختبار النطق";
+
+// MARK: - Onboarding Goal
+"onboarding.goal.headline" = "ما الأهم بالنسبة إليك في الاسم؟";
+"onboarding.goal.subheadline" = "اختر ما يلامس مشاعرك أكثر.";
+"onboarding.goal.soundsBeautiful" = "صوت جميل";
+"onboarding.goal.soundsBeautiful.sub" = "عند نطقه بصوت عالٍ";
+"onboarding.goal.bullyProof" = "مضاد للتنمر";
+"onboarding.goal.bullyProof.sub" = "بلا سخرية في الملعب";
+"onboarding.goal.looksGood" = "يبدو جيدًا على الورق";
+"onboarding.goal.looksGood.sub" = "السير الذاتية، الشهادات، الاستمارات";
+"onboarding.goal.goodHistory" = "تاريخ مشرف";
+"onboarding.goal.goodHistory.sub" = "ارتباطات تاريخية إيجابية";
+"onboarding.goal.easyPronounce" = "سهل النطق";
+"onboarding.goal.easyPronounce.sub" = "بلا تصحيحات يومية";
+"onboarding.goal.aesthetic" = "جمالية الأحرف الأولى";
+"onboarding.goal.aesthetic.sub" = "أحرف أولى أنيقة";
+
+// MARK: - Onboarding Pain
+"onboarding.pain.headline" = "ما الذي يقلقك عند اختيار اسم؟";
+"onboarding.pain.subheadline" = "حدد كل ما ينطبق. أنت لست وحيدًا.";
+"onboarding.pain.initials" = "حروف أولى محرجة";
+"onboarding.pain.rhymes" = "أوزان وألقاب الملعب";
+"onboarding.pain.mispronunciation" = "الخطأ المستمر في النطق";
+"onboarding.pain.namesake" = "الارتباطات التاريخية السلبية";
+"onboarding.pain.family" = "ضغط العائلة والحكم";
+"onboarding.pain.secondGuessing" = "الشك المستمر في اختياري";
+
+// MARK: - Onboarding Social
+"onboarding.social.headline" = "انضم إلى آلاف الأهل الذين اختبروا الأسماء";
+"onboarding.social.subheadline" = "قصص حقيقية من أهل حقيقيين.";
+"onboarding.testimonial.1.name" = "سارة م.";
+"onboarding.testimonial.1.tag" = "أم لأول مرة";
+"onboarding.testimonial.1.text" = "كدنا نسمّي ابنتنا أوليفيا س. حتى حذّرنا ناميفاي من الحروف الأولى. أدركنا الأمر في الوقت المناسب!";
+"onboarding.testimonial.2.name" = "جيمس ت.";
+"onboarding.testimonial.2.tag" = "أب لثلاثة";
+"onboarding.testimonial.2.text" = "اختبرت 12 اسمًا قبل الاستقرار على ثيو. فحص التجانس أنقذنا من كارثة محققة.";
+"onboarding.testimonial.3.name" = "بريا ك.";
+"onboarding.testimonial.3.tag" = "حامل";
+"onboarding.testimonial.3.text" = "كنت قلقة بشأن النطق. أكّد لي ناميفاي حدسي — أرجون هو الاسم المثالي.";
+
+// MARK: - Onboarding Solution
+"onboarding.solution.headline" = "ناميفاي يغطي كل شيء";
+"onboarding.solution.subheadline" = "إليك بالضبط كيف نحل كل قلق شاركته.";
+"onboarding.solution.cta" = "اختر اختباراتي";
+"onboarding.solution.initials" = "يفحص فحص الحروف الأولى أكثر من 500 تركيبة مُعلَّمة في لحظات";
+"onboarding.solution.rhymes" = "يكتشف ضعف التجانس أكثر من 2000 وزن وصوت محفوف بالمخاطر";
+"onboarding.solution.pronunciation" = "يُقيّم اختبار النطق الصعوبة ويتنبأ بالأخطاء";
+"onboarding.solution.namesake" = "يُعلّم الشخصية التاريخية الشهيرة — الإيجابية والسلبية";
+"onboarding.solution.family" = "يعطيك تقرير مدعوم بالبيانات ليدعم اختيارك بثقة";
+"onboarding.solution.secondGuessing" = "اختبر أسماء غير محدودة وقارن النتائج جنبًا إلى جنب";
+
+// MARK: - Onboarding Preferences
+"onboarding.prefs.headline" = "أي الاختبارات تريد أن نُجريها؟";
+"onboarding.prefs.subheadline" = "حدد ما يهمك. يمكنك تغيير ذلك في أي وقت.";
+"onboarding.prefs.cta" = "ابنِ مجموعة اختباراتي";
+"onboarding.prefs.rhyme" = "اكتشاف الأوزان المحفوفة بالمخاطر";
+"onboarding.prefs.initials" = "التحقق من الحروف الأولى السيئة";
+"onboarding.prefs.pronunciation" = "تقييم صعوبة النطق";
+"onboarding.prefs.nametag" = "معاينة ملاءمة الشارة";
+"onboarding.prefs.namesake" = "التحقق من الشخصيات التاريخية";
+"onboarding.prefs.monogram" = "تقييم أسلوب الأحرف الأولى";
+
+// MARK: - Onboarding Processing
+"onboarding.processing.headline" = "جارٍ بناء مجموعة الاختبارات المخصصة...";
+"onboarding.processing.subheadline" = "لحظة واحدة بينما نجهز كل شيء.";
+
+// MARK: - Onboarding Demo
+"onboarding.demo.headline" = "اختبر اسمك الخاص";
+"onboarding.demo.subheadline" = "أدخل اسمك (أو أي اسم تحبه) وشاهد ناميفاي وهو يعمل.";
+"onboarding.demo.cta" = "ابدأ الاختبار";
+
+// MARK: - Onboarding Complete
+"onboarding.complete.message" = "هذه هي تجربة ناميفاي. جاهز لاختبار الأسماء بثقة؟";
+"onboarding.complete.cta" = "ابدأ اختبار الأسماء";
+"onboarding.complete.secondary" = "شارك نتائجي";
+
+// MARK: - Onboarding Navigation
+"onboarding.continue" = "متابعة";
+"onboarding.back" = "رجوع";
+
+// MARK: - Analyzer Summaries — Rhyme
+"rhyme.summary.none" = "لم يُكتشف أي تجانس شائع في الملعب";
+"rhyme.summary.one" = "عُثر على وزن واحد متقارب — مخاطر خفيفة";
+"rhyme.summary.multiple" = "عُثر على %d تجانس مباشر — تعرض مرتفع";
+
+// MARK: - Analyzer Details — Rhyme
+"rhyme.detail.none" = "لم يُكتشف أي ضعف في التجانس عبر قاعدة بيانات الأوزان المضمنة.";
+"rhyme.detail.some" = "قمنا بفحص %@ مقابل أنماط التجانس المضمنة، ومرتكزات التجانس المتقارب، وقاعدة الكلمات السلبية لتقدير التعرض في الملعب.";
+
+// MARK: - Analyzer Summaries — Initials
+"initials.summary.pass" = "الحروف الأولى %@ — لم يُعثر على مشاكل";
+"initials.summary.fail" = "الحروف الأولى %@ — تركيبة مُعلَّمة";
+"initials.summary.warn" = "الحروف الأولى %@ — يُنصح بالمراجعة";
+
+// MARK: - Analyzer Details — Initials
+"initials.detail.pass" = "هذه الحروف الأولى لا تتطابق مع قاعدة بيانات الحروف الأولى المُعلَّمة.";
+"initials.detail.fail" = "فحص ناميفاي التركيبات الأولية الأساسية والبديلة، بما في ذلك الأزواج المعكوسة والأشكال المؤلفة من حرفين.";
+
+// MARK: - Analyzer Summaries — Pronunciation
+"pronunciation.summary.pass" = "صوتيًا واضح — سهل النطق";
+"pronunciation.summary.warn" = "تجميعة حروف علة غامضة قد تسبب خطأ في النطق";
+"pronunciation.summary.fail" = "عُثر على مصائد نطق متعددة";
+
+// MARK: - Analyzer Details — Pronunciation
+"pronunciation.detail" = "قام ناميفاي بتقييم صعوبة النطق باستخدام الحروف الصامتة، والتجميعات الغامضة، والمزجات الصوتية غير المألوفة، وطول الاسم، وأنماط الخطأ في النطق المعروفة.";
+"pronunciation.factor.pass.label" = "صوتيات واضحة";
+"pronunciation.factor.pass.explanation" = "لم يُكتشف أي أنماط نطق عالية الاحتكاك.";
+
+// MARK: - Analyzer Summaries — Email
+"email.summary.pass" = "firstname.lastname@ — على الأرجح متاح في معظم النطاقات";
+"email.summary.warn" = "اسم شائع — قد تواجه مشاكل في التوفر";
+"email.summary.fail" = "شائع جدًا — توقع متغيرات بريدية مرقمة";
+
+// MARK: - Analyzer Details — Email
+"email.detail" = "يُقدَّر التوفر من ترتيبات تكرار الأسماء الأولى وأسماء العائلات المضمنة، ثم يُعدَّل بناءً على طول العنوان واحتكاك الإملاء.";
+
+// MARK: - Analyzer Summaries — Name Tag
+"nametag.summary.pass" = "يتناسب بشكل نظيف مع شارة مؤتمر قياسية";
+"nametag.summary.warn" = "يتناسب بشكل حدي مع شارة مؤتمر قياسية";
+"nametag.summary.fail" = "طويل بما يكفي لقص شارة اسم قياسية";
+
+// MARK: - Analyzer Details — Name Tag
+"nametag.detail" = "قاس ناميفاي اسم الشارة المعروض مقابل عرض شارة مؤتمر قياسية، ويُعلّم أيضًا الحركات المعادية للطابعة أو التسميات شديدة التباعد.";
+
+// MARK: - Analyzer Summaries — Namesake
+"namesake.summary.empty.pass" = "لم يُعثر على أي ارتباطات سلبية ملحوظة لهذا الاسم الأول";
+"namesake.summary.has.pass" = "الارتباطات التاريخية نظيفة أو إيجابية";
+"namesake.summary.warn" = "عُثر على ارتباطات تاريخية مختلطة أو معقدة";
+"namesake.summary.fail" = "شخصية تاريخية مشهورة سلبية ترفع علمًا قويًا";
+
+// MARK: - Analyzer Details — Namesake
+"namesake.detail.empty" = "لم يُعثر على أي شخصيات تاريخية أو ثقافية مشهورة في مجموعة بيانات الشخصيات التاريخية المضمنة.";
+"namesake.detail.some" = "فحص ناميفاي التطابقات الصوتية والصوتية الدقيقة للاسم الأول مقابل الشخصيات التاريخية والثقافية المضمنة.";
+
+// MARK: - Analyzer Summaries — Monogram
+"monogram.summary.pass" = "جمالية أحرف أولى قوية";
+"monogram.summary.warn" = "مقبول لكن ليس مثاليًا";
+"monogram.summary.fail" = "قد تواجه الأحرف الأولى مشاكل بصرية";
+
+// MARK: - Analyzer Details — Monogram
+"monogram.detail" = "يقيّم ناميفاي التناظر، والتناغم في العرض، وتعارضات التخطيط المُكدَّس، والتوازن في الانحناء، وإمكانية الخلط بين الحروف لتقدير مدى تماسك الأحرف الأولى كشعار.";
+
+// MARK: - Generic Unavailable
+"generic.unavailable.summary" = "بيانات الاختبار غير متوفرة. تعذّر إكمال هذا الاختبار.";
+"generic.unavailable.detail" = "تعذّر تحميل البيانات المضمنة لهذا المحلل. حافظ ناميفاي على بقية التقرير وعلّم هذه النتيجة كتحذير بدلًا من إفشال الاختبار بأكمله.";
+"generic.unavailable.message" = "البيانات غير متوفرة";
+
+// MARK: - Share Card
+"share.card.watermark" = "تم الاختبار باستخدام ناميفاي";
+
+// MARK: - App
+"app.toast.saveSettingsFailed" = "تعذّر حفظ الإعدادات";
+
+// MARK: - Accessibility
+"accessibility.expandHint" = "اضغط مرتين للتوسيع لمزيد من التفاصيل.";
+
+// MARK: - Seed Data: Bad Initials Notes
+"initials.note.profanity" = "شتم شائع";
+"initials.note.medical" = "اختصار طبي ذي حمل اجتماعي";
+"initials.note.suggestive" = "اختصار ذو دلالة إيحائية";
+"initials.note.hate" = "إشارة إلى جماعة كراهية";
+"initials.note.negative" = "كلمة إنجليزية سلبية";
+"initials.note.teasing" = "هدف سخرية شائع";
+"initials.note.slang" = "اختصار عامي فاحش";
+
+// MARK: - Seed Data: Pronunciation Rules
+"pronunciation.rule.silentLetters" = "حروف صامتة";
+"pronunciation.rule.silentLetters.explanation" = "يحتوي على تسلسل gh يُخمنه الناطقون بالإنجليزية غالبًا بشكل خاطئ.";
+"pronunciation.rule.uncommonCombo" = "تجميعة حروف غير شائعة";
+"pronunciation.rule.uncommonCombo.explanation" = "يحتوي على مزج صوتي على طريقة الغيلية لا يستطيع العديد من القراء تحليله بشكل صحيح.";
+"pronunciation.rule.ambiguousVowel" = "تجميعة حروف علة غامضة";
+"pronunciation.rule.ambiguousVowel.explanation" = "تجميعة من حرفي علة بقراءات محتملة متعددة.";
+"pronunciation.rule.eigh" = "تجميعة حروف علة غامضة";
+"pronunciation.rule.eigh.explanation" = "أنماط EIGH تُنتج تخمينات إنجليزية متعددة.";
+"pronunciation.rule.sz" = "تجميعة حروف غير شائعة";
+"pronunciation.rule.sz.explanation" = "SZ غير شائعة في الأسماء الإنجليزية الأولى وغالبًا ما تسبب ترددًا.";
+"pronunciation.rule.uncommonFreq" = "تكرار حروف غير شائع";
+"pronunciation.rule.uncommonFreq.explanation" = "وجود X في منتصف الاسم المعطى يزيد من احتكاك الإملاء.";
+
+// MARK: - Seed Data: Historical Namesake Bios
+"namesake.ada.bio" = "رائدة في مجال البرمجة.";
+"namesake.attila.bio" = "حاكم فاتح للهون.";
+"namesake.cleo.bio" = "آخر حاكم نشط لمصر البطلمية.";
+"namesake.james.baldwin.bio" = "كاتب أمريكي ومفكر في مجال الحقوق المدنية.";
+"namesake.james.dean.bio" = "ممثل أمريكي وأيقونة ثقافية.";
+"namesake.john.gacy.bio" = "قاتل متسلسل ومجرم.";
+"namesake.john.lennon.bio" = "موسيقار وشخصية ثقافية.";
+"namesake.mary.shelley.bio" = "مؤلفة فرانكشتاين.";
+"namesake.mary.bloody.bio" = "ملكة إنجليزية ذات إرث عنيف.";
+"namesake.adolf.bio" = "ديكتاتور ألمانيا النازية.";
+"namesake.ulysses.bio" = "رئيس أمريكي وقائد في الحرب الأهلية.";
+"namesake.wolf.bio" = "صحفي أمريكي في مجال البث.";
+"namesake.zelda.bio" = "مجتمعة أمريكية وكاتبة.";

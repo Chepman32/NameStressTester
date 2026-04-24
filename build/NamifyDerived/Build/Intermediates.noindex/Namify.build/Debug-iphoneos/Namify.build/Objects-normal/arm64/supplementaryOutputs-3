@@ -1,0 +1,30 @@
+{
+  "/Users/antonchepur/Namify/Namify/Engine/TestDetailData.swift" : {
+    "const-values" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/TestDetailData.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/TestDetailData.d",
+    "diagnostics" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/TestDetailData.dia",
+    "object" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/TestDetailData.o",
+    "swift-dependencies" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/TestDetailData.swiftdeps"
+  },
+  "/Users/antonchepur/Namify/Namify/Features/History/HistoryScreen.swift" : {
+    "const-values" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/HistoryScreen.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/HistoryScreen.d",
+    "diagnostics" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/HistoryScreen.dia",
+    "object" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/HistoryScreen.o",
+    "swift-dependencies" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/HistoryScreen.swiftdeps"
+  },
+  "/Users/antonchepur/Namify/Namify/Features/Input/InputScreen.swift" : {
+    "const-values" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/InputScreen.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/InputScreen.d",
+    "diagnostics" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/InputScreen.dia",
+    "object" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/InputScreen.o",
+    "swift-dependencies" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/InputScreen.swiftdeps"
+  },
+  "/Users/antonchepur/Namify/Namify/Features/Onboarding/OnboardingDemoInputView.swift" : {
+    "const-values" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/OnboardingDemoInputView.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/OnboardingDemoInputView.d",
+    "diagnostics" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/OnboardingDemoInputView.dia",
+    "object" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/OnboardingDemoInputView.o",
+    "swift-dependencies" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphoneos/Namify.build/Objects-normal/arm64/OnboardingDemoInputView.swiftdeps"
+  }
+}

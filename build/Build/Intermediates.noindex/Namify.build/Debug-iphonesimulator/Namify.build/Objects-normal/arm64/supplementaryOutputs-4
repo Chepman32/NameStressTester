@@ -1,0 +1,23 @@
+{
+  "/Users/antonchepur/Namify/Namify/Features/Onboarding/OnboardingPreferencesView.swift" : {
+    "const-values" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/OnboardingPreferencesView.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/OnboardingPreferencesView.d",
+    "diagnostics" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/OnboardingPreferencesView.dia",
+    "object" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/OnboardingPreferencesView.o",
+    "swift-dependencies" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/OnboardingPreferencesView.swiftdeps"
+  },
+  "/Users/antonchepur/Namify/Namify/Features/Onboarding/OnboardingProcessingView.swift" : {
+    "const-values" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/OnboardingProcessingView.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/OnboardingProcessingView.d",
+    "diagnostics" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/OnboardingProcessingView.dia",
+    "object" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/OnboardingProcessingView.o",
+    "swift-dependencies" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/OnboardingProcessingView.swiftdeps"
+  },
+  "/Users/antonchepur/Namify/Namify/Features/Onboarding/OnboardingSocialProofView.swift" : {
+    "const-values" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/OnboardingSocialProofView.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/OnboardingSocialProofView.d",
+    "diagnostics" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/OnboardingSocialProofView.dia",
+    "object" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/OnboardingSocialProofView.o",
+    "swift-dependencies" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/OnboardingSocialProofView.swiftdeps"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "rules": [
+    { "pattern": "gh", "label": "Silent letters", "penalty": 1, "explanation": "Contains a gh sequence that English speakers often guess wrong.", "verdict": "warn" },
+    { "pattern": "bh", "label": "Uncommon letter combination", "penalty": 2, "explanation": "Contains a Gaelic-style consonant blend that many readers will not parse correctly.", "verdict": "fail" },
+    { "pattern": "ao", "label": "Ambiguous vowel cluster", "penalty": 2, "explanation": "Two-vowel cluster with multiple likely readings.", "verdict": "warn" },
+    { "pattern": "eigh", "label": "Ambiguous vowel cluster", "penalty": 2, "explanation": "EIGH patterns produce multiple English guesses.", "verdict": "warn" },
+    { "pattern": "sz", "label": "Uncommon letter combination", "penalty": 2, "explanation": "SZ is uncommon in English-first names and often causes hesitation.", "verdict": "fail" },
+    { "pattern": "x", "label": "Uncommon letter frequency", "penalty": 1, "explanation": "X in the middle of a given name increases dictation friction.", "verdict": "warn" }
+  ],
+  "overrides": [
+    { "name": "Siobhan", "phonetic": "shih-VAWN", "likelyMispronunciation": "see-OH-ban" },
+    { "name": "Niamh", "phonetic": "NEEV", "likelyMispronunciation": "nee-AM-h" },
+    { "name": "Aoife", "phonetic": "EE-fa", "likelyMispronunciation": "AY-oh-fee" },
+    { "name": "Sean", "phonetic": "SHAWN", "likelyMispronunciation": "SEEN" },
+    { "name": "Calliope", "phonetic": "kuh-LIE-oh-pee", "likelyMispronunciation": "CALL-ee-ope" }
+  ]
+}

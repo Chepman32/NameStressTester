@@ -1,0 +1,328 @@
+// MARK: - Splash
+"splash.tagline" = "どの名前も、徹底的なテストを受けるに値します";
+
+// MARK: - Input
+"input.title" = "名前をテストする";
+"input.subtitle" = "ファーストネーム、ミドルネーム（任意）、ラストネームを入力してください";
+"input.field.first" = "ファーストネーム";
+"input.field.middle" = "ミドルネーム（任意）";
+"input.field.last" = "ラストネーム";
+"input.cta" = "ガントレットを走る";
+"input.header" = "NAMIFY";
+"input.keyboard.done" = "完了";
+
+// MARK: - Results
+"results.testing" = "テスト %d / %d を実行中: %@...";
+"results.verdict.survived" = "この名前は中学時代を乗り切れます";
+"results.verdict.mixed" = "この名前には少し防御が必要です";
+"results.verdict.failed" = "この名前は無防備なまま闘技場に入ります";
+"results.score" = "%d / %d のテストを通過";
+"results.share.cta" = "成績表をシェアする";
+"results.another.cta" = "別の名前をテストする";
+"results.share.watermark" = "Namify for iOS でテスト済み";
+"results.button.back" = "戻る";
+"results.label.testedToday" = "本日テスト済み";
+"results.toast.saveFailed" = "保存できませんでした。結果は表示されたままです";
+"results.toast.interrupted" = "テストの実行が中断されました";
+"results.toast.nameCopied" = "フルネームをコピーしました";
+"results.toast.verdictCopied" = "判定結果をコピーしました";
+"results.swipe.share" = "シェア";
+
+// MARK: - Results Detail
+"results.detail.noRhymes" = "韻の脆弱性は検出されませんでした";
+"results.detail.rollCallMiss" = "点呼で読み間違えられる可能性: %@";
+"results.detail.difficultyScore" = "難易度スコア: %d/10";
+"results.detail.readability" = "読みやすさ";
+"results.detail.helloMyNameIs" = "HELLO MY NAME IS";
+"results.detail.blankSlate" = "この名前を持つ有名な歴史上の人物は見つかりませんでした — 白紙の状態です";
+"results.detail.noMatches" = "バンドルされたイニシャル警告データベースに一致するものはありません";
+
+// MARK: - Sentiment Labels
+"results.sentiment.positive" = "ポジティブ";
+"results.sentiment.negative" = "ネガティブ";
+"results.sentiment.mixed" = "ミックス";
+
+// MARK: - Email Status
+"email.status.likelyAvailable" = "利用可能な可能性が高い";
+"email.status.likelyTaken" = "取得済みの可能性が高い";
+"email.status.uncertain" = "不確定";
+
+// MARK: - Email Readability
+"email.readability.easy" = "簡単";
+"email.readability.moderate" = "普通";
+"email.readability.difficult" = "難しい";
+
+// MARK: - Monogram Styles
+"monogram.style.classic" = "クラシック";
+"monogram.style.stacked" = "スタックド";
+"monogram.style.interleaved" = "インターリーブド";
+
+// MARK: - Test Names
+"test.rhyme.name" = "韻の脆弱性";
+"test.initials.name" = "イニシャルチェック";
+"test.pronunciation.name" = "発音テスト";
+"test.email.name" = "メールアドレスの利用可否";
+"test.nametag.name" = "ネームタグの見栄え";
+"test.namesake.name" = "歴史上の同名人物";
+"test.monogram.name" = "モノグラムの美しさ";
+
+// MARK: - History
+"history.title" = "履歴";
+"history.empty.title" = "まだテストした名前がありません";
+"history.empty.subtitle" = "テスト履歴がここに表示されます";
+"history.empty.cta" = "名前をテストする";
+"history.search.placeholder" = "テストした名前を検索...";
+"history.delete.undo" = "名前を削除しました";
+"history.delete.undo.button" = "元に戻す";
+"history.button.back" = "入力画面へ";
+"history.swipe.favorite" = "お気に入り";
+"history.swipe.delete" = "削除";
+
+// MARK: - Sort Orders
+"sort.recent" = "最近";
+"sort.az" = "A-Z";
+"sort.za" = "Z-A";
+"sort.best" = "ベスト";
+"sort.worst" = "ワースト";
+
+// MARK: - Settings
+"settings.title" = "設定";
+"settings.appearance" = "外観";
+"settings.tests" = "テスト";
+"settings.data" = "データ";
+"settings.about" = "アプリについて";
+"settings.button.done" = "完了";
+"settings.appearance.darkmode" = "ダークモード";
+"settings.appearance.language" = "言語";
+"settings.language.title" = "言語";
+"settings.language.system" = "システム";
+"settings.tests.includeMiddle" = "すべてのテストにミドルネームを含める";
+"settings.tests.strict" = "ストリクトモード（WARNをFAILとして扱う）";
+"settings.tests.reorder" = "テスト順を管理する";
+"settings.data.clearHistory" = "すべての履歴を消去する";
+"settings.data.clearHistory.confirm" = "もう一度タップして確認";
+"settings.data.export" = "すべての結果をエクスポート";
+"settings.about.version" = "バージョン";
+"settings.about.about" = "Namifyについて";
+"settings.about.privacy" = "プライバシーポリシー";
+"settings.toast.cleared" = "履歴を消去しました";
+"settings.toast.exportFailed" = "履歴のエクスポートに失敗しました";
+"settings.testOrder.title" = "テスト順";
+
+// MARK: - About & Privacy
+"settings.about.title" = "Namifyについて";
+"settings.about.body" = "Namifyは、iPhoneおよびiPad向けの完全オフラインのネーム・ユーティリティです。名前を韻のリスク、イニシャル、発音の難しさ、バッジの見栄え、同名の歴史的バッゲージ、モノグラムの美しさで徹底的にテストします。";
+"settings.privacy.title" = "プライバシーポリシー";
+"settings.privacy.body" = "Namifyはデバイス外にデータを送信せず、ネットワークベースのアカウントも要求せず、レポートはローカルのSwiftDataストレージにのみ保存し、ユーザーが削除するまで保持します。";
+
+// MARK: - Badges
+"badge.pass" = "合格";
+"badge.fail" = "不合格";
+"badge.warn" = "注意";
+
+// MARK: - Time
+"time.today" = "今日";
+"time.yesterday" = "昨日";
+"time.daysAgo" = "%d日前";
+
+// MARK: - Onboarding Welcome
+"onboarding.welcome.headline" = "現実を生き抜く名前を見つけよう";
+"onboarding.welcome.subheadline" = "出生届に記入する前に、すべての名前が通過すべき7つのストレステスト";
+"onboarding.welcome.cta" = "始める";
+"onboarding.welcome.footnote" = "完全オフライン。データはデバイス外に出ません。";
+"onboarding.welcome.preview.rhyme" = "韻の脆弱性";
+"onboarding.welcome.preview.initials" = "イニシャルチェック";
+"onboarding.welcome.preview.pronunciation" = "発音テスト";
+
+// MARK: - Onboarding Goal
+"onboarding.goal.headline" = "名前で最も大切にしていることは何ですか？";
+"onboarding.goal.subheadline" = "最も共感できるものを1つ選んでください。";
+"onboarding.goal.soundsBeautiful" = "美しく響く";
+"onboarding.goal.soundsBeautiful.sub" = "声に出して読むとき";
+"onboarding.goal.bullyProof" = "いじめに強い";
+"onboarding.goal.bullyProof.sub" = "遊び場でのからかいがない";
+"onboarding.goal.looksGood" = "紙の上でも美しい";
+"onboarding.goal.looksGood.sub" = "履歴書、卒業証書、書類";
+"onboarding.goal.goodHistory" = "良い歴史";
+"onboarding.goal.goodHistory.sub" = "ポジティブな同名のつながり";
+"onboarding.goal.easyPronounce" = "読みやすい";
+"onboarding.goal.easyPronounce.sub" = "毎日の訂正が不要";
+"onboarding.goal.aesthetic" = "美しいモノグラム";
+"onboarding.goal.aesthetic.sub" = "素敵なイニシャル";
+
+// MARK: - Onboarding Pain
+"onboarding.pain.headline" = "名前選びで何を心配していますか？";
+"onboarding.pain.subheadline" = "該当するものをすべて選択してください。あなただけではありません。";
+"onboarding.pain.initials" = "恥ずかしいイニシャル";
+"onboarding.pain.rhymes" = "遊び場の韻とからかい";
+"onboarding.pain.mispronunciation" = "常に読み間違えられる";
+"onboarding.pain.namesake" = "同名のバッゲージ";
+"onboarding.pain.family" = "家族のプレッシャーと評価";
+"onboarding.pain.secondGuessing" = "自分を疑ってしまう";
+
+// MARK: - Onboarding Social
+"onboarding.social.headline" = "名前をストレステストした何千もの親御さんに参加しよう";
+"onboarding.social.subheadline" = "実際の親御さんからのリアルな体験談です。";
+"onboarding.testimonial.1.name" = "サラ・M";
+"onboarding.testimonial.1.tag" = "初めてのママ";
+"onboarding.testimonial.1.text" = "娘をオリビア・Sにしようとしていましたが、Namifyがイニシャルを警告しました。間に合ってよかったです！";
+"onboarding.testimonial.2.name" = "ジェームズ・T";
+"onboarding.testimonial.2.tag" = "3児のパパ";
+"onboarding.testimonial.2.text" = "テオに決める前に12個の名前をテストしました。韻チェックが大惨事を防いでくれました。";
+"onboarding.testimonial.3.name" = "プリヤ・K";
+"onboarding.testimonial.3.tag" = "妊娠中";
+"onboarding.testimonial.3.text" = "発音を心配していました。Namifyが私の直感を確認してくれました — アルジュンは完璧です。";
+
+// MARK: - Onboarding Solution
+"onboarding.solution.headline" = "Namifyがあなたをサポートします";
+"onboarding.solution.subheadline" = "あなたが共有したすべての心配を、私たちがどう解決するかをご紹介します。";
+"onboarding.solution.cta" = "テストを選ぶ";
+"onboarding.solution.initials" = "イニシャルチェックが500以上の警告組み合わせを瞬時にスキャンします";
+"onboarding.solution.rhymes" = "韻の脆弱性が2,000以上のリスキーな韻と音を検出します";
+"onboarding.solution.pronunciation" = "発音テストが難易度をスコア化し、読み間違いを予測します";
+"onboarding.solution.namesake" = "歴史上の同名人物が有名な人物 — 良いものも悪いものも — を警告します";
+"onboarding.solution.family" = "データに基づいた成績表が、あなたの選択を守る自信を与えます";
+"onboarding.solution.secondGuessing" = "無制限に名前をテストし、結果を並べて比較できます";
+
+// MARK: - Onboarding Preferences
+"onboarding.prefs.headline" = "どのテストを実行しますか？";
+"onboarding.prefs.subheadline" = "気になるものを選んでください。いつでも変更できます。";
+"onboarding.prefs.cta" = "マイ・テストスイートを構築する";
+"onboarding.prefs.rhyme" = "リスキーな韻を検出する";
+"onboarding.prefs.initials" = "悪いイニシャルをチェックする";
+"onboarding.prefs.pronunciation" = "発音の難しさをスコア化する";
+"onboarding.prefs.nametag" = "バッジの見栄えをプレビューする";
+"onboarding.prefs.namesake" = "有名な同名人物をチェックする";
+"onboarding.prefs.monogram" = "モノグラムのスタイルを評価する";
+
+// MARK: - Onboarding Processing
+"onboarding.processing.headline" = "パーソナライズされたテストスイートを構築中...";
+"onboarding.processing.subheadline" = "準備が整うまでしばらくお待ちください。";
+
+// MARK: - Onboarding Demo
+"onboarding.demo.headline" = "自分の名前をテストしてみよう";
+"onboarding.demo.subheadline" = "あなたの名前（または気に入った名前）を入力して、Namifyの動作を確認してください。";
+"onboarding.demo.cta" = "ガントレットを走る";
+
+// MARK: - Onboarding Complete
+"onboarding.complete.message" = "これがNamifyの体験です。自信を持って名前をテストする準備はできましたか？";
+"onboarding.complete.cta" = "名前のテストを始める";
+"onboarding.complete.secondary" = "結果をシェアする";
+
+// MARK: - Onboarding Navigation
+"onboarding.continue" = "続ける";
+"onboarding.back" = "戻る";
+
+// MARK: - Analyzer Summaries — Rhyme
+"rhyme.summary.none" = "一般的な遊び場の韻は検出されませんでした";
+"rhyme.summary.one" = "1つの類韻が見つかりました — 軽度のリスク";
+"rhyme.summary.multiple" = "%d個の直接韻が見つかりました — 高い露出リスク";
+
+// MARK: - Analyzer Details — Rhyme
+"rhyme.detail.none" = "バンドルされた韻コーパス全体で、韻の脆弱性は検出されませんでした。";
+"rhyme.detail.some" = "%@をバンドルされた韻パターン、類韻アンカー、ネガティブワードコーパスと照合し、遊び場での露出リスクを推定しました。";
+
+// MARK: - Analyzer Summaries — Initials
+"initials.summary.pass" = "イニシャル %@ — 問題は見つかりませんでした";
+"initials.summary.fail" = "イニシャル %@ — 警告対象の組み合わせです";
+"initials.summary.warn" = "イニシャル %@ — 確認を推奨します";
+
+// MARK: - Analyzer Details — Initials
+"initials.detail.pass" = "これらのイニシャルは、バンドルされたイニシャル警告データベースに一致しませんでした。";
+"initials.detail.fail" = "Namifyは主要および代替イニシャルの組み合わせ、逆順のペア、2文字形式も含めて確認しました。";
+
+// MARK: - Analyzer Summaries — Pronunciation
+"pronunciation.summary.pass" = "音声的にシンプル — 読みやすい";
+"pronunciation.summary.warn" = "曖昧な母音クラスタが読み間違いを引き起こす可能性があります";
+"pronunciation.summary.fail" = "複数の発音トラップが検出されました";
+
+// MARK: - Analyzer Details — Pronunciation
+"pronunciation.detail" = "Namifyは無音文字、曖昧なクラスタ、馴染みのない子音の組み合わせ、名前の長さ、既知の読み間違いパターンを使って、発音の難しさをスコア化しました。";
+"pronunciation.factor.pass.label" = "シンプルな音声構造";
+"pronunciation.factor.pass.explanation" = "高い摩擦の発音パターンは検出されませんでした。";
+
+// MARK: - Analyzer Summaries — Email
+"email.summary.pass" = "firstname.lastname@ — ほとんどのドメインで利用可能な可能性が高い";
+"email.summary.warn" = "一般的な名前 — 利用可否に問題が生じる可能性があります";
+"email.summary.fail" = "非常に一般的 — 番号付きのメールアドレスになる可能性があります";
+
+// MARK: - Analyzer Details — Email
+"email.detail" = "利用可否は、バンドルされたファーストネームおよび姓の頻度ランクから推定し、アドレスの長さと音声入力の摩擦を加味して調整しています。";
+
+// MARK: - Analyzer Summaries — Name Tag
+"nametag.summary.pass" = "標準的なカンファレンスバッジにきれいに収まります";
+"nametag.summary.warn" = "標準的なカンファレンスバッジにぎりぎり収まります";
+"nametag.summary.fail" = "長すぎて標準的なネームタグからはみ出します";
+
+// MARK: - Analyzer Details — Name Tag
+"nametag.detail" = "Namifyはレンダリングされたバッジ名を標準的なカンファレンスバッジの幅と比較し、プリンターに負担をかけるダイアクリティカルマークや極端に空白の多いラベルも警告します。";
+
+// MARK: - Analyzer Summaries — Namesake
+"namesake.summary.empty.pass" = "このファーストネームに関する注目すべきバッゲージは見つかりませんでした";
+"namesake.summary.has.pass" = "歴史的な関連性はクリーンまたはポジティブです";
+"namesake.summary.warn" = "ミックスまたは複雑な同名の関連性が見つかりました";
+"namesake.summary.fail" = "有名なネガティブな同名人物が強い警告を発しています";
+
+// MARK: - Analyzer Details — Namesake
+"namesake.detail.empty" = "バンドルされた同名人物データセットに、広く知られた歴史的または文化的な人物は見つかりませんでした。";
+"namesake.detail.some" = "Namifyは、バンドルされた歴史的および文化的な人物と、完全一致および音声一致のファーストネームを照合しました。";
+
+// MARK: - Analyzer Summaries — Monogram
+"monogram.summary.pass" = "モノグラムの美しさに優れています";
+"monogram.summary.warn" = "許容範囲ですが理想的ではありません";
+"monogram.summary.fail" = "モノグラムに視覚的な問題がある可能性があります";
+
+// MARK: - Analyzer Details — Monogram
+"monogram.detail" = "Namifyは対称性、幅の調和、スタックレイアウトの衝突、カーブのバランス、文字の混同可能性をスコア化し、イニシャルがモノグラムとしてどれだけ耐えうるかを推定します。";
+
+// MARK: - Generic Unavailable
+"generic.unavailable.summary" = "テストデータが利用できません。このテストは完了できませんでした。";
+"generic.unavailable.detail" = "このアナライザーのバンドルデータを読み込めませんでした。Namifyはレポートの残りを保持し、この結果を警告としてマークして、実行全体を不合格にすることを避けました。";
+"generic.unavailable.message" = "データが利用できません";
+
+// MARK: - Share Card
+"share.card.watermark" = "Namifyでテスト済み";
+
+// MARK: - App
+"app.toast.saveSettingsFailed" = "設定を保存できませんでした";
+
+// MARK: - Accessibility
+"accessibility.expandHint" = "詳細を表示するにはダブルタップしてください。";
+
+// MARK: - Seed Data: Bad Initials Notes
+"initials.note.profanity" = "一般的な冒涜的表現";
+"initials.note.medical" = "社会的バッゲージを持つ医学用略語";
+"initials.note.suggestive" = "示唆的な略語";
+"initials.note.hate" = "ヘイトグループの参照";
+"initials.note.negative" = "ネガティブな英単語";
+"initials.note.teasing" = "一般的なからかいの対象";
+"initials.note.slang" = "冒涜的なスラングの略語";
+
+// MARK: - Seed Data: Pronunciation Rules
+"pronunciation.rule.silentLetters" = "無音文字";
+"pronunciation.rule.silentLetters.explanation" = "ghの並びが含まれており、英語話者がしばしば誤って推測します。";
+"pronunciation.rule.uncommonCombo" = "珍しい文字の組み合わせ";
+"pronunciation.rule.uncommonCombo.explanation" = "ゲール語スタイルの子音の組み合わせが含まれており、多くの読者が正しく解析できません。";
+"pronunciation.rule.ambiguousVowel" = "曖昧な母音クラスタ";
+"pronunciation.rule.ambiguousVowel.explanation" = "複数の読み方が考えられる2母音のクラスタです。";
+"pronunciation.rule.eigh" = "曖昧な母音クラスタ";
+"pronunciation.rule.eigh.explanation" = "EIGHパターンは複数の英語の読み方を生み出します。";
+"pronunciation.rule.sz" = "珍しい文字の組み合わせ";
+"pronunciation.rule.sz.explanation" = "SZは英語のファーストネームでは珍しく、しばしば躊躇を引き起こします。";
+"pronunciation.rule.uncommonFreq" = "珍しい文字の頻度";
+"pronunciation.rule.uncommonFreq.explanation" = "ファーストネームの途中にXがあると、音声入力の摩擦が増加します。";
+
+// MARK: - Seed Data: Historical Namesake Bios
+"namesake.ada.bio" = "コンピュータ・プログラミングの先駆者。";
+"namesake.attila.bio" = "フン族の征服的支配者。";
+"namesake.cleo.bio" = "プトレマイオス朝エジプト最後の実権を持つ支配者。";
+"namesake.james.baldwin.bio" = "アメリカの作家であり公民権思想家。";
+"namesake.james.dean.bio" = "アメリカの俳優であり文化的アイコン。";
+"namesake.john.gacy.bio" = "連続殺人犯であり犯罪者。";
+"namesake.john.lennon.bio" = "音楽家であり文化的な人物。";
+"namesake.mary.shelley.bio" = "『フランケンシュタイン』の著者。";
+"namesake.mary.bloody.bio" = "暴力的な遺産を持つイングランドの女王。";
+"namesake.adolf.bio" = "ナチス・ドイツの独裁者。";
+"namesake.ulysses.bio" = "アメリカ合衆国大統領であり南北戦争の将軍。";
+"namesake.wolf.bio" = "アメリカの放送ジャーナリスト。";
+"namesake.zelda.bio" = "アメリカの社交家であり作家。";

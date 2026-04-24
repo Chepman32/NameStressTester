@@ -1,0 +1,30 @@
+{
+  "/Users/antonchepur/Namify/Namify/Engine/TestDetailData.swift" : {
+    "const-values" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/TestDetailData.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/TestDetailData.d",
+    "diagnostics" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/TestDetailData.dia",
+    "object" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/TestDetailData.o",
+    "swift-dependencies" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/TestDetailData.swiftdeps"
+  },
+  "/Users/antonchepur/Namify/Namify/Features/History/HistoryScreen.swift" : {
+    "const-values" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/HistoryScreen.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/HistoryScreen.d",
+    "diagnostics" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/HistoryScreen.dia",
+    "object" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/HistoryScreen.o",
+    "swift-dependencies" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/HistoryScreen.swiftdeps"
+  },
+  "/Users/antonchepur/Namify/Namify/Features/Input/InputScreen.swift" : {
+    "const-values" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/InputScreen.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/InputScreen.d",
+    "diagnostics" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/InputScreen.dia",
+    "object" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/InputScreen.o",
+    "swift-dependencies" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/InputScreen.swiftdeps"
+  },
+  "/Users/antonchepur/Namify/Namify/Features/Onboarding/OnboardingDemoInputView.swift" : {
+    "const-values" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/OnboardingDemoInputView.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/OnboardingDemoInputView.d",
+    "diagnostics" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/OnboardingDemoInputView.dia",
+    "object" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/OnboardingDemoInputView.o",
+    "swift-dependencies" : "/Users/antonchepur/Namify/build/NamifySimDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/x86_64/OnboardingDemoInputView.swiftdeps"
+  }
+}

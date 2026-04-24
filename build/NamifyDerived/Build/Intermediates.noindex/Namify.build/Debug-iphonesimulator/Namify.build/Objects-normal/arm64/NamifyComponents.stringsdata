@@ -1,0 +1,40 @@
+{
+  "source": "/Users/antonchepur/Namify/Namify/DesignSystem/NamifyComponents.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 161
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld/%lld",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 249
+        }
+      },
+      {
+        "comment": "",
+        "key": "accessibility.expandHint",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 342
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@: %@. %@",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 341
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,328 @@
+// MARK: - Splash
+"splash.tagline" = "每个名字都值得一场压力测试";
+
+// MARK: - Input
+"input.title" = "考验名字";
+"input.subtitle" = "输入名、中间名（可选）和姓";
+"input.field.first" = "名";
+"input.field.middle" = "中间名（可选）";
+"input.field.last" = "姓";
+"input.cta" = "开始考验";
+"input.header" = "NAMIFY";
+"input.keyboard.done" = "完成";
+
+// MARK: - Results
+"results.testing" = "正在运行第 %d/%d 项测试：%@…";
+"results.verdict.survived" = "这个名字能安然度过中学时代。";
+"results.verdict.mixed" = "这个名字需要一些防护。";
+"results.verdict.failed" = "这个名字简直是赤手空拳上阵。";
+"results.score" = "通过了 %d/%d 项测试";
+"results.share.cta" = "分享成绩单";
+"results.another.cta" = "再测一个名字";
+"results.share.watermark" = "使用 Namify for iOS 测试";
+"results.button.back" = "返回";
+"results.label.testedToday" = "今日已测试";
+"results.toast.saveFailed" = "保存失败，结果仍可见。";
+"results.toast.interrupted" = "测试运行被中断了。";
+"results.toast.nameCopied" = "全名已复制";
+"results.toast.verdictCopied" = "评语已复制";
+"results.swipe.share" = "分享";
+
+// MARK: - Results Detail
+"results.detail.noRhymes" = "未发现押韵风险";
+"results.detail.rollCallMiss" = "点名时可能被误读：%@";
+"results.detail.difficultyScore" = "难度评分：%d/10";
+"results.detail.readability" = "易读性";
+"results.detail.helloMyNameIs" = "你好，我的名字是";
+"results.detail.blankSlate" = "没有广为人知的历史人物与这个名字同名——一张白纸。";
+"results.detail.noMatches" = "在内置的敏感首字母数据库中未找到匹配项。";
+
+// MARK: - Sentiment Labels
+"results.sentiment.positive" = "正面";
+"results.sentiment.negative" = "负面";
+"results.sentiment.mixed" = "混合";
+
+// MARK: - Email Status
+"email.status.likelyAvailable" = "可能可用";
+"email.status.likelyTaken" = "可能已被占用";
+"email.status.uncertain" = "不确定";
+
+// MARK: - Email Readability
+"email.readability.easy" = "简单";
+"email.readability.moderate" = "中等";
+"email.readability.difficult" = "困难";
+
+// MARK: - Monogram Styles
+"monogram.style.classic" = "经典";
+"monogram.style.stacked" = "堆叠";
+"monogram.style.interleaved" = "交错";
+
+// MARK: - Test Names
+"test.rhyme.name" = "押韵风险";
+"test.initials.name" = "首字母检查";
+"test.pronunciation.name" = "发音测试";
+"test.email.name" = "邮箱可用性";
+"test.nametag.name" = "姓名牌预览";
+"test.namesake.name" = "历史同名人物";
+"test.monogram.name" = "花押字美观度";
+
+// MARK: - History
+"history.title" = "历史记录";
+"history.empty.title" = "还没有测试过名字";
+"history.empty.subtitle" = "你的测试记录将显示在这里";
+"history.empty.cta" = "考验名字";
+"history.search.placeholder" = "搜索已测试的名字…";
+"history.delete.undo" = "名字已删除";
+"history.delete.undo.button" = "撤销";
+"history.button.back" = "输入";
+"history.swipe.favorite" = "收藏";
+"history.swipe.delete" = "删除";
+
+// MARK: - Sort Orders
+"sort.recent" = "最近";
+"sort.az" = "A-Z";
+"sort.za" = "Z-A";
+"sort.best" = "最佳";
+"sort.worst" = "最差";
+
+// MARK: - Settings
+"settings.title" = "设置";
+"settings.appearance" = "外观";
+"settings.tests" = "测试";
+"settings.data" = "数据";
+"settings.about" = "关于";
+"settings.button.done" = "完成";
+"settings.appearance.darkmode" = "深色模式";
+"settings.appearance.language" = "语言";
+"settings.language.title" = "语言";
+"settings.language.system" = "系统";
+"settings.tests.includeMiddle" = "在所有测试中包含中间名";
+"settings.tests.strict" = "严格模式（警告视为不通过）";
+"settings.tests.reorder" = "管理测试顺序";
+"settings.data.clearHistory" = "清空所有历史记录";
+"settings.data.clearHistory.confirm" = "再次点击以确认";
+"settings.data.export" = "导出所有结果";
+"settings.about.version" = "版本";
+"settings.about.about" = "关于 Namify";
+"settings.about.privacy" = "隐私政策";
+"settings.toast.cleared" = "历史记录已清空";
+"settings.toast.exportFailed" = "无法导出历史记录";
+"settings.testOrder.title" = "测试顺序";
+
+// MARK: - About & Privacy
+"settings.about.title" = "关于 Namify";
+"settings.about.body" = "Namify 是一款完全离线的 iPhone 和 iPad 工具，为准父母们全面考验候选名字——涵盖押韵风险、首字母、发音难度、姓名牌适配、同名历史人物以及花押字美观度。";
+"settings.privacy.title" = "隐私政策";
+"settings.privacy.body" = "Namify 不会将任何数据发送到设备之外，不需要联网账户，测试报告仅保存在本地 SwiftData 存储中，直到用户主动删除。";
+
+// MARK: - Badges
+"badge.pass" = "通过";
+"badge.fail" = "不通过";
+"badge.warn" = "警告";
+
+// MARK: - Time
+"time.today" = "今天";
+"time.yesterday" = "昨天";
+"time.daysAgo" = "%d 天前";
+
+// MARK: - Onboarding Welcome
+"onboarding.welcome.headline" = "找到能经受住现实考验的名字";
+"onboarding.welcome.subheadline" = "在签署出生证明之前，每个名字都应该通过这 7 项压力测试";
+"onboarding.welcome.cta" = "开始使用";
+"onboarding.welcome.footnote" = "完全离线。数据不会离开你的设备。";
+"onboarding.welcome.preview.rhyme" = "押韵风险";
+"onboarding.welcome.preview.initials" = "首字母检查";
+"onboarding.welcome.preview.pronunciation" = "发音测试";
+
+// MARK: - Onboarding Goal
+"onboarding.goal.headline" = "给孩子取名，你最看重什么？";
+"onboarding.goal.subheadline" = "选择最打动你的那一项。";
+"onboarding.goal.soundsBeautiful" = "听起来悦耳";
+"onboarding.goal.soundsBeautiful.sub" = "念出口时顺耳动听";
+"onboarding.goal.bullyProof" = "不容易被嘲笑";
+"onboarding.goal.bullyProof.sub" = "同学间不会起外号";
+"onboarding.goal.looksGood" = "写在纸上好看";
+"onboarding.goal.looksGood.sub" = "简历、文凭、表格上都体面";
+"onboarding.goal.goodHistory" = "有好的历史渊源";
+"onboarding.goal.goodHistory.sub" = "与正面的历史人物同名";
+"onboarding.goal.easyPronounce" = "容易发音";
+"onboarding.goal.easyPronounce.sub" = "不用每天纠正别人";
+"onboarding.goal.aesthetic" = "花押字美观";
+"onboarding.goal.aesthetic.sub" = "首字母组合赏心悦目";
+
+// MARK: - Onboarding Pain
+"onboarding.pain.headline" = "选名字时，你最担心什么？";
+"onboarding.pain.subheadline" = "选择所有适用的选项。你不是一个人。";
+"onboarding.pain.initials" = "首字母组合尴尬";
+"onboarding.pain.rhymes" = "同学间拿名字押韵取笑";
+"onboarding.pain.mispronunciation" = "总是被人念错";
+"onboarding.pain.namesake" = "与负面历史人物同名";
+"onboarding.pain.family" = "家人的压力和评判";
+"onboarding.pain.secondGuessing" = "反复纠结、拿不定主意";
+
+// MARK: - Onboarding Social
+"onboarding.social.headline" = "加入数千位已为孩子名字做过压力测试的父母";
+"onboarding.social.subheadline" = "来自真实父母的真实故事。";
+"onboarding.testimonial.1.name" = "Sarah M.";
+"onboarding.testimonial.1.tag" = "新手妈妈";
+"onboarding.testimonial.1.text" = "我们差点给女儿取名 Olivia S.，幸好 Namify 及时预警了首字母问题。真是及时雨！";
+"onboarding.testimonial.2.name" = "James T.";
+"onboarding.testimonial.2.tag" = "三个孩子的爸爸";
+"onboarding.testimonial.2.text" = "在定下 Theo 之前，我测试了 12 个名字。押韵检查帮我们避开了一场灾难。";
+"onboarding.testimonial.3.name" = "Priya K.";
+"onboarding.testimonial.3.tag" = "准妈妈";
+"onboarding.testimonial.3.text" = "我一直担心发音问题。Namify 证实了我的直觉——Arjun 是个完美的选择。";
+
+// MARK: - Onboarding Solution
+"onboarding.solution.headline" = "Namify 为你保驾护航";
+"onboarding.solution.subheadline" = "以下是我们如何逐一解决你提到的每一个担忧。";
+"onboarding.solution.cta" = "选择我的测试";
+"onboarding.solution.initials" = "首字母检查瞬间扫描 500+ 个敏感组合";
+"onboarding.solution.rhymes" = "押韵风险检测 2,000+ 个高风险谐音";
+"onboarding.solution.pronunciation" = "发音测试评估难度并预测常见误读";
+"onboarding.solution.namesake" = "历史同名人物标记知名人物——无论好坏";
+"onboarding.solution.family" = "数据驱动的成绩单让你有信心坚持自己的选择";
+"onboarding.solution.secondGuessing" = "无限次测试名字，并排对比结果";
+
+// MARK: - Onboarding Preferences
+"onboarding.prefs.headline" = "你想运行哪些测试？";
+"onboarding.prefs.subheadline" = "选择对你重要的项目。随时可以在设置中更改。";
+"onboarding.prefs.cta" = "构建我的测试套件";
+"onboarding.prefs.rhyme" = "检测高风险谐音";
+"onboarding.prefs.initials" = "检查不良首字母组合";
+"onboarding.prefs.pronunciation" = "评估发音难度";
+"onboarding.prefs.nametag" = "预览姓名牌效果";
+"onboarding.prefs.namesake" = "检查著名同名人物";
+"onboarding.prefs.monogram" = "评估花押字风格";
+
+// MARK: - Onboarding Processing
+"onboarding.processing.headline" = "正在构建你的专属测试套件…";
+"onboarding.processing.subheadline" = "请稍候，我们正在准备一切。";
+
+// MARK: - Onboarding Demo
+"onboarding.demo.headline" = "测试你自己的名字";
+"onboarding.demo.subheadline" = "输入你的名字（或任何你喜欢的名字），看看 Namify 的实际效果。";
+"onboarding.demo.cta" = "开始考验";
+
+// MARK: - Onboarding Complete
+"onboarding.complete.message" = "这就是 Namify 的体验。准备好自信地测试名字了吗？";
+"onboarding.complete.cta" = "开始测试名字";
+"onboarding.complete.secondary" = "分享我的结果";
+
+// MARK: - Onboarding Navigation
+"onboarding.continue" = "继续";
+"onboarding.back" = "返回";
+
+// MARK: - Analyzer Summaries — Rhyme
+"rhyme.summary.none" = "未发现常见的同学间谐音";
+"rhyme.summary.one" = "发现 1 个近似谐音——风险较低";
+"rhyme.summary.multiple" = "发现 %d 个直接谐音——风险较高";
+
+// MARK: - Analyzer Details — Rhyme
+"rhyme.detail.none" = "在内置押韵词库中未发现任何押韵风险。";
+"rhyme.detail.some" = "我们将 %@ 与内置押韵模式、近似谐音锚点以及负面词汇库进行了比对，以评估在同学间被取笑的风险。";
+
+// MARK: - Analyzer Summaries — Initials
+"initials.summary.pass" = "首字母 %@ — 未发现问题";
+"initials.summary.fail" = "首字母 %@ — 敏感组合";
+"initials.summary.warn" = "首字母 %@ — 建议复核";
+
+// MARK: - Analyzer Details — Initials
+"initials.detail.pass" = "这些首字母与内置的敏感首字母数据库不匹配。";
+"initials.detail.fail" = "Namify 检查了主要和备选的首字母组合，包括反向配对和双字母形式。";
+
+// MARK: - Analyzer Summaries — Pronunciation
+"pronunciation.summary.pass" = "发音清晰直接——容易念对";
+"pronunciation.summary.warn" = "元音组合有歧义，可能导致误读";
+"pronunciation.summary.fail" = "发现多个发音陷阱";
+
+// MARK: - Analyzer Details — Pronunciation
+"pronunciation.detail" = "Namify 根据 silent letters（不发音字母）、歧义字母组合、不熟悉的辅音连缀、名字长度以及已知的误读模式，对发音难度进行了评分。";
+"pronunciation.factor.pass.label" = "发音清晰直接";
+"pronunciation.factor.pass.explanation" = "未发现高摩擦的发音模式。";
+
+// MARK: - Analyzer Summaries — Email
+"email.summary.pass" = "firstname.lastname@ — 在大多数域名上可能可用";
+"email.summary.warn" = "常见名字——可能面临邮箱被占用的问题";
+"email.summary.fail" = "极为常见——预计需要使用带数字的邮箱变体";
+
+// MARK: - Analyzer Details — Email
+"email.detail" = "可用性根据内置的名和姓频率排名进行估算，并根据地址长度和口述难度进行调整。";
+
+// MARK: - Analyzer Summaries — Name Tag
+"nametag.summary.pass" = "能完整放入标准会议胸牌";
+"nametag.summary.warn" = "在标准会议胸牌上略显拥挤";
+"nametag.summary.fail" = "名字太长，标准胸牌放不下";
+
+// MARK: - Analyzer Details — Name Tag
+"nametag.detail" = "Namify 将渲染后的胸牌名字与标准会议胸牌宽度进行比对，同时标记对打印机不友好的变音符号或过于稀疏的标签。";
+
+// MARK: - Analyzer Summaries — Namesake
+"namesake.summary.empty.pass" = "未找到与这个名相关的知名负面人物";
+"namesake.summary.has.pass" = "历史关联清白或正面";
+"namesake.summary.warn" = "发现复杂或混合的历史同名关联";
+"namesake.summary.fail" = "一位著名的负面历史人物引发了强烈警示";
+
+// MARK: - Analyzer Details — Namesake
+"namesake.detail.empty" = "在内置的历史文化人物数据库中，未找到广为人知的同名人物。";
+"namesake.detail.some" = "Namify 将精确匹配和发音相近的名与内置的历史文化人物进行了比对。";
+
+// MARK: - Analyzer Summaries — Monogram
+"monogram.summary.pass" = "花押字美观度出色";
+"monogram.summary.warn" = "尚可，但不够理想";
+"monogram.summary.fail" = "花押字可能存在视觉问题";
+
+// MARK: - Analyzer Details — Monogram
+"monogram.detail" = "Namify 从对称性、宽度和谐度、堆叠布局冲突、曲线平衡以及字母易混淆度等方面进行评分，以评估首字母作为花押字的表现。";
+
+// MARK: - Generic Unavailable
+"generic.unavailable.summary" = "测试数据不可用。无法完成此项测试。";
+"generic.unavailable.detail" = "该分析器的内置数据无法加载。Namify 保留了报告的其余部分，并将此结果标记为警告，而非让整个测试不通过。";
+"generic.unavailable.message" = "数据不可用";
+
+// MARK: - Share Card
+"share.card.watermark" = "使用 Namify 测试";
+
+// MARK: - App
+"app.toast.saveSettingsFailed" = "无法保存设置";
+
+// MARK: - Accessibility
+"accessibility.expandHint" = "双击以展开详情。";
+
+// MARK: - Seed Data: Bad Initials Notes
+"initials.note.profanity" = "常见脏话";
+"initials.note.medical" = "带有社交包袱的医学缩写";
+"initials.note.suggestive" = "暗示性缩写";
+"initials.note.hate" = "仇恨组织关联";
+"initials.note.negative" = "负面日常词汇";
+"initials.note.teasing" = "常见被嘲笑目标";
+"initials.note.slang" = "粗俗俚语缩写";
+
+// MARK: - Seed Data: Pronunciation Rules
+"pronunciation.rule.silentLetters" = "不发音字母";
+"pronunciation.rule.silentLetters.explanation" = "包含 gh 组合，英语使用者经常猜错。";
+"pronunciation.rule.uncommonCombo" = "不常见的字母组合";
+"pronunciation.rule.uncommonCombo.explanation" = "包含盖尔语风格的辅音连缀，许多读者无法正确拼读。";
+"pronunciation.rule.ambiguousVowel" = "歧义元音组合";
+"pronunciation.rule.ambiguousVowel.explanation" = "双元音组合有多种可能的读法。";
+"pronunciation.rule.eigh" = "歧义元音组合";
+"pronunciation.rule.eigh.explanation" = "EIGH 模式在英语中有多种发音猜测。";
+"pronunciation.rule.sz" = "不常见的字母组合";
+"pronunciation.rule.sz.explanation" = "SZ 在英语名字中不常见，常导致犹豫。";
+"pronunciation.rule.uncommonFreq" = "不常见的字母频率";
+"pronunciation.rule.uncommonFreq.explanation" = "名字中间出现 X 会增加口述时的摩擦。";
+
+// MARK: - Seed Data: Historical Namesake Bios
+"namesake.ada.bio" = "计算机编程的先驱。";
+"namesake.attila.bio" = "匈奴的征服者统治者。";
+"namesake.cleo.bio" = "托勒密埃及最后的在位统治者。";
+"namesake.james.baldwin.bio" = "美国作家和民权运动思想家。";
+"namesake.james.dean.bio" = "美国演员和文化偶像。";
+"namesake.john.gacy.bio" = "连环杀手和罪犯。";
+"namesake.john.lennon.bio" = "音乐家和文化人物。";
+"namesake.mary.shelley.bio" = "《弗兰肯斯坦》的作者。";
+"namesake.mary.bloody.bio" = "以暴力 legacy 著称的英格兰女王。";
+"namesake.adolf.bio" = "纳粹德国的独裁者。";
+"namesake.ulysses.bio" = "美国总统和南北战争将领。";
+"namesake.wolf.bio" = "美国广播电视记者。";
+"namesake.zelda.bio" = "美国社交名媛和作家。";

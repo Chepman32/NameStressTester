@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>12</integer>
+	<key>logs</key>
+	<dict>
+		<key>04A588EE-2BFA-4FD5-9A29-6C5C5FE325F6</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>04A588EE-2BFA-4FD5-9A29-6C5C5FE325F6.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Namify project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Namify</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project Namify with scheme Namify</string>
+			<key>timeStartedRecording</key>
+			<real>798713097.75090206</real>
+			<key>timeStoppedRecording</key>
+			<real>798713111.38235402</real>
+			<key>title</key>
+			<string>Building project Namify with scheme Namify</string>
+			<key>uniqueIdentifier</key>
+			<string>04A588EE-2BFA-4FD5-9A29-6C5C5FE325F6</string>
+		</dict>
+		<key>4B4B21EA-8465-4991-BC50-52B5B18AEC0B</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>4B4B21EA-8465-4991-BC50-52B5B18AEC0B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Namify project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Namify</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project Namify with scheme Namify</string>
+			<key>timeStartedRecording</key>
+			<real>798711330.72839904</real>
+			<key>timeStoppedRecording</key>
+			<real>798711352.071684</real>
+			<key>title</key>
+			<string>Building project Namify with scheme Namify</string>
+			<key>uniqueIdentifier</key>
+			<string>4B4B21EA-8465-4991-BC50-52B5B18AEC0B</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
