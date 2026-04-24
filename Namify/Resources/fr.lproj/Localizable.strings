@@ -163,6 +163,7 @@
 "onboarding.complete.secondary" = "Partager mes résultats";
 "onboarding.continue" = "Continuer";
 "onboarding.back" = "Retour";
+"onboarding.skip" = "Ignorer";
 "rhyme.summary.none" = "Aucune rime de cour d'école courante détectée";
 "rhyme.summary.one" = "1 assonance trouvée — risque léger";
 "rhyme.summary.multiple" = "%d rimes directes trouvées — forte exposition";

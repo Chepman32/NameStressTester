@@ -212,6 +212,7 @@
 // MARK: - Onboarding Navigation
 "onboarding.continue" = "계속";
 "onboarding.back" = "뒤로";
+"onboarding.skip" = "건너뛰기";
 
 // MARK: - Analyzer Summaries — Rhyme
 "rhyme.summary.none" = "일반적인 놀이터 라임이 발견되지 않았습니다";

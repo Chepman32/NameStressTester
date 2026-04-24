@@ -163,6 +163,7 @@
 "onboarding.complete.secondary" = "Mijn resultaten delen";
 "onboarding.continue" = "Doorgaan";
 "onboarding.back" = "Terug";
+"onboarding.skip" = "Overslaan";
 "rhyme.summary.none" = "Geen gebruikelijke schoolpleinrijmen gedetecteerd";
 "rhyme.summary.one" = "1 halve rijm gevonden — licht risico";
 "rhyme.summary.multiple" = "%d directe rijmen gevonden — hoge blootstelling";

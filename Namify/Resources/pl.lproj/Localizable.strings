@@ -163,6 +163,7 @@
 "onboarding.complete.secondary" = "Udostepnij moje wyniki";
 "onboarding.continue" = "Kontynuuj";
 "onboarding.back" = "Wstecz";
+"onboarding.skip" = "Pomiń";
 "rhyme.summary.none" = "Nie wykryto popularnych rymow podworkowych";
 "rhyme.summary.one" = "Znaleziono 1 rym przyblizony — niskie ryzyko";
 "rhyme.summary.multiple" = "Znaleziono %d rymow bezposrednich — wysoka ekspozycja";

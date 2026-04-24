@@ -163,6 +163,7 @@
 "onboarding.complete.secondary" = "Compartilhar meus resultados";
 "onboarding.continue" = "Continuar";
 "onboarding.back" = "Voltar";
+"onboarding.skip" = "Pular";
 "rhyme.summary.none" = "Nenhuma rima comum de pátio detectada";
 "rhyme.summary.one" = "1 rima aproximada encontrada — risco leve";
 "rhyme.summary.multiple" = "%d rimas diretas encontradas — alta exposição";

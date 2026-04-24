@@ -1,4 +1,5 @@
 "splash.tagline" = "Jeder Name verdient einen Stresstest";
+"onboarding.skip" = "Ueberspringen";
 "rhyme.summary.none" = "Keine ueblichen Schulhof-Reime erkannt";
 "rhyme.summary.one" = "1 Halbreim gefunden";
 "rhyme.summary.multiple" = "%d direkte Reime gefunden";

@@ -163,6 +163,7 @@
 "onboarding.complete.secondary" = "Chia se ket qua cua toi";
 "onboarding.continue" = "Tiep tuc";
 "onboarding.back" = "Tro lai";
+"onboarding.skip" = "Bo qua";
 "rhyme.summary.none" = "Khong phat hien van dieu san choi pho bien";
 "rhyme.summary.one" = "Tim thay 1 van dieu gan — rui ro nhe";
 "rhyme.summary.multiple" = "Tim thay %d van dieu truc tiep — tiep xuc cao";

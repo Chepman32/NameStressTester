@@ -163,6 +163,7 @@
 "onboarding.complete.secondary" = "Dela mina resultat";
 "onboarding.continue" = "Fortsatt";
 "onboarding.back" = "Tillbaka";
+"onboarding.skip" = "Hoppa over";
 "rhyme.summary.none" = "Inga vanliga skolgardsrim upptackta";
 "rhyme.summary.one" = "1 slutrim hittat — lag risk";
 "rhyme.summary.multiple" = "%d direkta rim hittade — hog exponering";

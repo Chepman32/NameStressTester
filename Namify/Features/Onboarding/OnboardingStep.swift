@@ -19,4 +19,8 @@ enum OnboardingStep: Int, CaseIterable {
     var canGoBack: Bool {
         rawValue > 0 && self != .processing && self != .demoResults
     }
+
+    var canSkip: Bool {
+        self != .processing && self != .demoResults
+    }
 }

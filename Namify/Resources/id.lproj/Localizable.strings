@@ -163,6 +163,7 @@
 "onboarding.complete.secondary" = "Bagikan hasil saya";
 "onboarding.continue" = "Lanjutkan";
 "onboarding.back" = "Kembali";
+"onboarding.skip" = "Lewati";
 "rhyme.summary.none" = "Tidak ada rima taman bermain umum terdeteksi";
 "rhyme.summary.one" = "Ditemukan 1 rima miring — risiko ringan";
 "rhyme.summary.multiple" = "Ditemukan %d rima langsung — paparan tinggi";

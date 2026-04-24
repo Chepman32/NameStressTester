@@ -212,6 +212,7 @@
 // MARK: - Onboarding Navigation
 "onboarding.continue" = "Continue";
 "onboarding.back" = "Back";
+"onboarding.skip" = "Skip";
 
 // MARK: - Analyzer Summaries — Rhyme
 "rhyme.summary.none" = "No common playground rhymes detected";

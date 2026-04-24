@@ -163,6 +163,7 @@
 "onboarding.complete.secondary" = "แชร์ผลลัพธ์ของฉัน";
 "onboarding.continue" = "ดำเนินการต่อ";
 "onboarding.back" = "ย้อนกลับ";
+"onboarding.skip" = "ข้าม";
 "rhyme.summary.none" = "ไม่พบการสัมผัสสนามเด็กเล่นทั่วไป";
 "rhyme.summary.one" = "พบการสัมผัสเคียง 1 รายการ — ความเสี่ยงต่ำ";
 "rhyme.summary.multiple" = "พบการสัมผัสตรง %d รายการ — การเปิดเผยสูง";

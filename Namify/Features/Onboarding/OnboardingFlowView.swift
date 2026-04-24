@@ -59,7 +59,25 @@ struct OnboardingFlowView: View {
     }
 
     private var topChrome: some View {
-        progressBar
+        HStack(spacing: NamifySpacing.md) {
+            progressBar
+
+            if viewModel.currentStep.canSkip {
+                Button {
+                    Haptics.impact(.light)
+                    onComplete()
+                } label: {
+                    Text(L("onboarding.skip"))
+                        .font(NamifyTypography.bodySmall().weight(.semibold))
+                        .foregroundStyle(Brand.accent)
+                        .padding(.horizontal, 12)
+                        .padding(.vertical, 8)
+                        .background(Brand.accent.opacity(0.10), in: Capsule())
+                }
+                .buttonStyle(.plain)
+                .accessibilityIdentifier("onboardingSkipButton")
+            }
+        }
             .padding(.horizontal, NamifySpacing.lg)
             .padding(.top, 10)
             .padding(.bottom, NamifySpacing.sm)

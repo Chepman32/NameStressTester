@@ -163,6 +163,7 @@
 "onboarding.complete.secondary" = "Shatekhet to'tza'otai";
 "onboarding.continue" = "Hamshekh";
 "onboarding.back" = "Ahorah";
+"onboarding.skip" = "Daleg";
 "rhyme.summary.none" = "Lo nitgale'u chariuzim nos'im shel migrash";
 "rhyme.summary.one" = "Nimtza chariuz alakhson 1 — sikun kal";
 "rhyme.summary.multiple" = "Nimtze'u %d chariuzim yesharim — exposure gavoha";

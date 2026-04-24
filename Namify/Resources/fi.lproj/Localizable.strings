@@ -163,6 +163,7 @@
 "onboarding.complete.secondary" = "Jaa tulokseni";
 "onboarding.continue" = "Jatka";
 "onboarding.back" = "Takaisin";
+"onboarding.skip" = "Ohita";
 "rhyme.summary.none" = "Ei havaittu yleisia pihariimejä";
 "rhyme.summary.one" = "1 lavea riimi loydetty — matala riski";
 "rhyme.summary.multiple" = "%d suoraa riimia loydetty — korkea altistuminen";

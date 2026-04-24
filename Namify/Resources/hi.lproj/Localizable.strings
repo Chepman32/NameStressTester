@@ -163,6 +163,7 @@
 "onboarding.complete.secondary" = "Apne results share karein";
 "onboarding.continue" = "Aage Badhein";
 "onboarding.back" = "Peeche";
+"onboarding.skip" = "Chhodein";
 "rhyme.summary.none" = "Koi aam playground rhyme nahi mili";
 "rhyme.summary.one" = "1 slant-rhyme mila — halka khatra";
 "rhyme.summary.multiple" = "%d seedhi rhymes mili — zyada exposure";

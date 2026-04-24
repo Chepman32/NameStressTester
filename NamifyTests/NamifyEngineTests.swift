@@ -98,12 +98,21 @@ final class NamifyEngineTests: XCTestCase {
         XCTAssertEqual(AppLanguage.selectableCases, [.system] + expectedSupportedCases)
     }
 
+    func testOnboardingSkipIsHiddenForTransientSteps() {
+        XCTAssertTrue(OnboardingStep.welcome.canSkip)
+        XCTAssertTrue(OnboardingStep.demoInput.canSkip)
+        XCTAssertFalse(OnboardingStep.processing.canSkip)
+        XCTAssertFalse(OnboardingStep.demoResults.canSkip)
+    }
+
     func testAppLocalizationUsesSelectedLanguage() {
         AppLocalization.setLanguage(.english)
         XCTAssertEqual(L("settings.title"), "Settings")
+        XCTAssertEqual(L("onboarding.skip"), "Skip")
 
         AppLocalization.setLanguage(.russian)
         XCTAssertEqual(L("settings.title"), "Настройки")
+        XCTAssertEqual(L("onboarding.skip"), "Пропустить")
 
         AppLocalization.setLanguage(.system)
     }

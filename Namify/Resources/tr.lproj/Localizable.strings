@@ -163,6 +163,7 @@
 "onboarding.complete.secondary" = "Sonuclarumu paylas";
 "onboarding.continue" = "Devam";
 "onboarding.back" = "Geri";
+"onboarding.skip" = "Atla";
 "rhyme.summary.none" = "Yaygun bahce kafiyeleri tespit edilmedi";
 "rhyme.summary.one" = "1 yarum kafiye bulundu — hafif risk";
 "rhyme.summary.multiple" = "%d dogrudan kafiye bulundu — yuksek maruziyet";

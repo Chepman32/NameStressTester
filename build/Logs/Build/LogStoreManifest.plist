@@ -6,7 +6,7 @@
 	<integer>12</integer>
 	<key>logs</key>
 	<dict>
-		<key>548976D5-0CBD-42EC-9BB9-BB1A34BBBE42</key>
+		<key>15680233-64B3-4C9E-8918-9B4D6DDD1599</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>548976D5-0CBD-42EC-9BB9-BB1A34BBBE42.xcactivitylog</string>
+			<string>15680233-64B3-4C9E-8918-9B4D6DDD1599.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -40,15 +40,15 @@
 			<key>signature</key>
 			<string>Building project Namify with scheme Namify and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>798723771.65572596</real>
+			<real>798727125.78406298</real>
 			<key>timeStoppedRecording</key>
-			<real>798723776.852054</real>
+			<real>798727129.02419996</real>
 			<key>title</key>
 			<string>Building project Namify with scheme Namify and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>548976D5-0CBD-42EC-9BB9-BB1A34BBBE42</string>
+			<string>15680233-64B3-4C9E-8918-9B4D6DDD1599</string>
 		</dict>
-		<key>6B585853-CF27-4849-A9A2-8A5B7813C319</key>
+		<key>F0675179-5861-45EE-932E-9C44F8F4FAF6</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -57,7 +57,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>6B585853-CF27-4849-A9A2-8A5B7813C319.xcactivitylog</string>
+			<string>F0675179-5861-45EE-932E-9C44F8F4FAF6.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -82,13 +82,13 @@
 			<key>signature</key>
 			<string>Building project Namify with scheme Namify and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>798723033.28682494</real>
+			<real>798726707.91430199</real>
 			<key>timeStoppedRecording</key>
-			<real>798723042.52620804</real>
+			<real>798726713.68796802</real>
 			<key>title</key>
 			<string>Building project Namify with scheme Namify and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>6B585853-CF27-4849-A9A2-8A5B7813C319</string>
+			<string>F0675179-5861-45EE-932E-9C44F8F4FAF6</string>
 		</dict>
 	</dict>
 </dict>

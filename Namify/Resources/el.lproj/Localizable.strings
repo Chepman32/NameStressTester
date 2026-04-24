@@ -212,6 +212,7 @@
 // MARK: - Onboarding Navigation
 "onboarding.continue" = "Συνέχεια";
 "onboarding.back" = "Πίσω";
+"onboarding.skip" = "Παράλειψη";
 
 // MARK: - Analyzer Summaries — Rhyme
 "rhyme.summary.none" = "Δεν εντοπίστηκαν συνηθισμένες ομοιοκαταληξίες παιδικής χαράς";

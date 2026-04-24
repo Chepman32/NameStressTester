@@ -163,6 +163,7 @@
 "onboarding.complete.secondary" = "Sdilet me vysledky";
 "onboarding.continue" = "Pokracovat";
 "onboarding.back" = "Zpet";
+"onboarding.skip" = "Preskocit";
 "rhyme.summary.none" = "Nebyly zjisteny zadne bezne detske rymy";
 "rhyme.summary.one" = "Nalezen 1 polorym — nizke riziko";
 "rhyme.summary.multiple" = "Nalezeno %d primych rymu — vysoke vystaveni";

@@ -212,6 +212,7 @@
 // MARK: - Onboarding Navigation
 "onboarding.continue" = "続ける";
 "onboarding.back" = "戻る";
+"onboarding.skip" = "スキップ";
 
 // MARK: - Analyzer Summaries — Rhyme
 "rhyme.summary.none" = "一般的な遊び場の韻は検出されませんでした";

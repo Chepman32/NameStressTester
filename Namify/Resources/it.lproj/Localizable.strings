@@ -163,6 +163,7 @@
 "onboarding.complete.secondary" = "Condividi i miei risultati";
 "onboarding.continue" = "Continua";
 "onboarding.back" = "Indietro";
+"onboarding.skip" = "Salta";
 "rhyme.summary.none" = "Nessuna rima comune del cortile rilevata";
 "rhyme.summary.one" = "1 rima approssimativa trovata — rischio lieve";
 "rhyme.summary.multiple" = "%d rime dirette trovate — alta esposizione";

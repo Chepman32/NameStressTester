@@ -163,6 +163,7 @@
 "onboarding.complete.secondary" = "Поделиться моими результатами";
 "onboarding.continue" = "Продолжить";
 "onboarding.back" = "Назад";
+"onboarding.skip" = "Пропустить";
 "rhyme.summary.none" = "Обычных дворовых рифм не обнаружено";
 "rhyme.summary.one" = "Найдена 1 приблизительная рифма — лёгкий риск";
 "rhyme.summary.multiple" = "Найдено %d прямых рифм — высокая степень уязвимости";

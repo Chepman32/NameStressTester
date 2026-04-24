@@ -212,6 +212,7 @@
 // MARK: - Onboarding Navigation
 "onboarding.continue" = "متابعة";
 "onboarding.back" = "رجوع";
+"onboarding.skip" = "تخطي";
 
 // MARK: - Analyzer Summaries — Rhyme
 "rhyme.summary.none" = "لم يُكتشف أي تجانس شائع في الملعب";

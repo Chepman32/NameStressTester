@@ -163,6 +163,7 @@
 "onboarding.complete.secondary" = "Del resultatene mine";
 "onboarding.continue" = "Fortsett";
 "onboarding.back" = "Tilbake";
+"onboarding.skip" = "Hopp over";
 "rhyme.summary.none" = "Ingen vanlige lekeplassrim oppdaget";
 "rhyme.summary.one" = "1 slant-rim funnet — lav risiko";
 "rhyme.summary.multiple" = "%d direkte rim funnet — hoy eksponering";

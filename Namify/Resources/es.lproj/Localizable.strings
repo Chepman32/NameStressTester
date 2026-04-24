@@ -163,6 +163,7 @@
 "onboarding.complete.secondary" = "Compartir mis resultados";
 "onboarding.continue" = "Continuar";
 "onboarding.back" = "Atrás";
+"onboarding.skip" = "Omitir";
 "rhyme.summary.none" = "No se detectaron rimas comunes de patio";
 "rhyme.summary.one" = "1 rima aproximada encontrada — riesgo leve";
 "rhyme.summary.multiple" = "%d rimas directas encontradas — alta exposición";

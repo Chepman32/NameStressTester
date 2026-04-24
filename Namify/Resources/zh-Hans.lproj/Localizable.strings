@@ -212,6 +212,7 @@
 // MARK: - Onboarding Navigation
 "onboarding.continue" = "继续";
 "onboarding.back" = "返回";
+"onboarding.skip" = "跳过";
 
 // MARK: - Analyzer Summaries — Rhyme
 "rhyme.summary.none" = "未发现常见的同学间谐音";

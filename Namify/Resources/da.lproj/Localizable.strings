@@ -163,6 +163,7 @@
 "onboarding.complete.secondary" = "Del mine resultater";
 "onboarding.continue" = "Fortsæt";
 "onboarding.back" = "Tilbage";
+"onboarding.skip" = "Spring over";
 "rhyme.summary.none" = "Ingen almindelige legepladsrim opdaget";
 "rhyme.summary.one" = "1 slant-rim fundet — lav risiko";
 "rhyme.summary.multiple" = "%d direkte rim fundet — høj eksponering";

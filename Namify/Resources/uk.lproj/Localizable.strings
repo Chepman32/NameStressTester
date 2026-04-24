@@ -163,6 +163,7 @@
 "onboarding.complete.secondary" = "Podylytysya moyimy rezul'tatamy";
 "onboarding.continue" = "Prodovzhyty";
 "onboarding.back" = "Nazad";
+"onboarding.skip" = "Propustyty";
 "rhyme.summary.none" = "Ne vyyavleno poshyrenykh maydanchykovykh rifm";
 "rhyme.summary.one" = "Znaydeno 1 nabluzhenu rifmu — nyz'kyy ryzyk";
 "rhyme.summary.multiple" = "Znaydeno %d pryamykh rifm — vysoka ekspozytsiya";
