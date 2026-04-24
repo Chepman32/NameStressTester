@@ -85,7 +85,7 @@ struct HistoryScreen: View {
                 .padding(.bottom, NamifySpacing.sm)
                 .background(.ultraThinMaterial)
         }
-        .searchable(text: $viewModel.query, placement: .automatic, prompt: String(localized: "history.search.placeholder"))
+        .searchable(text: $viewModel.query, placement: .automatic, prompt: L("history.search.placeholder"))
         .onChange(of: viewModel.query) { _, _ in viewModel.reload(context: modelContext) }
         .task {
             viewModel.reload(context: modelContext)
@@ -100,7 +100,7 @@ struct HistoryScreen: View {
             } label: {
                 HStack(spacing: 6) {
                     Image(systemName: "chevron.left")
-                    Text(String(localized: "history.button.back"))
+                    Text(L("history.button.back"))
                 }
                 .font(NamifyTypography.bodyMedium())
                 .foregroundStyle(Brand.accent)
@@ -108,7 +108,7 @@ struct HistoryScreen: View {
             .buttonStyle(.plain)
 
             Spacer()
-            Text(String(localized: "history.title"))
+            Text(L("history.title"))
                 .font(NamifyTypography.subtitle())
                 .foregroundStyle(Brand.textPrimary)
             Spacer()
@@ -133,13 +133,13 @@ struct HistoryScreen: View {
             Image(systemName: "clock.arrow.circlepath")
                 .font(.system(size: 64))
                 .foregroundStyle(Brand.textTertiary)
-            Text(String(localized: "history.empty.title"))
+            Text(L("history.empty.title"))
                 .font(NamifyTypography.subtitle())
                 .foregroundStyle(Brand.textTertiary)
-            Text(String(localized: "history.empty.subtitle"))
+            Text(L("history.empty.subtitle"))
                 .font(NamifyTypography.bodyMedium())
                 .foregroundStyle(Brand.textSecondary)
-            NamifyButton(title: String(localized: "history.empty.cta"), style: .secondary) {
+            NamifyButton(title: L("history.empty.cta"), style: .secondary) {
                 coordinator.pop()
             }
             .frame(maxWidth: 240)
@@ -184,7 +184,7 @@ struct HistoryScreen: View {
                         try? PersistenceService.shared.toggleFavorite(report, context: modelContext)
                         viewModel.reload(context: modelContext)
                     } label: {
-                        Label(String(localized: "history.swipe.favorite"), systemImage: "heart.fill")
+                        Label(L("history.swipe.favorite"), systemImage: "heart.fill")
                     }
                     .tint(Brand.warn)
                 }
@@ -195,8 +195,8 @@ struct HistoryScreen: View {
                         viewModel.reload(context: modelContext)
                         session.refreshHistoryCount(context: modelContext)
                         session.toast = ToastState(
-                            title: String(localized: "history.delete.undo"),
-                            actionTitle: String(localized: "history.delete.undo.button"),
+                            title: L("history.delete.undo"),
+                            actionTitle: L("history.delete.undo.button"),
                             action: {
                                 guard let deletedSnapshot else { return }
                                 try? deletedSnapshot.restore(into: modelContext)
@@ -206,7 +206,7 @@ struct HistoryScreen: View {
                             }
                         )
                     } label: {
-                        Label(String(localized: "history.swipe.delete"), systemImage: "trash.fill")
+                        Label(L("history.swipe.delete"), systemImage: "trash.fill")
                     }
                 }
             }

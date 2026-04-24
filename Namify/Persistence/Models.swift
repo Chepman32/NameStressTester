@@ -168,11 +168,11 @@ enum HistorySortOrder: String, CaseIterable, Identifiable {
 
     var label: String {
         switch self {
-        case .mostRecent: String(localized: "sort.recent")
-        case .alphabeticalAZ: String(localized: "sort.az")
-        case .alphabeticalZA: String(localized: "sort.za")
-        case .bestScoreFirst: String(localized: "sort.best")
-        case .worstScoreFirst: String(localized: "sort.worst")
+        case .mostRecent: L("sort.recent")
+        case .alphabeticalAZ: L("sort.az")
+        case .alphabeticalZA: L("sort.za")
+        case .bestScoreFirst: L("sort.best")
+        case .worstScoreFirst: L("sort.worst")
         }
     }
 }

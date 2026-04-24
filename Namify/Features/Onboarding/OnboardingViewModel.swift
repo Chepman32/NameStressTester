@@ -42,31 +42,31 @@ final class OnboardingViewModel: ObservableObject {
 
     var goals: [OnboardingGoal] {
         [
-            OnboardingGoal(emoji: "🎭", title: String(localized: "onboarding.goal.soundsBeautiful"), subtitle: String(localized: "onboarding.goal.soundsBeautiful.sub")),
-            OnboardingGoal(emoji: "🛡️", title: String(localized: "onboarding.goal.bullyProof"), subtitle: String(localized: "onboarding.goal.bullyProof.sub")),
-            OnboardingGoal(emoji: "🏷️", title: String(localized: "onboarding.goal.looksGood"), subtitle: String(localized: "onboarding.goal.looksGood.sub")),
-            OnboardingGoal(emoji: "📚", title: String(localized: "onboarding.goal.goodHistory"), subtitle: String(localized: "onboarding.goal.goodHistory.sub")),
-            OnboardingGoal(emoji: "🗣️", title: String(localized: "onboarding.goal.easyPronounce"), subtitle: String(localized: "onboarding.goal.easyPronounce.sub")),
-            OnboardingGoal(emoji: "🎨", title: String(localized: "onboarding.goal.aesthetic"), subtitle: String(localized: "onboarding.goal.aesthetic.sub")),
+            OnboardingGoal(emoji: "🎭", title: L("onboarding.goal.soundsBeautiful"), subtitle: L("onboarding.goal.soundsBeautiful.sub")),
+            OnboardingGoal(emoji: "🛡️", title: L("onboarding.goal.bullyProof"), subtitle: L("onboarding.goal.bullyProof.sub")),
+            OnboardingGoal(emoji: "🏷️", title: L("onboarding.goal.looksGood"), subtitle: L("onboarding.goal.looksGood.sub")),
+            OnboardingGoal(emoji: "📚", title: L("onboarding.goal.goodHistory"), subtitle: L("onboarding.goal.goodHistory.sub")),
+            OnboardingGoal(emoji: "🗣️", title: L("onboarding.goal.easyPronounce"), subtitle: L("onboarding.goal.easyPronounce.sub")),
+            OnboardingGoal(emoji: "🎨", title: L("onboarding.goal.aesthetic"), subtitle: L("onboarding.goal.aesthetic.sub")),
         ]
     }
 
     var painPoints: [OnboardingPainPoint] {
         [
-            OnboardingPainPoint(emoji: "😰", title: String(localized: "onboarding.pain.initials")),
-            OnboardingPainPoint(emoji: "😬", title: String(localized: "onboarding.pain.rhymes")),
-            OnboardingPainPoint(emoji: "🤷", title: String(localized: "onboarding.pain.mispronunciation")),
-            OnboardingPainPoint(emoji: "👤", title: String(localized: "onboarding.pain.namesake")),
-            OnboardingPainPoint(emoji: "💬", title: String(localized: "onboarding.pain.family")),
-            OnboardingPainPoint(emoji: "😵‍💫", title: String(localized: "onboarding.pain.secondGuessing")),
+            OnboardingPainPoint(emoji: "😰", title: L("onboarding.pain.initials")),
+            OnboardingPainPoint(emoji: "😬", title: L("onboarding.pain.rhymes")),
+            OnboardingPainPoint(emoji: "🤷", title: L("onboarding.pain.mispronunciation")),
+            OnboardingPainPoint(emoji: "👤", title: L("onboarding.pain.namesake")),
+            OnboardingPainPoint(emoji: "💬", title: L("onboarding.pain.family")),
+            OnboardingPainPoint(emoji: "😵‍💫", title: L("onboarding.pain.secondGuessing")),
         ]
     }
 
     var testimonials: [Testimonial] {
         [
-            Testimonial(name: String(localized: "onboarding.testimonial.1.name"), tag: String(localized: "onboarding.testimonial.1.tag"), text: String(localized: "onboarding.testimonial.1.text"), rating: 5),
-            Testimonial(name: String(localized: "onboarding.testimonial.2.name"), tag: String(localized: "onboarding.testimonial.2.tag"), text: String(localized: "onboarding.testimonial.2.text"), rating: 5),
-            Testimonial(name: String(localized: "onboarding.testimonial.3.name"), tag: String(localized: "onboarding.testimonial.3.tag"), text: String(localized: "onboarding.testimonial.3.text"), rating: 5),
+            Testimonial(name: L("onboarding.testimonial.1.name"), tag: L("onboarding.testimonial.1.tag"), text: L("onboarding.testimonial.1.text"), rating: 5),
+            Testimonial(name: L("onboarding.testimonial.2.name"), tag: L("onboarding.testimonial.2.tag"), text: L("onboarding.testimonial.2.text"), rating: 5),
+            Testimonial(name: L("onboarding.testimonial.3.name"), tag: L("onboarding.testimonial.3.tag"), text: L("onboarding.testimonial.3.text"), rating: 5),
         ]
     }
 
@@ -128,39 +128,39 @@ final class OnboardingViewModel: ObservableObject {
 
     func solutionMappings() -> [SolutionMapping] {
         let allMappings: [String: SolutionMapping] = [
-            String(localized: "onboarding.pain.initials"): SolutionMapping(
-                painPoint: String(localized: "onboarding.pain.initials"),
-                solution: String(localized: "onboarding.solution.initials"),
+            L("onboarding.pain.initials"): SolutionMapping(
+                painPoint: L("onboarding.pain.initials"),
+                solution: L("onboarding.solution.initials"),
                 icon: "textformat.abc",
                 color: Brand.initials
             ),
-            String(localized: "onboarding.pain.rhymes"): SolutionMapping(
-                painPoint: String(localized: "onboarding.pain.rhymes"),
-                solution: String(localized: "onboarding.solution.rhymes"),
+            L("onboarding.pain.rhymes"): SolutionMapping(
+                painPoint: L("onboarding.pain.rhymes"),
+                solution: L("onboarding.solution.rhymes"),
                 icon: "music.note.list",
                 color: Brand.rhyme
             ),
-            String(localized: "onboarding.pain.mispronunciation"): SolutionMapping(
-                painPoint: String(localized: "onboarding.pain.mispronunciation"),
-                solution: String(localized: "onboarding.solution.pronunciation"),
+            L("onboarding.pain.mispronunciation"): SolutionMapping(
+                painPoint: L("onboarding.pain.mispronunciation"),
+                solution: L("onboarding.solution.pronunciation"),
                 icon: "waveform.and.person.filled",
                 color: Brand.pronunciation
             ),
-            String(localized: "onboarding.pain.namesake"): SolutionMapping(
-                painPoint: String(localized: "onboarding.pain.namesake"),
-                solution: String(localized: "onboarding.solution.namesake"),
+            L("onboarding.pain.namesake"): SolutionMapping(
+                painPoint: L("onboarding.pain.namesake"),
+                solution: L("onboarding.solution.namesake"),
                 icon: "book.closed.fill",
                 color: Brand.namesake
             ),
-            String(localized: "onboarding.pain.family"): SolutionMapping(
-                painPoint: String(localized: "onboarding.pain.family"),
-                solution: String(localized: "onboarding.solution.family"),
+            L("onboarding.pain.family"): SolutionMapping(
+                painPoint: L("onboarding.pain.family"),
+                solution: L("onboarding.solution.family"),
                 icon: "shield.checkered",
                 color: Brand.accent
             ),
-            String(localized: "onboarding.pain.secondGuessing"): SolutionMapping(
-                painPoint: String(localized: "onboarding.pain.secondGuessing"),
-                solution: String(localized: "onboarding.solution.secondGuessing"),
+            L("onboarding.pain.secondGuessing"): SolutionMapping(
+                painPoint: L("onboarding.pain.secondGuessing"),
+                solution: L("onboarding.solution.secondGuessing"),
                 icon: "arrow.left.arrow.right",
                 color: Brand.pass
             ),

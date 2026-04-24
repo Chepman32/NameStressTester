@@ -104,6 +104,7 @@ private struct RootContainerView: View {
                     SettingsScreen()
                 }
                 .preferredColorScheme(session.preferredColorScheme)
+                .environment(\.locale, session.preferredLocale)
             }
         }
     }

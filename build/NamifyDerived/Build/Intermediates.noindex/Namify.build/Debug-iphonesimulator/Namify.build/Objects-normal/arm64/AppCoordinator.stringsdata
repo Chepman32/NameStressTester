@@ -1,16 +1,5 @@
 {
   "source": "/Users/antonchepur/Namify/Namify/App/AppCoordinator.swift",
-  "tables": {
-    "Localizable": [
-      {
-        "comment": "",
-        "key": "app.toast.saveSettingsFailed",
-        "location": {
-          "startingColumn": 57,
-          "startingLine": 86
-        }
-      }
-    ]
-  },
+  "tables": {},
   "version": 1
 }

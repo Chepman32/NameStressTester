@@ -20,12 +20,12 @@ struct OnboardingDemoInputView: View {
         ScrollView {
             VStack(spacing: NamifySpacing.xl) {
                 VStack(spacing: NamifySpacing.sm) {
-                    Text("onboarding.demo.headline")
+                    Text(L("onboarding.demo.headline"))
                         .font(NamifyTypography.title())
                         .foregroundStyle(Brand.textPrimary)
                         .multilineTextAlignment(.center)
 
-                    Text("onboarding.demo.subheadline")
+                    Text(L("onboarding.demo.subheadline"))
                         .font(NamifyTypography.bodyMedium())
                         .foregroundStyle(Brand.textSecondary)
                         .multilineTextAlignment(.center)
@@ -33,7 +33,7 @@ struct OnboardingDemoInputView: View {
 
                 VStack(spacing: NamifySpacing.md) {
                     NamifyTextField(
-                        title: String(localized: "input.field.first"),
+                        title: L("input.field.first"),
                         text: $firstName,
                         isRequired: true,
                         focused: focus == .first,
@@ -45,7 +45,7 @@ struct OnboardingDemoInputView: View {
                     .onSubmit { focus = .middle }
 
                     NamifyTextField(
-                        title: String(localized: "input.field.middle"),
+                        title: L("input.field.middle"),
                         text: $middleName,
                         focused: focus == .middle,
                         submitLabel: .next
@@ -56,7 +56,7 @@ struct OnboardingDemoInputView: View {
                     .onSubmit { focus = .last }
 
                     NamifyTextField(
-                        title: String(localized: "input.field.last"),
+                        title: L("input.field.last"),
                         text: $lastName,
                         isRequired: true,
                         focused: focus == .last,
@@ -80,7 +80,7 @@ struct OnboardingDemoInputView: View {
         .background(Brand.surface.ignoresSafeArea())
         .safeAreaInset(edge: .bottom) {
             NamifyButton(
-                title: String(localized: "onboarding.demo.cta"),
+                title: L("onboarding.demo.cta"),
                 isDisabled: !canSubmit,
                 isLoading: viewModel.isRunningDemo
             ) {

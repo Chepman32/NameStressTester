@@ -11,12 +11,12 @@ struct OnboardingWelcomeView: View {
                 welcomeIcon
 
                 VStack(spacing: NamifySpacing.md) {
-                    Text("onboarding.welcome.headline")
+                    Text(L("onboarding.welcome.headline"))
                         .font(NamifyTypography.title())
                         .foregroundStyle(Brand.textPrimary)
                         .multilineTextAlignment(.center)
 
-                    Text("onboarding.welcome.subheadline")
+                    Text(L("onboarding.welcome.subheadline"))
                         .font(NamifyTypography.bodyMedium())
                         .foregroundStyle(Brand.textSecondary)
                         .multilineTextAlignment(.center)
@@ -30,12 +30,12 @@ struct OnboardingWelcomeView: View {
             Spacer()
 
             VStack(spacing: NamifySpacing.md) {
-                NamifyButton(title: String(localized: "onboarding.welcome.cta")) {
+                NamifyButton(title: L("onboarding.welcome.cta")) {
                     Haptics.impact(.medium)
                     viewModel.advance()
                 }
 
-                Text("onboarding.welcome.footnote")
+                Text(L("onboarding.welcome.footnote"))
                     .font(NamifyTypography.bodySmall())
                     .foregroundStyle(Brand.textTertiary)
                     .multilineTextAlignment(.center)
@@ -62,9 +62,9 @@ struct OnboardingWelcomeView: View {
 
     private var previewCards: some View {
         VStack(spacing: NamifySpacing.sm) {
-            previewRow(icon: "music.note.list", title: String(localized: "onboarding.welcome.preview.rhyme"), color: Brand.rhyme)
-            previewRow(icon: "textformat.abc", title: String(localized: "onboarding.welcome.preview.initials"), color: Brand.initials)
-            previewRow(icon: "waveform.and.person.filled", title: String(localized: "onboarding.welcome.preview.pronunciation"), color: Brand.pronunciation)
+            previewRow(icon: "music.note.list", title: L("onboarding.welcome.preview.rhyme"), color: Brand.rhyme)
+            previewRow(icon: "textformat.abc", title: L("onboarding.welcome.preview.initials"), color: Brand.initials)
+            previewRow(icon: "waveform.and.person.filled", title: L("onboarding.welcome.preview.pronunciation"), color: Brand.pronunciation)
         }
         .padding(.horizontal, NamifySpacing.md)
     }

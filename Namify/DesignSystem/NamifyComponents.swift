@@ -5,7 +5,7 @@ struct NamifyBadge: View {
     var compact = false
 
     var body: some View {
-        Text(String(localized: String.LocalizationValue(verdict.labelKey)))
+        Text(L(verdict.labelKey))
             .font(NamifyTypography.badge())
             .kerning(0.8)
             .foregroundStyle(Brand.color(for: verdict))
@@ -302,7 +302,7 @@ struct NamifyCard<Content: View>: View {
                 NamifyIconCircle(systemName: testType.systemImage, color: Brand.color(for: testType))
 
                 VStack(alignment: .leading, spacing: 4) {
-                    Text(String(localized: String.LocalizationValue(testType.localizedNameKey)))
+                    Text(L(testType.localizedNameKey))
                         .font(NamifyTypography.bodyLarge())
                         .foregroundStyle(Brand.textPrimary)
                     Text(summary)
@@ -338,8 +338,8 @@ struct NamifyCard<Content: View>: View {
             Haptics.selection()
         }
         .accessibilityElement(children: .combine)
-        .accessibilityLabel("\(String(localized: String.LocalizationValue(testType.localizedNameKey))): \(verdict.rawValue.capitalized). \(summary)")
-        .accessibilityHint(String(localized: "accessibility.expandHint"))
+        .accessibilityLabel("\(L(testType.localizedNameKey)): \(verdict.rawValue.capitalized). \(summary)")
+        .accessibilityHint(L("accessibility.expandHint"))
     }
 }
 

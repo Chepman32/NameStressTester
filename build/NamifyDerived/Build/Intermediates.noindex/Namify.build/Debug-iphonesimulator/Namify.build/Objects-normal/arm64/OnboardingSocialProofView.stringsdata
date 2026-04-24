@@ -4,30 +4,6 @@
     "Localizable": [
       {
         "comment": "",
-        "key": "onboarding.continue",
-        "location": {
-          "startingColumn": 51,
-          "startingLine": 35
-        }
-      },
-      {
-        "comment": "",
-        "key": "onboarding.social.headline",
-        "location": {
-          "startingColumn": 30,
-          "startingLine": 11
-        }
-      },
-      {
-        "comment": "",
-        "key": "onboarding.social.subheadline",
-        "location": {
-          "startingColumn": 30,
-          "startingLine": 16
-        }
-      },
-      {
-        "comment": "",
         "key": "·",
         "location": {
           "startingColumn": 22,

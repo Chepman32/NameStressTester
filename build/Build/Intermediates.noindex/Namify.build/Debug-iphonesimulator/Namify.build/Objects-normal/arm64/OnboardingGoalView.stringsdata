@@ -1,32 +1,5 @@
 {
   "source": "/Users/antonchepur/Namify/Namify/Features/Onboarding/OnboardingGoalView.swift",
-  "tables": {
-    "Localizable": [
-      {
-        "comment": "",
-        "key": "onboarding.continue",
-        "location": {
-          "startingColumn": 42,
-          "startingLine": 54
-        }
-      },
-      {
-        "comment": "",
-        "key": "onboarding.goal.headline",
-        "location": {
-          "startingColumn": 30,
-          "startingLine": 11
-        }
-      },
-      {
-        "comment": "",
-        "key": "onboarding.goal.subheadline",
-        "location": {
-          "startingColumn": 34,
-          "startingLine": 17
-        }
-      }
-    ]
-  },
+  "tables": {},
   "version": 1
 }

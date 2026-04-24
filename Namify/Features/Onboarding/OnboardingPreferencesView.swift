@@ -5,12 +5,12 @@ struct OnboardingPreferencesView: View {
 
     private var testOptions: [(type: TestType, emoji: String, description: String)] {
         [
-            (.rhyme, "🎵", String(localized: "onboarding.prefs.rhyme")),
-            (.initials, "🔤", String(localized: "onboarding.prefs.initials")),
-            (.pronunciation, "🗣️", String(localized: "onboarding.prefs.pronunciation")),
-            (.nameTag, "🏷️", String(localized: "onboarding.prefs.nametag")),
-            (.namesake, "📖", String(localized: "onboarding.prefs.namesake")),
-            (.monogram, "✒️", String(localized: "onboarding.prefs.monogram")),
+            (.rhyme, "🎵", L("onboarding.prefs.rhyme")),
+            (.initials, "🔤", L("onboarding.prefs.initials")),
+            (.pronunciation, "🗣️", L("onboarding.prefs.pronunciation")),
+            (.nameTag, "🏷️", L("onboarding.prefs.nametag")),
+            (.namesake, "📖", L("onboarding.prefs.namesake")),
+            (.monogram, "✒️", L("onboarding.prefs.monogram")),
         ]
     }
 
@@ -19,12 +19,12 @@ struct OnboardingPreferencesView: View {
             ScrollView {
                 VStack(spacing: NamifySpacing.xl) {
                     VStack(spacing: NamifySpacing.sm) {
-                        Text("onboarding.prefs.headline")
+                        Text(L("onboarding.prefs.headline"))
                             .font(NamifyTypography.title())
                             .foregroundStyle(Brand.textPrimary)
                             .multilineTextAlignment(.center)
 
-                        Text("onboarding.prefs.subheadline")
+                        Text(L("onboarding.prefs.subheadline"))
                             .font(NamifyTypography.bodyMedium())
                             .foregroundStyle(Brand.textSecondary)
                             .multilineTextAlignment(.center)
@@ -58,7 +58,7 @@ struct OnboardingPreferencesView: View {
             }
 
             NamifyButton(
-                title: String(localized: "onboarding.prefs.cta"),
+                title: L("onboarding.prefs.cta"),
                 isDisabled: viewModel.selectedTests.isEmpty
             ) {
                 Haptics.impact(.medium)
@@ -124,6 +124,6 @@ private struct TestOptionCell: View {
 
 private extension TestType {
     var displayName: String {
-        String(localized: String.LocalizationValue(self.localizedNameKey))
+        L(self.localizedNameKey)
     }
 }

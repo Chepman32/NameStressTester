@@ -73,7 +73,7 @@ final class ResultsViewModel: ObservableObject {
                                 _ = try PersistenceService.shared.saveReport(name: liveName, summary: visibleSummary, context: context)
                                 session.refreshHistoryCount(context: context)
                             } catch {
-                                session.toast = ToastState(title: String(localized: "results.toast.saveFailed"), actionTitle: nil, action: nil)
+                                session.toast = ToastState(title: L("results.toast.saveFailed"), actionTitle: nil, action: nil)
                             }
 
                             switch visibleSummary.overallVerdict {
@@ -84,7 +84,7 @@ final class ResultsViewModel: ObservableObject {
                         }
                     }
                 } catch {
-                    session.toast = ToastState(title: String(localized: "results.toast.interrupted"), actionTitle: nil, action: nil)
+                    session.toast = ToastState(title: L("results.toast.interrupted"), actionTitle: nil, action: nil)
                     isRunning = false
                 }
             }
@@ -98,7 +98,7 @@ final class ResultsViewModel: ObservableObject {
 
     var progressLabel: String {
         guard let currentTestType else { return "" }
-        return String(format: String(localized: "results.testing"), currentIndex, totalCount, String(localized: String.LocalizationValue(currentTestType.localizedNameKey)))
+        return String(format: L("results.testing"), currentIndex, totalCount, L(currentTestType.localizedNameKey))
     }
 }
 
@@ -162,7 +162,7 @@ struct ResultsScreen: View {
             } label: {
                 HStack(spacing: 6) {
                     Image(systemName: "chevron.left")
-                    Text(String(localized: "results.button.back"))
+                    Text(L("results.button.back"))
                 }
                 .font(NamifyTypography.bodyMedium())
                 .foregroundStyle(Brand.accent)
@@ -193,7 +193,7 @@ struct ResultsScreen: View {
                 .multilineTextAlignment(.center)
                 .onTapGesture {
                     UIPasteboard.general.string = viewModel.name.fullName
-                    session.toast = ToastState(title: String(localized: "results.toast.nameCopied"), actionTitle: nil, action: nil)
+                    session.toast = ToastState(title: L("results.toast.nameCopied"), actionTitle: nil, action: nil)
                 }
 
             Text(sourceDateLabel)
@@ -241,7 +241,7 @@ struct ResultsScreen: View {
                     Button {
                         shareSingle(result)
                     } label: {
-                        Label(String(localized: "results.swipe.share"), systemImage: "square.and.arrow.up")
+                        Label(L("results.swipe.share"), systemImage: "square.and.arrow.up")
                     }
                     .tint(Brand.accent)
                 }
@@ -262,25 +262,25 @@ struct ResultsScreen: View {
                 .font(.system(size: 56, weight: .bold))
                 .foregroundStyle(summary.overallVerdict == .survived ? Brand.pass : (summary.overallVerdict == .mixed ? Brand.warn : Brand.fail))
 
-            Text(String(localized: String.LocalizationValue(summary.overallVerdict.headlineKey)))
+            Text(L(summary.overallVerdict.headlineKey))
                 .font(NamifyTypography.subtitle())
                 .foregroundStyle(summary.overallVerdict == .survived ? Brand.pass : (summary.overallVerdict == .mixed ? Brand.warn : Brand.fail))
                 .multilineTextAlignment(.center)
                 .onLongPressGesture {
-                    UIPasteboard.general.string = String(localized: String.LocalizationValue(summary.overallVerdict.headlineKey))
+                    UIPasteboard.general.string = L(summary.overallVerdict.headlineKey)
                     Haptics.impact(.heavy)
-                    session.toast = ToastState(title: String(localized: "results.toast.verdictCopied"), actionTitle: nil, action: nil)
+                    session.toast = ToastState(title: L("results.toast.verdictCopied"), actionTitle: nil, action: nil)
                 }
 
-            Text(String(format: String(localized: "results.score"), summary.passCount, summary.results.count))
+            Text(String(format: L("results.score"), summary.passCount, summary.results.count))
                 .font(NamifyTypography.bodyMedium())
                 .foregroundStyle(Brand.textSecondary)
 
-            NamifyButton(title: String(localized: "results.share.cta")) {
+            NamifyButton(title: L("results.share.cta")) {
                 shareFullReport()
             }
 
-            NamifyButton(title: String(localized: "results.another.cta"), style: .text) {
+            NamifyButton(title: L("results.another.cta"), style: .text) {
                 coordinator.popToRoot()
             }
         }
@@ -290,7 +290,7 @@ struct ResultsScreen: View {
     private var sourceDateLabel: String {
         switch source {
         case .live:
-            return String(localized: "results.label.testedToday")
+            return L("results.label.testedToday")
         case .saved(let report):
             return report.testDate.namifyRelativeLabel
         }
@@ -300,7 +300,7 @@ struct ResultsScreen: View {
         guard let summary = viewModel.summary,
               let image = ShareCardRenderer.renderReport(name: viewModel.name, summary: summary, colorScheme: colorScheme)
         else {
-            shareItems = [String(localized: String.LocalizationValue(viewModel.summary?.overallVerdict.headlineKey ?? "results.verdict.mixed"))]
+            shareItems = [L(viewModel.summary?.overallVerdict.headlineKey ?? "results.verdict.mixed")]
             return
         }
         Haptics.impact(.medium)
@@ -352,7 +352,7 @@ struct TestDetailView: View {
     @ViewBuilder
     private func rhyme(_ detail: RhymeDetail) -> some View {
         if detail.findings.isEmpty {
-            Label(String(localized: "results.detail.noRhymes"), systemImage: "checkmark.circle.fill")
+            Label(L("results.detail.noRhymes"), systemImage: "checkmark.circle.fill")
                 .font(NamifyTypography.bodyMedium())
                 .foregroundStyle(Brand.pass)
         } else {
@@ -389,7 +389,7 @@ struct TestDetailView: View {
                     .foregroundStyle(Brand.textSecondary)
                     .multilineTextAlignment(.center)
             } else {
-                Text(String(localized: "results.detail.noMatches"))
+                Text(L("results.detail.noMatches"))
                     .font(NamifyTypography.bodySmall())
                     .foregroundStyle(Brand.textSecondary)
             }
@@ -403,7 +403,7 @@ struct TestDetailView: View {
                 Text(detail.phonetic)
                     .font(NamifyTypography.mono())
                     .foregroundStyle(Brand.textPrimary)
-                Text(String(format: String(localized: "results.detail.rollCallMiss"), detail.likelyMispronunciation))
+                Text(String(format: L("results.detail.rollCallMiss"), detail.likelyMispronunciation))
                     .font(NamifyTypography.bodySmall())
                     .foregroundStyle(Brand.textSecondary)
             }
@@ -423,7 +423,7 @@ struct TestDetailView: View {
             }
             .frame(height: 14)
 
-            Text(String(format: String(localized: "results.detail.difficultyScore"), detail.difficultyScore))
+            Text(String(format: L("results.detail.difficultyScore"), detail.difficultyScore))
                 .font(NamifyTypography.bodySmall())
                 .foregroundStyle(Brand.textSecondary)
 
@@ -463,7 +463,7 @@ struct TestDetailView: View {
             .background(Brand.cardAlt, in: RoundedRectangle(cornerRadius: NamifyRadius.medium, style: .continuous))
 
             HStack {
-                Text(String(localized: "results.detail.readability"))
+                Text(L("results.detail.readability"))
                     .font(NamifyTypography.bodySmall())
                     .foregroundStyle(Brand.textSecondary)
                 Spacer()
@@ -487,7 +487,7 @@ struct TestDetailView: View {
                 }
                 .overlay {
                     VStack(spacing: 8) {
-                        Text(String(localized: "results.detail.helloMyNameIs"))
+                        Text(L("results.detail.helloMyNameIs"))
                             .font(NamifyTypography.badge())
                             .foregroundStyle(Brand.textTertiary)
                             .kerning(1.4)
@@ -513,7 +513,7 @@ struct TestDetailView: View {
     @ViewBuilder
     private func namesakes(_ detail: NamesakeDetail) -> some View {
         if detail.entries.isEmpty {
-            Text(String(localized: "results.detail.blankSlate"))
+            Text(L("results.detail.blankSlate"))
                 .font(NamifyTypography.bodyMedium())
                 .foregroundStyle(Brand.textSecondary)
         } else {
@@ -579,50 +579,50 @@ struct TestDetailView: View {
 
     private func localizedSentiment(_ sentiment: String) -> String {
         switch sentiment {
-        case "positive": return String(localized: "results.sentiment.positive")
-        case "negative": return String(localized: "results.sentiment.negative")
-        case "mixed": return String(localized: "results.sentiment.mixed")
+        case "positive": return L("results.sentiment.positive")
+        case "negative": return L("results.sentiment.negative")
+        case "mixed": return L("results.sentiment.mixed")
         default: return sentiment.capitalized
         }
     }
 
     private func localizedReadability(_ readability: String) -> String {
         switch readability {
-        case "EASY": return String(localized: "email.readability.easy")
-        case "MODERATE": return String(localized: "email.readability.moderate")
-        case "DIFFICULT": return String(localized: "email.readability.difficult")
+        case "EASY": return L("email.readability.easy")
+        case "MODERATE": return L("email.readability.moderate")
+        case "DIFFICULT": return L("email.readability.difficult")
         default: return readability
         }
     }
 
     private func localizedInitialsNote(_ note: String) -> String {
         switch note {
-        case "Common profanity": return String(localized: "initials.note.profanity")
-        case "Medical acronym with social baggage": return String(localized: "initials.note.medical")
-        case "Suggestive abbreviation": return String(localized: "initials.note.suggestive")
-        case "Hate-group reference": return String(localized: "initials.note.hate")
-        case "Negative plain-English word": return String(localized: "initials.note.negative")
-        case "Common teasing target": return String(localized: "initials.note.teasing")
-        case "Profane slang acronym": return String(localized: "initials.note.slang")
+        case "Common profanity": return L("initials.note.profanity")
+        case "Medical acronym with social baggage": return L("initials.note.medical")
+        case "Suggestive abbreviation": return L("initials.note.suggestive")
+        case "Hate-group reference": return L("initials.note.hate")
+        case "Negative plain-English word": return L("initials.note.negative")
+        case "Common teasing target": return L("initials.note.teasing")
+        case "Profane slang acronym": return L("initials.note.slang")
         default: return note
         }
     }
 
     private func localizedNamesakeBio(_ entry: NamesakeEntry) -> String {
         switch entry.fullName {
-        case "Ada Lovelace": return String(localized: "namesake.ada.bio")
-        case "Attila the Hun": return String(localized: "namesake.attila.bio")
-        case "Cleopatra": return String(localized: "namesake.cleo.bio")
-        case "James Baldwin": return String(localized: "namesake.james.baldwin.bio")
-        case "James Dean": return String(localized: "namesake.james.dean.bio")
-        case "John Wayne Gacy": return String(localized: "namesake.john.gacy.bio")
-        case "John Lennon": return String(localized: "namesake.john.lennon.bio")
-        case "Mary Shelley": return String(localized: "namesake.mary.shelley.bio")
-        case "Bloody Mary": return String(localized: "namesake.mary.bloody.bio")
-        case "Adolf Hitler": return String(localized: "namesake.adolf.bio")
-        case "Ulysses S. Grant": return String(localized: "namesake.ulysses.bio")
-        case "Wolf Blitzer": return String(localized: "namesake.wolf.bio")
-        case "Zelda Fitzgerald": return String(localized: "namesake.zelda.bio")
+        case "Ada Lovelace": return L("namesake.ada.bio")
+        case "Attila the Hun": return L("namesake.attila.bio")
+        case "Cleopatra": return L("namesake.cleo.bio")
+        case "James Baldwin": return L("namesake.james.baldwin.bio")
+        case "James Dean": return L("namesake.james.dean.bio")
+        case "John Wayne Gacy": return L("namesake.john.gacy.bio")
+        case "John Lennon": return L("namesake.john.lennon.bio")
+        case "Mary Shelley": return L("namesake.mary.shelley.bio")
+        case "Bloody Mary": return L("namesake.mary.bloody.bio")
+        case "Adolf Hitler": return L("namesake.adolf.bio")
+        case "Ulysses S. Grant": return L("namesake.ulysses.bio")
+        case "Wolf Blitzer": return L("namesake.wolf.bio")
+        case "Zelda Fitzgerald": return L("namesake.zelda.bio")
         default: return entry.shortBio
         }
     }
@@ -634,9 +634,9 @@ private struct MonogramPreviewCard: View {
 
     private var localizedStyle: String {
         switch style {
-        case "Classic": return String(localized: "monogram.style.classic")
-        case "Stacked": return String(localized: "monogram.style.stacked")
-        default: return String(localized: "monogram.style.interleaved")
+        case "Classic": return L("monogram.style.classic")
+        case "Stacked": return L("monogram.style.stacked")
+        default: return L("monogram.style.interleaved")
         }
     }
 

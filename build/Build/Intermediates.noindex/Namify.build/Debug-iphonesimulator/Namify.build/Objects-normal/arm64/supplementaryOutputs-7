@@ -19,12 +19,5 @@
     "diagnostics" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/Models.dia",
     "object" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/Models.o",
     "swift-dependencies" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/Models.swiftdeps"
-  },
-  "/Users/antonchepur/Namify/Namify/Persistence/PersistenceService.swift" : {
-    "const-values" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/PersistenceService.swiftconstvalues",
-    "dependencies" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/PersistenceService.d",
-    "diagnostics" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/PersistenceService.dia",
-    "object" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/PersistenceService.o",
-    "swift-dependencies" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/PersistenceService.swiftdeps"
   }
 }

@@ -9,38 +9,6 @@
           "startingColumn": 22,
           "startingLine": 46
         }
-      },
-      {
-        "comment": "",
-        "key": "splash.tagline",
-        "location": {
-          "startingColumn": 40,
-          "startingLine": 49
-        }
-      },
-      {
-        "comment": "",
-        "key": "results.score",
-        "location": {
-          "startingColumn": 55,
-          "startingLine": 84
-        }
-      },
-      {
-        "comment": "",
-        "key": "results.share.watermark",
-        "location": {
-          "startingColumn": 40,
-          "startingLine": 92
-        }
-      },
-      {
-        "comment": "",
-        "key": "share.card.watermark",
-        "location": {
-          "startingColumn": 36,
-          "startingLine": 131
-        }
       }
     ]
   },

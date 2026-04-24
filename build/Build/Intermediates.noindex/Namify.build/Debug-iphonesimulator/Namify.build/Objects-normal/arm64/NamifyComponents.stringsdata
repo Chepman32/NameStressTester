@@ -20,14 +20,6 @@
       },
       {
         "comment": "",
-        "key": "accessibility.expandHint",
-        "location": {
-          "startingColumn": 46,
-          "startingLine": 342
-        }
-      },
-      {
-        "comment": "",
         "key": "%@: %@. %@",
         "location": {
           "startingColumn": 29,

@@ -105,7 +105,7 @@ struct InputScreen: View {
             .buttonStyle(.plain)
 
             Spacer()
-            Text(String(localized: "input.header"))
+            Text(L("input.header"))
                 .font(NamifyTypography.subtitle())
                 .foregroundStyle(Brand.primary)
             Spacer()
@@ -135,10 +135,10 @@ struct InputScreen: View {
                         .foregroundStyle(Brand.accent)
                 }
             VStack(spacing: NamifySpacing.sm) {
-                Text(String(localized: "input.title"))
+                Text(L("input.title"))
                     .font(NamifyTypography.title())
                     .foregroundStyle(Brand.textPrimary)
-                Text(String(localized: "input.subtitle"))
+                Text(L("input.subtitle"))
                     .font(NamifyTypography.bodyMedium())
                     .foregroundStyle(Brand.textSecondary)
                     .multilineTextAlignment(.center)
@@ -151,7 +151,7 @@ struct InputScreen: View {
     private var formFields: some View {
         VStack(spacing: NamifySpacing.md) {
             NamifyTextField(
-                title: String(localized: "input.field.first"),
+                title: L("input.field.first"),
                 text: $viewModel.firstName,
                 isRequired: true,
                 focused: focus == .first,
@@ -163,7 +163,7 @@ struct InputScreen: View {
             .onSubmit { focus = .middle }
 
             NamifyTextField(
-                title: String(localized: "input.field.middle"),
+                title: L("input.field.middle"),
                 text: $viewModel.middleName,
                 focused: focus == .middle,
                 submitLabel: .next
@@ -174,7 +174,7 @@ struct InputScreen: View {
             .onSubmit { focus = .last }
 
             NamifyTextField(
-                title: String(localized: "input.field.last"),
+                title: L("input.field.last"),
                 text: $viewModel.lastName,
                 isRequired: true,
                 focused: focus == .last,
@@ -221,7 +221,7 @@ struct InputScreen: View {
     private var cta: some View {
         VStack(spacing: NamifySpacing.md) {
             NamifyButton(
-                title: String(localized: "input.cta"),
+                title: L("input.cta"),
                 style: .primary,
                 isDisabled: viewModel.canSubmit == false,
                 isLoading: viewModel.isSubmitting
@@ -236,7 +236,7 @@ struct InputScreen: View {
             focus = nil
             UIApplication.shared.endEditing()
         } label: {
-            Label(String(localized: "input.keyboard.done"), systemImage: "keyboard.chevron.compact.down")
+            Label(L("input.keyboard.done"), systemImage: "keyboard.chevron.compact.down")
                 .font(.system(size: 15, weight: .semibold))
                 .foregroundStyle(Brand.textPrimary)
                 .padding(.horizontal, 14)

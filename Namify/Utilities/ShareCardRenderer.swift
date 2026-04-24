@@ -46,7 +46,7 @@ private struct ShareReportView: View {
                 Text("NAMIFY")
                     .font(NamifyTypography.hero())
                     .foregroundStyle(Brand.textPrimary)
-                Text(String(localized: "splash.tagline"))
+                Text(L("splash.tagline"))
                     .font(NamifyTypography.bodySmall())
                     .foregroundStyle(Brand.textSecondary)
                     .kerning(1.6)
@@ -61,7 +61,7 @@ private struct ShareReportView: View {
                 ForEach(summary.results) { result in
                     HStack(spacing: NamifySpacing.md) {
                         NamifyIconCircle(systemName: result.testType.systemImage, color: Brand.color(for: result.testType), size: 34)
-                        Text(String(localized: String.LocalizationValue(result.testType.localizedNameKey)))
+                        Text(L(result.testType.localizedNameKey))
                             .font(NamifyTypography.bodySmall())
                             .foregroundStyle(Brand.textPrimary)
                         Spacer()
@@ -77,11 +77,11 @@ private struct ShareReportView: View {
                 Image(systemName: "shield.checkered")
                     .font(.system(size: 42, weight: .bold))
                     .foregroundStyle(summary.overallVerdict == .failed ? Brand.fail : (summary.overallVerdict == .mixed ? Brand.warn : Brand.pass))
-                Text(String(localized: String.LocalizationValue(summary.overallVerdict.headlineKey)))
+                Text(L(summary.overallVerdict.headlineKey))
                     .font(NamifyTypography.subtitle())
                     .multilineTextAlignment(.center)
                     .foregroundStyle(Brand.textPrimary)
-                Text(String(format: String(localized: "results.score"), summary.passCount, summary.results.count))
+                Text(String(format: L("results.score"), summary.passCount, summary.results.count))
                     .font(NamifyTypography.bodyMedium())
                     .foregroundStyle(Brand.textSecondary)
             }
@@ -89,7 +89,7 @@ private struct ShareReportView: View {
             Spacer()
 
             VStack(spacing: 6) {
-                Text(String(localized: "results.share.watermark"))
+                Text(L("results.share.watermark"))
                     .font(NamifyTypography.bodySmall())
                     .foregroundStyle(Brand.textTertiary)
                 Text(Date.now.formatted(.dateTime.month(.abbreviated).day().year()))
@@ -116,7 +116,7 @@ private struct ShareSingleTestView: View {
             Text(name.fullName)
                 .font(NamifyTypography.subtitle())
                 .foregroundStyle(Brand.textSecondary)
-            Text(String(localized: String.LocalizationValue(result.testType.localizedNameKey)))
+            Text(L(result.testType.localizedNameKey))
                 .font(NamifyTypography.title())
                 .foregroundStyle(Brand.textPrimary)
             Text(result.summaryLine)
@@ -128,7 +128,7 @@ private struct ShareSingleTestView: View {
 
             Spacer()
 
-            Text(String(localized: "share.card.watermark"))
+            Text(L("share.card.watermark"))
                 .font(NamifyTypography.bodySmall())
                 .foregroundStyle(Brand.textTertiary)
         }

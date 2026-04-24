@@ -253,7 +253,7 @@ enum AppLanguage: String, Codable, CaseIterable, Identifiable {
 
     var id: String { rawValue }
 
-    static let supportedCases: [AppLanguage] = [
+    private static let availableCases: [AppLanguage] = [
         .english,
         .arabic,
         .chineseSimplified,
@@ -266,17 +266,13 @@ enum AppLanguage: String, Codable, CaseIterable, Identifiable {
         .greek,
         .hebrew,
         .hindi,
-        .hungarian,
         .indonesian,
         .italian,
         .japanese,
         .korean,
-        .malay,
         .norwegian,
-        .norwegianBokmal,
         .polish,
         .portugueseBrazil,
-        .romanian,
         .russian,
         .spanish,
         .swedish,
@@ -285,6 +281,10 @@ enum AppLanguage: String, Codable, CaseIterable, Identifiable {
         .ukrainian,
         .vietnamese
     ]
+
+    static let supportedCases: [AppLanguage] = availableCases.sorted {
+        $0.sortName.localizedStandardCompare($1.sortName) == .orderedAscending
+    }
 
     static let selectableCases: [AppLanguage] = [.system] + supportedCases
 
@@ -297,6 +297,11 @@ enum AppLanguage: String, Codable, CaseIterable, Identifiable {
         return nativeLocale.localizedString(forIdentifier: rawValue)
             ?? Locale.current.localizedString(forIdentifier: rawValue)
             ?? rawValue
+    }
+
+    private var sortName: String {
+        Locale(identifier: AppLanguage.english.rawValue).localizedString(forIdentifier: rawValue)
+            ?? displayName
     }
 
     var localeIdentifier: String? {
@@ -336,16 +341,13 @@ enum AppLanguage: String, Codable, CaseIterable, Identifiable {
             case "el": return .greek
             case "he", "iw": return .hebrew
             case "hi": return .hindi
-            case "hu": return .hungarian
             case "id", "in": return .indonesian
             case "it": return .italian
             case "ja": return .japanese
             case "ko": return .korean
-            case "ms": return .malay
-            case "no", "nb": return .norwegianBokmal
+            case "no", "nb": return .norwegian
             case "pl": return .polish
             case "pt": return .portugueseBrazil
-            case "ro": return .romanian
             case "ru": return .russian
             case "es": return .spanish
             case "sv": return .swedish

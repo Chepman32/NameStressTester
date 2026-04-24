@@ -23,20 +23,20 @@ struct RhymeVulnerabilityAnalyzer {
             switch (negative.count, severe) {
             case (0, _):
                 verdict = .pass
-                summary = String(localized: "rhyme.summary.none")
+                summary = L("rhyme.summary.none")
             case (1, false):
                 verdict = .warn
-                summary = String(localized: "rhyme.summary.one")
+                summary = L("rhyme.summary.one")
             default:
                 verdict = .fail
-                summary = String(format: String(localized: "rhyme.summary.multiple"), negative.count)
+                summary = String(format: L("rhyme.summary.multiple"), negative.count)
             }
 
             let detailText: String
             if matches.isEmpty {
-                detailText = String(localized: "rhyme.detail.none")
+                detailText = L("rhyme.detail.none")
             } else {
-                detailText = String(format: String(localized: "rhyme.detail.some"), name.first)
+                detailText = String(format: L("rhyme.detail.some"), name.first)
             }
 
             return TestResult(
@@ -75,11 +75,11 @@ struct InitialsDetector {
 
             let summary: String
             if normalizedMatches.isEmpty {
-                summary = String(format: String(localized: "initials.summary.pass"), name.initials)
+                summary = String(format: L("initials.summary.pass"), name.initials)
             } else if let match = normalizedMatches.first {
-                summary = String(format: String(localized: "initials.summary.fail"), match.initials.chunkedInitials)
+                summary = String(format: L("initials.summary.fail"), match.initials.chunkedInitials)
             } else {
-                summary = String(format: String(localized: "initials.summary.warn"), name.initials)
+                summary = String(format: L("initials.summary.warn"), name.initials)
             }
 
             let matches = normalizedMatches.map {
@@ -87,8 +87,8 @@ struct InitialsDetector {
             }
 
             let detailText = normalizedMatches.isEmpty
-                ? String(localized: "initials.detail.pass")
-                : String(localized: "initials.detail.fail")
+                ? L("initials.detail.pass")
+                : L("initials.detail.fail")
 
             return TestResult(
                 testType: .initials,
@@ -140,8 +140,8 @@ struct PronunciationTester {
                 guard normalized.contains(rule.pattern.lowercased()) else { return nil }
                 let labelKey = Self.localizedKey(forPattern: rule.pattern)
                 return PronunciationFactor(
-                    label: String(localized: String.LocalizationValue(labelKey)),
-                    explanation: String(localized: String.LocalizationValue("\(labelKey).explanation")),
+                    label: L(labelKey),
+                    explanation: L("\(labelKey).explanation"),
                     verdict: TestVerdict(rawValue: rule.verdict) ?? .warn
                 )
             }
@@ -153,14 +153,14 @@ struct PronunciationTester {
 
             let verdict: TestVerdict = score <= 3 ? .pass : (score <= 6 ? .warn : .fail)
             let summary: String = score <= 3
-                ? String(localized: "pronunciation.summary.pass")
+                ? L("pronunciation.summary.pass")
                 : (score <= 6
-                    ? String(localized: "pronunciation.summary.warn")
-                    : String(localized: "pronunciation.summary.fail"))
+                    ? L("pronunciation.summary.warn")
+                    : L("pronunciation.summary.fail"))
             let phonetic = override?.phonetic ?? Self.naivePhonetic(for: name.first)
             let likely = override?.likelyMispronunciation ?? Self.englishDefault(for: name.first)
 
-            let detailText = String(localized: "pronunciation.detail")
+            let detailText = L("pronunciation.detail")
 
             return TestResult(
                 testType: .pronunciation,
@@ -173,7 +173,7 @@ struct PronunciationTester {
                         likelyMispronunciation: likely,
                         difficultyScore: score,
                         factors: factors.isEmpty
-                            ? [.init(label: String(localized: "pronunciation.factor.pass.label"), explanation: String(localized: "pronunciation.factor.pass.explanation"), verdict: .pass)]
+                            ? [.init(label: L("pronunciation.factor.pass.label"), explanation: L("pronunciation.factor.pass.explanation"), verdict: .pass)]
                             : factors
                     )
                 )
@@ -247,18 +247,18 @@ struct EmailSimulator {
             let summary: String
             switch verdict {
             case .pass:
-                summary = String(localized: "email.summary.pass")
+                summary = L("email.summary.pass")
             case .warn:
-                summary = String(localized: "email.summary.warn")
+                summary = L("email.summary.warn")
             case .fail:
-                summary = String(localized: "email.summary.fail")
+                summary = L("email.summary.fail")
             }
 
             return TestResult(
                 testType: .email,
                 verdict: verdict,
                 summaryLine: summary,
-                detailText: String(localized: "email.detail"),
+                detailText: L("email.detail"),
                 detailData: .email(EmailDetail(variants: Array(variants.prefix(10)), readability: readability))
             )
         } catch {
@@ -319,20 +319,20 @@ struct NameTagPreviewGenerator {
         let summary: String
         if charCount > 35 || width > 260 {
             verdict = .fail
-            summary = String(localized: "nametag.summary.fail")
+            summary = L("nametag.summary.fail")
         } else if charCount > 25 || width > 220 || hasDiacritics || charCount <= 3 {
             verdict = .warn
-            summary = String(localized: "nametag.summary.warn")
+            summary = L("nametag.summary.warn")
         } else {
             verdict = .pass
-            summary = String(localized: "nametag.summary.pass")
+            summary = L("nametag.summary.pass")
         }
 
         return TestResult(
             testType: .nameTag,
             verdict: verdict,
             summaryLine: summary,
-            detailText: String(localized: "nametag.detail"),
+            detailText: L("nametag.detail"),
             detailData: .nameTag(NameTagDetail(displayName: displayName, characterCount: charCount, fitsScore: summary, warnsForDiacritics: hasDiacritics))
         )
     }
@@ -370,16 +370,16 @@ struct HistoricalNamesakeEngine {
             let summary: String
             switch verdict {
             case .pass:
-                summary = limited.isEmpty ? String(localized: "namesake.summary.empty.pass") : String(localized: "namesake.summary.has.pass")
+                summary = limited.isEmpty ? L("namesake.summary.empty.pass") : L("namesake.summary.has.pass")
             case .warn:
-                summary = String(localized: "namesake.summary.warn")
+                summary = L("namesake.summary.warn")
             case .fail:
-                summary = String(localized: "namesake.summary.fail")
+                summary = L("namesake.summary.fail")
             }
 
             let detailText = limited.isEmpty
-                ? String(localized: "namesake.detail.empty")
-                : String(localized: "namesake.detail.some")
+                ? L("namesake.detail.empty")
+                : L("namesake.detail.some")
 
             return TestResult(
                 testType: .namesake,
@@ -420,16 +420,16 @@ struct MonogramAnalyzer {
         let verdict: TestVerdict = total >= 4 ? .pass : (total >= 2 ? .warn : .fail)
         let summary: String
         switch verdict {
-        case .pass: summary = String(localized: "monogram.summary.pass")
-        case .warn: summary = String(localized: "monogram.summary.warn")
-        case .fail: summary = String(localized: "monogram.summary.fail")
+        case .pass: summary = L("monogram.summary.pass")
+        case .warn: summary = L("monogram.summary.warn")
+        case .fail: summary = L("monogram.summary.fail")
         }
 
         return TestResult(
             testType: .monogram,
             verdict: verdict,
             summaryLine: summary,
-            detailText: String(localized: "monogram.detail"),
+            detailText: L("monogram.detail"),
             detailData: .monogram(
                 MonogramDetail(
                     score: max(0, min(total, 5)),
@@ -539,8 +539,8 @@ private func unavailableResult(for type: TestType) -> TestResult {
     TestResult(
         testType: type,
         verdict: .warn,
-        summaryLine: String(localized: "generic.unavailable.summary"),
-        detailText: String(localized: "generic.unavailable.detail"),
-        detailData: .generic(message: String(localized: "generic.unavailable.message"))
+        summaryLine: L("generic.unavailable.summary"),
+        detailText: L("generic.unavailable.detail"),
+        detailData: .generic(message: L("generic.unavailable.message"))
     )
 }

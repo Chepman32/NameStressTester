@@ -57,34 +57,26 @@ final class AppSession: ObservableObject {
             historyCount = 0
         }
 
-        // First-launch language detection: if language is still "system",
-        // try to match the device's preferred language to a supported language.
-        if preferences.appLanguage == .system {
-            if let detected = detectDeviceLanguage() {
-                preferences.appLanguage = detected
-                try? PersistenceService.shared.savePreferences(preferences, context: context)
-            }
-        }
-
+        AppLocalization.setLanguage(preferences.appLanguage)
         hasBootstrapped = true
     }
 
-    private func detectDeviceLanguage() -> AppLanguage? {
-        let preferredLanguages = Locale.preferredLanguages
-        for identifier in preferredLanguages {
-            if let matched = AppLanguage.from(localeIdentifier: identifier) {
-                return matched
-            }
-        }
-        return nil
-    }
-
     func savePreferences(context: ModelContext) {
+        preferences.appLanguage = preferences.appLanguage.supportedOrSystem
+        AppLocalization.setLanguage(preferences.appLanguage)
+
         do {
             try PersistenceService.shared.savePreferences(preferences, context: context)
         } catch {
-            toast = ToastState(title: String(localized: "app.toast.saveSettingsFailed"), actionTitle: nil, action: nil)
+            toast = ToastState(title: L("app.toast.saveSettingsFailed"), actionTitle: nil, action: nil)
         }
+    }
+
+    func updateAppLanguage(_ language: AppLanguage, context: ModelContext) {
+        var updatedPreferences = preferences
+        updatedPreferences.appLanguage = language.supportedOrSystem
+        preferences = updatedPreferences
+        savePreferences(context: context)
     }
 
     func refreshHistoryCount(context: ModelContext) {

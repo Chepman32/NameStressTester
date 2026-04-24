@@ -8,12 +8,12 @@ struct OnboardingSocialProofView: View {
             ScrollView {
                 VStack(spacing: NamifySpacing.xl) {
                     VStack(spacing: NamifySpacing.sm) {
-                        Text("onboarding.social.headline")
+                        Text(L("onboarding.social.headline"))
                             .font(NamifyTypography.title())
                             .foregroundStyle(Brand.textPrimary)
                             .multilineTextAlignment(.center)
 
-                        Text("onboarding.social.subheadline")
+                        Text(L("onboarding.social.subheadline"))
                             .font(NamifyTypography.bodyMedium())
                             .foregroundStyle(Brand.textSecondary)
                             .multilineTextAlignment(.center)
@@ -32,7 +32,7 @@ struct OnboardingSocialProofView: View {
                 .padding(.bottom, NamifySpacing.xxxl)
             }
 
-            NamifyButton(title: String(localized: "onboarding.continue")) {
+            NamifyButton(title: L("onboarding.continue")) {
                 Haptics.impact(.medium)
                 viewModel.advance()
             }

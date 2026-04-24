@@ -8,13 +8,13 @@ struct OnboardingGoalView: View {
             ScrollView {
                 VStack(spacing: NamifySpacing.xl) {
                     VStack(spacing: NamifySpacing.sm) {
-                        Text("onboarding.goal.headline")
+                        Text(L("onboarding.goal.headline"))
                             .font(NamifyTypography.title())
                             .foregroundStyle(Brand.textPrimary)
                             .multilineTextAlignment(.center)
 
                         if viewModel.selectedGoal == nil {
-                            Text("onboarding.goal.subheadline")
+                            Text(L("onboarding.goal.subheadline"))
                                 .font(NamifyTypography.bodyMedium())
                                 .foregroundStyle(Brand.textSecondary)
                                 .multilineTextAlignment(.center)
@@ -51,7 +51,7 @@ struct OnboardingGoalView: View {
             }
 
             NamifyButton(
-                title: String(localized: "onboarding.continue"),
+                title: L("onboarding.continue"),
                 isDisabled: viewModel.selectedGoal == nil
             ) {
                 Haptics.impact(.medium)

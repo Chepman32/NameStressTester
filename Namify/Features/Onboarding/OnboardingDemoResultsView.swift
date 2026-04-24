@@ -62,7 +62,7 @@ struct OnboardingDemoResultsView: View {
                 .foregroundStyle(Brand.textPrimary)
                 .multilineTextAlignment(.center)
 
-            Text(String(localized: "results.label.testedToday"))
+            Text(L("results.label.testedToday"))
                 .font(NamifyTypography.bodySmall())
                 .foregroundStyle(Brand.textSecondary)
                 .padding(.horizontal, 14)
@@ -109,12 +109,12 @@ struct OnboardingDemoResultsView: View {
                 .font(.system(size: 56, weight: .bold))
                 .foregroundStyle(summary.overallVerdict == .survived ? Brand.pass : (summary.overallVerdict == .mixed ? Brand.warn : Brand.fail))
 
-            Text(String(localized: String.LocalizationValue(summary.overallVerdict.headlineKey)))
+            Text(L(summary.overallVerdict.headlineKey))
                 .font(NamifyTypography.subtitle())
                 .foregroundStyle(summary.overallVerdict == .survived ? Brand.pass : (summary.overallVerdict == .mixed ? Brand.warn : Brand.fail))
                 .multilineTextAlignment(.center)
 
-            Text(String(format: String(localized: "results.score"), summary.passCount, summary.results.count))
+            Text(String(format: L("results.score"), summary.passCount, summary.results.count))
                 .font(NamifyTypography.bodyMedium())
                 .foregroundStyle(Brand.textSecondary)
         }
@@ -123,18 +123,18 @@ struct OnboardingDemoResultsView: View {
 
     private var completionCTA: some View {
         VStack(spacing: NamifySpacing.md) {
-            Text("onboarding.complete.message")
+            Text(L("onboarding.complete.message"))
                 .font(NamifyTypography.bodyMedium())
                 .foregroundStyle(Brand.textSecondary)
                 .multilineTextAlignment(.center)
                 .padding(.top, NamifySpacing.lg)
 
-            NamifyButton(title: String(localized: "onboarding.complete.cta")) {
+            NamifyButton(title: L("onboarding.complete.cta")) {
                 Haptics.notification(.success)
                 onComplete()
             }
 
-            NamifyButton(title: String(localized: "onboarding.complete.secondary"), style: .text) {
+            NamifyButton(title: L("onboarding.complete.secondary"), style: .text) {
                 if let summary = viewModel.demoSummary,
                    let name = viewModel.demoName,
                    let image = ShareCardRenderer.renderReport(name: name, summary: summary, colorScheme: colorScheme) {

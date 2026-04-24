@@ -27,12 +27,12 @@ struct OnboardingProcessingView: View {
             }
 
             VStack(spacing: NamifySpacing.sm) {
-                Text("onboarding.processing.headline")
+                Text(L("onboarding.processing.headline"))
                     .font(NamifyTypography.subtitle())
                     .foregroundStyle(Brand.textPrimary)
                     .multilineTextAlignment(.center)
 
-                Text("onboarding.processing.subheadline")
+                Text(L("onboarding.processing.subheadline"))
                     .font(NamifyTypography.bodyMedium())
                     .foregroundStyle(Brand.textSecondary)
                     .multilineTextAlignment(.center)

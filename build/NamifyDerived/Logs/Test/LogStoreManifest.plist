@@ -6,10 +6,10 @@
 	<integer>12</integer>
 	<key>logs</key>
 	<dict>
-		<key>FAC4D9BE-ED7B-4E53-9C9F-0B82A69D6A24</key>
+		<key>96D0FA3F-66AA-4FEB-B22D-7C0BF3A0F4AD</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>74756EFC-247F-435B-ABD2-7926B08EEF10</string>
+			<string>23B29F7C-259D-4532-935D-A559A001CB3D</string>
 			<key>auxiliaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -30,66 +30,7 @@
 			<key>domainType</key>
 			<string>com.apple.dt.unit.cocoaUnitTest</string>
 			<key>fileName</key>
-			<string>Test-Namify-2026.04.24_13-26-15-+0300.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>3</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>Namify project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Namify</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Test Namify</string>
-			<key>timeStartedRecording</key>
-			<real>798719175.698017</real>
-			<key>timeStoppedRecording</key>
-			<real>798719267.35363102</real>
-			<key>title</key>
-			<string>Test Namify</string>
-			<key>uniqueIdentifier</key>
-			<string>FAC4D9BE-ED7B-4E53-9C9F-0B82A69D6A24</string>
-		</dict>
-		<key>FC39D3D2-7219-4B3C-9FCC-BC13BC7BB449</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>ED495B38-AF7F-4A04-9665-448834B0075E</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>1</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>1</integer>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.unit.cocoaUnitTest</string>
-			<key>fileName</key>
-			<string>Test-Namify-2026.04.24_13-25-29-+0300.xcresult</string>
+			<string>Test-Namify-2026.04.24_14-28-20-+0300.xcresult</string>
 			<key>hasAuxiliaryLog</key>
 			<true/>
 			<key>hasPrimaryLog</key>
@@ -105,7 +46,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>1</integer>
+				<integer>0</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>Namify project</string>
@@ -116,13 +57,13 @@
 			<key>signature</key>
 			<string>Test Namify</string>
 			<key>timeStartedRecording</key>
-			<real>798719129.51186097</real>
+			<real>798722900.24952996</real>
 			<key>timeStoppedRecording</key>
-			<real>798719148.01834702</real>
+			<real>798722947.91392696</real>
 			<key>title</key>
 			<string>Test Namify</string>
 			<key>uniqueIdentifier</key>
-			<string>FC39D3D2-7219-4B3C-9FCC-BC13BC7BB449</string>
+			<string>96D0FA3F-66AA-4FEB-B22D-7C0BF3A0F4AD</string>
 		</dict>
 	</dict>
 </dict>

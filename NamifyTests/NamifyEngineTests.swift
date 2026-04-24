@@ -63,4 +63,48 @@ final class NamifyEngineTests: XCTestCase {
         XCTAssertEqual(preferences.appLanguageRaw, AppLanguage.russian.rawValue)
         XCTAssertEqual(preferences.snapshot.appLanguage, .russian)
     }
+
+    func testLanguagePickerCasesAreAlphabetizedWithSystemFirst() {
+        let expectedSupportedCases: [AppLanguage] = [
+            .arabic,
+            .chineseSimplified,
+            .czech,
+            .danish,
+            .dutch,
+            .english,
+            .finnish,
+            .french,
+            .german,
+            .greek,
+            .hebrew,
+            .hindi,
+            .indonesian,
+            .italian,
+            .japanese,
+            .korean,
+            .norwegian,
+            .polish,
+            .portugueseBrazil,
+            .russian,
+            .spanish,
+            .swedish,
+            .thai,
+            .turkish,
+            .ukrainian,
+            .vietnamese
+        ]
+
+        XCTAssertEqual(AppLanguage.supportedCases, expectedSupportedCases)
+        XCTAssertEqual(AppLanguage.selectableCases, [.system] + expectedSupportedCases)
+    }
+
+    func testAppLocalizationUsesSelectedLanguage() {
+        AppLocalization.setLanguage(.english)
+        XCTAssertEqual(L("settings.title"), "Settings")
+
+        AppLocalization.setLanguage(.russian)
+        XCTAssertEqual(L("settings.title"), "Настройки")
+
+        AppLocalization.setLanguage(.system)
+    }
 }

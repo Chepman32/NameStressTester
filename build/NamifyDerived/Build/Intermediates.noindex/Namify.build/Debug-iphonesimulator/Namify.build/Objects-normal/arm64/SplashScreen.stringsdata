@@ -9,22 +9,6 @@
           "startingColumn": 30,
           "startingLine": 230
         }
-      },
-      {
-        "comment": "",
-        "key": "splash.tagline",
-        "location": {
-          "startingColumn": 48,
-          "startingLine": 233
-        }
-      },
-      {
-        "comment": "",
-        "key": "splash.tagline",
-        "location": {
-          "startingColumn": 52,
-          "startingLine": 266
-        }
       }
     ]
   },

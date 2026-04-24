@@ -19,5 +19,12 @@
     "diagnostics" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/OnboardingSocialProofView.dia",
     "object" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/OnboardingSocialProofView.o",
     "swift-dependencies" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/OnboardingSocialProofView.swiftdeps"
+  },
+  "/Users/antonchepur/Namify/Namify/Features/Onboarding/OnboardingSolutionView.swift" : {
+    "const-values" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/OnboardingSolutionView.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/OnboardingSolutionView.d",
+    "diagnostics" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/OnboardingSolutionView.dia",
+    "object" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/OnboardingSolutionView.o",
+    "swift-dependencies" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/OnboardingSolutionView.swiftdeps"
   }
 }

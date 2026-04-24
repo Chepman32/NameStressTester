@@ -8,13 +8,13 @@ struct OnboardingPainPointsView: View {
             ScrollView {
                 VStack(spacing: NamifySpacing.xl) {
                     VStack(spacing: NamifySpacing.sm) {
-                        Text("onboarding.pain.headline")
+                        Text(L("onboarding.pain.headline"))
                             .font(NamifyTypography.title())
                             .foregroundStyle(Brand.textPrimary)
                             .multilineTextAlignment(.center)
 
                         if viewModel.selectedPainPoints.isEmpty {
-                            Text("onboarding.pain.subheadline")
+                            Text(L("onboarding.pain.subheadline"))
                                 .font(NamifyTypography.bodyMedium())
                                 .foregroundStyle(Brand.textSecondary)
                                 .multilineTextAlignment(.center)
@@ -51,7 +51,7 @@ struct OnboardingPainPointsView: View {
             }
 
             NamifyButton(
-                title: String(localized: "onboarding.continue"),
+                title: L("onboarding.continue"),
                 isDisabled: viewModel.selectedPainPoints.isEmpty
             ) {
                 Haptics.impact(.medium)

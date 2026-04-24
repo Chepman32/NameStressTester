@@ -26,7 +26,7 @@
 		</data>
 		<key>Namify.debug.dylib</key>
 		<data>
-		imhdPStgBDdKLQZ36KtFwEcUO0I=
+		O0c2pt84tsgzHClgWIcIYkGm+YI=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -80,6 +80,15 @@
 			<key>hash</key>
 			<data>
 			NR1B9+EODb60aksEe83ttvg931E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zgCTcDdt5+O6QgPAQTIKClyX8gc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -324,7 +333,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vYhGMnckQBnazY3I0Vh2NsROfEYuuaZmd1I9nlgZva4=
+			oS3T9KqfE9Nf+LvPH3R8q9Yn83g3cXm+rDv3V/KzXLA=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
@@ -387,6 +396,15 @@
 			<key>hash2</key>
 			<data>
 			uiuOnrP6VOgHPpRSxczeEuYq+1Uy0jqqYt8LsJ051ng=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TrcJc55uA3YburbfRvGpjxL6AEL8ux9h2Cm0NAv6Xa0=
 			</data>
 			<key>optional</key>
 			<true/>

@@ -12,12 +12,12 @@ struct OnboardingSolutionView: View {
             ScrollView {
                 VStack(spacing: NamifySpacing.xl) {
                     VStack(spacing: NamifySpacing.sm) {
-                        Text("onboarding.solution.headline")
+                        Text(L("onboarding.solution.headline"))
                             .font(NamifyTypography.title())
                             .foregroundStyle(Brand.textPrimary)
                             .multilineTextAlignment(.center)
 
-                        Text("onboarding.solution.subheadline")
+                        Text(L("onboarding.solution.subheadline"))
                             .font(NamifyTypography.bodyMedium())
                             .foregroundStyle(Brand.textSecondary)
                             .multilineTextAlignment(.center)
@@ -36,7 +36,7 @@ struct OnboardingSolutionView: View {
                 .padding(.bottom, NamifySpacing.xxxl)
             }
 
-            NamifyButton(title: String(localized: "onboarding.solution.cta")) {
+            NamifyButton(title: L("onboarding.solution.cta")) {
                 Haptics.impact(.medium)
                 viewModel.advance()
             }

@@ -230,7 +230,7 @@ struct SplashScreen: View {
                         Text("NAMIFY")
                             .font(NamifyTypography.hero())
                             .foregroundStyle(Brand.primary)
-                        Text(String(localized: "splash.tagline"))
+                        Text(L("splash.tagline"))
                             .font(NamifyTypography.bodySmall())
                             .foregroundStyle(Brand.textSecondary)
                             .kerning(2)
@@ -263,7 +263,7 @@ struct SplashScreen: View {
                                 .transition(.scale)
                         }
                         if viewModel.showTagline {
-                            Text(String(localized: "splash.tagline"))
+                            Text(L("splash.tagline"))
                                 .font(NamifyTypography.bodySmall())
                                 .foregroundStyle(Brand.textSecondary)
                                 .kerning(2)
