@@ -48,7 +48,7 @@
 			<key>uniqueIdentifier</key>
 			<string>1BEC03A5-1505-43A2-AA63-50A8AF9F22B2</string>
 		</dict>
-		<key>DB118697-081C-463D-9490-6DB10CBDB466</key>
+		<key>5C28737D-5C2D-4D63-9A77-A7E2D10DEE0D</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -57,7 +57,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>DB118697-081C-463D-9490-6DB10CBDB466.xcactivitylog</string>
+			<string>5C28737D-5C2D-4D63-9A77-A7E2D10DEE0D.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -82,13 +82,13 @@
 			<key>signature</key>
 			<string>Building project Namify with scheme Namify and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>798712805.05465806</real>
+			<real>798722456.95785701</real>
 			<key>timeStoppedRecording</key>
-			<real>798712816.28505194</real>
+			<real>798722459.79727197</real>
 			<key>title</key>
 			<string>Building project Namify with scheme Namify and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>DB118697-081C-463D-9490-6DB10CBDB466</string>
+			<string>5C28737D-5C2D-4D63-9A77-A7E2D10DEE0D</string>
 		</dict>
 	</dict>
 </dict>
