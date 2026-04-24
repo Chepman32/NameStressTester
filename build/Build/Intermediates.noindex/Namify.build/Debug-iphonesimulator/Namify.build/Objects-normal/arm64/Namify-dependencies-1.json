@@ -201,392 +201,392 @@
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/System\/Library\/Frameworks\/Accessibility.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/Accessibility-4D2SXLTCSFDOQUPIXWVDMLLOU.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/Accessibility-47BJKI7IGDU3B6NQJBHB1HP81.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Accessibility"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/System\/Library\/Frameworks\/CFNetwork.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/CFNetwork-3O3CWK5GKJ05A7ABBG2C9GGG3.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/CFNetwork-3EBCDP2HJG2JURHPS1SN2GIGI.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CFNetwork"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/System\/Library\/Frameworks\/CoreData.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/CoreData-64NYHQZRKRPCRKD63MR920RDF.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/CoreData-4KIUY67W10BICGEBJPJ3HLGL4.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreData"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/System\/Library\/Frameworks\/CoreFoundation.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/CoreFoundation-1OFVINHWTDSOQVIVLD7BDNJWO.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/CoreFoundation-4ETY8G71Z2VYGEU6W88PEH1CJ.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreFoundation"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/System\/Library\/Frameworks\/CoreGraphics.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/CoreGraphics-QBS7WDHMYPM4XQL8EJJ2Q8UZ.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/CoreGraphics-2RE0M50WPJ48KN131N1N5FMDX.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreGraphics"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/System\/Library\/Frameworks\/CoreImage.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/CoreImage-88PV1GG7WYX91M3VEHK0RGVPU.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/CoreImage-9CAMX1BYOSCGP2NOCXC7CN3LV.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreImage"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/System\/Library\/Frameworks\/CoreText.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/CoreText-B2944BOGBBKT6DTT0ROMBNQFL.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/CoreText-57P6OAPM22LZZ3D1LWV0400DC.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreText"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/System\/Library\/Frameworks\/CoreTransferable.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/CoreTransferable-2TSUTIWPH9R6C66EJUSBMTOLE.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/CoreTransferable-BGGMQAWAMONUCB3IWBJESZXED.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreTransferable"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/System\/Library\/Frameworks\/CoreVideo.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/CoreVideo-AE6FWWVMHWC7UJ0PT1V0IS2LG.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/CoreVideo-5HUE7ACH30H13LWMEBO0X1SAC.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreVideo"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/usr\/include\/Darwin.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/Darwin-3P1QYXZCEFOVGIITJ5N3T7PIG.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/Darwin-8GRMTMDO3OV5RYH9AAU6L3JX0.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Darwin"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/System\/Library\/Frameworks\/DataDetection.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/DataDetection-6M7BX2A5UD0NC4P0TTGYNRJWD.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/DataDetection-90ZAEYPA5I95O9QIU9ISRSTTS.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "DataDetection"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/System\/Library\/Frameworks\/DeveloperToolsSupport.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/DeveloperToolsSupport-2Z7P4AKNUWPHJ9B5E1H3ATRNJ.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/DeveloperToolsSupport-3UC0NVXTXJEH8I9GGVTQTTBN6.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "DeveloperToolsSupport"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/usr\/include\/dispatch.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/Dispatch-12WJ47TATYNK0E2J8X047FP7G.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/Dispatch-B0ZW4JFNN4NQ10A9LJYQMY8VU.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Dispatch"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/System\/Library\/Frameworks\/FileProvider.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/FileProvider-1TSITDPWERIJWWZCPQE0AFV8W.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/FileProvider-PGIQ09MC0RYALPOK6IHRT8OB.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "FileProvider"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/System\/Library\/Frameworks\/Foundation.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/Foundation-65MYCQ358MTSAT572JTP0GUFF.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/Foundation-ERM52YP3AW1KW1YYSEVLWYYW8.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Foundation"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/System\/Library\/Frameworks\/IOSurface.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/IOSurface-ED5IWPYUQ9XNJJS3W40RIMEQ8.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/IOSurface-9VKLM401YIC9VHV70CIYOBBE5.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "IOSurface"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/System\/Library\/Frameworks\/ImageIO.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/ImageIO-7DD35DCXVQT7YSU28R5VLV5NP.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/ImageIO-1T94UTYCVIG2NF13TC6NPKIPN.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "ImageIO"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/usr\/include\/DarwinBasic.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/MachO-62USEP97853HXULYB23IMD4ZP.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/MachO-7BSGWMD7SN943UOWR7RXQCJFG.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "MachO"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/System\/Library\/Frameworks\/Metal.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/Metal-7ZD2XQ3UDSBRFY6PJCCJA9UI1.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/Metal-DTXQXTXISDQRL8ZH25LRFULTT.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Metal"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/System\/Library\/Frameworks\/OSLog.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/OSLog-AA2S6L9BOSG32D23MNYRFR4MW.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/OSLog-BMEP3BX4JXXI1JT8Z4KKK6WGP.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "OSLog"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/usr\/include\/ObjectiveC.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/ObjectiveC-7U7SE7TXN2XZ9NDDRZB1LBKXV.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/ObjectiveC-9KSW5MTNJZKBOS3UDMKBYPDAI.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "ObjectiveC"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/System\/Library\/Frameworks\/OpenGLES.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/OpenGLES-8NOJKX3WCSJCSUVBDXE5PXFKD.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/OpenGLES-2WPGQNV9S9SA4MXMWP5Z1MXVH.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "OpenGLES"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/System\/Library\/Frameworks\/QuartzCore.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/QuartzCore-CCT4SYURG8730RF7S3RLPBCLH.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/QuartzCore-7WP8CWJ4IWL1ZUWN5PW7IKA4P.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "QuartzCore"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/System\/Library\/Frameworks\/Security.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/Security-4QORN8Z8AGF9YYAIXPVC9S2LO.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/Security-7M8SP6MN54SQW65HEEY6AQE3J.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Security"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/usr\/include\/Spatial\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/Spatial-CCIOC9Z3MP2LAUGDGY5VVTPU0.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/Spatial-4IVQW8VOSLAY6LISS2Y15A7XT.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Spatial"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/usr\/lib\/swift\/shims\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/SwiftShims-1LP18KHG1CUCZYRV8SQ07S8ME.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/SwiftShims-3XOIRDSELC0LXIHENV4YNNBSA.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "SwiftShims"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/System\/Library\/Frameworks\/SwiftUI.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/SwiftUI-44DXE2JAS4U0CG80YR8XJVPL7.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/SwiftUI-A7X4IZFOI9Z1TRSA5RS1CJ8O0.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "SwiftUI"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/System\/Library\/Frameworks\/SwiftUICore.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/SwiftUICore-6MONX5FEJKLPG6I2THA6LF6CE.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/SwiftUICore-6ZGOSF8BPRS6ON8EYIGDGJI46.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "SwiftUICore"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/System\/Library\/Frameworks\/Symbols.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/Symbols-25IDO4VXRJIMFKKDDKY3X5FON.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/Symbols-63WH5MZF8YH9IJ2C4ZCRCP7CY.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Symbols"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/System\/Library\/Frameworks\/UIKit.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/UIKit-7FDEWGHWAK99W7XUGNDMVCDRW.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/UIKit-B98HKNG792T3QK3UNBSORLURS.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "UIKit"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/System\/Library\/SubFrameworks\/UIUtilities.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/UIUtilities-7VDZ15R74YNGATPSUY5RDG39A.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/UIUtilities-ASFDL3WQBV47ZPB2SBFU73QH.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "UIUtilities"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/System\/Library\/Frameworks\/UniformTypeIdentifiers.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/UniformTypeIdentifiers-E654NJMRF3S7TJIYO9O8128X8.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/UniformTypeIdentifiers-D79IT02W32WR9UXMXZDM114MC.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "UniformTypeIdentifiers"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/System\/Library\/Frameworks\/UserNotifications.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/UserNotifications-8SU3YHQ3JUMZJJGVVTKP4D7QS.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/UserNotifications-DEWRFKEQPOL2OSN13MXP2Q30F.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "UserNotifications"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/usr\/include\/xpc.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/XPC-F1RS7AOQMDH8BPZHG2GMIYP32.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/XPC-A7SWVU3W0C2EXTS4I9BSJFQ3U.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "XPC"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/usr\/include\/DarwinFoundation1.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/_AvailabilityInternal-302XTLQU2PKQ2T111JQMFWVXC.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/_AvailabilityInternal-EVF1ZF5DB4I5O130KDWA4YPU0.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_AvailabilityInternal"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/_Builtin_float-980QZ7N3RVCWMSQQZJW37IMOM.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/_Builtin_float-D4BUJS6K1U81NMQO92XSSEULR.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_float"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/_Builtin_intrinsics-4O0R1UU4MIN2LOICVSHXQZJSE.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/_Builtin_intrinsics-C6L1N1L60WX9S77O2K4DYWVYS.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_intrinsics"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/_Builtin_inttypes-AHZHCNYOAX9LGBYU55BF3PRMD.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/_Builtin_inttypes-2H37H32GRDDTNI1MWH2867NX7.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_inttypes"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/_Builtin_limits-C0UNBOTGYDRLBLXPD0N9MXT2N.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/_Builtin_limits-EQF1N064TJC7OAMNNRTIBU55N.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_limits"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/_Builtin_stdarg-7199OG792WJGYFYXRWNQCDYOO.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/_Builtin_stdarg-3XKFOURJASC46IYI0GFD5NZIC.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_stdarg"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/_Builtin_stdatomic-1O2I32E2OBI2ANKKALF80HNUA.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/_Builtin_stdatomic-I0WA8N1QS7BZF0IAWGKKS5MB.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_stdatomic"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/_Builtin_stdbool-2WZQJCIZ0D8UX0HDC1A3TJGM2.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/_Builtin_stdbool-6KT985WGJU85043W1KR82GKXR.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_stdbool"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/_Builtin_stddef-8EXKM46FFHB6NB4I3T6M625OW.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/_Builtin_stddef-25IRMOQF109N0BK5QQ9AM1L4V.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_stddef"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/_Builtin_stdint-9BSMI971PSLCBROSW1HTDIMN1.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/_Builtin_stdint-9KTOW3T8MNBT1KZMRCTDDB5S3.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_stdint"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/_Builtin_tgmath-5G2IJPCX3HQ5W4MLDRCTQ5LLT.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/_Builtin_tgmath-8GNZ0U0VPF2VC06W2J21ASULX.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_tgmath"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/usr\/include\/DarwinFoundation1.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/_DarwinFoundation1-70AC7TE4C7HBEYIUGR5XC03PU.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/_DarwinFoundation1-B7T1PBNYP9D6IRCIKIY04LSMS.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_DarwinFoundation1"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/usr\/include\/DarwinFoundation2.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/_DarwinFoundation2-2YOQ2PVPRHTVBK7VSICRC6KDV.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/_DarwinFoundation2-62X48K5HZEMM1SCDSRE3P7UQZ.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_DarwinFoundation2"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/usr\/include\/DarwinFoundation3.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/_DarwinFoundation3-3Q5OU8EABRUD5BIGBGY9WYOHZ.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/_DarwinFoundation3-9U05MX9T0COTTQ5BJ1V2VT5EL.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_DarwinFoundation3"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/usr\/lib\/swift\/shims\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/_SwiftConcurrencyShims-B9THEHSV77EGOPCPS0IDXJIFC.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/_SwiftConcurrencyShims-WFT4WC7XH3W4P0H1RZ7DO1QX.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_SwiftConcurrencyShims"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/usr\/include\/os.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/os-7WOFWVXKGI5EWC4Q85U966323.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/os-BY3910P1VR58O4KV44DMZRV3E.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "os"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/usr\/include\/os.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/os_object-2HYKBN63S1WOU8BXME2USEU6.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/os_object-1XJE6R37JSU89GNM7L3C8A9NK.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "os_object"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/usr\/include\/os.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/os_workgroup-8LPV88ANOTRMOSZH8XAX8X73C.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/os_workgroup-BXSO42ORHKZBD5SK92ISWHZ23.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "os_workgroup"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/ptrauth-F5ATQPZC1JKSN098TMOQUH960.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/ptrauth-AMUAKN4FV4CTPR7QGUYJHMWJ4.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "ptrauth"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/ptrcheck-BV3YUNFMWHQ0LO3FWIPK46VSO.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/ptrcheck-CIVVSRCONC2BYOSH3BKBFUBIE.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "ptrcheck"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/usr\/include\/simd\/module.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/simd-5P802LIVYO55VDG7GDT2WHPXV.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/simd-EI87CO7JXVG4FUKKQY4Z822L8.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "simd"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneSimulator.platform\/Developer\/SDKs\/iPhoneSimulator.sdk\/usr\/include\/DarwinFoundation2.modulemap",
-    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/sys_types-2AD5S1E2VHRT0AW4I93RENCRM.pcm",
+    "clangModulePath" : "\/Users\/antonchepur\/Namify\/build\/ModuleCache.noindex\/sys_types-3693WULHIO0PUCNWBDLC0U7KL.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "sys_types"
