@@ -105,6 +105,20 @@ final class NamifyEngineTests: XCTestCase {
         XCTAssertFalse(OnboardingStep.demoResults.canSkip)
     }
 
+    @MainActor
+    func testOnboardingChoiceIdentitySurvivesRecomputedOptions() {
+        let viewModel = OnboardingViewModel()
+
+        let selectedGoal = viewModel.goals[0]
+        viewModel.selectedGoal = selectedGoal
+        XCTAssertEqual(viewModel.selectedGoal?.id, viewModel.goals[0].id)
+
+        let selectedPainPoint = viewModel.painPoints[0]
+        viewModel.selectedPainPoints.insert(selectedPainPoint)
+        XCTAssertTrue(viewModel.selectedPainPoints.contains(viewModel.painPoints[0]))
+        XCTAssertEqual(viewModel.solutionMappings().first?.id, selectedPainPoint.id)
+    }
+
     func testAppLocalizationUsesSelectedLanguage() {
         AppLocalization.setLanguage(.english)
         XCTAssertEqual(L("settings.title"), "Settings")

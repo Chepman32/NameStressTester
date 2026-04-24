@@ -1,0 +1,29 @@
+{
+  "" : {
+    "diagnostics" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/NamifyTests.build/Objects-normal/arm64/NamifyTests-primary.dia",
+    "emit-module-dependencies" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/NamifyTests.build/Objects-normal/arm64/NamifyTests-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/NamifyTests.build/Objects-normal/arm64/NamifyTests-primary-emit-module.dia",
+    "pch" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/NamifyTests.build/Objects-normal/arm64/NamifyTests-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/NamifyTests.build/Objects-normal/arm64/NamifyTests-primary.swiftdeps"
+  },
+  "/Users/antonchepur/Namify/NamifyTests/NamifyEngineTests.swift" : {
+    "const-values" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/NamifyTests.build/Objects-normal/arm64/NamifyEngineTests.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/NamifyTests.build/Objects-normal/arm64/NamifyEngineTests.d",
+    "diagnostics" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/NamifyTests.build/Objects-normal/arm64/NamifyEngineTests.dia",
+    "index-unit-output-path" : "/Namify.build/Debug-iphonesimulator/NamifyTests.build/Objects-normal/arm64/NamifyEngineTests.o",
+    "llvm-bc" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/NamifyTests.build/Objects-normal/arm64/NamifyEngineTests.bc",
+    "object" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/NamifyTests.build/Objects-normal/arm64/NamifyEngineTests.o",
+    "swift-dependencies" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/NamifyTests.build/Objects-normal/arm64/NamifyEngineTests.swiftdeps",
+    "swiftmodule" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/NamifyTests.build/Objects-normal/arm64/NamifyEngineTests~partial.swiftmodule"
+  },
+  "/Users/antonchepur/Namify/NamifyTests/NamifyRenderTests.swift" : {
+    "const-values" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/NamifyTests.build/Objects-normal/arm64/NamifyRenderTests.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/NamifyTests.build/Objects-normal/arm64/NamifyRenderTests.d",
+    "diagnostics" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/NamifyTests.build/Objects-normal/arm64/NamifyRenderTests.dia",
+    "index-unit-output-path" : "/Namify.build/Debug-iphonesimulator/NamifyTests.build/Objects-normal/arm64/NamifyRenderTests.o",
+    "llvm-bc" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/NamifyTests.build/Objects-normal/arm64/NamifyRenderTests.bc",
+    "object" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/NamifyTests.build/Objects-normal/arm64/NamifyRenderTests.o",
+    "swift-dependencies" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/NamifyTests.build/Objects-normal/arm64/NamifyRenderTests.swiftdeps",
+    "swiftmodule" : "/Users/antonchepur/Namify/build/NamifyDerived/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/NamifyTests.build/Objects-normal/arm64/NamifyRenderTests~partial.swiftmodule"
+  }
+}

@@ -2,16 +2,32 @@ import SwiftUI
 import SwiftData
 
 struct OnboardingGoal: Identifiable, Hashable {
-    let id = UUID()
+    let id: String
     let emoji: String
     let title: String
     let subtitle: String
+
+    static func == (lhs: OnboardingGoal, rhs: OnboardingGoal) -> Bool {
+        lhs.id == rhs.id
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
 }
 
 struct OnboardingPainPoint: Identifiable, Hashable {
-    let id = UUID()
+    let id: String
     let emoji: String
     let title: String
+
+    static func == (lhs: OnboardingPainPoint, rhs: OnboardingPainPoint) -> Bool {
+        lhs.id == rhs.id
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
 }
 
 struct Testimonial: Identifiable {
@@ -23,7 +39,7 @@ struct Testimonial: Identifiable {
 }
 
 struct SolutionMapping: Identifiable {
-    let id = UUID()
+    let id: String
     let painPoint: String
     let solution: String
     let icon: String
@@ -42,23 +58,23 @@ final class OnboardingViewModel: ObservableObject {
 
     var goals: [OnboardingGoal] {
         [
-            OnboardingGoal(emoji: "🎭", title: L("onboarding.goal.soundsBeautiful"), subtitle: L("onboarding.goal.soundsBeautiful.sub")),
-            OnboardingGoal(emoji: "🛡️", title: L("onboarding.goal.bullyProof"), subtitle: L("onboarding.goal.bullyProof.sub")),
-            OnboardingGoal(emoji: "🏷️", title: L("onboarding.goal.looksGood"), subtitle: L("onboarding.goal.looksGood.sub")),
-            OnboardingGoal(emoji: "📚", title: L("onboarding.goal.goodHistory"), subtitle: L("onboarding.goal.goodHistory.sub")),
-            OnboardingGoal(emoji: "🗣️", title: L("onboarding.goal.easyPronounce"), subtitle: L("onboarding.goal.easyPronounce.sub")),
-            OnboardingGoal(emoji: "🎨", title: L("onboarding.goal.aesthetic"), subtitle: L("onboarding.goal.aesthetic.sub")),
+            OnboardingGoal(id: "soundsBeautiful", emoji: "🎭", title: L("onboarding.goal.soundsBeautiful"), subtitle: L("onboarding.goal.soundsBeautiful.sub")),
+            OnboardingGoal(id: "bullyProof", emoji: "🛡️", title: L("onboarding.goal.bullyProof"), subtitle: L("onboarding.goal.bullyProof.sub")),
+            OnboardingGoal(id: "looksGood", emoji: "🏷️", title: L("onboarding.goal.looksGood"), subtitle: L("onboarding.goal.looksGood.sub")),
+            OnboardingGoal(id: "goodHistory", emoji: "📚", title: L("onboarding.goal.goodHistory"), subtitle: L("onboarding.goal.goodHistory.sub")),
+            OnboardingGoal(id: "easyPronounce", emoji: "🗣️", title: L("onboarding.goal.easyPronounce"), subtitle: L("onboarding.goal.easyPronounce.sub")),
+            OnboardingGoal(id: "aesthetic", emoji: "🎨", title: L("onboarding.goal.aesthetic"), subtitle: L("onboarding.goal.aesthetic.sub")),
         ]
     }
 
     var painPoints: [OnboardingPainPoint] {
         [
-            OnboardingPainPoint(emoji: "😰", title: L("onboarding.pain.initials")),
-            OnboardingPainPoint(emoji: "😬", title: L("onboarding.pain.rhymes")),
-            OnboardingPainPoint(emoji: "🤷", title: L("onboarding.pain.mispronunciation")),
-            OnboardingPainPoint(emoji: "👤", title: L("onboarding.pain.namesake")),
-            OnboardingPainPoint(emoji: "💬", title: L("onboarding.pain.family")),
-            OnboardingPainPoint(emoji: "😵‍💫", title: L("onboarding.pain.secondGuessing")),
+            OnboardingPainPoint(id: "initials", emoji: "😰", title: L("onboarding.pain.initials")),
+            OnboardingPainPoint(id: "rhymes", emoji: "😬", title: L("onboarding.pain.rhymes")),
+            OnboardingPainPoint(id: "mispronunciation", emoji: "🤷", title: L("onboarding.pain.mispronunciation")),
+            OnboardingPainPoint(id: "namesake", emoji: "👤", title: L("onboarding.pain.namesake")),
+            OnboardingPainPoint(id: "family", emoji: "💬", title: L("onboarding.pain.family")),
+            OnboardingPainPoint(id: "secondGuessing", emoji: "😵‍💫", title: L("onboarding.pain.secondGuessing")),
         ]
     }
 
@@ -128,37 +144,43 @@ final class OnboardingViewModel: ObservableObject {
 
     func solutionMappings() -> [SolutionMapping] {
         let allMappings: [String: SolutionMapping] = [
-            L("onboarding.pain.initials"): SolutionMapping(
+            "initials": SolutionMapping(
+                id: "initials",
                 painPoint: L("onboarding.pain.initials"),
                 solution: L("onboarding.solution.initials"),
                 icon: "textformat.abc",
                 color: Brand.initials
             ),
-            L("onboarding.pain.rhymes"): SolutionMapping(
+            "rhymes": SolutionMapping(
+                id: "rhymes",
                 painPoint: L("onboarding.pain.rhymes"),
                 solution: L("onboarding.solution.rhymes"),
                 icon: "music.note.list",
                 color: Brand.rhyme
             ),
-            L("onboarding.pain.mispronunciation"): SolutionMapping(
+            "mispronunciation": SolutionMapping(
+                id: "mispronunciation",
                 painPoint: L("onboarding.pain.mispronunciation"),
                 solution: L("onboarding.solution.pronunciation"),
                 icon: "waveform.and.person.filled",
                 color: Brand.pronunciation
             ),
-            L("onboarding.pain.namesake"): SolutionMapping(
+            "namesake": SolutionMapping(
+                id: "namesake",
                 painPoint: L("onboarding.pain.namesake"),
                 solution: L("onboarding.solution.namesake"),
                 icon: "book.closed.fill",
                 color: Brand.namesake
             ),
-            L("onboarding.pain.family"): SolutionMapping(
+            "family": SolutionMapping(
+                id: "family",
                 painPoint: L("onboarding.pain.family"),
                 solution: L("onboarding.solution.family"),
                 icon: "shield.checkered",
                 color: Brand.accent
             ),
-            L("onboarding.pain.secondGuessing"): SolutionMapping(
+            "secondGuessing": SolutionMapping(
+                id: "secondGuessing",
                 painPoint: L("onboarding.pain.secondGuessing"),
                 solution: L("onboarding.solution.secondGuessing"),
                 icon: "arrow.left.arrow.right",
@@ -166,6 +188,6 @@ final class OnboardingViewModel: ObservableObject {
             ),
         ]
 
-        return selectedPainPoints.compactMap { allMappings[$0.title] }
+        return selectedPainPoints.compactMap { allMappings[$0.id] }
     }
 }
