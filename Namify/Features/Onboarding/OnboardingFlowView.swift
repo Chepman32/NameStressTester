@@ -70,6 +70,7 @@ struct OnboardingFlowView: View {
                     Text(L("onboarding.skip"))
                         .font(NamifyTypography.bodySmall().weight(.semibold))
                         .foregroundStyle(Brand.accent)
+                        .namifyAdaptiveText(lineLimit: 1, minimumScaleFactor: 0.74)
                         .padding(.horizontal, 12)
                         .padding(.vertical, 8)
                         .background(Brand.accent.opacity(0.10), in: Capsule())

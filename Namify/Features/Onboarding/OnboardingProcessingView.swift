@@ -31,11 +31,13 @@ struct OnboardingProcessingView: View {
                     .font(NamifyTypography.subtitle())
                     .foregroundStyle(Brand.textPrimary)
                     .multilineTextAlignment(.center)
+                    .namifyAdaptiveText(lineLimit: 4, minimumScaleFactor: 0.74)
 
                 Text(L("onboarding.processing.subheadline"))
                     .font(NamifyTypography.bodyMedium())
                     .foregroundStyle(Brand.textSecondary)
                     .multilineTextAlignment(.center)
+                    .namifyAdaptiveText(lineLimit: 3, minimumScaleFactor: 0.78)
             }
 
             Spacer()

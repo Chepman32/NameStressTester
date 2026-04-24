@@ -50,7 +50,7 @@ struct OnboardingDemoResultsView: View {
             Text(name.first)
                 .font(NamifyTypography.subtitle())
                 .foregroundStyle(Brand.textPrimary)
-                .lineLimit(1)
+                .namifyAdaptiveText(lineLimit: 1, minimumScaleFactor: 0.70)
             Spacer()
         }
     }
@@ -61,10 +61,12 @@ struct OnboardingDemoResultsView: View {
                 .font(NamifyTypography.hero())
                 .foregroundStyle(Brand.textPrimary)
                 .multilineTextAlignment(.center)
+                .namifyAdaptiveText(lineLimit: 3, minimumScaleFactor: 0.64)
 
             Text(L("results.label.testedToday"))
                 .font(NamifyTypography.bodySmall())
                 .foregroundStyle(Brand.textSecondary)
+                .namifyAdaptiveText(lineLimit: 2, minimumScaleFactor: 0.78)
                 .padding(.horizontal, 14)
                 .padding(.vertical, 8)
                 .background(Brand.cardAlt, in: Capsule())
@@ -113,10 +115,12 @@ struct OnboardingDemoResultsView: View {
                 .font(NamifyTypography.subtitle())
                 .foregroundStyle(summary.overallVerdict == .survived ? Brand.pass : (summary.overallVerdict == .mixed ? Brand.warn : Brand.fail))
                 .multilineTextAlignment(.center)
+                .namifyAdaptiveText(lineLimit: 3, minimumScaleFactor: 0.74)
 
             Text(String(format: L("results.score"), summary.passCount, summary.results.count))
                 .font(NamifyTypography.bodyMedium())
                 .foregroundStyle(Brand.textSecondary)
+                .namifyAdaptiveText(lineLimit: 2, minimumScaleFactor: 0.78)
         }
         .padding(.top, NamifySpacing.lg)
     }
@@ -127,6 +131,7 @@ struct OnboardingDemoResultsView: View {
                 .font(NamifyTypography.bodyMedium())
                 .foregroundStyle(Brand.textSecondary)
                 .multilineTextAlignment(.center)
+                .namifyAdaptiveText(lineLimit: 4, minimumScaleFactor: 0.78)
                 .padding(.top, NamifySpacing.lg)
 
             NamifyButton(title: L("onboarding.complete.cta")) {

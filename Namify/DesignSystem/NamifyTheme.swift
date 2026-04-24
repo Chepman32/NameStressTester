@@ -122,6 +122,14 @@ extension View {
     func namifyCardShadow(_ spec: ShadowSpec = NamifyShadow.card) -> some View {
         shadow(color: spec.color, radius: spec.radius, x: 0, y: spec.y)
     }
+
+    func namifyAdaptiveText(lineLimit: Int? = nil, minimumScaleFactor: CGFloat = 0.75) -> some View {
+        self
+            .lineLimit(lineLimit)
+            .minimumScaleFactor(minimumScaleFactor)
+            .allowsTightening(true)
+            .fixedSize(horizontal: false, vertical: true)
+    }
 }
 
 extension Color {

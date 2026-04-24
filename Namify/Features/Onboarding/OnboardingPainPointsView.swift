@@ -12,12 +12,14 @@ struct OnboardingPainPointsView: View {
                             .font(NamifyTypography.title())
                             .foregroundStyle(Brand.textPrimary)
                             .multilineTextAlignment(.center)
+                            .namifyAdaptiveText(lineLimit: 3, minimumScaleFactor: 0.74)
 
                         if viewModel.selectedPainPoints.isEmpty {
                             Text(L("onboarding.pain.subheadline"))
                                 .font(NamifyTypography.bodyMedium())
                                 .foregroundStyle(Brand.textSecondary)
                                 .multilineTextAlignment(.center)
+                                .namifyAdaptiveText(lineLimit: 3, minimumScaleFactor: 0.78)
                                 .transition(.asymmetric(
                                     insertion: .move(edge: .top).combined(with: .opacity),
                                     removal: .move(edge: .top).combined(with: .opacity)
@@ -78,8 +80,10 @@ private struct PainPointRow: View {
                 Text(point.title)
                     .font(NamifyTypography.bodyLarge())
                     .foregroundStyle(Brand.textPrimary)
+                    .namifyAdaptiveText(lineLimit: 3, minimumScaleFactor: 0.76)
+                    .layoutPriority(1)
 
-                Spacer()
+                Spacer(minLength: NamifySpacing.sm)
 
                 ZStack {
                     RoundedRectangle(cornerRadius: 6, style: .continuous)

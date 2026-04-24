@@ -24,11 +24,13 @@ struct OnboardingDemoInputView: View {
                         .font(NamifyTypography.title())
                         .foregroundStyle(Brand.textPrimary)
                         .multilineTextAlignment(.center)
+                        .namifyAdaptiveText(lineLimit: 3, minimumScaleFactor: 0.74)
 
                     Text(L("onboarding.demo.subheadline"))
                         .font(NamifyTypography.bodyMedium())
                         .foregroundStyle(Brand.textSecondary)
                         .multilineTextAlignment(.center)
+                        .namifyAdaptiveText(lineLimit: 4, minimumScaleFactor: 0.78)
                 }
 
                 VStack(spacing: NamifySpacing.md) {

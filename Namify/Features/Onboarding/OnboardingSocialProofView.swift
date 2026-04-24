@@ -12,11 +12,13 @@ struct OnboardingSocialProofView: View {
                             .font(NamifyTypography.title())
                             .foregroundStyle(Brand.textPrimary)
                             .multilineTextAlignment(.center)
+                            .namifyAdaptiveText(lineLimit: 3, minimumScaleFactor: 0.74)
 
                         Text(L("onboarding.social.subheadline"))
                             .font(NamifyTypography.bodyMedium())
                             .foregroundStyle(Brand.textSecondary)
                             .multilineTextAlignment(.center)
+                            .namifyAdaptiveText(lineLimit: 3, minimumScaleFactor: 0.78)
                     }
 
                     VStack(spacing: NamifySpacing.md) {
@@ -60,11 +62,13 @@ private struct TestimonialCard: View {
                 .font(NamifyTypography.bodyMedium())
                 .foregroundStyle(Brand.textPrimary)
                 .lineSpacing(4)
+                .namifyAdaptiveText(minimumScaleFactor: 0.78)
 
             HStack(spacing: NamifySpacing.sm) {
                 Text(testimonial.name)
                     .font(NamifyTypography.bodySmall().weight(.semibold))
                     .foregroundStyle(Brand.textPrimary)
+                    .namifyAdaptiveText(lineLimit: 2, minimumScaleFactor: 0.78)
 
                 Text("·")
                     .foregroundStyle(Brand.textTertiary)
@@ -72,6 +76,7 @@ private struct TestimonialCard: View {
                 Text(testimonial.tag)
                     .font(NamifyTypography.bodySmall())
                     .foregroundStyle(Brand.textSecondary)
+                    .namifyAdaptiveText(lineLimit: 2, minimumScaleFactor: 0.78)
             }
         }
         .padding(NamifySpacing.md)

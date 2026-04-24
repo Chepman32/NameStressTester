@@ -12,12 +12,14 @@ struct OnboardingGoalView: View {
                             .font(NamifyTypography.title())
                             .foregroundStyle(Brand.textPrimary)
                             .multilineTextAlignment(.center)
+                            .namifyAdaptiveText(lineLimit: 3, minimumScaleFactor: 0.74)
 
                         if viewModel.selectedGoal == nil {
                             Text(L("onboarding.goal.subheadline"))
                                 .font(NamifyTypography.bodyMedium())
                                 .foregroundStyle(Brand.textSecondary)
                                 .multilineTextAlignment(.center)
+                                .namifyAdaptiveText(lineLimit: 3, minimumScaleFactor: 0.78)
                                 .transition(.asymmetric(
                                     insertion: .move(edge: .top).combined(with: .opacity),
                                     removal: .move(edge: .top).combined(with: .opacity)
@@ -79,12 +81,15 @@ private struct GoalRow: View {
                     Text(goal.title)
                         .font(NamifyTypography.bodyLarge())
                         .foregroundStyle(Brand.textPrimary)
+                        .namifyAdaptiveText(lineLimit: 2, minimumScaleFactor: 0.78)
                     Text(goal.subtitle)
                         .font(NamifyTypography.bodySmall())
                         .foregroundStyle(Brand.textSecondary)
+                        .namifyAdaptiveText(lineLimit: 2, minimumScaleFactor: 0.78)
                 }
+                .layoutPriority(1)
 
-                Spacer()
+                Spacer(minLength: NamifySpacing.sm)
 
                 if isSelected {
                     Image(systemName: "checkmark.circle.fill")

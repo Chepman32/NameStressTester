@@ -23,11 +23,13 @@ struct OnboardingPreferencesView: View {
                             .font(NamifyTypography.title())
                             .foregroundStyle(Brand.textPrimary)
                             .multilineTextAlignment(.center)
+                            .namifyAdaptiveText(lineLimit: 3, minimumScaleFactor: 0.74)
 
                         Text(L("onboarding.prefs.subheadline"))
                             .font(NamifyTypography.bodyMedium())
                             .foregroundStyle(Brand.textSecondary)
                             .multilineTextAlignment(.center)
+                            .namifyAdaptiveText(lineLimit: 3, minimumScaleFactor: 0.78)
                     }
 
                     LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: NamifySpacing.md) {
@@ -100,17 +102,17 @@ private struct TestOptionCell: View {
                     .font(NamifyTypography.bodyMedium().weight(.semibold))
                     .foregroundStyle(Brand.textPrimary)
                     .multilineTextAlignment(.center)
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.8)
+                    .namifyAdaptiveText(lineLimit: 2, minimumScaleFactor: 0.72)
+                    .layoutPriority(1)
 
                 Text(option.description)
                     .font(NamifyTypography.bodySmall())
                     .foregroundStyle(Brand.textSecondary)
                     .multilineTextAlignment(.center)
-                    .lineLimit(2)
+                    .namifyAdaptiveText(lineLimit: 3, minimumScaleFactor: 0.72)
             }
             .padding(NamifySpacing.md)
-            .frame(height: 160)
+            .frame(minHeight: 160)
             .frame(maxWidth: .infinity)
             .background(isSelected ? Brand.accent.opacity(0.08) : Brand.card, in: RoundedRectangle(cornerRadius: NamifyRadius.medium, style: .continuous))
             .overlay {

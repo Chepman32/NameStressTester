@@ -16,11 +16,13 @@ struct OnboardingSolutionView: View {
                             .font(NamifyTypography.title())
                             .foregroundStyle(Brand.textPrimary)
                             .multilineTextAlignment(.center)
+                            .namifyAdaptiveText(lineLimit: 3, minimumScaleFactor: 0.74)
 
                         Text(L("onboarding.solution.subheadline"))
                             .font(NamifyTypography.bodyMedium())
                             .foregroundStyle(Brand.textSecondary)
                             .multilineTextAlignment(.center)
+                            .namifyAdaptiveText(lineLimit: 4, minimumScaleFactor: 0.78)
                     }
 
                     VStack(spacing: NamifySpacing.md) {
@@ -63,14 +65,17 @@ private struct SolutionRow: View {
                     .font(NamifyTypography.bodySmall())
                     .foregroundStyle(Brand.textTertiary)
                     .strikethrough()
+                    .namifyAdaptiveText(lineLimit: 2, minimumScaleFactor: 0.78)
 
                 Text(mapping.solution)
                     .font(NamifyTypography.bodyMedium())
                     .foregroundStyle(Brand.textPrimary)
                     .lineSpacing(3)
+                    .namifyAdaptiveText(minimumScaleFactor: 0.78)
             }
+            .layoutPriority(1)
 
-            Spacer()
+            Spacer(minLength: NamifySpacing.sm)
         }
         .padding(NamifySpacing.md)
         .background(Brand.card, in: RoundedRectangle(cornerRadius: NamifyRadius.medium, style: .continuous))
