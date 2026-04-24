@@ -13,19 +13,109 @@ final class InputViewModel: ObservableObject {
             && lastName.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty == false
     }
 
-    func loadSuggestions() async {
+    func loadSuggestions(for language: AppLanguage) async {
+        let resolvedLanguage = language.resolvedForSuggestions
+        guard resolvedLanguage == .english else {
+            suggestions = LocalizedNameSuggestions.names(for: resolvedLanguage)
+            return
+        }
+
         do {
             let frequency = try await OfflineDatasetStore.shared.frequencyDatabase()
             suggestions = Array(
                 frequency.firstNames.sorted { $0.rank < $1.rank }.map(\.name).shuffled().prefix(12)
             )
         } catch {
-            suggestions = ["Ada", "Cleo", "Liam", "Emma", "Atlas", "Sloane", "Niamh", "James"]
+            suggestions = LocalizedNameSuggestions.names(for: .english)
         }
     }
 
     var nameComponents: NameComponents {
         NameComponents(first: firstName, middle: middleName, last: lastName)
+    }
+}
+
+enum LocalizedNameSuggestions {
+    static func names(for language: AppLanguage) -> [String] {
+        let pool = namesByLanguage[language.resolvedForSuggestions] ?? namesByLanguage[.english] ?? []
+        return Array(pool.shuffled().prefix(12))
+    }
+
+    private static let namesByLanguage: [AppLanguage: [String]] = [
+        .english: ["Olivia", "Liam", "Emma", "Noah", "Charlotte", "James", "Sophia", "Ava", "Eleanor", "Ada", "Atlas", "Sloane"],
+        .arabic: ["آدم", "ليان", "عمر", "نور", "يوسف", "مريم", "سارة", "ليلى", "زيد", "جنى", "مالك", "رنا"],
+        .chineseSimplified: ["子涵", "梓萱", "浩然", "一诺", "宇轩", "欣怡", "晨曦", "若曦", "明轩", "诗涵", "嘉怡", "俊杰"],
+        .czech: ["Eliška", "Jan", "Anna", "Jakub", "Tereza", "Tomáš", "Adéla", "Matěj", "Sofie", "Ondřej", "Karolína", "Vojtěch"],
+        .danish: ["Emma", "William", "Alma", "Noah", "Freja", "Oscar", "Ida", "Carl", "Clara", "Aksel", "Sofia", "Malthe"],
+        .dutch: ["Emma", "Noah", "Julia", "Lucas", "Sophie", "Daan", "Mila", "Levi", "Tess", "Sem", "Nora", "Bram"],
+        .finnish: ["Aino", "Elias", "Eevi", "Onni", "Sofia", "Eino", "Helmi", "Leo", "Aada", "Väinö", "Venla", "Noel"],
+        .french: ["Emma", "Gabriel", "Louise", "Léo", "Jade", "Louis", "Alice", "Raphaël", "Chloé", "Arthur", "Lina", "Noah"],
+        .german: ["Emilia", "Noah", "Mia", "Matteo", "Hannah", "Leon", "Emma", "Finn", "Sofia", "Elias", "Lina", "Paul"],
+        .greek: ["Μαρία", "Γιώργος", "Ελένη", "Νίκος", "Σοφία", "Αλέξανδρος", "Άννα", "Δημήτρης", "Κατερίνα", "Κωνσταντίνος", "Ιωάννα", "Παναγιώτης"],
+        .hebrew: ["נועה", "איתן", "תמר", "דניאל", "מאיה", "יונתן", "אביגיל", "אריאל", "יעל", "אורי", "שירה", "נועם"],
+        .hindi: ["आरव", "आन्या", "विवान", "सिया", "अर्जुन", "अनिका", "कबीर", "ईशा", "रोहन", "मीरा", "आदित्य", "रिया"],
+        .indonesian: ["Aisyah", "Rizky", "Putri", "Bima", "Nabila", "Dimas", "Siti", "Raka", "Alya", "Fajar", "Dewi", "Bagas"],
+        .italian: ["Sofia", "Leonardo", "Giulia", "Francesco", "Aurora", "Alessandro", "Ginevra", "Lorenzo", "Alice", "Mattia", "Emma", "Tommaso"],
+        .japanese: ["陽翔", "凛", "蓮", "陽葵", "湊", "結菜", "大和", "さくら", "悠真", "美咲", "蒼", "紬"],
+        .korean: ["서준", "서연", "민준", "지우", "도윤", "하윤", "예준", "서아", "시우", "지아", "주원", "하린"],
+        .malay: ["Aisyah", "Muhammad", "Nur", "Ahmad", "Siti", "Adam", "Sofia", "Danish", "Alya", "Irfan", "Hana", "Zafran"],
+        .norwegian: ["Emma", "Jakob", "Nora", "Noah", "Sofie", "Emil", "Maja", "Oliver", "Ingrid", "Aksel", "Ella", "Lucas"],
+        .polish: ["Zofia", "Antoni", "Zuzanna", "Jan", "Hanna", "Aleksander", "Maja", "Franciszek", "Julia", "Jakub", "Lena", "Stanisław"],
+        .portugueseBrazil: ["Helena", "Miguel", "Alice", "Arthur", "Laura", "Heitor", "Maria", "Davi", "Sophia", "Bernardo", "Valentina", "Gabriel"],
+        .russian: ["София", "Александр", "Анна", "Михаил", "Мария", "Артём", "Алиса", "Иван", "Виктория", "Дмитрий", "Ева", "Матвей"],
+        .spanish: ["Lucía", "Mateo", "Sofía", "Martín", "Valentina", "Santiago", "María", "Leo", "Emma", "Daniel", "Camila", "Nicolás"],
+        .swedish: ["Alice", "William", "Elsa", "Noah", "Vera", "Hugo", "Alma", "Elias", "Astrid", "Liam", "Maja", "Oliver"],
+        .thai: ["น้องภีม", "น้องมิน", "น้องพิม", "น้องกันต์", "น้องออม", "น้องต้น", "น้องแพรว", "น้องภูมิ", "น้องฟ้า", "น้องตาล", "น้องนนท์", "น้องมายด์"],
+        .turkish: ["Zeynep", "Yusuf", "Elif", "Eymen", "Defne", "Miraç", "Asya", "Ömer", "Azra", "Kerem", "Eylül", "Emir"],
+        .ukrainian: ["Софія", "Артем", "Анна", "Максим", "Марія", "Дмитро", "Анастасія", "Богдан", "Вероніка", "Олександр", "Злата", "Матвій"],
+        .vietnamese: ["An", "Minh", "Linh", "Huy", "Trang", "Nam", "Mai", "Phúc", "Ngọc", "Quân", "Thảo", "Duy"]
+    ]
+}
+
+extension AppLanguage {
+    var resolvedForSuggestions: AppLanguage {
+        switch self {
+        case .system:
+            return AppLanguage.systemSuggestionLanguage ?? .english
+        default:
+            return self
+        }
+    }
+
+    static var systemSuggestionLanguage: AppLanguage? {
+        suggestionLanguage(
+            from: Bundle.namifyResources.preferredLocalizations
+                + Locale.preferredLanguages
+                + [Locale.current.identifier]
+        )
+    }
+
+    static func suggestionLanguage(from localeIdentifiers: [String]) -> AppLanguage? {
+        for localeIdentifier in localeIdentifiers {
+            if let language = suggestionLanguage(from: localeIdentifier) {
+                return language
+            }
+        }
+
+        return nil
+    }
+
+    private static func suggestionLanguage(from localeIdentifier: String) -> AppLanguage? {
+        let normalized = localeIdentifier.replacingOccurrences(of: "_", with: "-")
+        let lowercased = normalized.lowercased()
+
+        if let exact = AppLanguage(rawValue: normalized), exact != .system {
+            return exact
+        }
+
+        let languageCode = lowercased.split(separator: "-").first.map(String.init)
+
+        switch languageCode {
+        case "ms":
+            return .malay
+        default:
+            return AppLanguage.from(localeIdentifier: localeIdentifier)
+        }
     }
 }
 
@@ -78,8 +168,8 @@ struct InputScreen: View {
         .onTapGesture {
             UIApplication.shared.endEditing()
         }
-        .task {
-            await viewModel.loadSuggestions()
+        .task(id: session.preferences.appLanguage) {
+            await viewModel.loadSuggestions(for: session.preferences.appLanguage)
             session.refreshHistoryCount(context: modelContext)
         }
         .animation(NamifyMotion.micro, value: focus != nil)

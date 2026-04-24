@@ -46,9 +46,15 @@ struct SolutionMapping: Identifiable {
     let color: Color
 }
 
+enum NavigationDirection {
+    case forward
+    case backward
+}
+
 @MainActor
 final class OnboardingViewModel: ObservableObject {
     @Published var currentStep: OnboardingStep = .welcome
+    @Published var navigationDirection: NavigationDirection = .forward
     @Published var selectedGoal: OnboardingGoal?
     @Published var selectedPainPoints: Set<OnboardingPainPoint> = []
     @Published var selectedTests: Set<TestType> = Set(TestType.defaultOrder)
@@ -106,6 +112,7 @@ final class OnboardingViewModel: ObservableObject {
 
     func advance() {
         guard let next = OnboardingStep(rawValue: currentStep.rawValue + 1) else { return }
+        navigationDirection = .forward
         withAnimation(NamifyMotion.smooth) {
             currentStep = next
         }
@@ -114,6 +121,7 @@ final class OnboardingViewModel: ObservableObject {
     func goBack() {
         guard let previous = OnboardingStep(rawValue: currentStep.rawValue - 1),
               currentStep.canGoBack else { return }
+        navigationDirection = .backward
         withAnimation(NamifyMotion.smooth) {
             currentStep = previous
         }

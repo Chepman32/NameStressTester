@@ -19,30 +19,31 @@ struct OnboardingFlowView: View {
 
     @ViewBuilder
     private var stepContent: some View {
+        let forward = viewModel.navigationDirection == .forward
         switch viewModel.currentStep {
         case .welcome:
             OnboardingWelcomeView()
-                .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading)))
+                .transition(stepTransition(forward: forward))
 
         case .goal:
             OnboardingGoalView()
-                .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading)))
+                .transition(stepTransition(forward: forward))
 
         case .painPoints:
             OnboardingPainPointsView()
-                .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading)))
+                .transition(stepTransition(forward: forward))
 
         case .socialProof:
             OnboardingSocialProofView()
-                .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading)))
+                .transition(stepTransition(forward: forward))
 
         case .solution:
             OnboardingSolutionView()
-                .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading)))
+                .transition(stepTransition(forward: forward))
 
         case .preferences:
             OnboardingPreferencesView()
-                .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading)))
+                .transition(stepTransition(forward: forward))
 
         case .processing:
             OnboardingProcessingView()
@@ -50,16 +51,38 @@ struct OnboardingFlowView: View {
 
         case .demoInput:
             OnboardingDemoInputView()
-                .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading)))
+                .transition(stepTransition(forward: forward))
 
         case .demoResults:
             OnboardingDemoResultsView(onComplete: onComplete)
-                .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading)))
+                .transition(stepTransition(forward: forward))
         }
+    }
+
+    private func stepTransition(forward: Bool) -> AnyTransition {
+        .asymmetric(
+            insertion: .move(edge: forward ? .trailing : .leading),
+            removal: .move(edge: forward ? .leading : .trailing)
+        )
     }
 
     private var topChrome: some View {
         HStack(spacing: NamifySpacing.md) {
+            if viewModel.currentStep.canGoBack {
+                Button {
+                    Haptics.impact(.light)
+                    viewModel.goBack()
+                } label: {
+                    Image(systemName: "chevron.left")
+                        .font(.system(size: 17, weight: .semibold))
+                        .foregroundStyle(Brand.accent)
+                        .frame(width: 32, height: 32)
+                        .background(Brand.accent.opacity(0.10), in: Circle())
+                }
+                .buttonStyle(.plain)
+                .accessibilityIdentifier("onboardingBackButton")
+            }
+
             progressBar
 
             if viewModel.currentStep.canSkip {

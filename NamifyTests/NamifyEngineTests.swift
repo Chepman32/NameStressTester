@@ -98,6 +98,57 @@ final class NamifyEngineTests: XCTestCase {
         XCTAssertEqual(AppLanguage.selectableCases, [.system] + expectedSupportedCases)
     }
 
+    func testLocalizedNameSuggestionsMatchSelectedLanguage() {
+        let russianSuggestions = LocalizedNameSuggestions.names(for: .russian)
+
+        XCTAssertFalse(russianSuggestions.isEmpty)
+        XCTAssertTrue(
+            russianSuggestions.allSatisfy { suggestion in
+                suggestion.unicodeScalars.contains { scalar in
+                    (0x0400...0x04FF).contains(Int(scalar.value))
+                }
+            }
+        )
+    }
+
+    func testAsianNameSuggestionsUseLocalScripts() {
+        let scriptChecks: [(AppLanguage, ClosedRange<Int>)] = [
+            (.chineseSimplified, 0x4E00...0x9FFF),
+            (.japanese, 0x3040...0x9FFF),
+            (.korean, 0xAC00...0xD7AF),
+            (.thai, 0x0E00...0x0E7F)
+        ]
+
+        for (language, range) in scriptChecks {
+            let suggestions = LocalizedNameSuggestions.names(for: language)
+            XCTAssertFalse(suggestions.isEmpty)
+            XCTAssertTrue(
+                suggestions.allSatisfy { suggestion in
+                    suggestion.unicodeScalars.contains { scalar in
+                        range.contains(Int(scalar.value))
+                    }
+                },
+                "Expected localized suggestions for \(language.rawValue)"
+            )
+        }
+    }
+
+    func testMalayNameSuggestionsAreLocalized() {
+        let suggestions = Set(LocalizedNameSuggestions.names(for: .malay))
+
+        XCTAssertFalse(suggestions.isEmpty)
+        XCTAssertFalse(suggestions.isDisjoint(with: ["Aisyah", "Muhammad", "Siti", "Zafran"]))
+    }
+
+    func testSystemNameSuggestionResolverUsesPreferredLanguageIdentifiers() {
+        XCTAssertEqual(AppLanguage.suggestionLanguage(from: ["ru", "en-US"]), .russian)
+        XCTAssertEqual(AppLanguage.suggestionLanguage(from: ["zh-Hans-CN", "en-US"]), .chineseSimplified)
+        XCTAssertEqual(AppLanguage.suggestionLanguage(from: ["ja-JP", "en-US"]), .japanese)
+        XCTAssertEqual(AppLanguage.suggestionLanguage(from: ["ko-KR", "en-US"]), .korean)
+        XCTAssertEqual(AppLanguage.suggestionLanguage(from: ["th-TH", "en-US"]), .thai)
+        XCTAssertEqual(AppLanguage.suggestionLanguage(from: ["ms-MY", "en-US"]), .malay)
+    }
+
     func testOnboardingSkipIsHiddenForTransientSteps() {
         XCTAssertTrue(OnboardingStep.welcome.canSkip)
         XCTAssertTrue(OnboardingStep.demoInput.canSkip)
