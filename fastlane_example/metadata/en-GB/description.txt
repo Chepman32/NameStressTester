@@ -1,0 +1,54 @@
+Blurio is a powerful offline video editor that lets you blur faces, licence plates, addresses, and any sensitive details in your videos before you share them. All processing happens on your device — nothing is uploaded to any server.
+
+WHY PEOPLE USE BLURIO
+
+- Hide faces and identities in videos you post online
+- Cover licence plates before uploading dashcam or street footage
+- Protect children's privacy in family videos shared with others
+- Redact confidential information in client or work footage
+- Anonymise bystanders, locations, and personal details
+- Keep full control of your data with a completely offline workflow
+
+PROFESSIONAL BLUR TOOLS
+
+Blurio includes 7 distinct blur effects so you can pick the right look for every situation:
+
+- Gaussian blur for smooth, natural obscuring
+- Bokeh for a cinematic depth-of-field feel
+- Motion blur for directional masking
+- Bilateral blur that preserves edges
+- Smart blur for content-aware processing
+- Radial blur for gradient-based hiding
+- Frosted glass for a modern, stylish finish
+
+Each effect is fully adjustable — control strength, feather, opacity, corner radius, and more.
+
+KEYFRAME ANIMATION
+
+Blurio is not a static overlay tool. You can animate blur regions across the timeline so they follow moving subjects frame by frame. Set position, size, rotation, and blur parameters at any point, and Blurio smoothly interpolates between keyframes using linear, ease-in-out, spring, or hold curves. This is the same animation approach used in professional desktop video editors — now on your phone.
+
+FLEXIBLE SHAPES & TEMPLATES
+
+Choose from rectangles, rounded rectangles, ellipses, or draw a custom path. Save your favourite blur configurations as reusable templates with categories, so you can apply them to new projects in one tap.
+
+REAL-TIME PREVIEW
+
+See exactly what your export will look like while you edit. Blurio renders blur effects live with three quality modes — Ultra, Balanced, and Smooth — so editing stays fluid even with 4K footage. Snap guides, safe-area overlays, and thumbnail scrubbing help you place blur regions with precision.
+
+EXPORT OPTIONS
+
+Export your finished video in 720p, 1080p, or 4K resolution. Choose between H.264 and HEVC codecs. Select 24, 30, or 60 frames per second. Include or exclude audio. Blurio tracks export progress through each stage — decode, blur, encode, save — and writes the final file directly to your Photos library.
+
+PROJECT MANAGEMENT
+
+Organise your work into folders. Duplicate projects for variations. Recover deleted projects from the bin before permanent removal. View storage usage and clear cache to free space.
+
+COMPLETELY OFFLINE
+
+Blurio never connects to the internet during editing or export. Your videos stay on your device at all times. No account required, no sign-up, no cloud sync. This is privacy editing the way it should be — local, fast, and entirely under your control.
+
+BUILT FOR EVERYDAY USE
+
+Whether you are a content creator protecting people in your footage, a parent sharing family moments safely, a driver posting dashcam clips, or a professional handling confidential video — Blurio gives you desktop-grade blur tools in a mobile-first package.
+
+Download Blurio and start protecting what matters in your videos.

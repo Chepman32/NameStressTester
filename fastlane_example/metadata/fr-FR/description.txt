@@ -1,0 +1,54 @@
+Blurio est un puissant éditeur vidéo hors ligne qui vous permet de flouter les visages, plaques d'immatriculation, adresses et tout détail sensible dans vos vidéos avant de les partager. Tout le traitement se fait sur votre appareil — rien n'est envoyé vers un serveur.
+
+POURQUOI LES GENS UTILISENT BLURIO
+
+- Masquez les visages et identités dans les vidéos publiées en ligne
+- Couvrez les plaques d'immatriculation avant de mettre en ligne des vidéos dashcam ou de rue
+- Protégez la vie privée des enfants dans les vidéos familiales partagées
+- Caviardez les informations confidentielles dans les vidéos clients ou professionnelles
+- Anonymisez les passants, lieux et données personnelles
+- Gardez le contrôle total de vos données avec un flux de travail entièrement hors ligne
+
+OUTILS DE FLOUTAGE PROFESSIONNELS
+
+Blurio inclut 7 effets de flou distincts pour choisir le rendu adapté à chaque situation :
+
+- Flou gaussien pour un masquage doux et naturel
+- Bokeh pour un effet cinématographique de profondeur de champ
+- Flou de mouvement pour un masquage directionnel
+- Flou bilatéral qui préserve les contours
+- Flou intelligent pour un traitement sensible au contenu
+- Flou radial pour un masquage en dégradé
+- Verre givré pour une finition moderne et élégante
+
+Chaque effet est entièrement réglable — contrôlez l'intensité, l'adoucissement, l'opacité, le rayon de coin et bien plus.
+
+ANIMATION PAR KEYFRAMES
+
+Blurio n'est pas un outil de superposition statique. Vous pouvez animer les zones de flou sur la timeline pour qu'elles suivent les sujets en mouvement image par image. Définissez position, taille, rotation et paramètres de flou à n'importe quel point, et Blurio interpole en douceur entre les keyframes avec des courbes linéaires, ease-in-out, spring ou hold. C'est la même approche d'animation utilisée dans les éditeurs vidéo professionnels de bureau — maintenant sur votre téléphone.
+
+FORMES ET MODELES FLEXIBLES
+
+Choisissez parmi des rectangles, rectangles arrondis, ellipses ou dessinez un tracé personnalisé. Enregistrez vos configurations de flou préférées comme modèles réutilisables avec catégories, pour les appliquer à de nouveaux projets en un seul appui.
+
+APERCU EN TEMPS REEL
+
+Voyez exactement à quoi ressemblera votre export pendant l'édition. Blurio rend les effets de flou en direct avec trois modes de qualité — Ultra, Équilibré et Fluide — pour que l'édition reste fluide même avec des séquences 4K. Des guides d'alignement, des superpositions de zone sécurisée et le défilement des miniatures vous aident à placer les zones de flou avec précision.
+
+OPTIONS D'EXPORTATION
+
+Exportez votre vidéo terminée en résolution 720p, 1080p ou 4K. Choisissez entre les codecs H.264 et HEVC. Sélectionnez 24, 30 ou 60 images par seconde. Incluez ou excluez l'audio. Blurio suit la progression de l'export à chaque étape — décodage, floutage, encodage, sauvegarde — et écrit le fichier final directement dans votre bibliothèque Photos.
+
+GESTION DE PROJETS
+
+Organisez votre travail en dossiers. Dupliquez des projets pour des variantes. Récupérez les projets supprimés de la corbeille avant la suppression définitive. Consultez l'utilisation du stockage et videz le cache pour libérer de l'espace.
+
+ENTIEREMENT HORS LIGNE
+
+Blurio ne se connecte jamais à internet pendant l'édition ou l'export. Vos vidéos restent sur votre appareil en permanence. Aucun compte requis, aucune inscription, aucune synchronisation cloud. C'est l'édition de confidentialité telle qu'elle devrait être — locale, rapide et entièrement sous votre contrôle.
+
+CONCU POUR UN USAGE QUOTIDIEN
+
+Que vous soyez un créateur de contenu protégeant les personnes dans vos séquences, un parent partageant des moments familiaux en toute sécurité, un conducteur publiant des clips dashcam, ou un professionnel traitant des vidéos confidentielles — Blurio vous offre des outils de floutage de niveau professionnel dans un format mobile.
+
+Téléchargez Blurio et commencez à protéger ce qui compte dans vos vidéos.

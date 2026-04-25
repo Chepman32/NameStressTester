@@ -1,0 +1,54 @@
+Blurio es un potente editor de video sin conexión que te permite difuminar rostros, placas de matrícula, direcciones y cualquier detalle sensible en tus videos antes de compartirlos. Todo el procesamiento ocurre en tu dispositivo — nada se sube a ningún servidor.
+
+POR QUE LA GENTE USA BLURIO
+
+- Oculta rostros e identidades en videos que publicas en línea
+- Cubre placas de matrícula antes de subir videos de dashcam o de la calle
+- Protege la privacidad de los niños en videos familiares compartidos
+- Censura información confidencial en videos de trabajo o clientes
+- Anonimiza transeúntes, ubicaciones y datos personales
+- Mantén control total de tus datos con un flujo de trabajo completamente sin conexión
+
+HERRAMIENTAS PROFESIONALES DE DIFUMINADO
+
+Blurio incluye 7 efectos de difuminado distintos para que elijas el aspecto adecuado en cada situación:
+
+- Difuminado Gaussiano para un oscurecimiento suave y natural
+- Bokeh para una sensación cinematográfica de profundidad de campo
+- Difuminado de movimiento para enmascaramiento direccional
+- Difuminado bilateral que preserva los bordes
+- Difuminado inteligente para procesamiento consciente del contenido
+- Difuminado radial para ocultamiento basado en gradiente
+- Vidrio esmerilado para un acabado moderno y elegante
+
+Cada efecto es totalmente ajustable — controla intensidad, desvanecimiento, opacidad, radio de esquina y más.
+
+ANIMACION KEYFRAME
+
+Blurio no es una herramienta de superposición estática. Puedes animar regiones de difuminado a lo largo de la línea de tiempo para que sigan a sujetos en movimiento cuadro por cuadro. Establece posición, tamaño, rotación y parámetros de difuminado en cualquier punto, y Blurio interpola suavemente entre keyframes usando curvas lineales, ease-in-out, spring o hold. Este es el mismo enfoque de animación usado en editores de video profesionales de escritorio — ahora en tu teléfono.
+
+FORMAS Y PLANTILLAS FLEXIBLES
+
+Elige entre rectángulos, rectángulos redondeados, elipses o dibuja una ruta personalizada. Guarda tus configuraciones de difuminado favoritas como plantillas reutilizables con categorías, para aplicarlas a nuevos proyectos con un solo toque.
+
+VISTA PREVIA EN TIEMPO REAL
+
+Mira exactamente cómo se verá tu exportación mientras editas. Blurio renderiza efectos de difuminado en vivo con tres modos de calidad — Ultra, Balanceado y Suave — para que la edición sea fluida incluso con material 4K. Guías de ajuste, superposiciones de área segura y scrubbing de miniaturas te ayudan a colocar regiones de difuminado con precisión.
+
+OPCIONES DE EXPORTACION
+
+Exporta tu video terminado en resolución 720p, 1080p o 4K. Elige entre codecs H.264 y HEVC. Selecciona 24, 30 o 60 cuadros por segundo. Incluye o excluye audio. Blurio rastrea el progreso de exportación en cada etapa — decodificar, difuminar, codificar, guardar — y escribe el archivo final directamente en tu biblioteca de Fotos.
+
+GESTION DE PROYECTOS
+
+Organiza tu trabajo en carpetas. Duplica proyectos para variaciones. Recupera proyectos eliminados de la papelera antes de la eliminación permanente. Ve el uso de almacenamiento y limpia la caché para liberar espacio.
+
+COMPLETAMENTE SIN CONEXION
+
+Blurio nunca se conecta a internet durante la edición o exportación. Tus videos permanecen en tu dispositivo en todo momento. Sin cuenta requerida, sin registro, sin sincronización en la nube. Así es como debería ser la edición de privacidad — local, rápida y completamente bajo tu control.
+
+HECHO PARA EL USO DIARIO
+
+Ya seas un creador de contenido que protege a las personas en sus grabaciones, un padre que comparte momentos familiares de forma segura, un conductor que publica clips de dashcam o un profesional que maneja video confidencial — Blurio te da herramientas de difuminado de nivel profesional en un paquete móvil.
+
+Descarga Blurio y comienza a proteger lo que importa en tus videos.

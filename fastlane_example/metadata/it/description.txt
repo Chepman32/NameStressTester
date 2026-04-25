@@ -1,0 +1,54 @@
+Blurio è un potente editor video offline che ti permette di sfocare volti, targhe, indirizzi e qualsiasi dettaglio sensibile nei tuoi video prima di condividerli. Tutta l'elaborazione avviene sul tuo dispositivo — nulla viene caricato su alcun server.
+
+PERCHÉ LE PERSONE USANO BLURIO
+
+- Nascondere volti e identità nei video pubblicati online
+- Coprire le targhe prima di caricare filmati da dashcam o riprese stradali
+- Proteggere la privacy dei bambini nei video familiari condivisi con altri
+- Oscurare informazioni riservate in filmati di clienti o di lavoro
+- Anonimizzare passanti, luoghi e dettagli personali
+- Mantenere il pieno controllo dei tuoi dati con un flusso di lavoro completamente offline
+
+STRUMENTI DI SFOCATURA PROFESSIONALI
+
+Blurio include 7 effetti di sfocatura distinti per scegliere l'aspetto giusto per ogni situazione:
+
+- Sfocatura gaussiana per un oscuramento morbido e naturale
+- Bokeh per un effetto cinematografico di profondità di campo
+- Motion blur per mascheratura direzionale
+- Sfocatura bilaterale che preserva i bordi
+- Sfocatura intelligente per elaborazione consapevole del contenuto
+- Sfocatura radiale per occultamento basato su gradiente
+- Vetro smerigliato per una finitura moderna e stilosa
+
+Ogni effetto è completamente regolabile — controlla intensità, sfumatura, opacità, raggio degli angoli e altro ancora.
+
+ANIMAZIONE KEYFRAME
+
+Blurio non è uno strumento di sovrapposizione statica. Puoi animare le regioni di sfocatura lungo la timeline in modo che seguano i soggetti in movimento fotogramma per fotogramma. Imposta posizione, dimensione, rotazione e parametri di sfocatura in qualsiasi punto, e Blurio interpola fluidamente tra i keyframe usando curve lineari, ease-in-out, spring o hold. È lo stesso approccio di animazione usato negli editor video desktop professionali — ora sul tuo telefono.
+
+FORME E MODELLI FLESSIBILI
+
+Scegli tra rettangoli, rettangoli arrotondati, ellissi o disegna un percorso personalizzato. Salva le tue configurazioni di sfocatura preferite come modelli riutilizzabili con categorie, così puoi applicarle a nuovi progetti con un solo tocco.
+
+ANTEPRIMA IN TEMPO REALE
+
+Vedi esattamente come apparirà la tua esportazione mentre modifichi. Blurio renderizza gli effetti di sfocatura in tempo reale con tre modalità di qualità — Ultra, Balanced e Smooth — così la modifica resta fluida anche con filmati 4K. Guide di allineamento, overlay dell'area sicura e scrubbing delle miniature ti aiutano a posizionare le regioni di sfocatura con precisione.
+
+OPZIONI DI ESPORTAZIONE
+
+Esporta il tuo video finito in risoluzione 720p, 1080p o 4K. Scegli tra i codec H.264 e HEVC. Seleziona 24, 30 o 60 fotogrammi al secondo. Includi o escludi l'audio. Blurio traccia il progresso dell'esportazione attraverso ogni fase — decodifica, sfocatura, codifica, salvataggio — e scrive il file finale direttamente nella tua libreria Foto.
+
+GESTIONE PROGETTI
+
+Organizza il tuo lavoro in cartelle. Duplica i progetti per le varianti. Recupera i progetti eliminati dal cestino prima della rimozione definitiva. Visualizza l'utilizzo dello spazio e svuota la cache per liberare spazio.
+
+COMPLETAMENTE OFFLINE
+
+Blurio non si connette mai a internet durante la modifica o l'esportazione. I tuoi video restano sempre sul tuo dispositivo. Nessun account richiesto, nessuna registrazione, nessuna sincronizzazione cloud. Questa è l'editing per la privacy come dovrebbe essere — locale, veloce e interamente sotto il tuo controllo.
+
+PROGETTATO PER L'USO QUOTIDIANO
+
+Che tu sia un creatore di contenuti che protegge le persone nelle sue riprese, un genitore che condivide momenti familiari in sicurezza, un automobilista che pubblica clip dalla dashcam, o un professionista che gestisce video riservati — Blurio ti offre strumenti di sfocatura di livello desktop in un pacchetto mobile-first.
+
+Scarica Blurio e inizia a proteggere ciò che conta nei tuoi video.

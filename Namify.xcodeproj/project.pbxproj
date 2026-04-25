@@ -22,6 +22,7 @@
 		34F4B5862ECFFF9F4223127F /* NamifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD432885EDBC452A44943D5B /* NamifyUITests.swift */; };
 		464A651338BC87597A2F89D4 /* OnboardingStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B98D5FD1E25760367B9112D /* OnboardingStep.swift */; };
 		47C8DB7C3F5B50073D1AB39C /* InputScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53926CA270479030334E51CC /* InputScreen.swift */; };
+		4E475245454B4255494C4400 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4E475245454B535452494E47 /* Localizable.strings */; };
 		4E7C87CE4E1913AAC5FC4FED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7977033EF321D41D2F78D9B /* Foundation.framework */; };
 		521606D5531A27E79CD26BEA /* NamifyComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA36801DE79173D8C304C1B /* NamifyComponents.swift */; };
 		64678829C4FE72DF91A50029 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80EB1EDABAB864F15EF1550B /* Localizable.strings */; };
@@ -72,7 +73,6 @@
 		ED1239A9AAD4A8CCCF600D21 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C082ABA5E949B7FE6401244 /* Localizable.strings */; };
 		ED72AFB240430BD4CBDDDBA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 177387DCF5998B3C262E2E8C /* Assets.xcassets */; };
 		EDBAD55FEB27EA3D2B963888 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2074D79E40701CCF0F933286 /* Localizable.strings */; };
-		4E475245454B4255494C4400 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4E475245454B535452494E47 /* Localizable.strings */; };
 		EF30376A25D00DFC007ABAFA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FC2F54799B708F9A86C303F /* Localizable.strings */; };
 		F0BBA490643981974344FED9 /* rhyme_patterns.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DA7338F76FF968FFAFD9794 /* rhyme_patterns.json */; };
 		F88B415C64F581272929FB5C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00DA7AD60FDDF6195AFA5BED /* Localizable.strings */; };
@@ -116,28 +116,28 @@
 		222E4F64348B81F77CA82D35 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		2AEF02EC974524889F6D91AC /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		2CFDD969B719CFFD6704C86F /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		4E475245454B535452494E47 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		30EAD6EBBFCB82EA159FD6F3 /* OnboardingProcessingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingProcessingView.swift; sourceTree = "<group>"; };
 		3C698D255090232210193E9A /* HistoryScreen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HistoryScreen.swift; sourceTree = "<group>"; };
 		460CCA8BC86B4BC2FB80D594 /* NamifyEngineTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NamifyEngineTests.swift; sourceTree = "<group>"; };
 		4B145F64F79020A150592D49 /* NamifyApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NamifyApp.swift; sourceTree = "<group>"; };
-		4DA7338F76FF968FFAFD9794 /* rhyme_patterns.json */ = {isa = PBXFileReference; includeInIndex = 1; path = rhyme_patterns.json; sourceTree = "<group>"; };
+		4DA7338F76FF968FFAFD9794 /* rhyme_patterns.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = rhyme_patterns.json; sourceTree = "<group>"; };
+		4E475245454B535452494E47 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		53926CA270479030334E51CC /* InputScreen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InputScreen.swift; sourceTree = "<group>"; };
 		5FCA38DE71C5123426F8FAD3 /* NamifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NamifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6024B967894B1270098290CB /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		6D5D6A3D66C70F3DD458EE46 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		6F42D8793474CA0BC6FB273E /* Manrope-VariableFont.ttf */ = {isa = PBXFileReference; includeInIndex = 1; path = "Manrope-VariableFont.ttf"; sourceTree = "<group>"; };
-		729423D25045E3ABDBE44702 /* historical_namesakes.json */ = {isa = PBXFileReference; includeInIndex = 1; path = historical_namesakes.json; sourceTree = "<group>"; };
+		6F42D8793474CA0BC6FB273E /* Manrope-VariableFont.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = "Manrope-VariableFont.ttf"; sourceTree = "<group>"; };
+		729423D25045E3ABDBE44702 /* historical_namesakes.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = historical_namesakes.json; sourceTree = "<group>"; };
 		7588DB7FA5CD53CBC2D960EA /* NameModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NameModels.swift; sourceTree = "<group>"; };
 		79E056C5E76BD8DD61E0ECA7 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		7B98D5FD1E25760367B9112D /* OnboardingStep.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingStep.swift; sourceTree = "<group>"; };
 		7C8A6EAAC30BFBD0F4489716 /* NameTestEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NameTestEngine.swift; sourceTree = "<group>"; };
 		7D0844E823AEEA2BA21C780D /* OnboardingDemoResultsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingDemoResultsView.swift; sourceTree = "<group>"; };
-		7FD79EF9413A7152862D507A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		7FD79EF9413A7152862D507A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		80EB1EDABAB864F15EF1550B /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		81F99305686964B09464CB01 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		840E810C7DB079C1401BC74A /* OnboardingSolutionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingSolutionView.swift; sourceTree = "<group>"; };
-		89854C10373BADAAC4422458 /* phonetic_rules.json */ = {isa = PBXFileReference; includeInIndex = 1; path = phonetic_rules.json; sourceTree = "<group>"; };
+		89854C10373BADAAC4422458 /* phonetic_rules.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = phonetic_rules.json; sourceTree = "<group>"; };
 		8A341E9E170208904B4C51D6 /* AppCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		8AB16639BCA657A2609F1E69 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		8B93F5FF4930773E497726AE /* OnboardingPainPointsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingPainPointsView.swift; sourceTree = "<group>"; };
@@ -145,7 +145,7 @@
 		98025E4405A3D7D89FCD5921 /* NamifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NamifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DC367255129284A9E4731A7 /* Analyzers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Analyzers.swift; sourceTree = "<group>"; };
 		A1560FE6F199F4F7563F8C91 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		A80BD18B53895A9D3E647DD4 /* popular_names_frequency.json */ = {isa = PBXFileReference; includeInIndex = 1; path = popular_names_frequency.json; sourceTree = "<group>"; };
+		A80BD18B53895A9D3E647DD4 /* popular_names_frequency.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = popular_names_frequency.json; sourceTree = "<group>"; };
 		AA4A579369C23465624AFA96 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		AD1ED598FCB83DDC0C6F0588 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		ADDAA6C0E513197B31441E0A /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -157,7 +157,7 @@
 		C94A5C369A7F522B569E8D74 /* ShareCardRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShareCardRenderer.swift; sourceTree = "<group>"; };
 		CAB2A97C3A4FAA6A36CB5230 /* Namify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Namify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D31377F213D8DC9B9300EE46 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
-		D8E722C5E6C580CA18A4D274 /* bad_initials.json */ = {isa = PBXFileReference; includeInIndex = 1; path = bad_initials.json; sourceTree = "<group>"; };
+		D8E722C5E6C580CA18A4D274 /* bad_initials.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = bad_initials.json; sourceTree = "<group>"; };
 		DD432885EDBC452A44943D5B /* NamifyUITests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NamifyUITests.swift; sourceTree = "<group>"; };
 		E2716FD0EF2461DC0FF5F213 /* DataRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DataRepository.swift; sourceTree = "<group>"; };
 		E656C4D7AB85C56E7B84C4A0 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 		EE69BC35EE501F8411FA9550 /* OnboardingGoalView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingGoalView.swift; sourceTree = "<group>"; };
 		F0E076CBFFD860300D848882 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		F7977033EF321D41D2F78D9B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		F8AEB2FA0C473009366A9836 /* common_email_domains.json */ = {isa = PBXFileReference; includeInIndex = 1; path = common_email_domains.json; sourceTree = "<group>"; };
+		F8AEB2FA0C473009366A9836 /* common_email_domains.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = common_email_domains.json; sourceTree = "<group>"; };
 		FE35C436C2C2468C0D57010E /* PersistenceService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -216,7 +216,6 @@
 			children = (
 				6D5D6A3D66C70F3DD458EE46 /* Localizable.strings */,
 			);
-			name = en.lproj;
 			path = en.lproj;
 			sourceTree = "<group>";
 		};
@@ -225,7 +224,6 @@
 			children = (
 				0E53FF8BA26AA3D5E80C8D36 /* Localizable.strings */,
 			);
-			name = tr.lproj;
 			path = tr.lproj;
 			sourceTree = "<group>";
 		};
@@ -235,7 +233,6 @@
 				1969D54AB1EC5869E0EC1FFB /* Models.swift */,
 				FE35C436C2C2468C0D57010E /* PersistenceService.swift */,
 			);
-			name = Persistence;
 			path = Persistence;
 			sourceTree = "<group>";
 		};
@@ -244,7 +241,6 @@
 			children = (
 				2AEF02EC974524889F6D91AC /* Localizable.strings */,
 			);
-			name = ko.lproj;
 			path = ko.lproj;
 			sourceTree = "<group>";
 		};
@@ -254,7 +250,6 @@
 				C94A5C369A7F522B569E8D74 /* ShareCardRenderer.swift */,
 				E84B0233EDD9B6EC6F560BE0 /* SystemHelpers.swift */,
 			);
-			name = Utilities;
 			path = Utilities;
 			sourceTree = "<group>";
 		};
@@ -263,7 +258,6 @@
 			children = (
 				143C990843F35C1E1962F744 /* ResultsScreen.swift */,
 			);
-			name = Results;
 			path = Results;
 			sourceTree = "<group>";
 		};
@@ -272,7 +266,6 @@
 			children = (
 				2CFDD969B719CFFD6704C86F /* Localizable.strings */,
 			);
-			name = nl.lproj;
 			path = nl.lproj;
 			sourceTree = "<group>";
 		};
@@ -280,7 +273,6 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = ro.lproj;
 			path = ro.lproj;
 			sourceTree = "<group>";
 		};
@@ -289,7 +281,6 @@
 			children = (
 				6F42D8793474CA0BC6FB273E /* Manrope-VariableFont.ttf */,
 			);
-			name = Fonts;
 			path = Fonts;
 			sourceTree = "<group>";
 		};
@@ -303,7 +294,6 @@
 				698479D1856A597291EF1ADF /* Settings */,
 				D3E42A9F9BA5130A2D473507 /* Splash */,
 			);
-			name = Features;
 			path = Features;
 			sourceTree = "<group>";
 		};
@@ -312,7 +302,6 @@
 			children = (
 				DD432885EDBC452A44943D5B /* NamifyUITests.swift */,
 			);
-			name = NamifyUITests;
 			path = NamifyUITests;
 			sourceTree = "<group>";
 		};
@@ -321,7 +310,6 @@
 			children = (
 				1B771EE38E54E9DDA80EE1CF /* Localizable.strings */,
 			);
-			name = pl.lproj;
 			path = pl.lproj;
 			sourceTree = "<group>";
 		};
@@ -336,7 +324,6 @@
 				E7F45D426EC47A71406BBDBA /* Resources */,
 				11FCA4CB806ED79EE13DD596 /* Utilities */,
 			);
-			name = Namify;
 			path = Namify;
 			sourceTree = "<group>";
 		};
@@ -346,7 +333,6 @@
 				8A341E9E170208904B4C51D6 /* AppCoordinator.swift */,
 				4B145F64F79020A150592D49 /* NamifyApp.swift */,
 			);
-			name = App;
 			path = App;
 			sourceTree = "<group>";
 		};
@@ -354,7 +340,6 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = nb.lproj;
 			path = nb.lproj;
 			sourceTree = "<group>";
 		};
@@ -363,7 +348,6 @@
 			children = (
 				00D4CEA939429A4F293B4D37 /* Localizable.strings */,
 			);
-			name = es.lproj;
 			path = es.lproj;
 			sourceTree = "<group>";
 		};
@@ -372,7 +356,6 @@
 			children = (
 				80EB1EDABAB864F15EF1550B /* Localizable.strings */,
 			);
-			name = he.lproj;
 			path = he.lproj;
 			sourceTree = "<group>";
 		};
@@ -381,7 +364,6 @@
 			children = (
 				A1560FE6F199F4F7563F8C91 /* Localizable.strings */,
 			);
-			name = de.lproj;
 			path = de.lproj;
 			sourceTree = "<group>";
 		};
@@ -398,7 +380,6 @@
 			children = (
 				1E301148F89C679CA4E9E79D /* Localizable.strings */,
 			);
-			name = no.lproj;
 			path = no.lproj;
 			sourceTree = "<group>";
 		};
@@ -418,7 +399,6 @@
 				BDA36801DE79173D8C304C1B /* NamifyComponents.swift */,
 				03E67A534F96D72146ED3CE4 /* NamifyTheme.swift */,
 			);
-			name = DesignSystem;
 			path = DesignSystem;
 			sourceTree = "<group>";
 		};
@@ -427,7 +407,6 @@
 			children = (
 				1FC2F54799B708F9A86C303F /* Localizable.strings */,
 			);
-			name = ar.lproj;
 			path = ar.lproj;
 			sourceTree = "<group>";
 		};
@@ -436,7 +415,6 @@
 			children = (
 				0C34D4E112415F728A68B137 /* SettingsScreen.swift */,
 			);
-			name = Settings;
 			path = Settings;
 			sourceTree = "<group>";
 		};
@@ -444,7 +422,6 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = hu.lproj;
 			path = hu.lproj;
 			sourceTree = "<group>";
 		};
@@ -454,7 +431,6 @@
 				460CCA8BC86B4BC2FB80D594 /* NamifyEngineTests.swift */,
 				AF0880969499E3160FEE434C /* NamifyRenderTests.swift */,
 			);
-			name = NamifyTests;
 			path = NamifyTests;
 			sourceTree = "<group>";
 		};
@@ -463,7 +439,6 @@
 			children = (
 				4E475245454B535452494E47 /* Localizable.strings */,
 			);
-			name = el.lproj;
 			path = el.lproj;
 			sourceTree = "<group>";
 		};
@@ -472,7 +447,6 @@
 			children = (
 				3C698D255090232210193E9A /* HistoryScreen.swift */,
 			);
-			name = History;
 			path = History;
 			sourceTree = "<group>";
 		};
@@ -481,7 +455,6 @@
 			children = (
 				2074D79E40701CCF0F933286 /* Localizable.strings */,
 			);
-			name = th.lproj;
 			path = th.lproj;
 			sourceTree = "<group>";
 		};
@@ -489,7 +462,6 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = ms.lproj;
 			path = ms.lproj;
 			sourceTree = "<group>";
 		};
@@ -498,7 +470,6 @@
 			children = (
 				8AB16639BCA657A2609F1E69 /* Localizable.strings */,
 			);
-			name = uk.lproj;
 			path = uk.lproj;
 			sourceTree = "<group>";
 		};
@@ -507,7 +478,6 @@
 			children = (
 				E8265BABC54D0A810E0CEE9F /* Localizable.strings */,
 			);
-			name = ja.lproj;
 			path = ja.lproj;
 			sourceTree = "<group>";
 		};
@@ -520,7 +490,6 @@
 				7C8A6EAAC30BFBD0F4489716 /* NameTestEngine.swift */,
 				1231519EA42BFB015C17873F /* TestDetailData.swift */,
 			);
-			name = Engine;
 			path = Engine;
 			sourceTree = "<group>";
 		};
@@ -529,7 +498,6 @@
 			children = (
 				222E4F64348B81F77CA82D35 /* Localizable.strings */,
 			);
-			name = cs.lproj;
 			path = cs.lproj;
 			sourceTree = "<group>";
 		};
@@ -538,7 +506,6 @@
 			children = (
 				E656C4D7AB85C56E7B84C4A0 /* Localizable.strings */,
 			);
-			name = "pt-BR.lproj";
 			path = "pt-BR.lproj";
 			sourceTree = "<group>";
 		};
@@ -547,7 +514,6 @@
 			children = (
 				AEB330E1DA58B24F5862DB8C /* Localizable.strings */,
 			);
-			name = sv.lproj;
 			path = sv.lproj;
 			sourceTree = "<group>";
 		};
@@ -556,7 +522,6 @@
 			children = (
 				53926CA270479030334E51CC /* InputScreen.swift */,
 			);
-			name = Input;
 			path = Input;
 			sourceTree = "<group>";
 		};
@@ -565,7 +530,6 @@
 			children = (
 				F0E076CBFFD860300D848882 /* Localizable.strings */,
 			);
-			name = fr.lproj;
 			path = fr.lproj;
 			sourceTree = "<group>";
 		};
@@ -574,7 +538,6 @@
 			children = (
 				79E056C5E76BD8DD61E0ECA7 /* Localizable.strings */,
 			);
-			name = ru.lproj;
 			path = ru.lproj;
 			sourceTree = "<group>";
 		};
@@ -591,7 +554,6 @@
 			children = (
 				ADDAA6C0E513197B31441E0A /* Localizable.strings */,
 			);
-			name = id.lproj;
 			path = id.lproj;
 			sourceTree = "<group>";
 		};
@@ -605,7 +567,6 @@
 				A80BD18B53895A9D3E647DD4 /* popular_names_frequency.json */,
 				4DA7338F76FF968FFAFD9794 /* rhyme_patterns.json */,
 			);
-			name = Data;
 			path = Data;
 			sourceTree = "<group>";
 		};
@@ -614,7 +575,6 @@
 			children = (
 				81F99305686964B09464CB01 /* Localizable.strings */,
 			);
-			name = vi.lproj;
 			path = vi.lproj;
 			sourceTree = "<group>";
 		};
@@ -623,7 +583,6 @@
 			children = (
 				AA4A579369C23465624AFA96 /* Localizable.strings */,
 			);
-			name = da.lproj;
 			path = da.lproj;
 			sourceTree = "<group>";
 		};
@@ -632,7 +591,6 @@
 			children = (
 				E67F1C1CD1F0A884F9AA5139 /* SplashScreen.swift */,
 			);
-			name = Splash;
 			path = Splash;
 			sourceTree = "<group>";
 		};
@@ -641,7 +599,6 @@
 			children = (
 				AD1ED598FCB83DDC0C6F0588 /* Localizable.strings */,
 			);
-			name = hi.lproj;
 			path = hi.lproj;
 			sourceTree = "<group>";
 		};
@@ -661,7 +618,6 @@
 				D31377F213D8DC9B9300EE46 /* OnboardingViewModel.swift */,
 				B86A47807199E8B365B381F4 /* OnboardingWelcomeView.swift */,
 			);
-			name = Onboarding;
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
@@ -703,7 +659,6 @@
 				D00A0BDEA17A14703F98000E /* vi.lproj */,
 				F8A9C102391C0BE0A76FD2F0 /* zh-Hans.lproj */,
 			);
-			name = Resources;
 			path = Resources;
 			sourceTree = "<group>";
 		};
@@ -712,7 +667,6 @@
 			children = (
 				00DA7AD60FDDF6195AFA5BED /* Localizable.strings */,
 			);
-			name = fi.lproj;
 			path = fi.lproj;
 			sourceTree = "<group>";
 		};
@@ -721,7 +675,6 @@
 			children = (
 				1C082ABA5E949B7FE6401244 /* Localizable.strings */,
 			);
-			name = "zh-Hans.lproj";
 			path = "zh-Hans.lproj";
 			sourceTree = "<group>";
 		};
@@ -730,7 +683,6 @@
 			children = (
 				6024B967894B1270098290CB /* Localizable.strings */,
 			);
-			name = it.lproj;
 			path = it.lproj;
 			sourceTree = "<group>";
 		};
@@ -798,6 +750,18 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					2440795D8981B1DB8634D4D7 = {
+						DevelopmentTeam = RUYUP6W3YT;
+						ProvisioningStyle = Manual;
+					};
+					295039CAC906DD607AFD5B75 = {
+						ProvisioningStyle = Automatic;
+					};
+					B5A7D9E1C2E2088AA9AC9EAF = {
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 3D3559789C4106CEAF3BC9D0 /* Build configuration list for PBXProject "Namify" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -809,7 +773,6 @@
 				Base,
 			);
 			mainGroup = 00DAE8377CB6022AB02037C9;
-			minimizedProjectReferenceProxies = 0;
 			productRefGroup = 5F159E142AD4A2AB1C84A57E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -992,10 +955,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = RUYUP6W3YT;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Namify/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
@@ -1004,6 +969,8 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.antonchepur.namify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Namify;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1060,8 +1027,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.9;
 			};
 			name = Release;
@@ -1072,10 +1038,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = RUYUP6W3YT;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Namify/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
@@ -1084,6 +1052,8 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.antonchepur.namify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Namify;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";

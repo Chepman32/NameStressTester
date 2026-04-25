@@ -1,0 +1,1 @@
+blur,video,face,redact,censor,privacy,license plate,mosaic,pixelate,hide,anonymize,editor

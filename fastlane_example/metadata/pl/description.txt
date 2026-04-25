@@ -1,0 +1,54 @@
+Blurio to potężny edytor wideo offline, który pozwala rozmyć twarze, tablice rejestracyjne, adresy i wszelkie wrażliwe dane w filmach przed ich udostępnieniem. Całe przetwarzanie odbywa się na Twoim urządzeniu — nic nie jest przesyłane na żaden serwer.
+
+DLACZEGO LUDZIE UŻYWAJĄ BLURIO
+
+- Ukrywanie twarzy i tożsamości w filmach publikowanych online
+- Zakrywanie tablic rejestracyjnych przed przesłaniem nagrań z kamery samochodowej lub ulicznych
+- Ochrona prywatności dzieci w filmach rodzinnych udostępnianych innym
+- Redagowanie poufnych informacji w materiałach klientów lub służbowych
+- Anonimizacja przechodniów, lokalizacji i danych osobowych
+- Pełna kontrola nad danymi dzięki w pełni offline'owemu przepływowi pracy
+
+PROFESJONALNE NARZĘDZIA ROZMYCIA
+
+Blurio zawiera 7 różnych efektów rozmycia, dzięki czemu możesz wybrać odpowiedni wygląd dla każdej sytuacji:
+
+- Rozmycie gaussowskie dla gładkiego, naturalnego zasłaniania
+- Bokeh dla kinowego efektu głębi ostrości
+- Rozmycie ruchu dla kierunkowego maskowania
+- Rozmycie bilateralne zachowujące krawędzie
+- Inteligentne rozmycie do przetwarzania uwzględniającego zawartość
+- Rozmycie radialne do ukrywania opartego na gradiencie
+- Matowe szkło dla nowoczesnego, stylowego wykończenia
+
+Każdy efekt jest w pełni konfigurowalny — kontroluj siłę, wtapianie, przezroczystość, promień narożników i wiele więcej.
+
+ANIMACJA KLATEK KLUCZOWYCH
+
+Blurio nie jest statycznym narzędziem nakładkowym. Możesz animować obszary rozmycia na osi czasu, aby podążały za poruszającymi się obiektami klatka po klatce. Ustaw pozycję, rozmiar, rotację i parametry rozmycia w dowolnym punkcie, a Blurio płynnie interpoluje między klatkami kluczowymi za pomocą krzywych liniowych, ease-in-out, sprężynowych lub wstrzymania. To to samo podejście do animacji, które jest stosowane w profesjonalnych edytorach wideo na komputery — teraz na Twoim telefonie.
+
+ELASTYCZNE KSZTAŁTY I SZABLONY
+
+Wybieraj spośród prostokątów, zaokrąglonych prostokątów, elips lub rysuj własną ścieżkę. Zapisuj ulubione konfiguracje rozmycia jako szablony wielokrotnego użytku z kategoriami, aby stosować je w nowych projektach jednym dotknięciem.
+
+PODGLĄD W CZASIE RZECZYWISTYM
+
+Zobacz dokładnie, jak będzie wyglądał Twój eksport podczas edycji. Blurio renderuje efekty rozmycia na żywo w trzech trybach jakości — Ultra, Balanced i Smooth — dzięki czemu edycja pozostaje płynna nawet przy materiałach 4K. Prowadnice przyciągania, nakładki strefy bezpiecznej i przewijanie miniatur pomagają precyzyjnie umieszczać obszary rozmycia.
+
+OPCJE EKSPORTU
+
+Eksportuj gotowy film w rozdzielczości 720p, 1080p lub 4K. Wybierz między kodekami H.264 i HEVC. Wybierz 24, 30 lub 60 klatek na sekundę. Dołącz lub pomiń dźwięk. Blurio śledzi postęp eksportu na każdym etapie — dekodowanie, rozmycie, kodowanie, zapis — i zapisuje finalny plik bezpośrednio w Twojej bibliotece Zdjęć.
+
+ZARZĄDZANIE PROJEKTAMI
+
+Organizuj swoją pracę w foldery. Duplikuj projekty do tworzenia wariantów. Odzyskuj usunięte projekty z kosza przed trwałym usunięciem. Sprawdzaj wykorzystanie pamięci i czyść pamięć podręczną, aby zwolnić miejsce.
+
+W PEŁNI OFFLINE
+
+Blurio nigdy nie łączy się z internetem podczas edycji lub eksportu. Twoje filmy pozostają na Twoim urządzeniu przez cały czas. Nie wymaga konta, nie wymaga rejestracji, brak synchronizacji w chmurze. To edycja prywatności taka, jaka powinna być — lokalna, szybka i całkowicie pod Twoją kontrolą.
+
+STWORZONY DO CODZIENNEGO UŻYTKU
+
+Niezależnie od tego, czy jesteś twórcą treści chroniącym osoby w swoich nagraniach, rodzicem bezpiecznie udostępniającym rodzinne chwile, kierowcą publikującym klipy z kamery samochodowej, czy profesjonalistą obsługującym poufne materiały wideo — Blurio daje Ci narzędzia rozmycia klasy desktopowej w pakiecie mobile-first.
+
+Pobierz Blurio i zacznij chronić to, co ważne w Twoich filmach.

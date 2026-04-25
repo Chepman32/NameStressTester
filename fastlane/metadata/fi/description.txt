@@ -1,0 +1,14 @@
+Vauvan nimen valinta on tunteikas päätös. Namify auttaa testaamaan, miltä nimi voi tuntua arjessa ennen kuin siitä tulee virallinen.
+
+Syötä etunimi, valinnainen toinen nimi ja sukunimi. Namify tekee käytännön tarkistuksia, jotka vanhemmat huomaavat usein liian myöhään:
+
+• Riimihaavoittuvuus: löytää kiusoitteluriimit ja riskialttiit äänteet
+• Nimikirjain­tarkistus: huomaa kömpelöt nimikirjaimet ja ei-toivotut lyhenteet
+• Ääntämistesti: näyttää todennäköiset lukemisvirheet ja vaikeuspisteet
+• Nimilappuesikatselu: näyttää miltä koko nimi näyttää arjessa
+• Historialliset kaimat: tarkistaa tunnetut mielleyhtymät
+• Monogrammin estetiikka: arvioi tasapainoa, luettavuutta ja tyyliä
+
+Namifylla voit vertailla ideoita, tallentaa testatut nimet, merkitä suosikit, järjestää testit, käyttää tiukkaa tilaa ja jakaa selkeitä raportteja, kun tarvitset toisen mielipiteen.
+
+Namify on vanhemmille, jotka haluavat enemmän kuin listan kauniita nimiä. Jokainen ehdokas saa realistisen stressitestin koulua, lomakkeita, perhekeskusteluja, nimikirjaimia, ääntämistä ja visuaalista ilmettä varten.

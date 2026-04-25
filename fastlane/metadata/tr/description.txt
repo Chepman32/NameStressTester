@@ -1,0 +1,14 @@
+Bebek adı seçmek duygusal bir karardır. Namify, bir ad resmileşmeden önce gerçek hayatta nasıl hissedilebileceğini test etmenize yardımcı olur.
+
+Adı, isteğe bağlı ikinci adı ve soyadı girin. Namify, ebeveynlerin çoğu zaman geç fark ettiği pratik kontrolleri çalıştırır:
+
+• Kafiye riski: alay konusu olabilecek kafiyeleri ve benzer sesleri bulur
+• Baş harf kontrolü: garip baş harfleri ve istenmeyen kısaltmaları yakalar
+• Telaffuz testi: olası okuma hatalarını ve zorluk puanını gösterir
+• İsim etiketi önizlemesi: tam adın günlük hayatta nasıl göründüğünü kontrol eder
+• Tarihsel adaşlar: adla ilgili bilinen çağrışımları gözden geçirir
+• Monogram estetiği: denge, okunabilirlik ve stili değerlendirir
+
+Namify ile fikirleri karşılaştırın, test edilen adları kaydedin, favorileri işaretleyin, test sırasını değiştirin, sıkı modu açın ve ikinci görüş gerektiğinde net raporlar paylaşın.
+
+Namify, güzel isim listelerinden fazlasını isteyen ebeveynler için tasarlandı. Her aday ad okul, evraklar, aile konuşmaları, baş harfler, telaffuz ve görsel sunum için gerçekçi bir stres testinden geçer.

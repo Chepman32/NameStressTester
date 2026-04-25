@@ -1,0 +1,54 @@
+Blurio är en kraftfull offline-videoredigerare som låter dig sudda ansikten, nummerplåtar, adresser och alla känsliga detaljer i dina videor innan du delar dem. All bearbetning sker på din enhet — ingenting laddas upp till någon server.
+
+VARFÖR FOLK ANVÄNDER BLURIO
+
+- Dölj ansikten och identiteter i videor du publicerar online
+- Täck nummerplåtar innan du laddar upp dashcam- eller gatumaterial
+- Skydda barns integritet i familjevideor som delas med andra
+- Censurera konfidentiell information i klient- eller arbetsmaterial
+- Anonymisera förbipasserande, platser och personliga detaljer
+- Behåll full kontroll över dina data med ett helt offline arbetsflöde
+
+PROFESSIONELLA SUDDVERKTYG
+
+Blurio innehåller 7 distinkta suddeffekter så att du kan välja rätt utseende för varje situation:
+
+- Gaussisk suddning för mjuk, naturlig maskering
+- Bokeh för en cinematisk skärpedjupskänsla
+- Rörelsesuddning för riktad maskering
+- Bilateral suddning som bevarar kanter
+- Smart suddning för innehållsmedveten bearbetning
+- Radiell suddning för gradientbaserad döljning
+- Frostat glas för en modern, stilren finish
+
+Varje effekt är helt justerbar — kontrollera styrka, mjukhet, opacitet, hörnradie och mer.
+
+KEYFRAME-ANIMERING
+
+Blurio är inte ett statiskt överlagringsverktyg. Du kan animera suddregioner längs tidslinjen så att de följer rörliga motiv bildruta för bildruta. Ställ in position, storlek, rotation och suddparametrar vid valfri punkt, och Blurio interpolerar smidigt mellan keyframes med linjära, ease-in-out, fjäder- eller hållkurvor. Detta är samma animeringsmetod som används i professionella datorbaserade videoredigerare — nu på din telefon.
+
+FLEXIBLA FORMER OCH MALLAR
+
+Välj mellan rektanglar, rundade rektanglar, ellipser eller rita en anpassad bana. Spara dina favoritkonfigurationer för suddning som återanvändbara mallar med kategorier, så att du kan tillämpa dem på nya projekt med ett tryck.
+
+FÖRHANDSGRANSKNING I REALTID
+
+Se exakt hur din export kommer att se ut medan du redigerar. Blurio renderar suddeffekter live med tre kvalitetslägen — Ultra, Balanserad och Jämn — så att redigeringen förblir smidig även med 4K-material. Fästguider, säkerhetszonsöverlagringar och miniatyrskrubbning hjälper dig att placera suddregioner med precision.
+
+EXPORTALTERNATIV
+
+Exportera din färdiga video i 720p, 1080p eller 4K-upplösning. Välj mellan H.264 och HEVC-codec. Välj 24, 30 eller 60 bilder per sekund. Inkludera eller exkludera ljud. Blurio spårar exportframsteg genom varje steg — avkodning, suddning, kodning, sparande — och skriver den slutliga filen direkt till ditt Fotobibliotek.
+
+PROJEKTHANTERING
+
+Organisera ditt arbete i mappar. Duplicera projekt för variationer. Återställ raderade projekt från papperskorgen före permanent borttagning. Visa lagringsanvändning och rensa cache för att frigöra utrymme.
+
+HELT OFFLINE
+
+Blurio ansluter aldrig till internet under redigering eller export. Dina videor stannar på din enhet hela tiden. Inget konto krävs, ingen registrering, ingen molnsynkronisering. Detta är integritetsredigering som det ska vara — lokalt, snabbt och helt under din kontroll.
+
+BYGGD FÖR DAGLIGT BRUK
+
+Oavsett om du är en innehållsskapare som skyddar personer i ditt material, en förälder som delar familjestunder säkert, en förare som postar dashcam-klipp eller en professionell som hanterar konfidentiell video — Blurio ger dig professionella suddverktyg i ett mobilvänligt paket.
+
+Ladda ner Blurio och börja skydda det som är viktigt i dina videor.

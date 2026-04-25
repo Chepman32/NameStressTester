@@ -1,0 +1,54 @@
+Blurio je výkonný offline video editor, který vám umožní rozmazat obličeje, SPZ, adresy a jakékoli citlivé detaily ve vašich videích předtím, než je budete sdílet. Veškeré zpracování probíhá na vašem zařízení — nic se nenahrává na žádný server.
+
+PROČ LIDÉ POUŽÍVAJÍ BLURIO
+
+- Skryjte obličeje a identity ve videích, která zveřejňujete online
+- Zakryjte SPZ před nahráním záznamu z palubní kamery nebo pouličních záběrů
+- Chraňte soukromí dětí v rodinných videích sdílených s ostatními
+- Začerněte důvěrné informace v klientských nebo pracovních záběrech
+- Anonymizujte kolemjdoucí, lokace a osobní údaje
+- Mějte plnou kontrolu nad svými daty s kompletně offline pracovním postupem
+
+PROFESIONÁLNÍ NÁSTROJE PRO ROZMAZÁNÍ
+
+Blurio obsahuje 7 různých efektů rozmazání, takže si můžete vybrat ten správný vzhled pro každou situaci:
+
+- Gaussovské rozmazání pro hladké, přirozené zakrytí
+- Bokeh pro filmový pocit hloubky ostrosti
+- Pohybové rozmazání pro směrové maskování
+- Bilaterální rozmazání zachovávající hrany
+- Chytré rozmazání pro zpracování s ohledem na obsah
+- Radiální rozmazání pro gradientové skrývání
+- Matné sklo pro moderní, stylový vzhled
+
+Každý efekt je plně nastavitelný — ovládejte sílu, prolnutí, průhlednost, zaoblení rohů a další.
+
+ANIMACE KLÍČOVÝCH SNÍMKŮ
+
+Blurio není statický překryvný nástroj. Můžete animovat oblasti rozmazání po časové ose, aby sledovaly pohybující se objekty snímek po snímku. Nastavte pozici, velikost, rotaci a parametry rozmazání v libovolném bodě a Blurio plynule interpoluje mezi klíčovými snímky pomocí lineárních, ease-in-out, pružinových nebo podržených křivek. Jedná se o stejný animační přístup používaný v profesionálních desktopových video editorech — nyní na vašem telefonu.
+
+FLEXIBILNÍ TVARY A ŠABLONY
+
+Vyberte si z obdélníků, zaoblených obdélníků, elips nebo nakreslete vlastní cestu. Uložte své oblíbené konfigurace rozmazání jako opakovaně použitelné šablony s kategoriemi, abyste je mohli aplikovat na nové projekty jedním klepnutím.
+
+NÁHLED V REÁLNÉM ČASE
+
+Podívejte se přesně, jak bude váš export vypadat během úprav. Blurio vykresluje efekty rozmazání živě se třemi režimy kvality — Ultra, Vyvážený a Plynulý — takže úpravy zůstávají plynulé i se záběry ve 4K. Vodítka, překryvy bezpečné oblasti a procházení miniatur vám pomohou umístit oblasti rozmazání s přesností.
+
+MOŽNOSTI EXPORTU
+
+Exportujte hotové video v rozlišení 720p, 1080p nebo 4K. Vyberte si mezi kodeky H.264 a HEVC. Zvolte 24, 30 nebo 60 snímků za sekundu. Zahrňte nebo vynechte zvuk. Blurio sleduje průběh exportu v každé fázi — dekódování, rozmazání, kódování, uložení — a zapíše finální soubor přímo do vaší knihovny Fotek.
+
+SPRÁVA PROJEKTŮ
+
+Organizujte svou práci do složek. Duplikujte projekty pro variace. Obnovte smazané projekty z koše před trvalým odstraněním. Zobrazte využití úložiště a vymažte mezipaměť pro uvolnění místa.
+
+KOMPLETNĚ OFFLINE
+
+Blurio se nikdy nepřipojuje k internetu během úprav nebo exportu. Vaše videa zůstávají na vašem zařízení po celou dobu. Žádný účet není potřeba, žádná registrace, žádná cloudová synchronizace. Toto je editace soukromí tak, jak by měla být — lokální, rychlá a zcela pod vaší kontrolou.
+
+VYTVOŘENO PRO KAŽDODENNÍ POUŽITÍ
+
+Ať už jste tvůrce obsahu chránící lidi ve svých záběrech, rodič bezpečně sdílející rodinné chvíle, řidič zveřejňující záznamy z palubní kamery nebo profesionál pracující s důvěrným videem — Blurio vám dává profesionální nástroje pro rozmazání v balíčku navrženém primárně pro mobilní zařízení.
+
+Stáhněte si Blurio a začněte chránit to, na čem záleží, ve vašich videích.

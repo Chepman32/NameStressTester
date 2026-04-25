@@ -1,0 +1,54 @@
+Blurio on tehokas offline-videoeditori, jolla voit sumentaa kasvoja, rekisterikilpiä, osoitteita ja mitä tahansa arkaluontoisia yksityiskohtia videoistasi ennen niiden jakamista. Kaikki käsittely tapahtuu laitteellasi — mitään ei ladata mihinkään palvelimelle.
+
+MIKSI IHMISET KAYTTAVAT BLURIOTA
+
+- Piilota kasvot ja henkilöllisyydet videoissa, joita julkaiset verkossa
+- Peitä rekisterikilvet ennen dashcam- tai katuvideoiden lataamista
+- Suojaa lasten yksityisyyttä perheen videoissa, joita jaat muille
+- Sensuroi luottamuksellisia tietoja asiakas- tai työvideoista
+- Anonymisoi sivulliset, sijainnit ja henkilökohtaiset tiedot
+- Pidä tietosi täysin hallinnassasi täysin offline-työnkululla
+
+AMMATTIMAISET SUMENNUSTYOKALUT
+
+Blurio sisältää 7 erilaista sumennustehostetta, jotta voit valita oikean tyylin jokaiseen tilanteeseen:
+
+- Gaussin sumennus pehmeään, luonnolliseen peittämiseen
+- Bokeh elokuvalliseen syväterävyysvaikutelmaan
+- Liikesumennus suuntaavaan peittämiseen
+- Bilateraalinen sumennus reunojen säilyttämiseen
+- Älykäs sumennus sisältötietoiseen käsittelyyn
+- Säteittäinen sumennus gradienttiperusteiseen piilottamiseen
+- Himmeä lasi moderniin, tyylikkääseen viimeistelyyn
+
+Jokainen tehoste on täysin säädettävissä — hallitse voimakkuutta, pehmennystä, läpinäkyvyyttä, kulmasädettä ja paljon muuta.
+
+KEYFRAME-ANIMAATIO
+
+Blurio ei ole staattinen peittokuvatyökalu. Voit animoida sumennusalueita aikajanalla, jotta ne seuraavat liikkuvia kohteita ruutu ruudulta. Aseta sijainti, koko, kierto ja sumennusparametrit missä tahansa kohdassa, ja Blurio interpoloi sujuvasti keyframejen välillä lineaarisilla, ease-in-out-, spring- tai hold-käyrillä. Tämä on sama animointimenetelmä, jota käytetään ammattimaisissa työpöytävideonmuokkausohjelmissa — nyt puhelimessasi.
+
+JOUSTAVAT MUODOT JA MALLIT
+
+Valitse suorakulmioista, pyöristetyistä suorakulmioista, ellipseistä tai piirrä mukautettu polku. Tallenna suosikkisumennusasetuksesi uudelleenkäytettävinä malleina kategorioiden kanssa, jotta voit soveltaa niitä uusiin projekteihin yhdellä napautuksella.
+
+REAALIAIKAINEN ESIKATSELU
+
+Näe tarkasti, miltä vientisi näyttää muokkauksen aikana. Blurio renderöi sumennustehosteita reaaliaikaisesti kolmella laatutilalla — Ultra, Tasapainotettu ja Sujuva — joten muokkaus pysyy sulavana jopa 4K-materiaalilla. Kohdistusoppaat, turva-alueen peittokuvat ja pikkukuvien selaus auttavat sijoittamaan sumennusalueet tarkasti.
+
+VIENTIVAIHTOEHDOT
+
+Vie valmis videosi 720p-, 1080p- tai 4K-resoluutiolla. Valitse H.264- ja HEVC-koodekkien välillä. Valitse 24, 30 tai 60 kuvaa sekunnissa. Sisällytä tai poissulje ääni. Blurio seuraa viennin edistymistä jokaisessa vaiheessa — dekoodaus, sumennus, koodaus, tallennus — ja kirjoittaa lopullisen tiedoston suoraan Kuvat-kirjastoosi.
+
+PROJEKTINHALLINTA
+
+Järjestä työsi kansioihin. Kopioi projekteja variaatioita varten. Palauta poistetut projektit roskakorista ennen pysyvää poistoa. Tarkastele tallennustilan käyttöä ja tyhjennä välimuisti tilan vapauttamiseksi.
+
+TAYSIN OFFLINE
+
+Blurio ei koskaan yhdistä internetiin muokkauksen tai viennin aikana. Videosi pysyvät laitteellasi koko ajan. Ei tarvita tiliä, rekisteröitymistä eikä pilvisynkronointia. Tämä on yksityisyysmuokkausta niin kuin sen pitäisi olla — paikallista, nopeaa ja täysin sinun hallinnassasi.
+
+TEHTY JOKAPAIVAISTA KAYTTOA VARTEN
+
+Olitpa sisällöntuottaja, joka suojelee ihmisiä kuvamateriaalissaan, vanhempi, joka jakaa perhehetkiä turvallisesti, kuljettaja, joka julkaisee dashcam-klippejä, tai ammattilainen, joka käsittelee luottamuksellista videota — Blurio antaa sinulle ammattiluokan sumennustyökalut mobiilipaketissa.
+
+Lataa Blurio ja ala suojata sitä, mikä on tärkeää videoissasi.

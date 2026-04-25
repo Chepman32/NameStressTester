@@ -1,0 +1,14 @@
+Alegerea numelui unui bebeluș este o decizie emoțională. Namify te ajută să testezi cum poate funcționa un nume în viața reală înainte să devină oficial.
+
+Introdu prenumele, un al doilea nume opțional și numele de familie. Namify rulează verificări practice pe care mulți părinți le descoperă prea târziu:
+
+• Vulnerabilitate la rime: găsește rime de tachinare și sunete riscante
+• Verificare inițiale: detectează inițiale stânjenitoare și acronime nedorite
+• Test de pronunție: arată greșeli probabile de citire și un scor de dificultate
+• Previzualizare ecuson: verifică felul în care arată numele complet zilnic
+• Omonimi istorici: revizuiește asocieri cunoscute ale numelui
+• Estetică monogramă: evaluează echilibrul, lizibilitatea și stilul
+
+Folosește Namify pentru a compara idei, salva nume testate, marca favorite, reordona testele, activa modul strict și partaja rapoarte clare când ai nevoie de o a doua opinie.
+
+Namify este creat pentru părinți care vor mai mult decât o listă de nume frumoase. Fiecare candidat primește un test realist pentru școală, documente, discuții de familie, inițiale, pronunție și prezentare vizuală.

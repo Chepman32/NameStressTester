@@ -1,0 +1,1 @@
+desfocar,vídeo,rosto,censurar,privacidade,placa,mosaico,pixelizar,ocultar,anonimizar,editor

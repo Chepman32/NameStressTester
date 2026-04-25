@@ -1,0 +1,54 @@
+Blurio là trình chỉnh sửa video ngoại tuyến mạnh mẽ cho phép bạn làm mờ khuôn mặt, biển số xe, địa chỉ và mọi chi tiết nhạy cảm trong video trước khi chia sẻ. Mọi xử lý diễn ra trên thiết bị của bạn — không có gì được tải lên máy chủ.
+
+TẠI SAO MỌI NGƯỜI DÙNG BLURIO
+
+- Ẩn khuôn mặt và danh tính trong video đăng trực tuyến
+- Che biển số xe trước khi tải lên video dashcam hoặc đường phố
+- Bảo vệ quyền riêng tư của trẻ em trong video gia đình chia sẻ với người khác
+- Biên tập thông tin mật trong video công việc hoặc khách hàng
+- Ẩn danh người qua đường, địa điểm và thông tin cá nhân
+- Kiểm soát hoàn toàn dữ liệu với quy trình hoàn toàn ngoại tuyến
+
+CÔNG CỤ LÀM MỜ CHUYÊN NGHIỆP
+
+Blurio bao gồm 7 hiệu ứng làm mờ khác nhau để bạn chọn phong cách phù hợp cho mọi tình huống:
+
+- Làm mờ Gaussian cho hiệu ứng mượt mà, tự nhiên
+- Bokeh cho cảm giác chiều sâu điện ảnh
+- Làm mờ chuyển động cho che phủ theo hướng
+- Làm mờ hai bên bảo toàn cạnh
+- Làm mờ thông minh cho xử lý nhận biết nội dung
+- Làm mờ xuyên tâm cho ẩn dựa trên gradient
+- Kính mờ cho phong cách hiện đại, tinh tế
+
+Mỗi hiệu ứng hoàn toàn có thể điều chỉnh — kiểm soát cường độ, độ mềm, độ mờ, bán kính góc và nhiều hơn nữa.
+
+HOẠT HÌNH KEYFRAME
+
+Blurio không phải là công cụ phủ tĩnh. Bạn có thể hoạt hình các vùng làm mờ trên timeline để chúng theo dõi đối tượng di chuyển từng khung hình. Đặt vị trí, kích thước, xoay và thông số làm mờ tại bất kỳ điểm nào, và Blurio nội suy mượt mà giữa các keyframe sử dụng đường cong tuyến tính, ease-in-out, spring hoặc giữ. Đây là cách tiếp cận hoạt hình tương tự được sử dụng trong các trình chỉnh sửa video chuyên nghiệp trên máy tính — giờ trên điện thoại của bạn.
+
+HÌNH DẠNG & MẪU LINH HOẠT
+
+Chọn từ hình chữ nhật, hình chữ nhật bo tròn, hình elip hoặc vẽ đường dẫn tùy chỉnh. Lưu cấu hình làm mờ yêu thích dưới dạng mẫu có thể sử dụng lại với danh mục, để bạn áp dụng cho dự án mới chỉ với một chạm.
+
+XEM TRƯỚC THỜI GIAN THỰC
+
+Xem chính xác kết quả xuất sẽ như thế nào khi bạn chỉnh sửa. Blurio render hiệu ứng làm mờ trực tiếp với ba chế độ chất lượng — Ultra, Cân bằng và Mượt — để chỉnh sửa luôn mượt mà ngay cả với video 4K. Hướng dẫn snap, lớp phủ vùng an toàn và cuộn thumbnail giúp bạn đặt vùng làm mờ chính xác.
+
+TÙY CHỌN XUẤT
+
+Xuất video hoàn thành ở độ phân giải 720p, 1080p hoặc 4K. Chọn giữa codec H.264 và HEVC. Chọn 24, 30 hoặc 60 khung hình mỗi giây. Bao gồm hoặc loại trừ âm thanh. Blurio theo dõi tiến trình xuất qua từng giai đoạn — giải mã, làm mờ, mã hóa, lưu — và ghi file cuối cùng trực tiếp vào thư viện Ảnh của bạn.
+
+QUẢN LÝ DỰ ÁN
+
+Tổ chức công việc vào thư mục. Nhân bản dự án cho các biến thể. Khôi phục dự án đã xóa từ thùng rác trước khi xóa vĩnh viễn. Xem dung lượng lưu trữ và xóa bộ nhớ cache để giải phóng không gian.
+
+HOÀN TOÀN NGOẠI TUYẾN
+
+Blurio không bao giờ kết nối internet trong quá trình chỉnh sửa hoặc xuất. Video của bạn luôn ở trên thiết bị của bạn. Không cần tài khoản, không đăng ký, không đồng bộ đám mây. Đây là chỉnh sửa quyền riêng tư đúng nghĩa — cục bộ, nhanh chóng và hoàn toàn dưới sự kiểm soát của bạn.
+
+DÀNH CHO SỬ DỤNG HÀNG NGÀY
+
+Dù bạn là nhà sáng tạo nội dung bảo vệ mọi người trong video, phụ huynh chia sẻ khoảnh khắc gia đình an toàn, tài xế đăng clip dashcam, hay chuyên gia xử lý video mật — Blurio mang đến công cụ làm mờ cấp chuyên nghiệp trong gói ứng dụng di động.
+
+Tải Blurio và bắt đầu bảo vệ những gì quan trọng trong video của bạn.

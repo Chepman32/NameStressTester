@@ -1,0 +1,54 @@
+Blurio, videolarınızı paylaşmadan önce yüzleri, plakaları, adresleri ve hassas detayları bulanıklaştırmanızı sağlayan güçlü bir çevrimdışı video düzenleyicisidir. Tüm işlemler cihazınızda gerçekleşir — hiçbir şey herhangi bir sunucuya yüklenmez.
+
+İNSANLAR NEDEN BLURIO KULLANIYOR
+
+- Çevrimiçi paylaştığınız videolarda yüzleri ve kimlikleri gizleyin
+- Araç kamerası veya sokak çekimlerini yüklemeden önce plakaları kapatın
+- Başkalarıyla paylaşılan aile videolarında çocukların gizliliğini koruyun
+- Müşteri veya iş çekimlerindeki gizli bilgileri sansürleyin
+- Çevredeki insanları, mekanları ve kişisel detayları anonimleştirin
+- Tamamen çevrimdışı bir iş akışıyla verilerinizin tam kontrolünü elinizde tutun
+
+PROFESYONEL BULANIKLAŞTIRMA ARAÇLARI
+
+Blurio, her durum için doğru görünümü seçebilmeniz için 7 farklı bulanıklaştırma efekti içerir:
+
+- Yumuşak, doğal gizleme için Gaussian bulanıklaştırma
+- Sinematik alan derinliği hissi için Bokeh
+- Yönlü maskeleme için hareket bulanıklaştırma
+- Kenarları koruyan bilateral bulanıklaştırma
+- İçerik duyarlı işleme için akıllı bulanıklaştırma
+- Gradyan tabanlı gizleme için radyal bulanıklaştırma
+- Modern, şık bir görünüm için buzlu cam
+
+Her efekt tamamen ayarlanabilir — yoğunluk, yumuşatma, opaklık, köşe yarıçapı ve daha fazlasını kontrol edin.
+
+KEYFRAME ANİMASYONU
+
+Blurio statik bir kaplama aracı değildir. Bulanıklaştırma bölgelerini zaman çizelgesi boyunca hareketli nesneleri kare kare takip edecek şekilde canlandırabilirsiniz. Herhangi bir noktada konum, boyut, döndürme ve bulanıklaştırma parametrelerini ayarlayın; Blurio, doğrusal, ease-in-out, yay veya tutma eğrileri kullanarak keyframe'ler arasında pürüzsüz enterpolasyon yapar. Bu, profesyonel masaüstü video düzenleyicilerinde kullanılan aynı animasyon yaklaşımıdır — şimdi telefonunuzda.
+
+ESNEK ŞEKİLLER VE ŞABLONLAR
+
+Dikdörtgenler, yuvarlatılmış dikdörtgenler, elipsler arasından seçin veya özel bir yol çizin. Favori bulanıklaştırma yapılandırmalarınızı kategoriler halinde yeniden kullanılabilir şablonlar olarak kaydedin, böylece yeni projelere tek dokunuşla uygulayabilirsiniz.
+
+GERÇEK ZAMANLI ÖNİZLEME
+
+Düzenlerken dışa aktarmanızın tam olarak nasıl görüneceğini görün. Blurio, bulanıklaştırma efektlerini üç kalite modunda canlı olarak işler — Ultra, Dengeli ve Akıcı — böylece 4K çekimlerde bile düzenleme akıcı kalır. Yapışma kılavuzları, güvenli alan kaplamaları ve küçük resim kaydırma, bulanıklaştırma bölgelerini hassas şekilde yerleştirmenize yardımcı olur.
+
+DIŞA AKTARMA SEÇENEKLERİ
+
+Bitmiş videonuzu 720p, 1080p veya 4K çözünürlükte dışa aktarın. H.264 ve HEVC kodekleri arasında seçim yapın. 24, 30 veya 60 kare/saniye seçin. Sesi dahil edin veya hariç tutun. Blurio, dışa aktarma ilerlemesini her aşamada takip eder — çözme, bulanıklaştırma, kodlama, kaydetme — ve son dosyayı doğrudan Fotoğraflar kitaplığınıza yazar.
+
+PROJE YÖNETİMİ
+
+Çalışmanızı klasörler halinde düzenleyin. Varyasyonlar için projeleri çoğaltın. Kalıcı olarak silinmeden önce silinen projeleri çöp kutusundan kurtarın. Depolama kullanımını görüntüleyin ve alan açmak için önbelleği temizleyin.
+
+TAMAMEN ÇEVRİMDIŞI
+
+Blurio, düzenleme veya dışa aktarma sırasında asla internete bağlanmaz. Videolarınız her zaman cihazınızda kalır. Hesap gerekmez, kayıt olmaya gerek yok, bulut senkronizasyonu yok. Gizlilik düzenlemesi olması gerektiği gibi — yerel, hızlı ve tamamen sizin kontrolünüzde.
+
+GÜNLÜK KULLANIM İÇİN TASARLANDI
+
+İster çekimlerindeki insanları koruyan bir içerik üreticisi, ister aile anlarını güvenle paylaşan bir ebeveyn, ister araç kamerası kliplerini paylaşan bir sürücü veya gizli videolarla ilgilenen bir profesyonel olun — Blurio size mobil öncelikli bir pakette masaüstü düzeyinde bulanıklaştırma araçları sunar.
+
+Blurio'yu indirin ve videolarınızdaki önemli şeyleri korumaya başlayın.

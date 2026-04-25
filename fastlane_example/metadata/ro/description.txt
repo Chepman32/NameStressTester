@@ -1,0 +1,54 @@
+Blurio este un editor video offline puternic care îți permite să estompezi fețe, plăcuțe de înmatriculare, adrese și orice detalii sensibile din videoclipurile tale înainte de a le distribui. Toată procesarea are loc pe dispozitivul tău — nimic nu este încărcat pe vreun server.
+
+DE CE FOLOSESC OAMENII BLURIO
+
+- Ascunde fețe și identități în videoclipurile postate online
+- Acoperă plăcuțele de înmatriculare înainte de a încărca filmări dashcam sau stradale
+- Protejează intimitatea copiilor în videoclipurile de familie distribuite altora
+- Cenzurează informații confidențiale din filmările de lucru sau ale clienților
+- Anonimizează trecătorii, locațiile și detaliile personale
+- Păstrează controlul total al datelor tale cu un flux de lucru complet offline
+
+INSTRUMENTE PROFESIONALE DE ESTOMPARE
+
+Blurio include 7 efecte de estompare distincte pentru a alege aspectul potrivit în fiecare situație:
+
+- Blur Gaussian pentru estompare lină și naturală
+- Bokeh pentru un efect cinematic de adâncime de câmp
+- Blur de mișcare pentru mascare direcțională
+- Blur bilateral care păstrează marginile
+- Blur inteligent pentru procesare adaptivă la conținut
+- Blur radial pentru ascundere bazată pe gradient
+- Sticlă mată pentru un finisaj modern și elegant
+
+Fiecare efect este complet ajustabil — controlează intensitatea, estomparea marginilor, opacitatea, raza colțurilor și multe altele.
+
+ANIMAȚIE CU KEYFRAME
+
+Blurio nu este un instrument de suprapunere statică. Poți anima regiunile de blur de-a lungul cronologiei pentru a urma subiecții în mișcare cadru cu cadru. Setează poziția, dimensiunea, rotația și parametrii de blur în orice punct, iar Blurio interpolează lin între keyframe-uri folosind curbe liniare, ease-in-out, spring sau hold. Aceasta este aceeași abordare de animație folosită în editoarele video profesionale desktop — acum pe telefonul tău.
+
+FORME FLEXIBILE ȘI ȘABLOANE
+
+Alege dintre dreptunghiuri, dreptunghiuri rotunjite, elipse sau desenează o cale personalizată. Salvează configurațiile tale preferate de blur ca șabloane reutilizabile cu categorii, pentru a le aplica proiectelor noi dintr-o singură atingere.
+
+PREVIZUALIZARE ÎN TIMP REAL
+
+Vezi exact cum va arăta exportul tău în timp ce editezi. Blurio redă efectele de blur în timp real cu trei moduri de calitate — Ultra, Echilibrat și Fluid — astfel încât editarea rămâne fluidă chiar și cu filmări 4K. Ghidaje de aliniere, suprapuneri de zonă sigură și navigare prin miniaturi te ajută să plasezi regiunile de blur cu precizie.
+
+OPȚIUNI DE EXPORT
+
+Exportă videoclipul finalizat la rezoluție 720p, 1080p sau 4K. Alege între codecurile H.264 și HEVC. Selectează 24, 30 sau 60 cadre pe secundă. Include sau exclude audio. Blurio urmărește progresul exportului prin fiecare etapă — decodare, blur, codare, salvare — și scrie fișierul final direct în biblioteca ta Foto.
+
+MANAGEMENTUL PROIECTELOR
+
+Organizează-ți munca în foldere. Duplică proiectele pentru variații. Recuperează proiectele șterse din coșul de gunoi înainte de eliminarea permanentă. Vizualizează utilizarea stocării și curăță cache-ul pentru a elibera spațiu.
+
+COMPLET OFFLINE
+
+Blurio nu se conectează niciodată la internet în timpul editării sau exportului. Videoclipurile tale rămân pe dispozitivul tău în permanență. Fără cont necesar, fără înregistrare, fără sincronizare în cloud. Aceasta este editarea de confidențialitate așa cum ar trebui să fie — locală, rapidă și în întregime sub controlul tău.
+
+CONSTRUIT PENTRU UTILIZAREA ZILNICĂ
+
+Fie că ești un creator de conținut care protejează persoanele din filmările tale, un părinte care distribuie momente de familie în siguranță, un șofer care postează clipuri dashcam sau un profesionist care gestionează videoclipuri confidențiale — Blurio îți oferă instrumente de blur de nivel profesional într-un pachet conceput pentru mobil.
+
+Descarcă Blurio și începe să protejezi ce contează în videoclipurile tale.

@@ -1,0 +1,54 @@
+Blurio er en kraftfuld offline videoredigering, der lader dig sløre ansigter, nummerplader, adresser og alle følsomme detaljer i dine videoer, før du deler dem. Al behandling sker på din enhed — intet uploades til nogen server.
+
+HVORFOR FOLK BRUGER BLURIO
+
+- Skjul ansigter og identiteter i videoer, du poster online
+- Dæk nummerplader, før du uploader dashcam- eller gadeoptagelser
+- Beskyt børns privatliv i familievideoer, der deles med andre
+- Sløre fortrolige oplysninger i kunde- eller arbejdsoptagelser
+- Anonymiser forbipasserende, lokationer og personlige detaljer
+- Behold fuld kontrol over dine data med en helt offline arbejdsgang
+
+PROFESSIONELLE SLØRINGSVÆRKTØJER
+
+Blurio inkluderer 7 forskellige sløringseffekter, så du kan vælge det rigtige look til enhver situation:
+
+- Gaussisk sløring til jævn, naturlig tilsløring
+- Bokeh for en filmisk dybdeskarphedsfornemmelse
+- Bevægelsessløring til retningsbestemt maskering
+- Bilateral sløring, der bevarer kanter
+- Smart sløring til indholdsbevidst behandling
+- Radial sløring til gradientbaseret skjulning
+- Frostet glas for et moderne, stilfuldt finish
+
+Hver effekt er fuldt justerbar — kontrollér styrke, fading, gennemsigtighed, hjørneradius og mere.
+
+KEYFRAME-ANIMATION
+
+Blurio er ikke et statisk overlay-værktøj. Du kan animere sløringsområder langs tidslinjen, så de følger bevægelige motiver billede for billede. Indstil position, størrelse, rotation og sløringsparametre på et hvilket som helst punkt, og Blurio interpolerer jævnt mellem keyframes ved hjælp af lineære, ease-in-out, fjeder- eller hold-kurver. Dette er den samme animationstilgang, der bruges i professionelle desktop-videoredigeringsprogrammer — nu på din telefon.
+
+FLEKSIBLE FORMER OG SKABELONER
+
+Vælg mellem rektangler, afrundede rektangler, ellipser eller tegn en brugerdefineret sti. Gem dine foretrukne sløringsindstillinger som genanvendelige skabeloner med kategorier, så du kan anvende dem på nye projekter med ét tryk.
+
+REALTIDSFORHÅNDSVISNING
+
+Se præcis, hvordan din eksport vil se ud, mens du redigerer. Blurio renderer sløringseffekter live med tre kvalitetstilstande — Ultra, Balanceret og Jævn — så redigering forbliver flydende selv med 4K-optagelser. Hjælpelinjer, sikkerhedszone-overlays og miniaturebillede-gennemsøgning hjælper dig med at placere sløringsområder med præcision.
+
+EKSPORTMULIGHEDER
+
+Eksportér din færdige video i 720p, 1080p eller 4K-opløsning. Vælg mellem H.264 og HEVC codecs. Vælg 24, 30 eller 60 billeder per sekund. Inkludér eller udelad lyd. Blurio sporer eksportfremskridt gennem hver fase — afkodning, sløring, kodning, lagring — og skriver den endelige fil direkte til dit Fotobibliotek.
+
+PROJEKTSTYRING
+
+Organisér dit arbejde i mapper. Duplikér projekter til variationer. Gendan slettede projekter fra papirkurven før permanent fjernelse. Se lagerforbrug og ryd cache for at frigøre plads.
+
+HELT OFFLINE
+
+Blurio opretter aldrig forbindelse til internettet under redigering eller eksport. Dine videoer forbliver på din enhed til enhver tid. Ingen konto påkrævet, ingen tilmelding, ingen cloud-synkronisering. Dette er privatlivsredigering, som det bør være — lokalt, hurtigt og helt under din kontrol.
+
+BYGGET TIL DAGLIG BRUG
+
+Uanset om du er en indholdsskaber, der beskytter folk i dine optagelser, en forælder, der deler familiemomenter sikkert, en bilist, der poster dashcam-klip, eller en professionel, der håndterer fortrolig video — Blurio giver dig sløringsværktøjer på desktopniveau i en mobilvenlig pakke.
+
+Download Blurio og begynd at beskytte det, der betyder noget, i dine videoer.

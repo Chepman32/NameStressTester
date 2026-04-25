@@ -1,0 +1,54 @@
+Blurio é um poderoso editor de vídeo offline que permite desfocar rostos, placas de veículos, endereços e qualquer detalhe sensível nos seus vídeos antes de compartilhá-los. Todo o processamento acontece no seu dispositivo — nada é enviado a nenhum servidor.
+
+POR QUE AS PESSOAS USAM O BLURIO
+
+- Ocultar rostos e identidades em vídeos publicados online
+- Cobrir placas de veículos antes de enviar filmagens de dashcam ou da rua
+- Proteger a privacidade de crianças em vídeos familiares compartilhados
+- Censurar informações confidenciais em filmagens de clientes ou trabalho
+- Anonimizar pessoas, locais e detalhes pessoais
+- Manter controle total dos seus dados com um fluxo de trabalho completamente offline
+
+FERRAMENTAS PROFISSIONAIS DE DESFOQUE
+
+O Blurio inclui 7 efeitos de desfoque distintos para que você escolha o visual ideal para cada situação:
+
+- Desfoque Gaussiano para uma ocultação suave e natural
+- Bokeh para um efeito cinematográfico de profundidade de campo
+- Desfoque de Movimento para mascaramento direcional
+- Desfoque Bilateral que preserva bordas
+- Desfoque Inteligente para processamento adaptativo ao conteúdo
+- Desfoque Radial para ocultação baseada em gradiente
+- Vidro Fosco para um acabamento moderno e elegante
+
+Cada efeito é totalmente ajustável — controle intensidade, suavização, opacidade, raio dos cantos e muito mais.
+
+ANIMAÇÃO COM KEYFRAMES
+
+O Blurio não é uma ferramenta de sobreposição estática. Você pode animar regiões de desfoque ao longo da linha do tempo para que acompanhem sujeitos em movimento quadro a quadro. Defina posição, tamanho, rotação e parâmetros de desfoque em qualquer ponto, e o Blurio interpola suavemente entre keyframes usando curvas linear, ease-in-out, spring ou hold. Essa é a mesma abordagem de animação usada em editores de vídeo profissionais para desktop — agora no seu celular.
+
+FORMAS FLEXÍVEIS E MODELOS
+
+Escolha entre retângulos, retângulos arredondados, elipses ou desenhe um caminho personalizado. Salve suas configurações de desfoque favoritas como modelos reutilizáveis com categorias, para aplicá-las a novos projetos com um toque.
+
+PRÉ-VISUALIZAÇÃO EM TEMPO REAL
+
+Veja exatamente como ficará sua exportação enquanto edita. O Blurio renderiza efeitos de desfoque ao vivo com três modos de qualidade — Ultra, Equilibrado e Suave — para que a edição permaneça fluida mesmo com filmagens em 4K. Guias de alinhamento, sobreposições de área segura e navegação por miniaturas ajudam a posicionar regiões de desfoque com precisão.
+
+OPÇÕES DE EXPORTAÇÃO
+
+Exporte seu vídeo finalizado em resolução 720p, 1080p ou 4K. Escolha entre os codecs H.264 e HEVC. Selecione 24, 30 ou 60 quadros por segundo. Inclua ou exclua o áudio. O Blurio acompanha o progresso da exportação em cada etapa — decodificação, desfoque, codificação, salvamento — e grava o arquivo final diretamente na sua biblioteca de Fotos.
+
+GERENCIAMENTO DE PROJETOS
+
+Organize seu trabalho em pastas. Duplique projetos para variações. Recupere projetos excluídos da lixeira antes da remoção permanente. Visualize o uso de armazenamento e limpe o cache para liberar espaço.
+
+COMPLETAMENTE OFFLINE
+
+O Blurio nunca se conecta à internet durante a edição ou exportação. Seus vídeos permanecem no seu dispositivo o tempo todo. Sem necessidade de conta, sem cadastro, sem sincronização na nuvem. Essa é a edição de privacidade como deveria ser — local, rápida e inteiramente sob seu controle.
+
+FEITO PARA O USO DIÁRIO
+
+Seja você um criador de conteúdo protegendo pessoas nas suas filmagens, um pai compartilhando momentos em família com segurança, um motorista postando clipes de dashcam ou um profissional lidando com vídeos confidenciais — o Blurio oferece ferramentas de desfoque de nível profissional em um pacote pensado para dispositivos móveis.
+
+Baixe o Blurio e comece a proteger o que importa nos seus vídeos.

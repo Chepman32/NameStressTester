@@ -1,0 +1,54 @@
+A Blurio egy hatékony offline videószerkesztő, amellyel elmoshatod az arcokat, rendszámokat, címeket és bármilyen érzékeny adatot a videóidban, mielőtt megosztanád őket. Minden feldolgozás a készülékeden történik — semmi sem kerül fel semmilyen szerverre.
+
+MIÉRT HASZNÁLJÁK A BLURIÓT
+
+- Arcok és személyazonosságok elrejtése az online közzétett videókban
+- Rendszámok eltakarása dashcam vagy utcai felvételek feltöltése előtt
+- Gyermekek magánéletének védelme a másokkal megosztott családi videókban
+- Bizalmas információk kitakarása ügyfél- vagy munkahelyi felvételeken
+- Járókelők, helyszínek és személyes adatok anonimizálása
+- Teljes kontroll az adataid felett teljesen offline munkafolyamattal
+
+PROFESSZIONÁLIS ELMOSÁSI ESZKÖZÖK
+
+A Blurio 7 különböző elmosási effektet tartalmaz, hogy minden helyzethez megtaláld a megfelelőt:
+
+- Gauss-elmosás sima, természetes eltakaráshoz
+- Bokeh mozis mélységélesség-hatáshoz
+- Mozgáselmosás irányított maszkoláshoz
+- Bilaterális elmosás élek megőrzésével
+- Intelligens elmosás tartalomfüggő feldolgozáshoz
+- Radiális elmosás gradiens alapú elrejtéshez
+- Homályos üveg modern, stílusos megjelenéshez
+
+Minden effekt teljesen állítható — szabályozd az erősséget, lágyítást, átlátszóságot, sarokívet és még sok mást.
+
+KEYFRAME ANIMÁCIÓ
+
+A Blurio nem statikus fedvényeszköz. A blur régiókat animálhatod az idővonalon, hogy képkockáról képkockára kövessék a mozgó alanyokat. Állítsd be a pozíciót, méretet, forgatást és blur paramétereket bármely ponton, és a Blurio simán interpolál a keyframe-ek között lineáris, ease-in-out, rugó vagy tartási görbékkel. Ez ugyanaz az animációs megközelítés, amelyet professzionális asztali videószerkesztők használnak — most a telefonodon.
+
+RUGALMAS FORMÁK ÉS SABLONOK
+
+Válassz téglalapok, lekerekített téglalapok, ellipszisek közül, vagy rajzolj egyéni útvonalat. Mentsd el kedvenc blur beállításaidat újrafelhasználható sablonként kategóriákkal, így egyetlen koppintással alkalmazhatod őket új projektekre.
+
+VALÓS IDEJŰ ELŐNÉZET
+
+Szerkesztés közben pontosan láthatod, hogyan fog kinézni az exportod. A Blurio három minőségi módban — Ultra, Balanced és Smooth — valós időben rendereli a blur effekteket, így a szerkesztés még 4K felvételek mellett is folyékony marad. Illesztési segédvonalak, biztonsági terület fedvények és miniatűr görgetés segítenek a blur régiók pontos elhelyezésében.
+
+EXPORTÁLÁSI LEHETŐSÉGEK
+
+Exportáld a kész videódat 720p, 1080p vagy 4K felbontásban. Válassz H.264 és HEVC kodekek között. Válassz 24, 30 vagy 60 képkocka/másodperc közül. Hang hozzáadásával vagy nélküle. A Blurio minden szakaszon — dekódolás, elmosás, kódolás, mentés — nyomon követi az export előrehaladását, és a végleges fájlt közvetlenül a Fotók könyvtáradba írja.
+
+PROJEKTKEZELÉS
+
+Rendszerezd munkádat mappákba. Duplikálj projekteket variációkhoz. Állítsd vissza a törölt projekteket a kukából a végleges törlés előtt. Tekintsd meg a tárhelyhasználatot, és ürítsd a gyorsítótárat hely felszabadításához.
+
+TELJESEN OFFLINE
+
+A Blurio soha nem csatlakozik az internethez szerkesztés vagy exportálás közben. Videóid mindig a készülékeden maradnak. Nincs szükség fiókra, nincs regisztráció, nincs felhőszinkronizálás. Ez az adatvédelmi szerkesztés úgy, ahogy lennie kell — helyi, gyors és teljes mértékben az irányításod alatt.
+
+MINDENNAPI HASZNÁLATRA TERVEZVE
+
+Legyen szó tartalomkészítőről, aki védi a felvételein szereplő személyeket, szülőről, aki biztonságosan osztja meg a családi pillanatokat, sofőrről, aki dashcam klipeket posztol, vagy szakemberről, aki bizalmas videókat kezel — a Blurio asztali szintű blur eszközöket kínál mobilbarát csomagban.
+
+Töltsd le a Bluriót, és kezdd el védeni, ami számít a videóidban.

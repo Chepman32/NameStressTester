@@ -1,0 +1,54 @@
+Blurio is een krachtige offline video-editor waarmee je gezichten, kentekens, adressen en gevoelige details in je video's kunt vervagen voordat je ze deelt. Alle verwerking vindt plaats op je apparaat — er wordt niets geüpload naar een server.
+
+WAAROM MENSEN BLURIO GEBRUIKEN
+
+- Gezichten en identiteiten verbergen in video's die je online plaatst
+- Kentekens bedekken voordat je dashcam- of straatbeelden uploadt
+- De privacy van kinderen beschermen in familievideo's die met anderen worden gedeeld
+- Vertrouwelijke informatie redigeren in klant- of werkopnames
+- Voorbijgangers, locaties en persoonlijke gegevens anonimiseren
+- Volledige controle over je gegevens behouden met een volledig offline workflow
+
+PROFESSIONELE VERVAGINGSTOOLS
+
+Blurio bevat 7 verschillende vervagingseffecten zodat je de juiste look kunt kiezen voor elke situatie:
+
+- Gaussische vervaging voor zachte, natuurlijke verdoezeling
+- Bokeh voor een filmisch scherptediepte-effect
+- Bewegingsonscherpte voor gerichte maskering
+- Bilaterale vervaging die randen behoudt
+- Slimme vervaging voor inhoudsbewuste verwerking
+- Radiale vervaging voor op gradiënt gebaseerde verdoezeling
+- Matglas voor een moderne, stijlvolle afwerking
+
+Elk effect is volledig aanpasbaar — regel sterkte, vervaging, dekking, hoekradius en meer.
+
+KEYFRAME-ANIMATIE
+
+Blurio is geen statische overlay-tool. Je kunt vervagingsgebieden animeren over de tijdlijn zodat ze bewegende onderwerpen frame voor frame volgen. Stel positie, grootte, rotatie en vervagingsparameters in op elk punt, en Blurio interpoleert vloeiend tussen keyframes met lineaire, ease-in-out, spring- of hold-curves. Dit is dezelfde animatiebenadering die wordt gebruikt in professionele desktop-video-editors — nu op je telefoon.
+
+FLEXIBELE VORMEN EN SJABLONEN
+
+Kies uit rechthoeken, afgeronde rechthoeken, ellipsen of teken een aangepast pad. Sla je favoriete vervagingsconfiguraties op als herbruikbare sjablonen met categorieën, zodat je ze met één tik op nieuwe projecten kunt toepassen.
+
+REALTIME VOORBEELD
+
+Zie precies hoe je export eruitziet terwijl je bewerkt. Blurio rendert vervagingseffecten live met drie kwaliteitsmodi — Ultra, Balanced en Smooth — zodat bewerken vloeiend blijft, zelfs met 4K-beeldmateriaal. Uitlijnhulpen, veilige-zone-overlays en thumbnail-scrubbing helpen je vervagingsgebieden nauwkeurig te plaatsen.
+
+EXPORTOPTIES
+
+Exporteer je voltooide video in 720p, 1080p of 4K-resolutie. Kies tussen H.264- en HEVC-codecs. Selecteer 24, 30 of 60 frames per seconde. Audio wel of niet opnemen. Blurio volgt de exportvoortgang door elke fase — decoderen, vervagen, coderen, opslaan — en schrijft het uiteindelijke bestand rechtstreeks naar je Fotobibliotheek.
+
+PROJECTBEHEER
+
+Organiseer je werk in mappen. Dupliceer projecten voor variaties. Herstel verwijderde projecten uit de prullenbak voordat ze permanent worden verwijderd. Bekijk opslaggebruik en wis de cache om ruimte vrij te maken.
+
+VOLLEDIG OFFLINE
+
+Blurio maakt nooit verbinding met internet tijdens het bewerken of exporteren. Je video's blijven altijd op je apparaat. Geen account vereist, geen registratie, geen cloudsynchronisatie. Dit is privacybewerking zoals het hoort — lokaal, snel en volledig onder jouw controle.
+
+GEBOUWD VOOR DAGELIJKS GEBRUIK
+
+Of je nu een contentcreator bent die mensen in je beeldmateriaal beschermt, een ouder die familiemomenten veilig deelt, een chauffeur die dashcamclips plaatst, of een professional die vertrouwelijke video's verwerkt — Blurio geeft je desktop-niveau vervagingstools in een mobile-first pakket.
+
+Download Blurio en begin met het beschermen van wat belangrijk is in je video's.

@@ -1,0 +1,1 @@
+Arcok, rendszámok és érzékeny adatok elmosása bármely videóban — a készülékeden. Nincs felhő. Keyframe animációk, 7 blur effekt, 4K export.

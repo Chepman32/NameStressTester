@@ -1,0 +1,51 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "Upload Blurio metadata to App Store Connect"
+  lane :upload_metadata do
+    api_key = app_store_connect_api_key(
+      key_id: "STDG5D3U5A",
+      issuer_id: "5c3aee75-98b2-489d-b18e-c273d41d1e02",
+      key_filepath: "./fastlane/AuthKey_STDG5D3U5A.p8",
+      in_house: false
+    )
+
+    deliver(
+      api_key: api_key,
+      app_identifier: "com.blurio.app",
+      submit_for_review: false,
+      skip_screenshots: true,
+      skip_binary_upload: true,
+      skip_app_version_update: true,
+      force: true,
+      overwrite_screenshots: false,
+      run_precheck_before_submit: false,
+      ignore_language_directory_validation: true
+    )
+  end
+
+  desc "Upload Blurio screenshots to App Store Connect"
+  lane :upload_screenshots do
+    api_key = app_store_connect_api_key(
+      key_id: "STDG5D3U5A",
+      issuer_id: "5c3aee75-98b2-489d-b18e-c273d41d1e02",
+      key_filepath: "./fastlane/AuthKey_STDG5D3U5A.p8",
+      in_house: false
+    )
+
+    deliver(
+      api_key: api_key,
+      app_identifier: "com.blurio.app",
+      submit_for_review: false,
+      skip_metadata: true,
+      skip_screenshots: false,
+      skip_binary_upload: true,
+      skip_app_version_update: true,
+      force: true,
+      overwrite_screenshots: true,
+      run_precheck_before_submit: false,
+      ignore_language_directory_validation: true,
+      screenshots_path: "./fastlane/screenshots_staged"
+    )
+  end
+end

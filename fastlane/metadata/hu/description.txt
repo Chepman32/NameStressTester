@@ -1,0 +1,14 @@
+A babanév kiválasztása érzelmes döntés. A Namify segít kipróbálni, hogyan működhet egy név a való életben, mielőtt hivatalossá válik.
+
+Add meg a keresztnevet, opcionális második nevet és vezetéknevet. A Namify gyakorlati ellenőrzéseket futtat, amelyeket sok szülő csak későn vesz észre:
+
+• Rímkockázat: felismeri a csúfolódó rímeket és hasonló hangzásokat
+• Kezdőbetűk ellenőrzése: kiszűri a kínos monogramokat és nem kívánt rövidítéseket
+• Kiejtési teszt: megmutatja a várható felolvasási hibákat és a nehézségi pontszámot
+• Névcímke előnézet: láthatóvá teszi, hogyan mutat a teljes név a mindennapokban
+• Történelmi névrokonok: áttekinti az ismert asszociációkat
+• Monogram esztétika: értékeli az egyensúlyt, olvashatóságot és stílust
+
+A Namify segítségével összehasonlíthatod az ötleteket, mentheted a tesztelt neveket, kedvenceket jelölhetsz, átrendezheted a teszteket, bekapcsolhatod a szigorú módot és megoszthatod az áttekinthető jelentéseket, ha második véleményre van szükséged.
+
+A Namify azoknak a szülőknek készült, akik többet szeretnének egy szép névlistánál. Minden jelölt valós élethelyzetekre kap stressztesztet: iskola, papírok, családi viták, kezdőbetűk, kiejtés és vizuális megjelenés.

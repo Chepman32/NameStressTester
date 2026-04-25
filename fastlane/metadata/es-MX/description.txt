@@ -1,0 +1,14 @@
+Elegir un nombre de bebé es una decisión emocional. Namify te ayuda a probar cómo puede sentirse un nombre en la vida real antes de hacerlo oficial.
+
+Escribe nombre, segundo nombre opcional y apellido. Namify ejecuta pruebas prácticas que muchas familias descubren demasiado tarde:
+
+• Vulnerabilidad a rimas: detecta rimas de burla y sonidos parecidos
+• Revisión de iniciales: encuentra iniciales incómodas y acrónimos no deseados
+• Prueba de pronunciación: muestra errores probables al leer el nombre y una puntuación de dificultad
+• Vista de etiqueta: revisa cómo se ve el nombre completo en situaciones cotidianas
+• Homónimos históricos: muestra asociaciones conocidas alrededor del nombre
+• Estética de monograma: evalúa equilibrio, legibilidad y estilo
+
+Usa Namify para comparar ideas, guardar nombres probados, marcar favoritos, cambiar el orden de las pruebas, activar modo estricto y compartir reportes claros cuando necesites otra opinión.
+
+Namify está hecho para familias que quieren más que una lista de nombres bonitos. Cada candidato recibe una prueba de estrés realista para escuela, trámites, conversaciones familiares, iniciales, pronunciación y presentación visual.

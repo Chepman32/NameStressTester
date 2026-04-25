@@ -1,0 +1,54 @@
+Blurio adalah editor video offline yang powerful, memungkinkan Anda memblur wajah, plat nomor, alamat, dan detail sensitif apa pun di video sebelum Anda membagikannya. Semua pemrosesan terjadi di perangkat Anda — tidak ada yang diunggah ke server mana pun.
+
+MENGAPA ORANG MENGGUNAKAN BLURIO
+
+- Menyembunyikan wajah dan identitas di video yang diposting online
+- Menutupi plat nomor sebelum mengunggah rekaman dashcam atau jalanan
+- Melindungi privasi anak-anak di video keluarga yang dibagikan
+- Menyunting informasi rahasia di rekaman klien atau pekerjaan
+- Menganonimkan orang sekitar, lokasi, dan detail pribadi
+- Menjaga kontrol penuh atas data Anda dengan alur kerja sepenuhnya offline
+
+ALAT BLUR PROFESIONAL
+
+Blurio mencakup 7 efek blur berbeda sehingga Anda bisa memilih tampilan yang tepat untuk setiap situasi:
+
+- Gaussian blur untuk pengaburan yang halus dan natural
+- Bokeh untuk kesan kedalaman bidang sinematik
+- Motion blur untuk masking terarah
+- Bilateral blur yang mempertahankan tepi
+- Smart blur untuk pemrosesan sadar konten
+- Radial blur untuk penyembunyian berbasis gradien
+- Frosted glass untuk hasil modern dan stylish
+
+Setiap efek sepenuhnya dapat disesuaikan — atur kekuatan, feather, opacity, radius sudut, dan lainnya.
+
+ANIMASI KEYFRAME
+
+Blurio bukan alat overlay statis. Anda dapat menganimasikan area blur di sepanjang timeline agar mengikuti subjek yang bergerak frame demi frame. Atur posisi, ukuran, rotasi, dan parameter blur di titik mana pun, dan Blurio menginterpolasi dengan mulus antar keyframe menggunakan kurva linear, ease-in-out, spring, atau hold. Ini adalah pendekatan animasi yang sama dengan editor video desktop profesional — sekarang di ponsel Anda.
+
+BENTUK & TEMPLATE FLEKSIBEL
+
+Pilih dari persegi panjang, persegi panjang bulat, elips, atau gambar jalur kustom. Simpan konfigurasi blur favorit Anda sebagai template yang dapat digunakan ulang dengan kategori, sehingga Anda bisa menerapkannya ke proyek baru dalam satu ketukan.
+
+PRATINJAU REAL-TIME
+
+Lihat persis seperti apa ekspor Anda saat mengedit. Blurio merender efek blur secara langsung dengan tiga mode kualitas — Ultra, Balanced, dan Smooth — sehingga pengeditan tetap lancar bahkan dengan rekaman 4K. Panduan snap, overlay area aman, dan scrubbing thumbnail membantu Anda menempatkan area blur dengan presisi.
+
+OPSI EKSPOR
+
+Ekspor video final Anda dalam resolusi 720p, 1080p, atau 4K. Pilih antara codec H.264 dan HEVC. Pilih 24, 30, atau 60 frame per detik. Sertakan atau kecualikan audio. Blurio melacak progres ekspor melalui setiap tahap — decode, blur, encode, simpan — dan menulis file final langsung ke perpustakaan Foto Anda.
+
+MANAJEMEN PROYEK
+
+Organisir pekerjaan Anda ke dalam folder. Duplikat proyek untuk variasi. Pulihkan proyek yang dihapus dari tempat sampah sebelum penghapusan permanen. Lihat penggunaan penyimpanan dan bersihkan cache untuk membebaskan ruang.
+
+SEPENUHNYA OFFLINE
+
+Blurio tidak pernah terhubung ke internet selama pengeditan atau ekspor. Video Anda tetap di perangkat Anda setiap saat. Tidak perlu akun, tidak perlu mendaftar, tidak ada sinkronisasi cloud. Ini adalah pengeditan privasi sebagaimana seharusnya — lokal, cepat, dan sepenuhnya di bawah kendali Anda.
+
+DIBUAT UNTUK PENGGUNAAN SEHARI-HARI
+
+Baik Anda seorang kreator konten yang melindungi orang dalam rekaman Anda, orang tua yang membagikan momen keluarga dengan aman, pengemudi yang memposting klip dashcam, atau profesional yang menangani video rahasia — Blurio memberi Anda alat blur kelas desktop dalam paket mobile-first.
+
+Unduh Blurio dan mulai lindungi yang penting dalam video Anda.

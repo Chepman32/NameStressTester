@@ -1,0 +1,54 @@
+Blurio ist ein leistungsstarker Offline-Videoeditor, mit dem du Gesichter, Kennzeichen, Adressen und alle sensiblen Details in deinen Videos unkenntlich machen kannst, bevor du sie teilst. Die gesamte Verarbeitung findet auf deinem Gerät statt — nichts wird auf einen Server hochgeladen.
+
+WARUM MENSCHEN BLURIO NUTZEN
+
+- Gesichter und Identitäten in Videos verbergen, die du online postest
+- Kennzeichen abdecken, bevor du Dashcam- oder Straßenaufnahmen hochlädst
+- Privatsphäre von Kindern in Familienvideos schützen, die mit anderen geteilt werden
+- Vertrauliche Informationen in Kunden- oder Arbeitsaufnahmen schwärzen
+- Passanten, Standorte und persönliche Daten anonymisieren
+- Volle Kontrolle über deine Daten mit einem komplett offline Arbeitsablauf behalten
+
+PROFESSIONELLE UNSCHÄRFE-WERKZEUGE
+
+Blurio enthält 7 verschiedene Unschärfe-Effekte, damit du den richtigen Look für jede Situation wählen kannst:
+
+- Gaußsche Unschärfe für sanftes, natürliches Verschleiern
+- Bokeh für ein filmisches Tiefenschärfe-Gefühl
+- Bewegungsunschärfe für gerichtetes Maskieren
+- Bilaterale Unschärfe mit Kantenerhaltung
+- Intelligente Unschärfe für inhaltsbasierte Verarbeitung
+- Radiale Unschärfe für verlaufsbasiertes Verbergen
+- Milchglas für ein modernes, stilvolles Finish
+
+Jeder Effekt ist vollständig anpassbar — steuere Stärke, Weichzeichnung, Deckkraft, Eckenradius und mehr.
+
+KEYFRAME-ANIMATION
+
+Blurio ist kein statisches Overlay-Werkzeug. Du kannst Unschärfe-Bereiche entlang der Zeitleiste animieren, sodass sie sich bewegende Objekte Bild für Bild verfolgen. Setze Position, Größe, Rotation und Unschärfe-Parameter an jedem Punkt, und Blurio interpoliert nahtlos zwischen Keyframes mit linearen, Ease-in-out-, Feder- oder Haltekurven. Dies ist der gleiche Animationsansatz, der in professionellen Desktop-Videoeditoren verwendet wird — jetzt auf deinem Handy.
+
+FLEXIBLE FORMEN UND VORLAGEN
+
+Wähle zwischen Rechtecken, abgerundeten Rechtecken, Ellipsen oder zeichne einen benutzerdefinierten Pfad. Speichere deine bevorzugten Unschärfe-Konfigurationen als wiederverwendbare Vorlagen mit Kategorien, damit du sie mit einem Tipp auf neue Projekte anwenden kannst.
+
+ECHTZEITVORSCHAU
+
+Sieh genau, wie dein Export aussehen wird, während du bearbeitest. Blurio rendert Unschärfe-Effekte live mit drei Qualitätsmodi — Ultra, Ausgewogen und Flüssig — sodass die Bearbeitung auch bei 4K-Material flüssig bleibt. Hilfslinien, Sicherheitsbereich-Overlays und Miniaturansicht-Scrubbing helfen dir, Unschärfe-Bereiche präzise zu platzieren.
+
+EXPORT-OPTIONEN
+
+Exportiere dein fertiges Video in 720p, 1080p oder 4K-Auflösung. Wähle zwischen H.264 und HEVC Codecs. Wähle 24, 30 oder 60 Bilder pro Sekunde. Schließe Audio ein oder aus. Blurio verfolgt den Exportfortschritt durch jede Phase — Dekodierung, Unschärfe, Kodierung, Speicherung — und schreibt die finale Datei direkt in deine Fotomediathek.
+
+PROJEKTVERWALTUNG
+
+Organisiere deine Arbeit in Ordnern. Dupliziere Projekte für Variationen. Stelle gelöschte Projekte aus dem Papierkorb wieder her, bevor sie endgültig entfernt werden. Zeige Speichernutzung an und lösche den Cache, um Speicherplatz freizugeben.
+
+KOMPLETT OFFLINE
+
+Blurio verbindet sich niemals mit dem Internet während der Bearbeitung oder des Exports. Deine Videos bleiben jederzeit auf deinem Gerät. Kein Konto erforderlich, keine Registrierung, keine Cloud-Synchronisierung. Dies ist Datenschutz-Bearbeitung, wie sie sein sollte — lokal, schnell und vollständig unter deiner Kontrolle.
+
+FÜR DEN TÄGLICHEN GEBRAUCH ENTWICKELT
+
+Ob du Content Creator bist und Menschen in deinen Aufnahmen schützt, ein Elternteil, das Familienmomente sicher teilt, ein Autofahrer, der Dashcam-Clips postet, oder ein Profi, der mit vertraulichem Videomaterial arbeitet — Blurio gibt dir Desktop-niveau Unschärfe-Werkzeuge in einem Mobile-First-Paket.
+
+Lade Blurio herunter und beginne zu schützen, was in deinen Videos wichtig ist.
