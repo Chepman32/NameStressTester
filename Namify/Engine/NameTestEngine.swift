@@ -14,6 +14,7 @@ struct NameTestEngine {
         AsyncThrowingStream { continuation in
             Task {
                 let orderedTypes = TestType.sanitizedOrder(preferences.testOrder)
+                let analysisLanguage = preferences.appLanguage.resolvedForAnalysis
                 continuation.yield(.started(total: orderedTypes.count))
 
                 var results: [TestResult] = []
@@ -21,7 +22,7 @@ struct NameTestEngine {
                 for (index, type) in orderedTypes.enumerated() {
                     continuation.yield(.progress(index: index + 1, total: orderedTypes.count, testType: type))
                     try? await Task.sleep(for: .milliseconds(220))
-                    let result = await execute(type: type, name: name, preferences: preferences)
+                    let result = await execute(type: type, name: name, preferences: preferences, language: analysisLanguage)
                     results.append(result)
                     continuation.yield(.result(index: index + 1, total: orderedTypes.count, result: result))
                 }
@@ -33,20 +34,25 @@ struct NameTestEngine {
         }
     }
 
-    private func execute(type: TestType, name: NameComponents, preferences: UserPreferencesSnapshot) async -> TestResult {
+    private func execute(
+        type: TestType,
+        name: NameComponents,
+        preferences: UserPreferencesSnapshot,
+        language: AppLanguage
+    ) async -> TestResult {
         switch type {
         case .rhyme:
-            return await RhymeVulnerabilityAnalyzer(store: store).analyze(name: name)
+            return await RhymeVulnerabilityAnalyzer(store: store, language: language).analyze(name: name)
         case .initials:
-            return await InitialsDetector(store: store).analyze(name: name)
+            return await InitialsDetector(store: store, language: language).analyze(name: name)
         case .pronunciation:
-            return await PronunciationTester(store: store).analyze(name: name)
+            return await PronunciationTester(store: store, language: language).analyze(name: name)
         case .email:
-            return await EmailSimulator(store: store).analyze(name: name)
+            return await EmailSimulator(store: store, language: language).analyze(name: name)
         case .nameTag:
-            return await NameTagPreviewGenerator().analyze(name: name, includeMiddleName: preferences.includeMiddleName)
+            return await NameTagPreviewGenerator().analyze(name: name, includeMiddleName: preferences.includeMiddleName, language: language)
         case .namesake:
-            return await HistoricalNamesakeEngine(store: store).analyze(name: name)
+            return await HistoricalNamesakeEngine(store: store, language: language).analyze(name: name)
         case .monogram:
             return await MonogramAnalyzer().analyze(name: name)
         }

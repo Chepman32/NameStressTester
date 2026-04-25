@@ -2,7 +2,7 @@ import XCTest
 @testable import Namify
 
 final class NamifyEngineTests: XCTestCase {
-    func testOverallVerdictTreatsWarnAsPassOutsideStrictMode() {
+    func testOverallVerdictTreatsWarningsAsPassButFailuresBlockSurvivedOutsideStrictMode() {
         let results: [TestResult] = [
             .init(testType: .rhyme, verdict: .pass, summaryLine: "", detailText: "", detailData: .generic(message: "")),
             .init(testType: .initials, verdict: .warn, summaryLine: "", detailText: "", detailData: .generic(message: "")),
@@ -13,13 +13,138 @@ final class NamifyEngineTests: XCTestCase {
             .init(testType: .monogram, verdict: .warn, summaryLine: "", detailText: "", detailData: .generic(message: ""))
         ]
 
-        XCTAssertEqual(OverallVerdict.from(results: results, strictMode: false), .survived)
-        XCTAssertEqual(OverallVerdict.from(results: results, strictMode: true), .mixed)
+        XCTAssertEqual(OverallVerdict.from(results: results, strictMode: false), .mixed)
+        XCTAssertEqual(OverallVerdict.from(results: results, strictMode: true), .failed)
+
+        let noFailures = results.filter { $0.verdict != .fail }
+        XCTAssertEqual(OverallVerdict.from(results: noFailures, strictMode: false), .survived)
     }
 
     func testInitialsDetectorFlagsPrimaryMatch() async {
         let result = await InitialsDetector(store: .shared).analyze(name: NameComponents(first: "A", middle: "S", last: "S"))
         XCTAssertEqual(result.verdict, .fail)
+    }
+
+    func testRussianRhymeVulnerabilityUsesRussianDataset() async {
+        let result = await RhymeVulnerabilityAnalyzer(store: .shared, language: .russian)
+            .analyze(name: NameComponents(first: "Чмо", middle: nil, last: "Адница"))
+
+        XCTAssertEqual(result.verdict, .fail)
+        guard case .rhyme(let detail) = result.detailData else {
+            return XCTFail("Expected rhyme detail")
+        }
+
+        XCTAssertTrue(detail.findings.contains { $0.source == "Чмо" && $0.rhyme == "чмо" })
+        XCTAssertTrue(detail.findings.contains { $0.source == "Адница" && $0.rhyme == "задница" })
+    }
+
+    func testRussianRhymeVulnerabilityFlagsScreenshotCase() async {
+        let result = await RhymeVulnerabilityAnalyzer(store: .shared, language: .russian)
+            .analyze(name: NameComponents(first: "Гопа", middle: nil, last: "Смо"))
+
+        XCTAssertEqual(result.verdict, .fail)
+        guard case .rhyme(let detail) = result.detailData else {
+            return XCTFail("Expected rhyme detail")
+        }
+
+        XCTAssertTrue(detail.findings.contains { $0.source == "Гопа" && $0.rhyme == "попа" })
+        XCTAssertTrue(detail.findings.contains { $0.source == "Гопа" && $0.rhyme == "жопа" })
+        XCTAssertTrue(detail.findings.contains { $0.source == "Смо" && $0.rhyme == "чмо" })
+    }
+
+    func testRussianRhymeVulnerabilityFlagsIosifScreenshotCase() async {
+        let result = await RhymeVulnerabilityAnalyzer(store: .shared, language: .russian)
+            .analyze(name: NameComponents(first: "Иосиф", middle: nil, last: "Смо"))
+
+        XCTAssertEqual(result.verdict, .fail)
+        guard case .rhyme(let detail) = result.detailData else {
+            return XCTFail("Expected rhyme detail")
+        }
+
+        XCTAssertTrue(detail.findings.contains { $0.source == "Смо" && $0.rhyme == "чмо" })
+    }
+
+    func testRussianNamesakeFlagsIosifStalin() async {
+        let result = await HistoricalNamesakeEngine(store: .shared, language: .russian)
+            .analyze(name: NameComponents(first: "Иосиф", middle: nil, last: "Смо"))
+
+        XCTAssertEqual(result.verdict, .fail)
+        guard case .namesake(let detail) = result.detailData else {
+            return XCTFail("Expected namesake detail")
+        }
+
+        XCTAssertTrue(detail.entries.contains { $0.fullName == "Иосиф Сталин" && $0.sentiment == "negative" })
+    }
+
+    func testRussianRhymeDataDoesNotLeakIntoEnglishChecks() async {
+        let result = await RhymeVulnerabilityAnalyzer(store: .shared, language: .english)
+            .analyze(name: NameComponents(first: "Чмо", middle: nil, last: "Адница"))
+
+        XCTAssertEqual(result.verdict, .pass)
+        guard case .rhyme(let detail) = result.detailData else {
+            return XCTFail("Expected rhyme detail")
+        }
+
+        XCTAssertFalse(detail.findings.contains { $0.rhyme == "чмо" || $0.rhyme == "задница" })
+    }
+
+    func testRhymeAnalyzerChecksFirstMiddleAndLastNameParts() async {
+        let result = await RhymeVulnerabilityAnalyzer(store: .shared, language: .english)
+            .analyze(name: NameComponents(first: "Art", middle: "Ash", last: "Kali"))
+
+        guard case .rhyme(let detail) = result.detailData else {
+            return XCTFail("Expected rhyme detail")
+        }
+
+        let sources = Set(detail.findings.map(\.source))
+        XCTAssertTrue(sources.contains("Art"))
+        XCTAssertTrue(sources.contains("Ash"))
+        XCTAssertTrue(sources.contains("Kali"))
+    }
+
+    func testAsianRhymeChecksUseSelectedLanguageDatasets() async {
+        let thai = await RhymeVulnerabilityAnalyzer(store: .shared, language: .thai)
+            .analyze(name: NameComponents(first: "ขี้", middle: nil, last: "ใจดี"))
+        let chinese = await RhymeVulnerabilityAnalyzer(store: .shared, language: .chineseSimplified)
+            .analyze(name: NameComponents(first: "笨", middle: nil, last: "王"))
+
+        XCTAssertNotEqual(thai.verdict, .pass)
+        XCTAssertNotEqual(chinese.verdict, .pass)
+    }
+
+    func testNameTestEnginePassesResolvedLanguageIntoAnalyzers() async throws {
+        var preferences = UserPreferencesSnapshot.default
+        preferences.appLanguage = .russian
+        preferences.testOrder = [.rhyme]
+
+        var completedSummary: NameRunSummary?
+        for try await event in NameTestEngine().run(
+            name: NameComponents(first: "Чмо", middle: nil, last: "Адница"),
+            preferences: preferences
+        ) {
+            if case .completed(let summary) = event {
+                completedSummary = summary
+            }
+        }
+
+        XCTAssertEqual(completedSummary?.results.first?.verdict, .fail)
+    }
+
+    func testLocaleScopedDatasetsCoverEverySupportedLanguage() async throws {
+        let store = OfflineDatasetStore.shared
+        let supportedLanguages = Set(AppLanguage.supportedCases.map(\.rawValue))
+        let rhymePatterns = try await store.rhymePatterns()
+        let badInitials = try await store.badInitials()
+        let phoneticRules = try await store.phoneticRules()
+        let frequency = try await store.frequencyDatabase()
+        let namesakes = try await store.namesakes()
+
+        XCTAssertTrue(Set(rhymePatterns.compactMap(\.language)).isSuperset(of: supportedLanguages))
+        XCTAssertTrue(Set(badInitials.compactMap(\.language)).isSuperset(of: supportedLanguages))
+        XCTAssertTrue(Set(phoneticRules.rules.compactMap(\.language)).isSuperset(of: supportedLanguages))
+        XCTAssertTrue(Set(frequency.firstNames.compactMap(\.language)).isSuperset(of: supportedLanguages))
+        XCTAssertTrue(Set(frequency.lastNames.compactMap(\.language)).isSuperset(of: supportedLanguages))
+        XCTAssertTrue(Set(namesakes.compactMap(\.language)).isSuperset(of: supportedLanguages))
     }
 
     func testMonogramAnalyzerRewardsBalancedInitials() async {

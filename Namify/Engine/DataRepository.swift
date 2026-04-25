@@ -7,9 +7,25 @@ struct RhymePatternRecord: Codable, Hashable {
         let severity: String?
     }
 
+    let language: String?
     let sound: String
     let anchors: [String]
+    let matchType: String?
     let words: [WordRecord]
+
+    init(
+        language: String? = AppLanguage.english.rawValue,
+        sound: String,
+        anchors: [String],
+        matchType: String? = nil,
+        words: [WordRecord]
+    ) {
+        self.language = language
+        self.sound = sound
+        self.anchors = anchors
+        self.matchType = matchType
+        self.words = words
+    }
 }
 
 struct RhymeDatabase: Codable {
@@ -17,10 +33,25 @@ struct RhymeDatabase: Codable {
 }
 
 struct BadInitialsRecord: Codable, Hashable {
+    let language: String?
     let initials: String
     let category: String
     let severity: String
     let note: String
+
+    init(
+        language: String? = AppLanguage.english.rawValue,
+        initials: String,
+        category: String,
+        severity: String,
+        note: String
+    ) {
+        self.language = language
+        self.initials = initials
+        self.category = category
+        self.severity = severity
+        self.note = note
+    }
 }
 
 struct BadInitialsDatabase: Codable {
@@ -28,17 +59,47 @@ struct BadInitialsDatabase: Codable {
 }
 
 struct PronunciationRuleRecord: Codable, Hashable {
+    let language: String?
     let pattern: String
     let label: String
     let penalty: Int
     let explanation: String
     let verdict: String
+
+    init(
+        language: String? = AppLanguage.english.rawValue,
+        pattern: String,
+        label: String,
+        penalty: Int,
+        explanation: String,
+        verdict: String
+    ) {
+        self.language = language
+        self.pattern = pattern
+        self.label = label
+        self.penalty = penalty
+        self.explanation = explanation
+        self.verdict = verdict
+    }
 }
 
 struct PronunciationOverrideRecord: Codable, Hashable {
+    let language: String?
     let name: String
     let phonetic: String
     let likelyMispronunciation: String
+
+    init(
+        language: String? = AppLanguage.english.rawValue,
+        name: String,
+        phonetic: String,
+        likelyMispronunciation: String
+    ) {
+        self.language = language
+        self.name = name
+        self.phonetic = phonetic
+        self.likelyMispronunciation = likelyMispronunciation
+    }
 }
 
 struct PhoneticRuleDatabase: Codable {
@@ -47,8 +108,15 @@ struct PhoneticRuleDatabase: Codable {
 }
 
 struct FrequencyEntry: Codable, Hashable {
+    let language: String?
     let name: String
     let rank: Int
+
+    init(language: String? = AppLanguage.english.rawValue, name: String, rank: Int) {
+        self.language = language
+        self.name = name
+        self.rank = rank
+    }
 }
 
 struct FrequencyDatabase: Codable {
@@ -57,6 +125,7 @@ struct FrequencyDatabase: Codable {
 }
 
 struct HistoricalNamesakeRecord: Codable, Hashable {
+    let language: String?
     let firstName: String
     let fullName: String
     let shortBio: String
@@ -64,6 +133,26 @@ struct HistoricalNamesakeRecord: Codable, Hashable {
     let domain: String
     let sentiment: String
     let notoriety: Int
+
+    init(
+        language: String? = AppLanguage.english.rawValue,
+        firstName: String,
+        fullName: String,
+        shortBio: String,
+        era: String,
+        domain: String,
+        sentiment: String,
+        notoriety: Int
+    ) {
+        self.language = language
+        self.firstName = firstName
+        self.fullName = fullName
+        self.shortBio = shortBio
+        self.era = era
+        self.domain = domain
+        self.sentiment = sentiment
+        self.notoriety = notoriety
+    }
 }
 
 struct HistoricalNamesakeDatabase: Codable {
@@ -91,11 +180,19 @@ actor OfflineDatasetStore {
         return decoded
     }
 
+    func rhymePatterns(for language: AppLanguage) throws -> [RhymePatternRecord] {
+        localizedRecords(try rhymePatterns(), for: language, language: \.language)
+    }
+
     func badInitials() throws -> [BadInitialsRecord] {
         if let initialsCache { return initialsCache }
         let decoded = (try? decode(BadInitialsDatabase.self, file: "bad_initials"))?.flagged ?? SeedData.badInitials
         initialsCache = decoded
         return decoded
+    }
+
+    func badInitials(for language: AppLanguage) throws -> [BadInitialsRecord] {
+        localizedRecords(try badInitials(), for: language, language: \.language)
     }
 
     func phoneticRules() throws -> PhoneticRuleDatabase {
@@ -105,6 +202,14 @@ actor OfflineDatasetStore {
         return decoded
     }
 
+    func phoneticRules(for language: AppLanguage) throws -> PhoneticRuleDatabase {
+        let database = try phoneticRules()
+        return PhoneticRuleDatabase(
+            rules: localizedRecords(database.rules, for: language, language: \.language),
+            overrides: localizedRecords(database.overrides, for: language, language: \.language, fallbackToEnglish: false)
+        )
+    }
+
     func frequencyDatabase() throws -> FrequencyDatabase {
         if let frequencyCache { return frequencyCache }
         let decoded = (try? decode(FrequencyDatabase.self, file: "popular_names_frequency")) ?? SeedData.frequencyDatabase
@@ -112,11 +217,23 @@ actor OfflineDatasetStore {
         return decoded
     }
 
+    func frequencyDatabase(for language: AppLanguage) throws -> FrequencyDatabase {
+        let database = try frequencyDatabase()
+        return FrequencyDatabase(
+            firstNames: localizedRecords(database.firstNames, for: language, language: \.language),
+            lastNames: localizedRecords(database.lastNames, for: language, language: \.language)
+        )
+    }
+
     func namesakes() throws -> [HistoricalNamesakeRecord] {
         if let namesakeCache { return namesakeCache }
         let decoded = (try? decode(HistoricalNamesakeDatabase.self, file: "historical_namesakes"))?.entries ?? SeedData.namesakes
         namesakeCache = decoded
         return decoded
+    }
+
+    func namesakes(for language: AppLanguage) throws -> [HistoricalNamesakeRecord] {
+        localizedRecords(try namesakes(), for: language, language: \.language)
     }
 
     func domains() throws -> [String] {
@@ -127,11 +244,31 @@ actor OfflineDatasetStore {
     }
 
     private func decode<T: Decodable>(_ type: T.Type, file: String) throws -> T {
-        guard let url = Bundle.namifyResources.url(forResource: file, withExtension: "json", subdirectory: "Data") else {
+        let url = Bundle.namifyResources.url(forResource: file, withExtension: "json", subdirectory: "Data")
+            ?? Bundle.namifyResources.url(forResource: file, withExtension: "json")
+
+        guard let url else {
             throw CocoaError(.fileNoSuchFile)
         }
         let data = try Data(contentsOf: url)
         return try JSONDecoder().decode(type, from: data)
+    }
+
+    private func localizedRecords<Record>(
+        _ records: [Record],
+        for language: AppLanguage,
+        language keyPath: KeyPath<Record, String?>,
+        fallbackToEnglish: Bool = true
+    ) -> [Record] {
+        let resolvedLanguage = language.resolvedForAnalysis
+        let localized = records.filter { $0[keyPath: keyPath] == resolvedLanguage.rawValue }
+        if localized.isEmpty == false {
+            return localized
+        }
+
+        guard fallbackToEnglish else { return [] }
+        let english = records.filter { ($0[keyPath: keyPath] ?? AppLanguage.english.rawValue) == AppLanguage.english.rawValue }
+        return english.isEmpty ? records : english
     }
 }
 

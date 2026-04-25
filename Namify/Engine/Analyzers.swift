@@ -3,17 +3,28 @@ import UIKit
 
 struct RhymeVulnerabilityAnalyzer {
     let store: OfflineDatasetStore
+    let language: AppLanguage
+
+    init(store: OfflineDatasetStore, language: AppLanguage = .english) {
+        self.store = store
+        self.language = language.resolvedForAnalysis
+    }
 
     func analyze(name: NameComponents) async -> TestResult {
         do {
-            let patterns = try await store.rhymePatterns()
-            let normalized = name.first.namifyLettersOnly
-            let matches = patterns.flatMap { pattern -> [RhymeFinding] in
-                guard pattern.anchors.contains(where: { normalized.hasSuffix($0) }) else { return [] }
-                return pattern.words.map { word in
-                    RhymeFinding(source: name.first, rhyme: word.word, negative: word.negative, severity: word.severity)
+            let patterns = try await store.rhymePatterns(for: language)
+            let nameParts = [name.first, name.middle, name.last].compactMap { $0 }
+            let rawMatches = nameParts.flatMap { part -> [RhymeFinding] in
+                let normalized = part.namifyLettersOnly
+                return patterns.flatMap { pattern -> [RhymeFinding] in
+                    guard Self.matches(normalized, pattern: pattern) else { return [] }
+                    return pattern.words.map { word in
+                        RhymeFinding(source: part, rhyme: word.word, negative: word.negative, severity: word.severity)
+                    }
                 }
             }
+            var seenMatches = Set<RhymeFinding>()
+            let matches = rawMatches.filter { seenMatches.insert($0).inserted }
 
             let negative = matches.filter(\.negative)
             let severe = negative.contains(where: { $0.severity == "severe" || $0.severity == "critical" })
@@ -36,7 +47,7 @@ struct RhymeVulnerabilityAnalyzer {
             if matches.isEmpty {
                 detailText = L("rhyme.detail.none")
             } else {
-                detailText = String(format: L("rhyme.detail.some"), name.first)
+                detailText = String(format: L("rhyme.detail.some"), matches.first?.source ?? name.first)
             }
 
             return TestResult(
@@ -50,14 +61,30 @@ struct RhymeVulnerabilityAnalyzer {
             return unavailableResult(for: .rhyme)
         }
     }
+
+    private static func matches(_ normalized: String, pattern: RhymePatternRecord) -> Bool {
+        let anchors = pattern.anchors.map(\.namifyLettersOnly).filter { $0.isEmpty == false }
+        switch pattern.matchType {
+        case "exact":
+            return anchors.contains(normalized)
+        default:
+            return anchors.contains { normalized.hasSuffix($0) }
+        }
+    }
 }
 
 struct InitialsDetector {
     let store: OfflineDatasetStore
+    let language: AppLanguage
+
+    init(store: OfflineDatasetStore, language: AppLanguage = .english) {
+        self.store = store
+        self.language = language.resolvedForAnalysis
+    }
 
     func analyze(name: NameComponents) async -> TestResult {
         do {
-            let database = try await store.badInitials()
+            let database = try await store.badInitials(for: language)
             let initials = computeInitials(for: name)
             let normalizedMatches = database.filter { record in
                 initials.contains(record.initials.uppercased())
@@ -130,25 +157,33 @@ struct InitialsDetector {
 
 struct PronunciationTester {
     let store: OfflineDatasetStore
+    let language: AppLanguage
+
+    init(store: OfflineDatasetStore, language: AppLanguage = .english) {
+        self.store = store
+        self.language = language.resolvedForAnalysis
+    }
 
     func analyze(name: NameComponents) async -> TestResult {
         do {
-            let rules = try await store.phoneticRules()
+            let rules = try await store.phoneticRules(for: language)
             let normalized = name.first.namifyLettersOnly
             let override = rules.overrides.first { $0.name.namifyNormalized == name.first.namifyNormalized }
-            let factors = rules.rules.compactMap { rule -> PronunciationFactor? in
-                guard normalized.contains(rule.pattern.lowercased()) else { return nil }
-                let labelKey = Self.localizedKey(forPattern: rule.pattern)
+            let matchedRules = rules.rules.filter { rule in
+                let pattern = rule.pattern.namifyLettersOnly
+                return pattern.isEmpty == false && normalized.contains(pattern)
+            }
+            let factors = matchedRules.map { rule in
                 return PronunciationFactor(
-                    label: L(labelKey),
-                    explanation: L("\(labelKey).explanation"),
+                    label: rule.label,
+                    explanation: rule.explanation,
                     verdict: TestVerdict(rawValue: rule.verdict) ?? .warn
                 )
             }
 
-            var score = 1 + factors.reduce(0) { $0 + penalty(for: $1.verdict) }
-            if name.first.count > 10 { score += 1 }
-            if name.first.contains(where: { "qxz".contains($0.lowercased()) }) { score += 1 }
+            var score = 1 + matchedRules.reduce(0) { $0 + $1.penalty }
+            if name.first.count > lengthWarningThreshold { score += 1 }
+            if language == .english && name.first.contains(where: { "qxz".contains($0.lowercased()) }) { score += 1 }
             score = min(score, 10)
 
             let verdict: TestVerdict = score <= 3 ? .pass : (score <= 6 ? .warn : .fail)
@@ -157,8 +192,8 @@ struct PronunciationTester {
                 : (score <= 6
                     ? L("pronunciation.summary.warn")
                     : L("pronunciation.summary.fail"))
-            let phonetic = override?.phonetic ?? Self.naivePhonetic(for: name.first)
-            let likely = override?.likelyMispronunciation ?? Self.englishDefault(for: name.first)
+            let phonetic = override?.phonetic ?? Self.naivePhonetic(for: name.first, language: language)
+            let likely = override?.likelyMispronunciation ?? Self.defaultReading(for: name.first, language: language)
 
             let detailText = L("pronunciation.detail")
 
@@ -183,45 +218,43 @@ struct PronunciationTester {
         }
     }
 
-    private static func localizedKey(forPattern pattern: String) -> String {
-        switch pattern {
-        case "gh": return "pronunciation.rule.silentLetters"
-        case "bh": return "pronunciation.rule.uncommonCombo"
-        case "ao": return "pronunciation.rule.ambiguousVowel"
-        case "eigh": return "pronunciation.rule.eigh"
-        case "sz": return "pronunciation.rule.sz"
-        case "x": return "pronunciation.rule.uncommonFreq"
-        default: return "pronunciation.rule.uncommonCombo"
+    private var lengthWarningThreshold: Int {
+        switch language {
+        case .chineseSimplified, .japanese, .korean:
+            return 5
+        case .thai:
+            return 14
+        default:
+            return 10
         }
     }
 
-    private func penalty(for verdict: TestVerdict) -> Int {
-        switch verdict {
-        case .pass: 0
-        case .warn: 1
-        case .fail: 2
-        }
-    }
-
-    private static func naivePhonetic(for name: String) -> String {
-        name
+    private static func naivePhonetic(for name: String, language: AppLanguage) -> String {
+        guard language == .english else { return name }
+        return name
             .replacingOccurrences(of: "ph", with: "f")
             .replacingOccurrences(of: "ie", with: "ee")
             .replacingOccurrences(of: "th", with: "th")
             .uppercased()
     }
 
-    private static func englishDefault(for name: String) -> String {
-        name.uppercased()
+    private static func defaultReading(for name: String, language: AppLanguage) -> String {
+        language == .english ? name.uppercased() : name
     }
 }
 
 struct EmailSimulator {
     let store: OfflineDatasetStore
+    let language: AppLanguage
+
+    init(store: OfflineDatasetStore, language: AppLanguage = .english) {
+        self.store = store
+        self.language = language.resolvedForAnalysis
+    }
 
     func analyze(name: NameComponents) async -> TestResult {
         do {
-            let database = try await store.frequencyDatabase()
+            let database = try await store.frequencyDatabase(for: language)
             let domains = try await store.domains()
             let firstRank = database.firstNames.first(where: { $0.name.namifyNormalized == name.first.namifyNormalized })?.rank ?? 5_000
             let lastRank = database.lastNames.first(where: { $0.name.namifyNormalized == name.last.namifyNormalized })?.rank ?? 8_000
@@ -304,7 +337,8 @@ struct EmailSimulator {
 }
 
 struct NameTagPreviewGenerator {
-    func analyze(name: NameComponents, includeMiddleName: Bool) async -> TestResult {
+    func analyze(name: NameComponents, includeMiddleName: Bool, language: AppLanguage = .english) async -> TestResult {
+        let analysisLanguage = language.resolvedForAnalysis
         let displayName = includeMiddleName && name.middle != nil
             ? "\(name.first) \(String(name.middle!.prefix(1))). \(name.last)"
             : "\(name.first) \(name.last)"
@@ -313,6 +347,7 @@ struct NameTagPreviewGenerator {
             withAttributes: [.font: UIFont.systemFont(ofSize: 22, weight: .semibold)]
         ).width
         let hasDiacritics = displayName != displayName.folding(options: .diacriticInsensitive, locale: .current)
+        let warnsForDiacritics = analysisLanguage == .english && hasDiacritics
         let charCount = displayName.count
 
         let verdict: TestVerdict
@@ -320,7 +355,7 @@ struct NameTagPreviewGenerator {
         if charCount > 35 || width > 260 {
             verdict = .fail
             summary = L("nametag.summary.fail")
-        } else if charCount > 25 || width > 220 || hasDiacritics || charCount <= 3 {
+        } else if charCount > 25 || width > 220 || warnsForDiacritics || charCount <= 3 {
             verdict = .warn
             summary = L("nametag.summary.warn")
         } else {
@@ -333,23 +368,29 @@ struct NameTagPreviewGenerator {
             verdict: verdict,
             summaryLine: summary,
             detailText: L("nametag.detail"),
-            detailData: .nameTag(NameTagDetail(displayName: displayName, characterCount: charCount, fitsScore: summary, warnsForDiacritics: hasDiacritics))
+            detailData: .nameTag(NameTagDetail(displayName: displayName, characterCount: charCount, fitsScore: summary, warnsForDiacritics: warnsForDiacritics))
         )
     }
 }
 
 struct HistoricalNamesakeEngine {
     let store: OfflineDatasetStore
+    let language: AppLanguage
+
+    init(store: OfflineDatasetStore, language: AppLanguage = .english) {
+        self.store = store
+        self.language = language.resolvedForAnalysis
+    }
 
     func analyze(name: NameComponents) async -> TestResult {
         do {
-            let dataset = try await store.namesakes()
+            let dataset = try await store.namesakes(for: language)
             let normalized = name.first.namifyNormalized
             let soundex = soundexCode(for: normalized)
             let matches = dataset
                 .filter {
                     $0.firstName.namifyNormalized == normalized
-                        || soundexCode(for: $0.firstName.namifyNormalized) == soundex
+                        || (language == .english && soundexCode(for: $0.firstName.namifyNormalized) == soundex)
                 }
                 .sorted { $0.notoriety < $1.notoriety }
 
@@ -410,6 +451,10 @@ struct HistoricalNamesakeEngine {
 struct MonogramAnalyzer {
     func analyze(name: NameComponents) async -> TestResult {
         let initials = name.monogramLetters
+        if initials.allSatisfy(Self.isLatinInitial) == false {
+            return scriptNeutralResult(initials: initials)
+        }
+
         let symmetry = symmetryScore(for: initials)
         let width = widthScore(for: initials)
         let conflict = conflictScore(for: initials)
@@ -444,6 +489,43 @@ struct MonogramAnalyzer {
                 )
             )
         )
+    }
+
+    private func scriptNeutralResult(initials: [String]) -> TestResult {
+        let uniqueCount = Set(initials).count
+        let total = uniqueCount >= 2 ? 4 : 3
+        let verdict: TestVerdict = total >= 4 ? .pass : .warn
+        let summary: String
+        switch verdict {
+        case .pass: summary = L("monogram.summary.pass")
+        case .warn: summary = L("monogram.summary.warn")
+        case .fail: summary = L("monogram.summary.fail")
+        }
+
+        return TestResult(
+            testType: .monogram,
+            verdict: verdict,
+            summaryLine: summary,
+            detailText: L("monogram.detail"),
+            detailData: .monogram(
+                MonogramDetail(
+                    score: total,
+                    symmetry: uniqueCount >= 2 ? 1.0 : 0.5,
+                    widthHarmony: 1.0,
+                    readability: 1.0,
+                    previews: [
+                        .init(title: "Classic", initials: initials),
+                        .init(title: "Stacked", initials: initials),
+                        .init(title: "Interleaved", initials: initials)
+                    ]
+                )
+            )
+        )
+    }
+
+    private static func isLatinInitial(_ value: String) -> Bool {
+        guard value.count == 1, let scalar = value.unicodeScalars.first else { return false }
+        return (65...90).contains(Int(scalar.value))
     }
 
     private func symmetryScore(for initials: [String]) -> Double {

@@ -33,15 +33,21 @@ enum OverallVerdict: String, Codable, CaseIterable, Hashable {
         let failCount = results.filter { $0.verdict == .fail }.count
 
         let effectivePassCount = strictMode ? passCount : passCount + warnCount
-        let _ = strictMode ? failCount + warnCount : failCount
+        let effectiveFailCount = strictMode ? failCount + warnCount : failCount
+
+        if effectiveFailCount == 0 && effectivePassCount >= 5 {
+            return .survived
+        }
+
+        if effectiveFailCount >= 3 || effectivePassCount < 3 {
+            return .failed
+        }
 
         switch effectivePassCount {
-        case 5...:
-            return .survived
         case 3...4:
             return .mixed
         default:
-            return .failed
+            return .mixed
         }
     }
 }
@@ -308,6 +314,15 @@ enum AppLanguage: String, Codable, CaseIterable, Identifiable {
         switch supportedOrSystem {
         case .system: return nil
         default: return supportedOrSystem.rawValue
+        }
+    }
+
+    var resolvedForAnalysis: AppLanguage {
+        switch self {
+        case .system:
+            return AppLanguage.systemSuggestionLanguage ?? .english
+        default:
+            return supportedOrSystem == .system ? .english : supportedOrSystem
         }
     }
 

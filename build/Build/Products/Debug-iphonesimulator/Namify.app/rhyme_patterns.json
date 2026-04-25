@@ -1,8 +1,55 @@
 {
   "patterns": [
     {
+      "language": "ar",
+      "sound": "AR_DIRECT_GHABI",
+      "anchors": ["غبي"],
+      "matchType": "exact",
+      "words": [
+        { "word": "غبي", "negative": true, "severity": "critical" }
+      ]
+    },
+    {
+      "language": "zh-Hans",
+      "sound": "ZH_DIRECT_BEN",
+      "anchors": ["笨"],
+      "matchType": "exact",
+      "words": [
+        { "word": "笨", "negative": true, "severity": "critical" }
+      ]
+    },
+    {
+      "language": "cs",
+      "sound": "CS_DIRECT_BLB",
+      "anchors": ["blb"],
+      "matchType": "exact",
+      "words": [
+        { "word": "blb", "negative": true, "severity": "critical" }
+      ]
+    },
+    {
+      "language": "da",
+      "sound": "DA_DIRECT_DUM",
+      "anchors": ["dum"],
+      "matchType": "exact",
+      "words": [
+        { "word": "dum", "negative": true, "severity": "moderate" }
+      ]
+    },
+    {
+      "language": "nl",
+      "sound": "NL_DIRECT_SUKKEL",
+      "anchors": ["sukkel"],
+      "matchType": "exact",
+      "words": [
+        { "word": "sukkel", "negative": true, "severity": "critical" }
+      ]
+    },
+    {
+      "language": "en",
       "sound": "ART",
       "anchors": ["art", "hart", "bart", "mart"],
+      "matchType": "suffix",
       "words": [
         { "word": "cart", "negative": false, "severity": null },
         { "word": "tart", "negative": true, "severity": "mild" },
@@ -10,35 +57,280 @@
       ]
     },
     {
+      "language": "en",
       "sound": "ASH",
       "anchors": ["ash"],
+      "matchType": "suffix",
       "words": [
         { "word": "rash", "negative": false, "severity": null },
         { "word": "trash", "negative": true, "severity": "moderate" }
       ]
     },
     {
+      "language": "en",
       "sound": "IAN",
       "anchors": ["ian", "ien"],
+      "matchType": "suffix",
       "words": [
         { "word": "dean", "negative": false, "severity": null },
         { "word": "pee-an", "negative": true, "severity": "mild" }
       ]
     },
     {
+      "language": "en",
       "sound": "LEE",
       "anchors": ["lee", "leigh", "ley", "li"],
+      "matchType": "suffix",
       "words": [
         { "word": "glee", "negative": false, "severity": null },
         { "word": "flea", "negative": true, "severity": "mild" }
       ]
     },
     {
+      "language": "en",
       "sound": "OE",
       "anchors": ["oe", "jo", "joe"],
+      "matchType": "suffix",
       "words": [
         { "word": "foe", "negative": true, "severity": "moderate" },
         { "word": "show", "negative": false, "severity": null }
+      ]
+    },
+    {
+      "language": "fi",
+      "sound": "FI_DIRECT_PASKA",
+      "anchors": ["paska"],
+      "matchType": "exact",
+      "words": [
+        { "word": "paska", "negative": true, "severity": "critical" }
+      ]
+    },
+    {
+      "language": "fr",
+      "sound": "FR_DIRECT_CON",
+      "anchors": ["con"],
+      "matchType": "exact",
+      "words": [
+        { "word": "con", "negative": true, "severity": "critical" }
+      ]
+    },
+    {
+      "language": "de",
+      "sound": "DE_DIRECT_DOOF",
+      "anchors": ["doof"],
+      "matchType": "exact",
+      "words": [
+        { "word": "doof", "negative": true, "severity": "moderate" }
+      ]
+    },
+    {
+      "language": "el",
+      "sound": "EL_DIRECT_CHAZOS",
+      "anchors": ["χαζός", "χαζος"],
+      "matchType": "exact",
+      "words": [
+        { "word": "χαζός", "negative": true, "severity": "moderate" }
+      ]
+    },
+    {
+      "language": "he",
+      "sound": "HE_DIRECT_TIPESH",
+      "anchors": ["טיפש"],
+      "matchType": "exact",
+      "words": [
+        { "word": "טיפש", "negative": true, "severity": "moderate" }
+      ]
+    },
+    {
+      "language": "hi",
+      "sound": "HI_DIRECT_MURKH",
+      "anchors": ["मूर्ख"],
+      "matchType": "exact",
+      "words": [
+        { "word": "मूर्ख", "negative": true, "severity": "moderate" }
+      ]
+    },
+    {
+      "language": "id",
+      "sound": "ID_DIRECT_BODOH",
+      "anchors": ["bodoh"],
+      "matchType": "exact",
+      "words": [
+        { "word": "bodoh", "negative": true, "severity": "moderate" }
+      ]
+    },
+    {
+      "language": "it",
+      "sound": "IT_DIRECT_SCEMO",
+      "anchors": ["scemo"],
+      "matchType": "exact",
+      "words": [
+        { "word": "scemo", "negative": true, "severity": "moderate" }
+      ]
+    },
+    {
+      "language": "ja",
+      "sound": "JA_DIRECT_BAKA",
+      "anchors": ["ばか", "バカ"],
+      "matchType": "exact",
+      "words": [
+        { "word": "ばか", "negative": true, "severity": "critical" }
+      ]
+    },
+    {
+      "language": "ko",
+      "sound": "KO_DIRECT_BABO",
+      "anchors": ["바보"],
+      "matchType": "exact",
+      "words": [
+        { "word": "바보", "negative": true, "severity": "critical" }
+      ]
+    },
+    {
+      "language": "no",
+      "sound": "NO_DIRECT_DUM",
+      "anchors": ["dum"],
+      "matchType": "exact",
+      "words": [
+        { "word": "dum", "negative": true, "severity": "moderate" }
+      ]
+    },
+    {
+      "language": "pl",
+      "sound": "PL_DIRECT_GLUPEK",
+      "anchors": ["głupek", "glupek"],
+      "matchType": "exact",
+      "words": [
+        { "word": "głupek", "negative": true, "severity": "moderate" }
+      ]
+    },
+    {
+      "language": "pt-BR",
+      "sound": "PT_DIRECT_BOBO",
+      "anchors": ["bobo"],
+      "matchType": "exact",
+      "words": [
+        { "word": "bobo", "negative": true, "severity": "moderate" }
+      ]
+    },
+    {
+      "language": "ru",
+      "sound": "RU_DIRECT_CHMO",
+      "anchors": ["чмо"],
+      "matchType": "exact",
+      "words": [
+        { "word": "чмо", "negative": true, "severity": "critical" }
+      ]
+    },
+    {
+      "language": "ru",
+      "sound": "RU_SUFFIX_MO",
+      "anchors": ["мо"],
+      "matchType": "suffix",
+      "words": [
+        { "word": "чмо", "negative": true, "severity": "critical" },
+        { "word": "гмо", "negative": false, "severity": null }
+      ]
+    },
+    {
+      "language": "ru",
+      "sound": "RU_SUFFIX_OPA",
+      "anchors": ["опа"],
+      "matchType": "suffix",
+      "words": [
+        { "word": "попа", "negative": true, "severity": "moderate" },
+        { "word": "жопа", "negative": true, "severity": "critical" }
+      ]
+    },
+    {
+      "language": "ru",
+      "sound": "RU_SUFFIX_ADNITSA",
+      "anchors": ["адница"],
+      "matchType": "suffix",
+      "words": [
+        { "word": "задница", "negative": true, "severity": "critical" }
+      ]
+    },
+    {
+      "language": "ru",
+      "sound": "RU_SUFFIX_AVNO",
+      "anchors": ["авно"],
+      "matchType": "suffix",
+      "words": [
+        { "word": "говно", "negative": true, "severity": "critical" }
+      ]
+    },
+    {
+      "language": "ru",
+      "sound": "RU_SUFFIX_UDAK",
+      "anchors": ["удак"],
+      "matchType": "suffix",
+      "words": [
+        { "word": "мудак", "negative": true, "severity": "critical" },
+        { "word": "дурак", "negative": true, "severity": "moderate" }
+      ]
+    },
+    {
+      "language": "ru",
+      "sound": "RU_SUFFIX_OKH",
+      "anchors": ["ох", "лох"],
+      "matchType": "suffix",
+      "words": [
+        { "word": "лох", "negative": true, "severity": "critical" }
+      ]
+    },
+    {
+      "language": "es",
+      "sound": "ES_DIRECT_TONTO",
+      "anchors": ["tonto"],
+      "matchType": "exact",
+      "words": [
+        { "word": "tonto", "negative": true, "severity": "moderate" }
+      ]
+    },
+    {
+      "language": "sv",
+      "sound": "SV_DIRECT_DUM",
+      "anchors": ["dum"],
+      "matchType": "exact",
+      "words": [
+        { "word": "dum", "negative": true, "severity": "moderate" }
+      ]
+    },
+    {
+      "language": "th",
+      "sound": "TH_DIRECT_KHI",
+      "anchors": ["ขี้"],
+      "matchType": "exact",
+      "words": [
+        { "word": "ขี้", "negative": true, "severity": "critical" }
+      ]
+    },
+    {
+      "language": "tr",
+      "sound": "TR_DIRECT_SALAK",
+      "anchors": ["salak"],
+      "matchType": "exact",
+      "words": [
+        { "word": "salak", "negative": true, "severity": "critical" }
+      ]
+    },
+    {
+      "language": "uk",
+      "sound": "UK_DIRECT_DUREN",
+      "anchors": ["дурень"],
+      "matchType": "exact",
+      "words": [
+        { "word": "дурень", "negative": true, "severity": "moderate" }
+      ]
+    },
+    {
+      "language": "vi",
+      "sound": "VI_DIRECT_NGU",
+      "anchors": ["ngu"],
+      "matchType": "exact",
+      "words": [
+        { "word": "ngu", "negative": true, "severity": "critical" }
       ]
     }
   ]
