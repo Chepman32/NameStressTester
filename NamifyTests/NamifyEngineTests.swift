@@ -149,6 +149,43 @@ final class NamifyEngineTests: XCTestCase {
         XCTAssertEqual(AppLanguage.suggestionLanguage(from: ["ms-MY", "en-US"]), .malay)
     }
 
+    @MainActor
+    func testOnboardingTestimonialsLocalizeExampleNames() {
+        AppLocalization.setLanguage(.russian)
+        let testimonials = OnboardingViewModel().testimonials
+        let combinedText = testimonials.map { "\($0.name) \($0.text)" }.joined(separator: " ")
+
+        XCTAssertEqual(testimonials[0].name, "Анна М.")
+        XCTAssertTrue(combinedText.contains("София С."))
+        XCTAssertTrue(combinedText.contains("Матвей"))
+        XCTAssertTrue(combinedText.contains("Артём"))
+        XCTAssertFalse(combinedText.contains("Olivia"))
+        XCTAssertFalse(combinedText.contains("Theo"))
+        XCTAssertFalse(combinedText.contains("Arjun"))
+
+        AppLocalization.setLanguage(.system)
+    }
+
+    func testOnboardingAsianExampleNamesUseLocalScripts() {
+        let checks: [(AppLanguage, String, String)] = [
+            (.chineseSimplified, "梓萱", "浩然"),
+            (.japanese, "結菜", "陽翔"),
+            (.korean, "서아", "도윤"),
+            (.thai, "น้องพิม", "น้องภีม")
+        ]
+
+        for (language, flaggedName, chosenName) in checks {
+            let names = OnboardingTestimonialNames.names(for: language)
+            let text = names.localizedText("Olivia S. Theo Arjun")
+
+            XCTAssertTrue(text.contains(flaggedName))
+            XCTAssertTrue(text.contains(chosenName))
+            XCTAssertFalse(text.contains("Olivia"))
+            XCTAssertFalse(text.contains("Theo"))
+            XCTAssertFalse(text.contains("Arjun"))
+        }
+    }
+
     func testOnboardingSkipIsHiddenForTransientSteps() {
         XCTAssertTrue(OnboardingStep.welcome.canSkip)
         XCTAssertTrue(OnboardingStep.demoInput.canSkip)

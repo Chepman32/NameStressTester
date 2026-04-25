@@ -38,6 +38,67 @@ struct Testimonial: Identifiable {
     let rating: Int
 }
 
+struct OnboardingTestimonialNames {
+    let parentOne: String
+    let parentTwo: String
+    let parentThree: String
+    let flaggedName: String
+    let chosenName: String
+    let pronunciationName: String
+
+    static var current: OnboardingTestimonialNames {
+        names(for: AppLocalization.currentLanguage.resolvedForSuggestions)
+    }
+
+    static func names(for language: AppLanguage) -> OnboardingTestimonialNames {
+        namesByLanguage[language.resolvedForSuggestions] ?? namesByLanguage[.english]!
+    }
+
+    func localizedText(_ text: String) -> String {
+        var localized = text
+        for source in ["Olivia S.:ksi", "Olivia S.", "Olivia S", "أوليفيا س.", "オリビア・S", "오리비아 S."] {
+            localized = localized.replacingOccurrences(of: source, with: flaggedName)
+        }
+        for source in ["Theosta", "Theo'ya", "Theo", "ثيو", "テオ", "Θοδωρή"] {
+            localized = localized.replacingOccurrences(of: source, with: chosenName)
+        }
+        for source in ["Arjun", "أرجون", "アルジュン", "아르준", "Αρτζούν"] {
+            localized = localized.replacingOccurrences(of: source, with: pronunciationName)
+        }
+        return localized
+    }
+
+    private static let namesByLanguage: [AppLanguage: OnboardingTestimonialNames] = [
+        .english: .init(parentOne: "Sarah M.", parentTwo: "James T.", parentThree: "Priya K.", flaggedName: "Olivia S.", chosenName: "Theo", pronunciationName: "Arjun"),
+        .arabic: .init(parentOne: "سارة م.", parentTwo: "يوسف ت.", parentThree: "مريم ك.", flaggedName: "ليان س.", chosenName: "آدم", pronunciationName: "عمر"),
+        .chineseSimplified: .init(parentOne: "李娜", parentTwo: "王伟", parentThree: "陈婷", flaggedName: "梓萱", chosenName: "浩然", pronunciationName: "子涵"),
+        .czech: .init(parentOne: "Anna M.", parentTwo: "Jakub T.", parentThree: "Tereza K.", flaggedName: "Eliška S.", chosenName: "Matěj", pronunciationName: "Tomáš"),
+        .danish: .init(parentOne: "Emma M.", parentTwo: "William T.", parentThree: "Freja K.", flaggedName: "Alma S.", chosenName: "Oscar", pronunciationName: "Aksel"),
+        .dutch: .init(parentOne: "Emma M.", parentTwo: "Daan T.", parentThree: "Mila K.", flaggedName: "Julia S.", chosenName: "Bram", pronunciationName: "Sem"),
+        .finnish: .init(parentOne: "Aino M.", parentTwo: "Eino T.", parentThree: "Venla K.", flaggedName: "Eevi S.", chosenName: "Onni", pronunciationName: "Väinö"),
+        .french: .init(parentOne: "Camille M.", parentTwo: "Louis T.", parentThree: "Léa K.", flaggedName: "Louise S.", chosenName: "Gabriel", pronunciationName: "Raphaël"),
+        .german: .init(parentOne: "Emilia M.", parentTwo: "Leon T.", parentThree: "Hannah K.", flaggedName: "Mia S.", chosenName: "Matteo", pronunciationName: "Elias"),
+        .greek: .init(parentOne: "Μαρία Μ.", parentTwo: "Νίκος Τ.", parentThree: "Ελένη Κ.", flaggedName: "Σοφία Σ.", chosenName: "Αλέξανδρος", pronunciationName: "Δημήτρης"),
+        .hebrew: .init(parentOne: "נועה מ.", parentTwo: "איתן ט.", parentThree: "תמר ק.", flaggedName: "מאיה ס.", chosenName: "דניאל", pronunciationName: "יונתן"),
+        .hindi: .init(parentOne: "आन्या म.", parentTwo: "आरव ट.", parentThree: "मीरा क.", flaggedName: "सिया स.", chosenName: "विवान", pronunciationName: "अर्जुन"),
+        .indonesian: .init(parentOne: "Siti M.", parentTwo: "Rizky T.", parentThree: "Alya K.", flaggedName: "Nabila S.", chosenName: "Bima", pronunciationName: "Raka"),
+        .italian: .init(parentOne: "Sofia M.", parentTwo: "Leonardo T.", parentThree: "Giulia K.", flaggedName: "Aurora S.", chosenName: "Lorenzo", pronunciationName: "Alessandro"),
+        .japanese: .init(parentOne: "美咲 M", parentTwo: "大和 T", parentThree: "凛 K", flaggedName: "結菜", chosenName: "陽翔", pronunciationName: "蓮"),
+        .korean: .init(parentOne: "서연 M.", parentTwo: "민준 T.", parentThree: "지우 K.", flaggedName: "서아", chosenName: "도윤", pronunciationName: "하윤"),
+        .malay: .init(parentOne: "Aisyah M.", parentTwo: "Irfan T.", parentThree: "Hana K.", flaggedName: "Sofia S.", chosenName: "Danish", pronunciationName: "Zafran"),
+        .norwegian: .init(parentOne: "Nora M.", parentTwo: "Jakob T.", parentThree: "Emma K.", flaggedName: "Sofie S.", chosenName: "Aksel", pronunciationName: "Emil"),
+        .polish: .init(parentOne: "Zofia M.", parentTwo: "Antoni T.", parentThree: "Hanna K.", flaggedName: "Maja S.", chosenName: "Jan", pronunciationName: "Aleksander"),
+        .portugueseBrazil: .init(parentOne: "Helena M.", parentTwo: "Miguel T.", parentThree: "Laura K.", flaggedName: "Alice S.", chosenName: "Arthur", pronunciationName: "Gabriel"),
+        .russian: .init(parentOne: "Анна М.", parentTwo: "Дмитрий Т.", parentThree: "Мария К.", flaggedName: "София С.", chosenName: "Матвей", pronunciationName: "Артём"),
+        .spanish: .init(parentOne: "Lucía M.", parentTwo: "Mateo T.", parentThree: "Camila K.", flaggedName: "Sofía S.", chosenName: "Martín", pronunciationName: "Nicolás"),
+        .swedish: .init(parentOne: "Alice M.", parentTwo: "William T.", parentThree: "Maja K.", flaggedName: "Elsa S.", chosenName: "Hugo", pronunciationName: "Elias"),
+        .thai: .init(parentOne: "คุณมิน", parentTwo: "คุณกันต์", parentThree: "คุณแพรว", flaggedName: "น้องพิม", chosenName: "น้องภีม", pronunciationName: "น้องฟ้า"),
+        .turkish: .init(parentOne: "Zeynep M.", parentTwo: "Yusuf T.", parentThree: "Elif K.", flaggedName: "Defne S.", chosenName: "Eymen", pronunciationName: "Emir"),
+        .ukrainian: .init(parentOne: "Софія М.", parentTwo: "Дмитро Т.", parentThree: "Анна К.", flaggedName: "Марія С.", chosenName: "Артем", pronunciationName: "Матвій"),
+        .vietnamese: .init(parentOne: "Linh M.", parentTwo: "Minh T.", parentThree: "Trang K.", flaggedName: "Mai S.", chosenName: "An", pronunciationName: "Huy")
+    ]
+}
+
 struct SolutionMapping: Identifiable {
     let id: String
     let painPoint: String
@@ -85,10 +146,11 @@ final class OnboardingViewModel: ObservableObject {
     }
 
     var testimonials: [Testimonial] {
-        [
-            Testimonial(name: L("onboarding.testimonial.1.name"), tag: L("onboarding.testimonial.1.tag"), text: L("onboarding.testimonial.1.text"), rating: 5),
-            Testimonial(name: L("onboarding.testimonial.2.name"), tag: L("onboarding.testimonial.2.tag"), text: L("onboarding.testimonial.2.text"), rating: 5),
-            Testimonial(name: L("onboarding.testimonial.3.name"), tag: L("onboarding.testimonial.3.tag"), text: L("onboarding.testimonial.3.text"), rating: 5),
+        let names = OnboardingTestimonialNames.current
+        return [
+            Testimonial(name: names.parentOne, tag: L("onboarding.testimonial.1.tag"), text: names.localizedText(L("onboarding.testimonial.1.text")), rating: 5),
+            Testimonial(name: names.parentTwo, tag: L("onboarding.testimonial.2.tag"), text: names.localizedText(L("onboarding.testimonial.2.text")), rating: 5),
+            Testimonial(name: names.parentThree, tag: L("onboarding.testimonial.3.tag"), text: names.localizedText(L("onboarding.testimonial.3.text")), rating: 5),
         ]
     }
 

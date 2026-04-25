@@ -12,6 +12,10 @@ extension Bundle {
 enum AppLocalization {
     private static var selectedLanguage: AppLanguage = .system
 
+    static var currentLanguage: AppLanguage {
+        selectedLanguage
+    }
+
     static func setLanguage(_ language: AppLanguage) {
         selectedLanguage = language.supportedOrSystem
     }

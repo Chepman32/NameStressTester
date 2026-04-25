@@ -48,6 +48,48 @@
 			<key>uniqueIdentifier</key>
 			<string>384C786C-6D53-4BDF-A4C6-0665DE95BE61</string>
 		</dict>
+		<key>85997447-F854-4868-BBA1-8E464997E920</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>85997447-F854-4868-BBA1-8E464997E920.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Namify project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Namify</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project Namify with scheme Namify and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>798794184.93026805</real>
+			<key>timeStoppedRecording</key>
+			<real>798794189.96829605</real>
+			<key>title</key>
+			<string>Building project Namify with scheme Namify and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>85997447-F854-4868-BBA1-8E464997E920</string>
+		</dict>
 	</dict>
 </dict>
 </plist>

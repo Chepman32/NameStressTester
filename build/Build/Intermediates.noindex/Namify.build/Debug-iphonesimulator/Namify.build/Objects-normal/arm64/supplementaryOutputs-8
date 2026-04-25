@@ -1,4 +1,11 @@
 {
+  "/Users/antonchepur/Namify/Namify/Persistence/Models.swift" : {
+    "const-values" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/Models.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/Models.d",
+    "diagnostics" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/Models.dia",
+    "object" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/Models.o",
+    "swift-dependencies" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/Models.swiftdeps"
+  },
   "/Users/antonchepur/Namify/Namify/Persistence/PersistenceService.swift" : {
     "const-values" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/PersistenceService.swiftconstvalues",
     "dependencies" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/PersistenceService.d",
@@ -12,12 +19,5 @@
     "diagnostics" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/ShareCardRenderer.dia",
     "object" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/ShareCardRenderer.o",
     "swift-dependencies" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/ShareCardRenderer.swiftdeps"
-  },
-  "/Users/antonchepur/Namify/Namify/Utilities/SystemHelpers.swift" : {
-    "const-values" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/SystemHelpers.swiftconstvalues",
-    "dependencies" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/SystemHelpers.d",
-    "diagnostics" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/SystemHelpers.dia",
-    "object" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/SystemHelpers.o",
-    "swift-dependencies" : "/Users/antonchepur/Namify/build/Build/Intermediates.noindex/Namify.build/Debug-iphonesimulator/Namify.build/Objects-normal/arm64/SystemHelpers.swiftdeps"
   }
 }
