@@ -31,12 +31,19 @@ final class PhysicsEngine: ObservableObject {
     private var displayLink: CADisplayLink?
     private var lastTimestamp: CFTimeInterval = 0
     private var attractorStrength: CGFloat = 0
+    private var canvasSize: CGSize = .zero
     private var gravity: CGFloat = 980
     private var exploding = false
     private var reassembling = false
     private let boundsInset: CGFloat = 20
 
     func configure(word: String, in size: CGSize) {
+        stop()
+        canvasSize = size
+        attractorStrength = 0
+        exploding = false
+        reassembling = false
+
         let spacing: CGFloat = 34
         let totalWidth = spacing * CGFloat(word.count - 1)
         let originX = (size.width - totalWidth) / 2
@@ -70,6 +77,7 @@ final class PhysicsEngine: ObservableObject {
         displayLink?.invalidate()
         lastTimestamp = 0
         displayLink = CADisplayLink(target: self, selector: #selector(step))
+        displayLink?.preferredFrameRateRange = CAFrameRateRange(minimum: 45, maximum: 60, preferred: 60)
         displayLink?.add(to: .main, forMode: .common)
     }
 
@@ -96,17 +104,47 @@ final class PhysicsEngine: ObservableObject {
         reassembling = true
     }
 
+    func particlesAtTargets() -> [LetterParticle] {
+        particles.map { particle in
+            var particle = particle
+            particle.position = particle.target
+            particle.velocity = .zero
+            particle.angle = 0
+            particle.angularVelocity = 0
+            particle.trail = []
+            return particle
+        }
+    }
+
+    func settleAtTargets() {
+        exploding = false
+        reassembling = false
+        attractorStrength = 0
+        particles = particlesAtTargets()
+    }
+
+    var isNearlySettled: Bool {
+        particles.allSatisfy { particle in
+            let dx = particle.position.x - particle.target.x
+            let dy = particle.position.y - particle.target.y
+            let speed = sqrt(particle.velocity.dx * particle.velocity.dx + particle.velocity.dy * particle.velocity.dy)
+
+            return sqrt(dx * dx + dy * dy) < 5 && speed < 35 && abs(particle.angle) < 0.12
+        }
+    }
+
     @objc private func step(link: CADisplayLink) {
-        let dt = lastTimestamp == 0 ? 1.0 / 60.0 : link.timestamp - lastTimestamp
+        let elapsed = lastTimestamp == 0 ? 1.0 / 60.0 : link.timestamp - lastTimestamp
+        let dt = min(max(elapsed, 0), 1.0 / 30.0)
         lastTimestamp = link.timestamp
 
         if reassembling {
-            attractorStrength = min(attractorStrength + CGFloat(dt * 160), 50)
+            attractorStrength = min(attractorStrength + CGFloat(dt * 220), 85)
         }
 
-        particles = particles.enumerated().map { index, particle in
+        particles = particles.map { particle in
             var particle = particle
-            if exploding || reassembling {
+            if exploding {
                 particle.velocity.dy += gravity * dt
             }
 
@@ -115,32 +153,47 @@ final class PhysicsEngine: ObservableObject {
                 let dy = particle.target.y - particle.position.y
                 particle.velocity.dx += dx * attractorStrength * dt / particle.mass
                 particle.velocity.dy += dy * attractorStrength * dt / particle.mass
-                particle.angularVelocity *= 0.95
-                particle.angle *= 0.92
+                particle.angularVelocity *= pow(0.84, CGFloat(dt * 60))
+                particle.angle *= pow(0.88, CGFloat(dt * 60))
             }
 
             particle.position.x += particle.velocity.dx * dt
             particle.position.y += particle.velocity.dy * dt
             particle.angle += particle.angularVelocity * dt
 
-            particle.velocity.dx *= reassembling ? 0.96 : 0.92
-            particle.velocity.dy *= reassembling ? 0.96 : 0.92
+            let damping = pow(reassembling ? 0.90 : 0.92, CGFloat(dt * 60))
+            particle.velocity.dx *= damping
+            particle.velocity.dy *= damping
 
-            if particle.position.x < boundsInset || particle.position.x > UIScreen.main.bounds.width - boundsInset {
-                particle.velocity.dx *= -0.6
+            let maxX = max(boundsInset, canvasSize.width - boundsInset)
+            let maxY = max(boundsInset, canvasSize.height - boundsInset)
+            if particle.position.x < boundsInset {
+                particle.position.x = boundsInset
+                particle.velocity.dx = abs(particle.velocity.dx) * 0.6
+            } else if particle.position.x > maxX {
+                particle.position.x = maxX
+                particle.velocity.dx = -abs(particle.velocity.dx) * 0.6
             }
-            if particle.position.y < boundsInset || particle.position.y > UIScreen.main.bounds.height - boundsInset {
-                particle.velocity.dy *= -0.6
+
+            if particle.position.y < boundsInset {
+                particle.position.y = boundsInset
+                particle.velocity.dy = abs(particle.velocity.dy) * 0.6
+            } else if particle.position.y > maxY {
+                particle.position.y = maxY
+                particle.velocity.dy = -abs(particle.velocity.dy) * 0.6
             }
 
             particle.trail.insert(particle.position, at: 0)
             particle.trail = Array(particle.trail.prefix(3))
 
             if reassembling,
-               hypot(particle.position.x - particle.target.x, particle.position.y - particle.target.y) < 2 {
+               hypot(particle.position.x - particle.target.x, particle.position.y - particle.target.y) < 2,
+               hypot(particle.velocity.dx, particle.velocity.dy) < 20 {
                 particle.position = particle.target
                 particle.velocity = .zero
                 particle.angle = 0
+                particle.angularVelocity = 0
+                particle.trail = []
             }
             return particle
         }
@@ -155,61 +208,116 @@ final class SplashViewModel: ObservableObject {
     @Published var lineVisible = false
 
     let engine = PhysicsEngine()
-    private var observing = false
+    private var particleCancellable: AnyCancellable?
+    private var animationTask: Task<Void, Never>?
+    private var hasCompleted = false
 
     func start(size: CGSize, onComplete: @escaping () -> Void) {
-        guard observing == false else { return }
-        observing = true
+        guard animationTask == nil, hasCompleted == false else { return }
         engine.configure(word: "NAMIFY", in: size)
         particles = engine.particles
-        engine.start()
 
-        let cancellable = engine.$particles.sink { [weak self] particles in
-            self?.particles = particles
-        }
+        animationTask = Task { [weak self] in
+            guard let self else { return }
 
-        Task {
             state = .assembling
-            withAnimation(NamifyMotion.bouncy) {
-                particles = engine.particles.map {
-                    var particle = $0
-                    particle.position = particle.target
-                    particle.angle = 0
-                    return particle
-                }
+            withAnimation(.spring(response: 0.76, dampingFraction: 0.78)) {
+                self.particles = self.engine.particlesAtTargets()
             }
 
-            try? await Task.sleep(for: .milliseconds(450))
+            guard await pause(milliseconds: 760) else { return }
+            engine.settleAtTargets()
+            particles = engine.particles
+
             state = .holding
             withAnimation(NamifyMotion.smooth) {
-                lineVisible = true
-                showTagline = true
+                self.lineVisible = true
+                self.showTagline = true
             }
 
-            try? await Task.sleep(for: .milliseconds(650))
+            guard await pause(milliseconds: 700) else { return }
+            observeEngine()
+            engine.start()
             state = .exploding
             engine.explode()
 
-            try? await Task.sleep(for: .milliseconds(800))
+            guard await pause(milliseconds: 820) else { return }
             state = .reassembling
             engine.reassemble()
 
-            try? await Task.sleep(for: .milliseconds(550))
+            guard await waitForReassembly() else { return }
             state = .transitioning
             Haptics.impact(.medium)
 
-            try? await Task.sleep(for: .milliseconds(240))
-            state = .completed
             engine.stop()
-            cancellable.cancel()
-            onComplete()
+            particleCancellable?.cancel()
+            withAnimation(.spring(response: 0.42, dampingFraction: 0.92)) {
+                self.particles = self.engine.particlesAtTargets()
+            }
+            engine.settleAtTargets()
+
+            guard await pause(milliseconds: 420) else { return }
+            complete(onComplete: onComplete)
         }
     }
 
     func skip(onComplete: @escaping () -> Void) {
         guard state != .completed else { return }
+        animationTask?.cancel()
+        animationTask = nil
         state = .transitioning
         engine.stop()
+        particleCancellable?.cancel()
+        complete(onComplete: onComplete)
+    }
+
+    func finish(onComplete: @escaping () -> Void) {
+        animationTask?.cancel()
+        animationTask = nil
+        complete(onComplete: onComplete)
+    }
+
+    private func observeEngine() {
+        particleCancellable?.cancel()
+        particleCancellable = engine.$particles.sink { [weak self] particles in
+            self?.particles = particles
+        }
+    }
+
+    private func pause(milliseconds: Int) async -> Bool {
+        do {
+            try await Task.sleep(for: .milliseconds(milliseconds))
+            return Task.isCancelled == false
+        } catch {
+            return false
+        }
+    }
+
+    private func waitForReassembly() async -> Bool {
+        var elapsed = 0
+        let minimumDuration = 880
+        let maximumDuration = 1_520
+        let frameInterval = 40
+
+        while elapsed < maximumDuration {
+            guard await pause(milliseconds: frameInterval) else { return false }
+            elapsed += frameInterval
+
+            if elapsed >= minimumDuration, engine.isNearlySettled {
+                return true
+            }
+        }
+
+        return Task.isCancelled == false
+    }
+
+    private func complete(onComplete: () -> Void) {
+        guard hasCompleted == false else { return }
+        hasCompleted = true
+        state = .completed
+        animationTask = nil
+        engine.stop()
+        particleCancellable?.cancel()
         onComplete()
     }
 }
@@ -279,7 +387,7 @@ struct SplashScreen: View {
             .task {
                 if reduceMotion {
                     try? await Task.sleep(for: .milliseconds(900))
-                    onComplete()
+                    viewModel.finish(onComplete: onComplete)
                 } else {
                     viewModel.start(size: proxy.size, onComplete: onComplete)
                 }
