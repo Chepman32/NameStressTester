@@ -6,48 +6,6 @@
 	<integer>12</integer>
 	<key>logs</key>
 	<dict>
-		<key>0134416F-58CA-4405-BADD-66E71947A84B</key>
-		<dict>
-			<key>className</key>
-			<string>IDECommandLineBuildLog</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>0134416F-58CA-4405-BADD-66E71947A84B.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>Namify project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Namify</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Building project Namify with scheme Namify and configuration Debug</string>
-			<key>timeStartedRecording</key>
-			<real>798823000.86121202</real>
-			<key>timeStoppedRecording</key>
-			<real>798823012.19898999</real>
-			<key>title</key>
-			<string>Building project Namify with scheme Namify and configuration Debug</string>
-			<key>uniqueIdentifier</key>
-			<string>0134416F-58CA-4405-BADD-66E71947A84B</string>
-		</dict>
 		<key>817CABCB-2869-4DD2-8505-1E2CF02D186C</key>
 		<dict>
 			<key>className</key>
@@ -89,6 +47,48 @@
 			<string>Building project Namify with scheme Namify and configuration Debug</string>
 			<key>uniqueIdentifier</key>
 			<string>817CABCB-2869-4DD2-8505-1E2CF02D186C</string>
+		</dict>
+		<key>AFCD45D7-664B-4519-BFBC-C81656BF630E</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>AFCD45D7-664B-4519-BFBC-C81656BF630E.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Namify project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Namify</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project Namify with scheme Namify and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>798881681.75823998</real>
+			<key>timeStoppedRecording</key>
+			<real>798881686.64107203</real>
+			<key>title</key>
+			<string>Building project Namify with scheme Namify and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>AFCD45D7-664B-4519-BFBC-C81656BF630E</string>
 		</dict>
 	</dict>
 </dict>

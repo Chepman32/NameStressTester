@@ -76,6 +76,47 @@ final class NamifyEngineTests: XCTestCase {
         XCTAssertTrue(detail.entries.contains { $0.fullName == "Иосиф Сталин" && $0.sentiment == "negative" })
     }
 
+    func testRussianNamesakeFlagsDistinctiveBadHistoricalFirstNames() async {
+        let result = await HistoricalNamesakeEngine(store: .shared, language: .russian)
+            .analyze(name: NameComponents(first: "Адольф", middle: nil, last: "Смо"))
+
+        XCTAssertEqual(result.verdict, .fail)
+        guard case .namesake(let detail) = result.detailData else {
+            return XCTFail("Expected namesake detail")
+        }
+
+        XCTAssertTrue(detail.entries.contains { $0.fullName == "Адольф Гитлер" && $0.sentiment == "negative" })
+    }
+
+    func testRussianNamesakeMatchesCommonBadHistoricalFullNamesWithoutFlaggingFirstNameOnly() async {
+        let commonFirstOnly = await HistoricalNamesakeEngine(store: .shared, language: .russian)
+            .analyze(name: NameComponents(first: "Андрей", middle: nil, last: "Смо"))
+        let fullName = await HistoricalNamesakeEngine(store: .shared, language: .russian)
+            .analyze(name: NameComponents(first: "Андрей", middle: nil, last: "Чикатило"))
+
+        XCTAssertEqual(commonFirstOnly.verdict, .pass)
+        XCTAssertEqual(fullName.verdict, .fail)
+
+        guard case .namesake(let detail) = fullName.detailData else {
+            return XCTFail("Expected namesake detail")
+        }
+
+        XCTAssertTrue(detail.entries.contains { $0.fullName == "Андрей Чикатило" && $0.sentiment == "negative" })
+    }
+
+    func testRussianNamesakeDatasetHasBroadNegativeCoverage() async throws {
+        let russianNamesakes = try await OfflineDatasetStore.shared.namesakes(for: .russian)
+        let negativeNamesakes = russianNamesakes.filter { $0.sentiment == "negative" }
+
+        XCTAssertGreaterThanOrEqual(negativeNamesakes.count, 100)
+    }
+
+    func testRussianNamesakeDescriptionsAreLocalized() async throws {
+        let russianNamesakes = try await OfflineDatasetStore.shared.namesakes(for: .russian)
+
+        XCTAssertTrue(russianNamesakes.allSatisfy { $0.shortBio.range(of: #"[А-Яа-яЁё]"#, options: .regularExpression) != nil })
+    }
+
     func testRussianRhymeDataDoesNotLeakIntoEnglishChecks() async {
         let result = await RhymeVulnerabilityAnalyzer(store: .shared, language: .english)
             .analyze(name: NameComponents(first: "Чмо", middle: nil, last: "Адница"))

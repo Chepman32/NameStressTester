@@ -133,6 +133,8 @@ struct HistoricalNamesakeRecord: Codable, Hashable {
     let domain: String
     let sentiment: String
     let notoriety: Int
+    let aliases: [String]?
+    let matchFirstName: Bool?
 
     init(
         language: String? = AppLanguage.english.rawValue,
@@ -142,7 +144,9 @@ struct HistoricalNamesakeRecord: Codable, Hashable {
         era: String,
         domain: String,
         sentiment: String,
-        notoriety: Int
+        notoriety: Int,
+        aliases: [String] = [],
+        matchFirstName: Bool = true
     ) {
         self.language = language
         self.firstName = firstName
@@ -152,6 +156,8 @@ struct HistoricalNamesakeRecord: Codable, Hashable {
         self.domain = domain
         self.sentiment = sentiment
         self.notoriety = notoriety
+        self.aliases = aliases
+        self.matchFirstName = matchFirstName
     }
 }
 

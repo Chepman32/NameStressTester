@@ -385,14 +385,24 @@ struct HistoricalNamesakeEngine {
     func analyze(name: NameComponents) async -> TestResult {
         do {
             let dataset = try await store.namesakes(for: language)
-            let normalized = name.first.namifyNormalized
-            let soundex = soundexCode(for: normalized)
-            let matches = dataset
-                .filter {
-                    $0.firstName.namifyNormalized == normalized
-                        || (language == .english && soundexCode(for: $0.firstName.namifyNormalized) == soundex)
+            let normalizedFirst = name.first.namifyNormalized
+            let normalizedFull = name.fullName.namifyNormalized
+            let normalizedTokens = Set(name.normalizedTokens)
+            let soundex = soundexCode(for: normalizedFirst)
+            let rawMatches = dataset
+                .filter { record in
+                    let recordFirst = record.firstName.namifyNormalized
+                    let exactNames = [record.fullName].map(\.namifyNormalized)
+                    let aliases = (record.aliases ?? []).map(\.namifyNormalized)
+                    return ((record.matchFirstName ?? true) && recordFirst == normalizedFirst)
+                        || exactNames.contains(normalizedFull)
+                        || aliases.contains(normalizedFull)
+                        || aliases.contains(where: { normalizedTokens.contains($0) })
+                        || (language == .english && soundexCode(for: recordFirst) == soundex)
                 }
                 .sorted { $0.notoriety < $1.notoriety }
+            var seenMatches = Set<String>()
+            let matches = rawMatches.filter { seenMatches.insert($0.fullName.namifyNormalized).inserted }
 
             let limited = Array(matches.prefix(5))
             let hasFamousNegative = limited.contains { $0.sentiment == "negative" && $0.notoriety <= 100 }
